@@ -1,6 +1,10 @@
 <!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+ <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
+ <!--[if lte IE 9]><link rel="stylesheet" href="{{ '/css/ie9.css'|url }}" /><![endif]-->
+ <noscript><link rel="stylesheet" href="{{ '/css/noscript.css'|url }}" /></noscript>
+
 <title>{% block title %}Welcome{% endblock %} — c3woc</title>
 <body>
   <header>
@@ -26,4 +30,9 @@
   <footer>
     &copy; Copyright 2018 by L3D.
   </footer>
+  <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
