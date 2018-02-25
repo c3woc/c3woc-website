@@ -1,2 +1,14 @@
 [project]
 name = c3woc
+url = https://c3woce.de/
+
+[servers.c3woc]
+name = c3woc
+url = https://c3woc/
+url_style = absolute
+enabled = yes
+default = yes
+target = rsync://l3d@c3woc.de/var/www/c3woc.de/web
+
+[packages]
+lektor-atom = 0.2

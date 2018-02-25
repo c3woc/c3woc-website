@@ -1,38 +1,56 @@
 <!doctype html>
+<head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
  <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
  <!--[if lte IE 9]><link rel="stylesheet" href="{{ '/css/ie9.css'|url }}" /><![endif]-->
  <noscript><link rel="stylesheet" href="{{ '/css/noscript.css'|url }}" /></noscript>
-
 <title>{% block title %}Welcome{% endblock %} — c3woc</title>
+</head>
 <body>
-  <header>
-    <h1>c3woc</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-    {% block body %}{% endblock %}
+  <div id="wrapper">
+    <header id="header">
+      <div class="logo">
+        <span class="icon fa-heart"></span>
+      </div>
+      <div class="content">
+        <div class="inner">
+          <h1>c3woc</h1>
+          <p>Das C3 Waffel Operation Center.<br/>Wir machen Waffeln.</p>
+                            </div>
+                        </div>
+
+      <nav>
+        <ul class="nav navbar-nav">
+          <li{% if this._path == '/' %} class="active"{% endif
+            %}><a href="{{ '/'|url }}">Welcome</a></li>
+          {% for href, title in [
+            ['/blog', 'Blog'],
+            ['/projects', 'Projects'],
+            ['/about', 'About']
+          ] %}
+            <li{% if this.is_child_of(href) %} class="active"{% endif
+              %}><a href="{{ href|url }}#{{ title }}">{{ title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <article id="{{ this.title }}">
+        <span class="image main"><img src="images/pic01.jpg" alt="" /></span> 
+        <div class="page">
+          {% block body %}{% endblock %}
+        </div>
+      </article>
+    </div>
+    <footer id="footer">
+      &copy; Copyright 2018 by L3D.
+    </footer>
   </div>
-  <footer>
-    &copy; Copyright 2018 by L3D.
-  </footer>
+  <div id="bg"></div>
   <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ '/js/jquery.min.js'|url }}"></script>
+    <script src="{{ '/js/skel.min.js'|url }}"></script>
+    <script src="{{ '/js/util.js'|url }}"></script>
+    <script src="{{ '/js/main.js'|url }}"></script>
 </body>
