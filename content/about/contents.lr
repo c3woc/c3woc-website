@@ -1,7 +1,21 @@
-title: About this Website
+title: Impressum
 ---
 body:
 
-This is a website that was made with the Lektor quickstart.
+IRC:
 
-And it does not contain a lot of information.
+````
+Server: irc.hackint.org
+Channel: #c6
+````
+[irc://irc.hackint.org](ircs://irc.hackint.org:6697/#C6) -  [Web IRC](https://webirc.hackint.org/#irc://irc.hackint.org/#C6)
+
+
+Postanschrift:
+
+````
+Toolbox Bodensee e.V.
+c3WOC
+Bergheimer Str. 6-12
+88677 Markdorf 
+````

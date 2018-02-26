@@ -22,11 +22,11 @@
       <nav>
         <ul class="nav navbar-nav">
           <li{% if this._path == '/' %} class="active"{% endif
-            %}><a href="{{ '/'|url }}#Cyber">Welcome</a></li>
+            %}><a href="{{ '/'|url }}#Cyber">Willkommen</a></li>
           {% for href, title in [
             ['/blog', 'Blog'],
-            ['/projects', 'Projects'],
-            ['/about', 'About']
+            ['/projects', 'Projekte'],
+            ['/about', 'Impressum']
           ] %}
             <li{% if this.is_child_of(href) %} class="active"{% endif
               %}><a href="{{ href|url }}#Cyber">{{ title }}</a></li>
@@ -36,10 +36,7 @@
     </header>
     <div id="main">
       <article id="Cyber">
-        <span class="image main"><img src="images/pic01.jpg" alt="" /></span> 
-        <div class="page">
           {% block body %}{% endblock %}
-        </div>
       </article>
     </div>
     <footer id="footer">
