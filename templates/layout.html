@@ -8,6 +8,7 @@
 <title>{% block title %}Welcome{% endblock %} — c3woc</title>
 </head>
 <body>
+
   <div id="wrapper">
     <header id="header">
       <div class="logo">
@@ -27,7 +28,8 @@
             ['/blog', 'Blog'],
             ['/projects', 'Projekte'],
             ['/about', 'Impressum']
-          ] %}
+          ]
+          %}
             <li{% if this.is_child_of(href) %} class="active"{% endif
               %}><a href="{{ href|url }}#Cyber">{{ title }}</a></li>
           {% endfor %}
@@ -40,7 +42,7 @@
       </article>
     </div>
     <footer id="footer">
-      &copy; Copyright 2018 by L3D.
+      &copy; Copyright 2018 by L3D | News <a href="{{ '/feed.xml'|url }}" title="RSS Feed" class="icon fa-rss" style="font-size: 1.2em; padding-left: 5px;"></a>
     </footer>
   </div>
   <div id="bg"></div>
