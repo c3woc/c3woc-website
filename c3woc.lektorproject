@@ -1,6 +1,6 @@
 [project]
 name = c3woc
-url = https://c3woce.de/
+url = https://c3woc.de/
 
 [servers.c3woc]
 name = c3woc
