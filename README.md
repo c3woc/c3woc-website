@@ -15,6 +15,6 @@ git submodule update --init --recursive
 ```bash
 lektor server
 ```
-*Die Seite ist nun unter ``http://localhost:5000/`` erreichbar**
+*Die Seite ist nun unter ``http://localhost:5000/`` erreichbar*
 
 
