@@ -1,0 +1,7 @@
+assets/solid-state/
+*.swp
+**.swp
+*.tmp
+*.directory
+**.tmp
+**.directory
