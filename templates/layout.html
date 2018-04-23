@@ -1,55 +1,104 @@
-<!doctype html>
-<head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
- <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
- <!--[if lte IE 9]><link rel="stylesheet" href="{{ '/css/ie9.css'|url }}" /><![endif]-->
- <noscript><link rel="stylesheet" href="{{ '/css/noscript.css'|url }}" /></noscript>
- <title>{% block title %}Welcome{% endblock %} c3woc</title>
- <!-- Quellcode: https://git.see-base.de/l3d/c3woc  -->
-</head>
-<body>
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>{% block title %}Startseite{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="{{ '/js/ie/html5shiv.js'|url }}"></script><![endif]-->
+    <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ '/css/ie9.css'|url }}" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ '/css/ie8.css'|url }}" /><![endif]-->
+    <link rel="icon" href="{{ '/images/favicon.png'|url }}" type="image/png">
+    <style>
+      .active a{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
 
-  <div id="wrapper">
-    <header id="header">
-      <div class="logo">
-        <span class="icon fa-heart"></span>
-      </div>
-      <div class="content">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      <!-- Header -->
+      <header id="header" class="alt">
+        <h1><a href="index.html">c3WOC</a></h1>
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+      </header>
+
+      <!-- Menu -->
+      <nav id="menu">
         <div class="inner">
-          <img style="width: 100%; margin-top: -23px;" src="{{ '/images/logo/c3woc.svg'|url }}" />
-          <p>Das C3 Waffel Operation Center. <br/>Wir machen Waffeln.</p>
-        </div>
-      </div>
-      <nav>
-        <ul class="nav navbar-nav">
-          <li{% if this._path == '/' %} class="active"{% endif
-            %}><a href="{{ '/'|url }}#Cyber">Willkommen</a></li>
-          {% for href, title in [
-            ['/blog', 'Blog'],
-            ['/projects', 'Projekte'],
-            ['/about', 'Impressum']
-          ]
-          %}
+          <h2>Menu</h2>
+          <ul class="links">
+            <li{% if this._path == '/' %} class="active"{% endif
+              %}><a href="{{ '/'|url }}">Home</a></li>{%
+             for href, title in [
+              ['/blog', 'Neuigkeiten'],
+              ['/projects', 'Projekte'],
+              ['/impressum', 'Kontakt']
+            ] %}
             <li{% if this.is_child_of(href) %} class="active"{% endif
-              %}><a href="{{ href|url }}#Cyber">{{ title }}</a></li>
-          {% endfor %}
-        </ul>
+                %}><a href="{{ href|url }}">{{ title }}</a></li>{%
+             endfor %}
+          </ul>
+          <a href="#" class="close">Close</a>
+        </div>
       </nav>
-    </header>
-    <div id="main">
-      <article id="Cyber">
+
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <div class="logo"><span class="icon fa-heart"></span></div>
+            <h2>C3WOC</h2>
+            <p>C3 Waffel Operation Center  <span class="icon fa-heart"></span>  Wir machen Waffeln</p>
+          </div>
+        </section>
+        <!-- Wrapper -->
+        <section id="wrapper">
+          <!-- Main -->
           {% block body %}{% endblock %}
-      </article>
+        </section>
+
+
+        <!-- Footer -->
+        <section id="footer">
+          <div class="inner">
+            <h2 class="major">Wir <span class="icon fa-heart"></span> Waffeln, du auch?</h2>
+            <p>Das c3WOC besteht aus Chaoten überall im Chaos. Nimm doch mal mit uns Kontakt auf und lass uns zusammen Waffeln machen!</p>
+            <form>
+              <img src="{{ '/images/logo/c3woc.svg'|url }}" style="width: 100%;"></img>
+            </form>
+                  <ul class="contact">
+                    {% for icon, link, name in [
+                      ['fa-envelope', 'mailto:waffel@c3woc.de', 'waffel@c3woc.de'],
+                      ['fa-hashtag', 'ircs://irc.hackint.org/#waffel', 'irc.hackint.org/#waffel'],
+                      ['fa-hashtag', 'https://webirc.hackint.org/#irc://irc.hackint.org/#waffel', 'webirc.hackint.org'],
+                      ['fa-twitter', 'https://twitter.com/@c3WOC', '@c3WOC'],
+                      ['fa-comments', 'https://chaos.social/@c3WOC', 'c3WOC@chaos.social'],
+                    ] %}
+                    <li class="{{ icon }}"><a href="{{ link }}">{{ name }}</a></li>{%
+                  endfor %} 
+                </ul>
+              <ul class="copyright">
+            <li>&copy; by L3D.</li><li><a href="{{ '/impressum/'|url }}">Impressum</a></li><li>Design inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+	    </div>
+      </section>
     </div>
-    <footer id="footer">
-      &copy; Copyright 2018 by L3D | News <a href="{{ '/feed.xml'|url }}" title="RSS Feed" class="icon fa-rss" style="font-size: 1.2em; padding-left: 5px;"></a>
-    </footer>
-  </div>
-  <div id="bg"></div>
-  <!-- Scripts -->
-    <script src="{{ '/js/jquery.min.js'|url }}"></script>
+    <!-- Scripts -->
     <script src="{{ '/js/skel.min.js'|url }}"></script>
+    <script src="{{ '/js/jquery.min.js'|url }}"></script>
+    <script src="{{ '/js/jquery.scrollex.min.js'|url }}"></script>
     <script src="{{ '/js/util.js'|url }}"></script>
+    <!--[if lte IE 8]><script src="{{ '/js/ie/respond.min.js'|url }}"></script><![endif]-->
     <script src="{{ '/js/main.js'|url }}"></script>
-</body>
+  </body>
+</html>
