@@ -1,10 +1,59 @@
-title: Wir sind das c3woc
+as01b1: Wir sind Nerds und Hacker aus dem Chaosumfeld. Wir haben an einigen strategisch wichtigen Orten im Chaos waffeleisen deponiert.
 ---
-body:
-
-Das C3 Waffel Operation Center möchte die ganze Welt mit Waffeln versorgen! 
-
-Daher haben wir es uns zum Ziel gesetzt zufällig an verschiedenen Chaosevents, in Hackerspacen und bei Chaostreffs aufzutauchen und Waffeln zu machen.
-Notfalls auch mit Waffelgewalt. 
+as01h1: Wer ist das c3WOC?
 ---
-_template: home.html
+title: Wir sind das c3WOC
+---
+as01img: eisen.jpg
+---
+as01d1: Unser Equipment
+---
+as01l1: https://c3woc.de/equipment
+---
+as02d1: Unser Rezept
+---
+as02h1: Wie backen wir Waffeln
+---
+as02l1: https://c3woc.de/rezept
+---
+as02b1:
+
+Wir bereiten Waffeln mit viel Liebe zu.
+Aber Liebe ist nicht alles. Wirbrauchen auch ein kleinen wenig Mate...
+---
+as02img: waffel.jpg
+---
+as03b1:
+
+Wir sind Nerds und Leben im Internet.
+Daher erreichst du uns am u.a. im IRC!
+---
+as03d1: irc.hackint.org/#waffel
+---
+as03h1: So erreichst du uns
+---
+as03img: eh18.jpg
+---
+as03l1: ircs://irc.hackint.org/#waffel
+---
+description:
+
+Wir haben es uns zur Aufgabe gemacht an diversen Hackveranstaltungen aufzutauchen und dort Waffeln zu backen.
+Aber auch ab und zu einfach so in diversen Hackerspacen, zu Freifunk Treffen oder auch mal auf einem Hackerthon.
+
+Selbstverständlich werden wir euch darüber unregelmäßig Informieren.
+Dies Geschieht nicht nur im [IRC](https://webirc.hackint.org/#irc://irc.hackint.org/#waffel), sondern auch über Soziale Kanäle wie [Mastodon](https://chaos.social/@c3WOC) oder [Twitter](https://twitter.com/c3WOC). 
+
+Und natürlich wird darüber auch hier berichtet. [Abonier](https://c3woc.de/feed.xml) doch hierfür unseren RSS Feed.
+
+
+ Unsere nächsten Events
+===
+
+*  [Flash in den Mai](https://freifunk-stuttgart.de/2018/04/17/flash-in-den-mai-2018/) im Shackspace<br/>
+*  [Hackerthon](https://uh18.diin.io/) auf dem Bodensee<br/>
+*  [GPN](https://gulas.ch) in karlsruhe<br/>
+*  [Congress](https://events.ccc.de) in Leipzig
+
+---
+where: Wo sind wir als nächstes
