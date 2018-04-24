@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+                <section class="wrapper alt spotlight style2">
+                  <div class="inner">
+                    <div class="content">
+                      <h2 class="major">{{ this.title }}</h2>
+                      {{ this.spruch }}
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Content -->
+                <div class="wrapper">
+                  <div class="inner">
+                    <h3 class="major">{{ this.subtitle }}</h3>
+                    {{ this.body }}
+                  </div>
+                </div>
+
+{% endblock %}
