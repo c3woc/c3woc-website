@@ -1,26 +1,33 @@
-title: Kontakt
+_model: site
+---
+title: Impressum
 ---
 body:
 
-IRC:
+ IRC:
+-----
 
-````
+```
 Server: irc.hackint.org
 Channel: #waffel
-````
-[irc://irc.hackint.org](ircs://irc.hackint.org:6697/#waffel) -  [Web IRC](https://webirc.hackint.org/#irc://irc.hackint.org/#waffel)
+```
+[irc://irc.hackint.org](ircs://irc.hackint.org/#waffel) - [Web IRC](https://webirc.hackint.org/#irc://irc.hackint.org/#waffel)
 
-
-Mail:
-````
+ Mail:
+----
+```
 waffel@c3woc.de
-````
+```
 
-Postanschrift:
-
-````
+ Postanschrift:
+----
+```
 Toolbox Bodensee e.V.
 c3WOC
 Bergheimer Str. 6-12
-88677 Markdorf 
-````
+88677 Markdorf
+```
+---
+subtitle: Kontaktmöglichkeiten
+---
+spruch: So kann man uns erreichen...

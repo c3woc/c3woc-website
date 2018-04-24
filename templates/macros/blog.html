@@ -1,20 +1,40 @@
 {% macro render_blog_post(post, from_index=false) %}
-  <div class="blog-post">
-  {% if from_index %}
-    <h2><a href="{{ post|url }}#Cyber">{{ post.title }}</a></h2>
-  {% else %}
-    <h2>{{ post.title }}</h2>
-  {% endif %}
-  <p class="meta">
-    written by
-    {% if post.twitter_handle %}
-      <a href="https://twitter.com/{{ post.twitter_handle
-        }}">{{ post.author or post.twitter_handle }}</a>
-    {% else %}
-      {{ post.author }}
-    {% endif %}
-    on {{ post.pub_date }}
-  </p>
-  {{ post.body }}
+{% if from_index == True %}
+            <!-- Wrapper -->
+            <!-- <section id="wrapper"> -->
+                <header>
+                  <div class="inner">
+                    {% if from_index %}
+                      <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+                    {% else %}
+                     <h2>{{ post.title }}</h2>
+                    {% endif %}
+                    <p class="meta">Written by {%
+                      if post.twitter_handle %}<a href="https://chaos.social/@{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a>{%
+                      else %}{{ post.author }}{%
+                      endif %} on {{ post.pub_date }}</p>
+                  </div>
+                </header>
+{% else %}
+<section class="wrapper alt spotlight style2">
+  <div class="inner">
+      <div class="content">
+        <h2 class="major">{{ post.title }}</h2>
+    <p class="meta">Written by {%
+                      if post.twitter_handle %}<a href="https://chaos.social/@{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a>{%
+                      else %}{{ post.author }}{%
+                      endif %} on {{ post.pub_date }}</p>
   </div>
+</section> 
+{% endif %} 
+              <!-- Content -->
+			  <div class="wrapper">
+			    <div class="inner">
+                  <h2 class="major">{{ post.subtitle }}</h2>
+{{ post.body }}
+                </div>
+              </div>
+            <!-- </section>-->
+	
+
 {% endmacro %}

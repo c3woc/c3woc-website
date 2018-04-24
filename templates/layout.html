@@ -43,7 +43,7 @@
              for href, title in [
               ['/blog', 'Neuigkeiten'],
               ['/projects', 'Projekte'],
-              ['/impressum', 'Kontakt']
+              ['/impressum', 'Impressum']
             ] %}
             <li{% if this.is_child_of(href) %} class="active"{% endif
                 %}><a href="{{ href|url }}">{{ title }}</a></li>{%
@@ -56,7 +56,7 @@
       <!-- Banner -->
       <section id="banner">
         <div class="inner">
-          <div class="logo"><span class="icon fa-heart"></span></div>
+          <div class="logo"><a href="{{ '/'|url }}"><span class="icon fa-heart"></span></a></div>
             <h2>C3WOC</h2>
             <p>C3 Waffel Operation Center  <span class="icon fa-heart"></span>  Wir machen Waffeln</p>
           </div>
