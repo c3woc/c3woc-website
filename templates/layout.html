@@ -41,8 +41,9 @@
             <li{% if this._path == '/' %} class="active"{% endif
               %}><a href="{{ '/'|url }}">Home</a></li>{%
              for href, title in [
-              ['/blog', 'Neuigkeiten'],
-              ['/projects', 'Projekte'],
+              ['/blog',      'Neuigkeiten'],
+              ['/equipment', 'Equipment'],
+              ['/rezepte',   'Rezepte'],
               ['/impressum', 'Impressum']
             ] %}
             <li{% if this.is_child_of(href) %} class="active"{% endif
