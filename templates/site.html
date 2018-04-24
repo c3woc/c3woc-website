@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="page">
+  <h2>{{ this.title }}</h2>
+  <span class="image main"><img src="images/njom.jpg" alt="" /></span> 
+  {{ this.body }}
+</div>
+{% endblock %}
