@@ -1,8 +1,12 @@
-as01b1: Wir sind Nerds und Hacker aus dem Chaosumfeld. Wir haben an einigen strategisch wichtigen Orten im Chaos waffeleisen deponiert.
+as01b1:
+
+Wir sind Nerds und Hacker aus dem Chaosumfeld. <br/>
+Wir haben an einigen strategisch wichtigen Orten im Chaos Waffeleisen deponiert.<br/>
+**Und wir werden Sie benutzen!**
 ---
-as01h1: Wer ist das c3WOC?
+as01h1: Wer ist das C3WOC?
 ---
-title: Wir sind das c3WOC
+title: Wir sind das C3WOC
 ---
 as01img: eisen.jpg
 ---
@@ -10,7 +14,7 @@ as01d1: Unser Equipment
 ---
 as01l1: https://c3woc.de/equipment
 ---
-as02d1: Unsere Rezepte
+as02d1: Unsere Rezepturen
 ---
 as02h1: Wie backen wir Waffeln
 ---
@@ -20,14 +24,15 @@ as02b1:
 
 Wir bereiten Waffeln mit viel Liebe zu. 
 Aber Liebe ist nicht alles.<br/>
-In einen guten Teig kommt auch ein Schluck Mate...
+In einen guten Teig kommt natürlich auch noch ein Schluck Mate...
 ---
 as02img: waffel.jpg
 ---
 as03b1:
 
-Wir sind Nerds und Leben im Internet.
-Daher erreichst du uns am u.a. im IRC!
+Wir sind Nerds und Leben im Internet.<br/>
+Wenn du uns Suchst, findest du uns auch dort oder auf einem Event bei Waffeln backen.<br/>
+Du erreichst uns am besten im IRC
 ---
 as03d1: irc.hackint.org/#waffel
 ---
@@ -35,7 +40,7 @@ as03h1: So erreichst du uns
 ---
 as03img: eh18.jpg
 ---
-as03l1: ircs://irc.hackint.org/#waffel
+as03l1: https://webirc.hackint.org/#irc://irc.hackint.org/#waffel
 ---
 description:
 
@@ -74,6 +79,10 @@ Und natürlich wird darüber auch hier berichtet. [Abonier](https://c3woc.de/fee
     <td><a href="https://cosin.ch">CoSin</a></td>
     <td>Biel/Bienne</td>
 </tr><tr> 
+   <td>28.-29. Juli 2018</td>
+    <td><a href="https://www.galacon.eu/">GalaCon <i>(primär für Helfer)</i></a></td>
+    <td>Kiel</td>
+</tr><tr>
    <td>9.-11. November 2018</td>
     <td><a href="https://c3c3.de">C6 Geekend</a></td>
     <td>Kiel</td>
