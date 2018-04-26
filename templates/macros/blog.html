@@ -32,6 +32,12 @@
 			    <div class="inner">
                   <h2 class="major">{{ post.subtitle }}</h2>
 {{ post.body }}
+{% if from_index == False %}
+{{ post.privatebody }}
+{% else %}
+                  <h2 class="major">Link zum Beitrag:</h2>  
+                  <a class="button special fit" href="{{ post|url }}">{{ post.title }}</a>
+{% endif %}
                 </div>
               </div>
             <!-- </section>-->
