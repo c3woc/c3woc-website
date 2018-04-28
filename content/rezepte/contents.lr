@@ -4,10 +4,54 @@ title: Rezepte
 ---
 body:
 
-Und mit ein paar mehr Zutaten. Mehr dazu später.
+Beim Zubereiten eines Waffelteigs orientieren wir uns an folgender Mengenangabe:
 
-Für den Waffelnotfall gibt es aber auch [hier](http://lmgtfy.com/?s=d&iie=1&q=Waffelteig+Rezept)...
+```
+10 Eier
+500g Zucker
+500g Butter (weich)
+2 Pck. Vanille
+1 Pck Backpulver
+1 l Milch
+1kg Mehl
+etwas Rum
+```
+
+ Zubereitung
+============
+Butter, Ei und Zucker in der Schüssel verrühren.
+Unter ständigen rühren nach und nach die anderen Zutaten hinzugeben.
+Zu guter letzt den Teig abschmecken und bei bedarf die Menge der Zutaten variieren. 
+
+
+Wichtig beim Teig ist, dass dieser lecker ist. Denn wenn der Teig nicht schmeckt, dann wird auch die Waffel nicht schmecken.
+Daher kann dieser nach belieben variiert und Angepasst werden.
+
+<h3 class="major">Was kann man variieren?</h3>
+
+<table><thead><tr><th>Grundzutat</th><th>Alternative</th><th>Effekt</th></tr></thead>
+<tbody><tr>
+    <td>Milch</td>
+    <td>Anstelle von Kuhmilch lassen sich auch Vegane Alternativen wie Mandelmilch oder Hafermilch verwenden.</a></td>
+    <td>mehr vegan</td>
+</tr><tr>
+    <td>Milch</td>
+    <td>Die Milch lässt sich auch teilweise durch kohlensäurigere Getränke wie Club-Mate oder Sprudel ersetzen</td>
+    <td>auch lecker</td>
+</tr><tr>
+    <td>Ei</td>
+    <td>Das normale Hühnerei kann man auch durch Ei aus Tetrapack-Packungen ersetzen</td>
+    <td>Hygienischer</td>
+</tr><tr>    
+    <td>Zucker</td>
+    <td>Zucker lässt sich natürlich auch durch süße Alternativen wie Honig ersetzen</td>
+    <td>weniger Zucker</td>
+</tr><tr>    
+    <td>Mehl</td>
+    <td>Unterschiedliches Mehl schafft unterschiedlchen Waffelgeschmack. Werde kreativ und probiere aus, was dir schmeckt. Mann kann auch mit einer Getreidemühle Mehl frisch mahlen ;-)</td>
+    <td>auch Lecker</td>
+</tr></tfoot></table>
 ---
 spruch: Ohne guten Teig hilft auch das beste Waffeleisen nicht weiter
 ---
-subtitle: Waffelteig wird mit Liebe gemacht!
+subtitle: Waffelteig
