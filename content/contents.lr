@@ -31,8 +31,8 @@ as02img: waffel.jpg
 as03b1:
 
 Wir sind Nerds und Leben im Internet.<br/>
-Wenn du uns Suchst, findest du uns auch dort oder auf einem Event bei Waffeln backen.<br/>
-Du erreichst uns am besten im IRC
+Wenn wir nicht gerade am Waffeln backen sind, wir dort fleißig am cybern.<br/>
+Am besten erreichst du uns im IRC
 ---
 as03d1: irc.hackint.org/#waffel
 ---
@@ -59,10 +59,7 @@ Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [RS
 
 <table><thead><tr><th>Datum</th><th>Veranstaltung</th><th>Ort</th></tr></thead>
 <tbody><tr>
-    <td>28. April 2018</td>
-    <td><a href="https://freifunk-stuttgart.de/2018/04/17/flash-in-den-mai-2018/">Flash in den Mai</a></td>
-    <td>Stuttgart</td>
-</tr><tr>
+
     <td>4.-5. Mai 2018</td>
     <td><a href="https://uh18.diin.io">UH18 Hackerthon</a></td>
     <td>Bodensee</td>
