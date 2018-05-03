@@ -1,0 +1,28 @@
+_model: material
+---
+title: Datenschutz
+---
+body:
+
+Datenschutz ist auch für Waffeln und waffelnahen Lebensformen ein wichtiger Schwerpunkt. Deshalb versuchen wir hier mal
+verständlich zu machen, was diese Website kann und tut und darf. Bei Verständnisfragen oder Inkonsistenzen fragt bitte!
+
+Diese Website kann grundsätzlich absolut anonym genutzt werden – ihr braucht keine Namen, Mailadressen, oder sonstwas
+dafür angeben. Wir nutzen auch keine Cookies, um nachzuvollziehen, wer die Website wie oft wann besucht. Wir tracken die
+Websitenbesucher auch sonst nicht. 
+
+Wir erfassen anonymisiert (ohne IP-Adresse), wie viele Menschen wann auf die Website zugreifen (Zeitpunkt, abgefragte
+Adresse, vom Browser mitgeschickter Browser-Identifier und Referrer), aber wir können und wollen das nicht auf Personen
+zurückverfolgen. Da wir unsere Websiten alle selber betreiben, liegen selbst diese anonymen Informationen nur bei uns,
+und nur das Admin-Team hat Zugriff darauf. Wir übermitteln diese Daten an niemanden sonst.
+
+Dadurch dass wir diese Websites verschlüsselt (über SSL/TLS, ihrwisstschon, HTTPS) anbieten, helfen wir weiter dabei,
+eure Daten zu schützen, weil so nicht einfach von Dritten einsehbar ist, welche Inhalte ihr abruft. Wir können aber nicht
+garantieren, dass nicht irgendwo im HTTPS-Protokoll oder den Implementierungen, die ihr oder wir nutzen, Fehler sind.
+(Wenn das so ist, dann erfahrt ihr das aber definitiv aus den Nachrichten, sobald es rauskommt.)
+
+Zu unserem eigenen Schutz: Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+---
+spruch: Mit Waffeln Daten schützen!
+---
+subtitle: Welche gefahren drohen dir hier?
