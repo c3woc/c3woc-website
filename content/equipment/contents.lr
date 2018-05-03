@@ -2,8 +2,53 @@ _model: material
 ---
 title: Unser Equipment
 ---
-body: Hier steht demnächst, was wir haben um Waffeln zu backen...
+body:
+
+Wir haben Waffeleisen bei verschiedenen strategisch Relevanten Hackerspacen plaziert.
+Von dort sind wir in der Lage mit vereinte Waffelgewalt gezielt Waffelherzen zu verbreiten.
+
+<h2 class="major">Toolbox Bodensee e.V.</h2>
+In der [Toolbox Bodensee e.V.](https://toolbox-bodensee.de) gibt es das ["Mate Syndikat"](https://küche.toolbox-bodensee.de/), das sich um die Küche der Toolbox kümmert.
+Da die Toolbox Bodensee als gemeinnütziger Verein keine Geschäftstätigkeiten wie zB. einen Getränkeverkauf dauerhaft durchführen möchte, agiert das Mate-Syndikat unabhängig von der Toolbox. Vorstand des Mate-Syndikat ist L3D. L3D ist auch gewählter Beirat der Toolbox mit dem Ressort [Vereinsheim, Catering und Küche](https://toolbox-bodensee.de/2018/03/01/jahreshauptversammlung-2018/).
+
+Das Mate-Syndikat hat ein Bartscher Gastro-Waffeleisen. Hier einige technische Daten:
+
+```
+Energiebedarf: 2,2 kW  
+Waffelform: Herzform
+Waffelgröße: Ø 210 mm, Höhe 16 mm  
+Temperaturbereich von: 0°C bis 300°C
+Gewicht: 15,5 kg
+```
+<br style="clear: both;"> 
+<span class="image main" style="width: 46%; float: left; padding: 2%;">
+<img src="/images/tmp.jpg"/>
+</span>
+<span class="image main" style="width: 46%; float: left; padding: 2%;">
+<img src="/images/tmp2.jpg"/>
+</span>
+<div style="min-height: 18em;"/>
+
+
+<h2 style="major">Platinengarten</h2>
+Beim [Platinengarten](http://platinengarten.de/) gibt es auch aktive Nerds mit Waffeleisen.
+Hier findet man bis zu 3 Rowenta Waffeleisen,
+
+Diese orientieren sich an folgenden technischen Daten:
+```
+Energiebedarf: 900 W
+Waffelform: Herzform
+Waffelgröße: normalgroß
+Gewicht: nicht so schwer
+
+```
+
+<span class="image main" style="padding: 2%;">
+<img src="/images/njom.jpg"/>
+</span>
+<div style="min-height: 18em;"/>
+
 ---
 spruch: Ohne Waffeleisen kann man auch keine Waffeln backen
 ---
-subtitle: Unsere Gerätschaften
+subtitle: Dezentrale Waffelpower
