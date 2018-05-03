@@ -44,7 +44,8 @@
               ['/blog',      'Neuigkeiten'],
               ['/equipment', 'Equipment'],
               ['/rezepte',   'Rezepte'],
-              ['/impressum', 'Impressum']
+              ['/impressum', 'Impressum'],
+              ['/datenschutz', 'Datenschutz']
             ] %}
             <li{% if this.is_child_of(href) %} class="active"{% endif
                 %}><a href="{{ href|url }}">{{ title }}</a></li>{%
@@ -89,7 +90,7 @@
                   endfor %} 
                 </ul>
               <ul class="copyright">
-            <li>&copy; by L3D.</li><li><a href="{{ '/impressum/'|url }}">Impressum</a></li><li>Design inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
+            <li>&copy; by L3D.</li><li><a href="{{ '/datenschutz/'|url }}">Datenschutz</a></li><li><a href="{{ '/impressum/'|url }}">Impressum</a></li><li>Design inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>
 	    </div>
       </section>
