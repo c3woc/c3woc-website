@@ -1,7 +1,6 @@
 as01b1:
 
-Wir sind Nerds und Hacker aus dem Chaosumfeld. <br/>
-Wir haben an einigen strategisch wichtigen Orten im Chaos Waffeleisen deponiert.<br/>
+Wir sind Chaoten und Cyberexperten aus dem Chaosumfeld.<br/>Sort haben wir uns an strategischen Standorten mit taktischen Waffeleisen ausgerüstet!<br/>
 **Und wir werden Sie benutzen!**
 ---
 as01h1: Wer ist das C3WOC?
@@ -10,11 +9,11 @@ title: Wir sind das C3WOC
 ---
 as01img: eisen_smal.jpg
 ---
-as01d1: Unser Equipment
+as01d1: Strategisches Waffel-Equpment
 ---
 as01l1: https://c3woc.de/equipment
 ---
-as02d1: Unser Rezept
+as02d1: Die Waffelformel
 ---
 as02h1: Wie backen wir Waffeln
 ---
@@ -50,7 +49,7 @@ Aber natürlich auch ab und zu einfach so in ausgewählten Hackerspacen, zu Frei
 Selbstverständlich werden wir euch darüber unzuverlässig und unregelmäßig Informieren.
 Dies passiert nicht nur im [IRC](https://webirc.hackint.org/#irc://irc.hackint.org/#waffel), sondern auch über Kanäle wie [Mastodon](https://chaos.social/@c3WOC) oder [Twitter](https://twitter.com/c3WOC). 
 
-Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [RSS Feed](https://c3woc.de/feed.xml) kannst du informiert bleiben.
+Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [ICS Kalender](c3woc.de/waffeln.ics) kannst du informiert bleiben.
 
 
 <h3 id="tourdaten" class="major"> Unsere nächsten Events</h3>
@@ -69,6 +68,10 @@ Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [RS
     <td><a href="https://ffbsee.de/camp">Freifunk Camp</a></td>
     <td>Campus der Waldorfschule Überlingen</td>
 </tr><tr>
+   <td>25.-26. August 2018</td>
+    <td><a href="https://www.froscon.de/">FrOSCon <i>(Socialevent)</i></a></td>
+    <td>Sankt Augustin</td>
+</tr><tr>
    <td>7.-9. September 2018</td>
     <td><a href="https://2018.mrmcd.net/">MRMCD</a></td>
     <td>Darmstadt</td>
@@ -77,6 +80,14 @@ Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [RS
     <td><a href="https://c3c3.de">C6 Geekend</a></td>
     <td>Kiel</td>
 </tr><tr>
+   <td>November 2018</td>
+    <td><a href="https://entropia.de/GPN17,5">Glühweinprogrammiernacht (GlühPN) </a></td>
+    <td>Karlsruhe</td>
+</tr><tr> 
+   <td>1. Dezember 2018</td>
+    <td><a href="https://waldorfschule-ueberlingen.de/termine/schule/veranstaltungen/index.html">Adventsbasar mit Hackerspace</a></td>
+    <td>Überlingen</td>
+</tr><tr>
 <td>26.-30. Dezember 2018</td>
     <td><a href="https://events.ccc.de/">35. Chaos Communication Congress</a></td>
     <td>Leipzig</td>
@@ -84,6 +95,14 @@ Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [RS
     <td>19. - 22. April 2019</td>
     <td><a href="https://eh19.easterhegg.eu/">Easterhegg 2019</a></td>
     <td>Wien</td>
+</tr><tr>    
+    <td>30. Mai - 2. Juni 2019</td>
+    <td><a href="https://entropia.de/GPN19/">GPN19</a></td>
+    <td>Karlsruhe</td>
+</tr><tr>    
+    <td>Sommer 2019</td>
+    <td><a href="https://events.ccc.de">CCCamp 2019</a></td>
+    <td>🚀</td>
 </tr></tfoot></table>
 	
 							
