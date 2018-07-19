@@ -4,12 +4,12 @@ title: Rezepte
 ---
 body:
 
-Beim Zubereiten eines Waffelteigs orientieren wir uns an folgender Mengenangabe:
+Beim Zubereiten eines Waffelteigs orientieren wir uns an folgender Mengenangabe<b><a href="#tipp"> * </a></b>:
 
 ```
 20 Eier
 1 Kg Zucker
-1 Kg Butter (weich)
+1,25 Kg Butter (weich)
 5 Pck. Vanillezucker
 2 Pck. Backpulver
 1,5 Liter Milch
@@ -98,13 +98,15 @@ Aber für den Ultimativen Geschmack gibt es einige Zutaten, die sich als sehr le
 </tr><tr>
     <td>Schlagsahne</td>
 </tr><tr>
-    <td>Sprühsahne - die billigere Alternative zur Schlagsahne</td>
+    <td>Sprühsahne - die wirklich billige auslegung von Schlagsahne</td>
 </tr><tr>
     <td>Speiseeis</td>
 </tr><tr>
     <td>Schokostreusel</td>
 </tr><tr>
     <td>Honig</td>
+</tr><tr> 
+  <td>Sirup</td>
 </tr><tr>
     <td>Apfelmus</td>
 </tr><tr>
@@ -112,6 +114,12 @@ Aber für den Ultimativen Geschmack gibt es einige Zutaten, die sich als sehr le
 </tr></tfoot></table>
 
 Aber auch hier sind der Fantasie kaum Grenzen gesetzt.
+
+<hr>
+<div id="tipp">
+<h3 class="major">Tipp:</h3>
+Der Waffelteig ist optimiert auf einen 10 Liter Eimer. <br/>Für einen handlichen 5 Liter Eimer mit Teig eignet sich das halbe Rezept optimal!
+</div>
 ---
 spruch: Ohne guten Teig hilft auch das beste Waffeleisen nicht weiter
 ---
