@@ -1,0 +1,3 @@
+[submodule "assets/images/logo"]
+	path = assets/images/logo
+	url = git@git.see-base.de:c3woc/c3woc-logo.git
