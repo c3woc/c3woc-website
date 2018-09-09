@@ -23,10 +23,10 @@
 <!-- Content -->
     <section id="content">
 
-    <div id="mapid" class="image fit" style="width: auto; height: 70vh; z-index: 1;"></div>
+    <div id="mapid" class="image fit" style="width: auto; height: 110vh; z-index: 1;"></div>
 
 <script>
-    var mymap = L.map('mapid').setView([47.7123, 9.3995], 9);
+    var mymap = L.map('mapid').setView([49.46, 9.05], 8);
 
 var greenIcon = L.icon({
     iconUrl: '/images/map.png',
@@ -50,8 +50,30 @@ var greenIcon = L.icon({
 	L.marker([47.71234, 9.39956], {icon: greenIcon}).addTo(mymap)
     .bindPopup("<aside><h3 style='color: black;'>Waffellager Bodensee:</h3><img src='/equipment/eisen.jpg'></img><br/><center>Kleines Waffeleisen</center></aside>").openPopup();
 
+    L.marker([49.8781, 8.65401], {icon: greenIcon}).addTo(mymap)
+    .bindPopup("<aside><h3 style='color: black;'>Waffellager Darmstadt:</h3><img src='/equipment/mini.jpg'></img><br/><center>Rowenta Waffeleisen</center></aside>").openPopup();
+
 	L.marker([47.77243, 9.19943], {icon: greenIcon}).addTo(mymap)
     .bindPopup("<aside><h3 style='color: black;'>Waffellager Bodensee:</h3><img src='/equipment/doppeleisen.jpg'></img><br/><center>Großes Waffeleisen</center></aside>").openPopup();
+
+
+L.polygon([
+		[49.87814327607132, 8.653730368550693],
+		[49.8780226890993, 8.653828203678133],
+		[49.87818731851169, 8.654329776763918],
+		[49.878306512632534, 8.654230535030367]],
+        {
+        color: 'ForestGreen ',
+		fillColor: 'ForestGreen ',
+		fillOpacity: 0.5
+        }).addTo(mymap).bindPopup("<aside><b>Platinengarten</b></aside>");
+    L.circle([49.87807977529451, 8.65401059389114], 2, {
+		color: 'DarkGreen',
+		fillColor: 'DarkGreen',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Eingang");
+
+
 
 
 L.polygon([
