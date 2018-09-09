@@ -2,6 +2,8 @@
 {% block expand_header %}
     <link rel="stylesheet" href="/css/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
     <script src="/js/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://toolbox.cyber.yt/css/spacestatus.css" />
+    <link rel="stylesheet" href="https://see-base.de/css/space_api.css" />
 {% endblock %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
@@ -20,20 +22,59 @@
                     <h3 class="major">{{ this.subtitle }}</h3>
 <!-- Content -->
     <section id="content">
-<div id="mapid" class="image fit" style="width: auto; height: 70vh; z-index: 1;"></div>
+
+    <div id="mapid" class="image fit" style="width: auto; height: 70vh; z-index: 1;"></div>
+
 <script>
-    var mymap = L.map('mapid').setView([47.7123, 9.3995], 19);
+    var mymap = L.map('mapid').setView([47.7123, 9.3995], 9);
+
+var greenIcon = L.icon({
+    iconUrl: '/images/map.png',
+    shadowUrl: '/images/map-shadow.png',
+
+    iconSize:     [52, 60], // size of the icon
+    shadowSize:   [60, 60], // size of the shadow
+    iconAnchor:   [26, 62], // point of the icon which will correspond to marker's location
+    shadowAnchor: [2, 55],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 
 	L.tileLayer('https://tiles.ffbsee.de:9090/{z}/{x}/{y}.png', {
 		maxZoom: 19,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		id: 'mapbox.streets'
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> ' 
 	}).addTo(mymap);
 
-	L.marker([47.71234, 9.39956]).addTo(mymap)
-    .bindPopup("<aside>Toolbox Bodensee e.V.<br /><a id='tb-closed' class='special button'>Vereinsheim geschlossen!</a><a id='tb-opened' class='special button' style='background-color: LimeGreen !important;'>Vereinsheim offen!</a></aside>").openPopup();
+
+	L.marker([47.71234, 9.39956], {icon: greenIcon}).addTo(mymap)
+    .bindPopup("<aside><h3 style='color: black;'>Waffellager Bodensee:</h3><img src='/equipment/eisen.jpg'></img><br/><center>Kleines Waffeleisen</center></aside>").openPopup();
+
+	L.marker([47.77243, 9.19943], {icon: greenIcon}).addTo(mymap)
+    .bindPopup("<aside><h3 style='color: black;'>Waffellager Bodensee:</h3><img src='/equipment/doppeleisen.jpg'></img><br/><center>Großes Waffeleisen</center></aside>").openPopup();
+
+
+L.polygon([
+		[47.77244138, 9.19947267],
+		[47.77241975, 9.19938147],
+		[47.77244499, 9.19931710],
+		[47.77252791, 9.19920444],
+		[47.77259641, 9.19923663],
+		[47.77260001, 9.19926345],
+		[47.77249907, 9.19939756]],
+        {
+        color: '#5eba5e',
+		fillColor: '#5eba5e',
+		fillOpacity: 0.5
+        }).addTo(mymap).bindPopup("<aside><b>see-base</b><br /><a id='sb-closed' class='special button' style='background: FireBrick;'>Hackerspace geschlossen!</a><a id='sb-opened' class='special button' style='background-color: LimeGreen !important;'>Hackerspace offen!</a></aside>");
+    L.circle([47.77243191425533, 9.199432432651522], 2, {
+		color: 'blue',
+		fillColor: 'blue',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Eingang");
+
+
+
     L.polygon([
 		[47.71242900, 9.39956546],
 		[47.71231350, 9.39980686],
@@ -44,23 +85,9 @@
         color: 'orange',
 		fillColor: 'orange',
 		fillOpacity: 0.5
-    }).addTo(mymap).bindPopup("Vereinsheim");
+        }).addTo(mymap).bindPopup("<aside><b>Toolbox Bodensee e.V.</b><br /><a id='tb-closed' class='special button' style='background: FireBrick;'>Vereinsheim geschlossen!</a><a id='tb-opened' class='special button' style='background-color: LimeGreen !important;'>Vereinsheim offen!</a></aside>");
 
-	L.polygon([
-		[47.71208610, 9.39969957],
-		[47.71217273, 9.39950109],
-		[47.71220882, 9.39953864],
-		[47.71212220, 9.39973176]
-	]).addTo(mymap).bindPopup("Hier Parken");
-	
-    L.polygon([
-		[47.71219800, 9.39945817],
-		[47.71224131, 9.39936161],
-		[47.71227379, 9.39939916],
-		[47.71223409, 9.39949036]
-	]).addTo(mymap).bindPopup("Hier Parken");
-
-	L.circle([47.71229545, 9.39956009], 2, {
+    L.circle([47.71229545, 9.39956009], 2, {
 		color: 'red',
 		fillColor: 'red',
 		fillOpacity: 0.5
