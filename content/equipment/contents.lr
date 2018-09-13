@@ -8,45 +8,94 @@ Wir haben Waffeleisen bei verschiedenen strategisch Relevanten Hackerspacen plaz
 Von dort sind wir in der Lage mit vereinte Waffelgewalt gezielt Waffelherzen zu verbreiten.
 
 <h2 class="major">Toolbox Bodensee e.V.</h2>
-In der [Toolbox Bodensee e.V.](https://toolbox-bodensee.de) gibt es das ["Mate Syndikat"](https://küche.toolbox-bodensee.de/), das sich um die Küche der Toolbox kümmert.
-Da die Toolbox Bodensee als gemeinnütziger Verein keine Geschäftstätigkeiten wie zB. einen Getränkeverkauf dauerhaft durchführen möchte, agiert das Mate-Syndikat unabhängig von der Toolbox. Vorstand des Mate-Syndikat ist L3D. L3D ist auch gewählter Beirat der Toolbox mit dem Ressort [Vereinsheim, Catering und Küche](https://toolbox-bodensee.de/2018/03/01/jahreshauptversammlung-2018/).
 
-Das Mate-Syndikat hat ein Bartscher Gastro-Waffeleisen. Hier einige technische Daten:
+In der [Toolbox Bodensee e.V.](https://toolbox-bodensee.de) in Markdorf am Bodensee gibt es das ["Mate Syndikat"](https://küche.toolbox-bodensee.de/), das sich um die Küche der Toolbox kümmert. Und natürlich kann sich ein aktiver Hackerspace nicht entgehen lassen, vernünftiges Waffelequipment zu haben.
+
+Das Mate-Syndikat hat ein kleines Bartscher Gastro-Waffeleisen. Hier einige technische Daten:
+
 
 ```
-Energiebedarf: 2,2 kW  
-Waffelform: Herzform
-Waffelgröße: Ø 210 mm, Höhe 16 mm  
-Temperaturbereich von: 0°C bis 300°C
-Gewicht: 15,5 kg
+    Energiebedarf: 2,2 kW  
+    Waffelform: Herzform
+    Waffelgröße: Ø 210 mm, Höhe 16 mm  
+    Temperaturbereich von: 0°C bis 300°C
+    Gewicht: 15,5 kg
 ```
+
+
+<h3>"kleines Waffeleisen"</h3>
+
+
 <br style="clear: both;"> 
-<span class="image main" style="width: 46%; float: left; padding: 2%;">
+<span class="image main" style="width: 50%; float: left; padding: 2%;">
 <img src="/images/tmp.jpg"/>
 </span>
-<span class="image main" style="width: 46%; float: left; padding: 2%;">
+<span class="image main" style="width: 50%; float: left; padding: 2%;">
 <img src="/images/tmp2.jpg"/>
+</span><br/>
+<span class="image main" style="width: 50%; float: left; padding: 2%;">
+<img src="/equipment/eisen.jpg"/>
 </span>
-<div style="min-height: 18em;"/>
+<span class="image main" style="width: 50%; float: left; padding: 2%;">
+<img src="/equipment/case.jpg"/>
+</span>
 
+<div style="min-height: 23em;"/>
+<br/>
+
+
+<h2 class="major">see-base</h2>
+
+In Ü**Berlin**gen gibt es den Hackerspace [see-base](https://see-base.de). Natürlich wird in der see-base auch gewaffelt und überregionales Waffeln für gut empfunden. So ist auch die see-base Teil des C3WOC und hat ein großes Bartscher Gastro-Waffeleisen im Sortiment. Dieses hat folgende Werte:
+
+```
+  Energiebedarf: 2x 2,2 kW  
+  Waffelform: Herzform
+  Waffelgröße: Ø 210 mm, Höhe 16 mm  
+  Temperaturbereich von: 0°C bis 300°C
+  Gewicht: 23,5 kg
+```
+
+<h3>"großes Waffeleisen:"</h3>
+
+<br style="clear: both;"> 
+<span class="image main" style="width: 46%; float: left; padding: 2%;">
+<img src="/equipment/doppeleisen.jpg"/>
+</span><span class="image main" style="width: 46%; float: left; padding: 2%;">
+<img src="/equipment/big_case.jpg"/>
+</span>
+
+<br/><br/>
+Selbstverständlich haben die beiden Gastro-Waffeleisen auch jeweils einen Pelikan-Case für den sicheren Transport zum Einsatzort.
+<div style="min-height: 42em;"/>
+<br/>
 
 <h2 style="major">Platinengarten</h2>
+
 Beim [Platinengarten](http://platinengarten.de/) gibt es auch aktive Nerds mit Waffeleisen.
-Hier findet man bis zu 3 Rowenta Waffeleisen,
+Hier findet man bis zu 7 Rowenta Waffeleisen,
+
+
 
 Diese orientieren sich an folgenden technischen Daten:
-```
-Energiebedarf: 900 W
-Waffelform: Herzform
-Waffelgröße: normalgroß
-Gewicht: nicht so schwer
 
+```
+  Energiebedarf: 900 W
+  Waffelform: Herzform
+  Waffelgröße: normalgroß
+  Gewicht: nicht so schwer
 ```
 
 <span class="image main" style="padding: 2%;">
 <img src="/images/njom.jpg"/>
 </span>
-<div style="min-height: 18em;"/>
+<br/>
+
+Hast du oder dein Hackerspace nicht vielleicht auch Lust, beim C3WOC mit zu machen?
+
+<a href="/mitmachen/" class="button special">Werde Teil des C3WOC</a>
+
+<clear>
 
 ---
 spruch: Ohne Waffeleisen kann man auch keine Waffeln backen

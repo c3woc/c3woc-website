@@ -9,10 +9,10 @@
                     {% else %}
                      <h2>{{ post.title }}</h2>
                     {% endif %}
-                    <p class="meta">Written by {%
+                    <p class="meta">Geschrieben von {%
                       if post.twitter_handle %}<a href="https://chaos.social/@{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a>{%
                       else %}{{ post.author }}{%
-                      endif %} on {{ post.pub_date }}</p>
+                      endif %} am {{ post.pub_date.strftime('%d. %m. %Y') }}</p>
                   </div>
                 </header>
 {% else %}
@@ -20,10 +20,10 @@
   <div class="inner">
       <div class="content">
         <h2 class="major">{{ post.title }}</h2>
-    <p class="meta">Written by {%
+    <p class="meta">Verfasst von {%
                       if post.twitter_handle %}<a href="https://chaos.social/@{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a>{%
                       else %}{{ post.author }}{%
-                      endif %} on {{ post.pub_date }}</p>
+                      endif %} am {{ post.pub_date.strftime('%d. %m. %Y') }}</p>
   </div>
 </section> 
 {% endif %} 
