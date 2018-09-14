@@ -44,12 +44,14 @@
              for href, title in [
               ['/blog',      'Neuigkeiten'],
               ['/equipment', 'Equipment'],
-              ['/rezepte',   'Rezepte'],
+              ['/rezept',   'Waffelteig'],
+              ['/hygiene',   'Hygiene'],
+              ['/mitmachen',   'Mitmachen'],
               ['/impressum', 'Impressum'],
-              ['/datenschutz', 'Datenschutz']
+              ['/datenschutz', 'Datenschmutz']
             ] %}
             <li{% if this.is_child_of(href) %} class="active"{% endif
-                %}><a href="{{ href|url }}">{{ title }}</a></li>{%
+               %}><a href="{{ href|url }}">{{ title }}</a></li>{%
              endfor %}
           </ul>
           <a href="#" class="close">Close</a>
@@ -86,6 +88,7 @@
                       ['fa-hashtag', 'https://webirc.hackint.org/#irc://irc.hackint.org/#waffel', 'webirc.hackint.org'],
                       ['fa-twitter', 'https://twitter.com/@c3WOC', '@c3WOC'],
                       ['fa-comments', 'https://chaos.social/@c3WOC', 'c3WOC@chaos.social'],
+                      ['fa-user-plus', 'https://c3woc.de/mitmachen', 'Mach bei uns mit']
                     ] %}
                     <li class="{{ icon }}"><a href="{{ link }}">{{ name }}</a></li>{%
                   endfor %} 
