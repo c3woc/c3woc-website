@@ -1,0 +1,49 @@
+_model: site
+---
+title: Waffelbelag
+---
+body:
+
+Natürlich schmeckt die Waffel so auch ohne Belag schon richtig gut.
+Aber für den Ultimativen Geschmack gibt es einige Zutaten, die sich als sehr leckeren Belag heraus gestellt haben. Aber auch hier sind eurer Kreativität keine Grenzen gesetzt. Mit Waffeln ist echt ziemlich viel Möglich!
+
+<table><thead><tr><th>Belag</th></tr></thead>
+<tbody><tr>
+    <td>Puderzucker - ein Klassiker</td>
+</tr><tr>
+    <td>Schlagsahne</td>
+</tr><tr>
+    <td>Sprühsahne - den wirklich billigen ersatz von Schlagsahne</td>
+</tr><tr>
+    <td>Speiseeis</td>
+</tr><tr>
+    <td>Schokostreusel</td>
+</tr><tr>
+    <td>Honig</td>
+</tr><tr> 
+  <td>Sirup</td>
+</tr><tr>
+    <td>Apfelmus</td>
+</tr><tr>
+    <td>Obstsalat</td>
+</tr><tr>
+    <td>Nutella</td>
+</tr><tr>
+    <td>Bananen</td>
+</tr><tr>
+    <td>Zimt</td>
+</tr></tfoot></table>
+
+In manchen Kulturkreisen ist auch "Waffle with chicken" ein sehr beliebtes Essen. Hierfür sollte aber der Zuckeranteil im Teig drastisch reduziert werden.
+
+Waffelrezepte:
+----------------
+<a href="/rezept" class="button">normaler Teig</a>
+<a href="/rezept/eifrei" class="button">Teig ohne Ei</a>
+<a href="/rezept/vegan" class="button">Veganer Teig</a>
+<a href="/rezept/gluten" class="button">Glutenfreier Teig</a>
+
+---
+spruch: Waffeln bitte dick belegen!
+---
+subtitle: Mehr Nutelle - mehr gut!
