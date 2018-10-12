@@ -1,25 +1,24 @@
 as01b1:
 
-Wir sind Chaoten und Cyberexperten aus dem Chaosumfeld.<br/>Dort haben wir uns an strategischen Standorten mit taktischen Waffeleisen ausgerüstet!<br/>
-**Und wir werden Sie benutzen!**
+we are hacker and cyber experts from the environment of the chaos computer club.<br/>we placed on some strategic places tactical waffle irons.<br/>
+**and we are gonna use them with no mercy.**
 ---
-as01d1: Strategisches Waffel-Equpment
+as01d1: tactical waffle equipment
 ---
 as01h1: Who is the C3WOC?
 ---
 as01img: eisen_smal.jpg
 ---
-as01l1: https://c3woc.de/equipment
+as01l1: /equipment
 ---
 as02b1:
 
-Wir bereiten Waffeln mit viel Liebe zu. 
-Aber Liebe ist nicht alles.<br/>
-In einen guten Teig kommt natürlich auch noch ein Schluck Mate...
+we use love to craft waffles.<br/>and of course a sip of club mate.<br/>
+learn more about our waffle prescription
 ---
 as02d1: Die Waffelformel
 ---
-as02h1: Wie backen wir Waffeln
+as02h1: How do we bake waffles?
 ---
 as02img: waffel.2.jpg
 ---
@@ -49,17 +48,19 @@ Dies passiert nicht nur im [IRC](https://webirc.hackint.org/#irc://irc.hackint.o
 
 Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [ICS Kalender](https://c3woc.de/waffeln.ics) kannst du informiert bleiben.
 
-
 <h3 id="tourdaten" class="major"> Unsere nächsten Events</h3>
 
+---
+title: We love waffles
+---
+where: Wo sind wir als nächstes
+---
+tour:
+
+<table><thead><tr><th>Datum</th><th>Veranstaltung</th><th>Ort</th></tr></thead><tbody><tr>
 
 
-<table><thead><tr><th>Datum</th><th>Veranstaltung</th><th>Ort</th></tr></thead>
-<tbody><tr>
-  
-   
 <tr> 
-
    <td>9.-11. November 2018</td>
     <td><a href="https://c3c3.de">C6 Geekend</a></td>
     <td>Kiel</td>
@@ -68,7 +69,7 @@ Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [IC
     <td><a href="https://toolbox-bodensee.de/termine/">Tag der offenen Türe im Hackerspace Toolbox</a></td>
     <td>Markdorf</td>
 </tr><tr> 
-   <td>November 2018</td>
+   <td>23. - 25. November 2018</td>
     <td><a href="https://entropia.de/GPN18,5">Glühweinprogrammiernacht (GlühPN) </a></td>
     <td>Karlsruhe</td>
 </tr><tr> 
@@ -91,12 +92,8 @@ Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [IC
     <td>21.-25. August 2019</td>
     <td><a href="https://events.ccc.de">CCCamp 2019</a></td>
     <td>Ziegeleipark Mildenberg 🚀</td>
-</tr></tfoot></table>
-	
-							
+</tr>
 
 
----
-title: We love waffles
----
-where: Wo sind wir als nächstes
+
+</tfoot></table>

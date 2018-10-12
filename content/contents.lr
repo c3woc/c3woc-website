@@ -1,7 +1,7 @@
 as01b1:
 
-Wir sind Chaoten und Cyberexperten aus dem Chaosumfeld.<br/>Dort haben wir uns an strategischen Standorten mit taktischen Waffeleisen ausgerüstet!<br/>
-**Und wir werden Sie benutzen!**
+Wir sinf Hacker und Nerds aus dem Umfeld des Chaos Computer Club..<br/>Wir uns an strategischen Standorten einige taktischen Waffeleisen plaziert!<br/>
+**Und wir werden Sie einsetzen!**
 ---
 as01h1: Wer ist das C3WOC?
 ---
@@ -22,8 +22,8 @@ as02l1: /rezept/
 as02b1:
 
 Wir bereiten Waffeln mit viel Liebe zu. 
-Aber Liebe ist nicht alles.<br/>
-In einen guten Teig kommt natürlich auch noch ein Schluck Mate...
+Und natürlich einen Schluck Club-Mate.<br/>
+Lerne unsere Waffelmixtur kennen
 ---
 as02img: waffel.2.jpg
 ---
@@ -53,15 +53,15 @@ Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [IC
 
 
 <h3 id="tourdaten" class="major"> Unsere nächsten Events</h3>
+---
+where: Wo sind wir als nächstes
+---
+tour:
+
+<table><thead><tr><th>Datum</th><th>Veranstaltung</th><th>Ort</th></tr></thead><tbody><tr>
 
 
-
-<table><thead><tr><th>Datum</th><th>Veranstaltung</th><th>Ort</th></tr></thead>
-<tbody><tr>
-  
-   
 <tr> 
-
    <td>9.-11. November 2018</td>
     <td><a href="https://c3c3.de">C6 Geekend</a></td>
     <td>Kiel</td>
@@ -70,7 +70,7 @@ Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [IC
     <td><a href="https://toolbox-bodensee.de/termine/">Tag der offenen Türe im Hackerspace Toolbox</a></td>
     <td>Markdorf</td>
 </tr><tr> 
-   <td>November 2018</td>
+   <td>23. - 25. November 2018</td>
     <td><a href="https://entropia.de/GPN18,5">Glühweinprogrammiernacht (GlühPN) </a></td>
     <td>Karlsruhe</td>
 </tr><tr> 
@@ -93,10 +93,8 @@ Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [IC
     <td>21.-25. August 2019</td>
     <td><a href="https://events.ccc.de">CCCamp 2019</a></td>
     <td>Ziegeleipark Mildenberg 🚀</td>
-</tr></tfoot></table>
-	
-							
+</tr>
 
 
----
-where: Wo sind wir als nächstes
+
+</tfoot></table>
