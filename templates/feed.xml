@@ -25,7 +25,7 @@ set search = "blog" %}
         {{ page.xml }} 
       {% if page.xml_img 
       %}&lt;br/&gt;
-      &lt;img width=&quot;23%&quot; height=&quot;23%&quot; src=&quot;{{ page|url }}{{ page.xml_img }}&quot; /&gt;
+      &lt;img width=&quot;23%&quot; src=&quot;{{ page|url }}{{ page.xml_img }}&quot; /&gt;
       {% endif %}
     </content>
   </entry>{%

@@ -5,7 +5,7 @@ url_style = absolute
 
 [servers.c3woc]
 name = c3woc
-url = https://c3woc/
+url = https://c3woc.de/
 url_style = absolute
 enabled = yes
 default = yes
@@ -20,5 +20,10 @@ locale = de_DE
 [alternatives.en]
 name = Englisch
 locale = en_US
-eurl_prefix = /de/
+url_prefix = /en/
+
+[alternatives.ru]
+name = Russisch
+locale = ru_RU
+url_prefix = /ru/
 
