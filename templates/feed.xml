@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>{%
+set baseurl = "https://c3woc.de/" %}{%
+set search = "blog" %}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Waffel Neuigkeiten</title>
+  <id>42{{ none|datetimeformat('YYYYMMDDhhmmss') }}</id>
+  <updated>{{ none|datetimeformat('YYYY-MM-DDThh:mm:ss') }}Z</updated>
+  <link href="{{ baseurl }}{{ search }}/" />
+  <link href="{{ baseurl }}feed.xml" rel="self" />
+  <author>
+    <name>{% if this.author %}{{ this.author }}{% else %}L3D{% endif %}</name>
+  </author>
+  <generator uri="https://github.com/ajdavis/lektor-atom" version="0.2">Lektor Atom Plugin</generator>{%
+  set pages = site.query('/blog').include_undiscoverable(true).all() %}{%
+ for page in pages %}
+  <entry xml:base="{{ baseurl }}{{ search }}/{{ page._id }}/">
+    <title type="text">{{ page.title }}</title>
+    <id>23{{ page.pub_date|datetimeformat('YYYYMMDDhhmmss') }}</id>
+    <updated>{{ page.pub_date|datetimeformat('YYYY-MM-DDThh:mm:ss') }}Z</updated>
+    <link href="{{ baseurl }}{{ search }}/{{ page._id }}/" />
+    <author>
+      <name>{% if page.author %}{{ page.author }}{% else %}L3D{% endif %}</name>
+    </author>
+    <content type="{% if page.xml_img %}html{% else %}text{% endif %}">
+        {{ page.xml }} 
+      {% if page.xml_img 
+      %}&lt;br/&gt;
+      &lt;img width=&quot;23%&quot; height=&quot;23%&quot; src=&quot;{{ page|url }}{{ page.xml_img }}&quot; /&gt;
+      {% endif %}
+    </content>
+  </entry>{%
+endfor %}
+</feed>

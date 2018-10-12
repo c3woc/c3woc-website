@@ -1,6 +1,7 @@
 [project]
 name = c3woc
 url = https://c3woc.de/
+url_style = absolute
 
 [servers.c3woc]
 name = c3woc
@@ -8,22 +9,16 @@ url = https://c3woc/
 url_style = absolute
 enabled = yes
 default = yes
+locale = de_DE
 target = rsync://web4@c3woc.de/var/www/c3woc.de/web
 
 [alternatives.de]
 name = Deutsch
 primary = yes
-locale = en_US
+locale = de_DE
 
 [alternatives.en]
 name = Englisch
-url_prefix = /en/
 locale = en_US
+eurl_prefix = /de/
 
-[alternatives.ru]
-name = Russisch
-url_prefix = /ru/
-locale = ru_RU
-
-[packages]
-lektor-atom = 0.2
