@@ -8,8 +8,7 @@
     <a class="image"><img src="{{ '/images/c3woc/c3woc.svg'|url }}" alt="" /></a>
       <div class="content">
         <h2 class="major">{{ this.title }}</h2>
-        <a>Leckere Neuigkeiten. Jetzt auch als </a><a href="{{ '/feed.xml'|url }}">RSS  <span class="icon fa-rss"></span></a> <br/>
-        <a>Taktische Waffeleinsätze. Jetzt auch als </a><a href="{{ '/waffeln.ics'|url }}">ICS  <span class="icon fa-calendar"></span></a>
+        {{ this.sub_title }}
   </div>
 </section> 
   {% for child in this.pagination.items %}
