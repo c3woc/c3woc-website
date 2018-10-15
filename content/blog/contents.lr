@@ -1,3 +1,9 @@
 _model: blog
 ---
 title: Neuigkeiten
+---
+sub_title:
+
+        <a>Leckere Neuigkeiten. Jetzt auch als </a><a href="{{ '/feed.xml'|url }}">RSS  <span class="icon fa-rss"></span></a> <br/>
+        <a>Taktische Waffeleinsätze. Jetzt auch als </a><a href="{{ '/waffeln.ics'|url }}">ICS  <span class="icon fa-calendar"></span></a>
+
