@@ -9,10 +9,11 @@
                     {% else %}
                      <h2>{{ post.title }}</h2>
                     {% endif %}
-                    <p class="meta">Geschrieben von {%
+                    <p class="meta">{% if post.alt == 'en' %}Created by{% else
+                    %}Geschrieben von{% endif %} {%
                       if post.twitter_handle %}<a href="https://chaos.social/@{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a>{%
                       else %}{{ post.author }}{%
-                      endif %} am {{ post.pub_date.strftime('%d. %m. %Y') }}</p>
+                      endif %} {% if post.alt == 'en' %}on {{ post.pub_date }}{% else %}am {{ post.pub_date.strftime('%d. %m. %Y') }}{% endif %}</p>
                   </div>
                 </header>
 {% else %}
@@ -20,10 +21,10 @@
   <div class="inner">
       <div class="content">
         <h2 class="major">{{ post.title }}</h2>
-    <p class="meta">Verfasst von {%
+        <p class="meta">{% if post.alt == 'en' %}Created by{% else %}Verfasst von {% endif %}{%
                       if post.twitter_handle %}<a href="https://chaos.social/@{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a>{%
                       else %}{{ post.author }}{%
-                      endif %} am {{ post.pub_date.strftime('%d. %m. %Y') }}</p>
+                      endif %} {% if post.alt == 'en' %}on {{ post.pub_date }}{% else %}am {{ post.pub_date.strftime('%d. %m. %Y') }}{% endif %}</p>
   </div>
 </section> 
 {% endif %} 
@@ -35,7 +36,7 @@
 {% if from_index == False %}
 {{ post.privatebody }}
 {% else %}
-                  <h2 class="major">Weiterlesen:</h2>  
+<h2 class="major">{% if post.alt == 'en' %}continue reading{% else %}Weiter lesen{% endif %}</h2>  
                   <a class="button special fit" href="{{ post|url }}">{{ post.title }}</a>
 {% endif %}
                 </div>
