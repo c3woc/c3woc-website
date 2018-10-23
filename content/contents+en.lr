@@ -54,7 +54,7 @@ where: Where are we next
 ---
 tour:
 
-<table><thead><tr><th>date</th><th>event</th><th>place</th></tr></thead><tbody><tr>
+<table><thead><tr><th>Datum</th><th>Veranstaltung</th><th>Ort</th></tr></thead><tbody><tr>
 
 
 <tr> 
@@ -63,7 +63,7 @@ tour:
     <td>Kiel</td>
 </tr><tr>
    <td>17. November 2018</td>
-    <td><a href="https://toolbox-bodensee.de/termine/">Tag der offenen Türe im Hackspace Toolbox</a></td>
+    <td><a href="https://toolbox-bodensee.de/termine/">Tag der offenen Türe im Hackerspace Toolbox</a></td>
     <td>Markdorf</td>
 </tr><tr> 
    <td>23. - 25. November 2018</td>
@@ -85,6 +85,10 @@ tour:
     <td>30. Mai - 2. Juni 2019</td>
     <td><a href="https://entropia.de/GPN19/">GPN19</a></td>
     <td>Karlsruhe</td>
+</tr><tr>    
+    <td>14. - 16. Juni 2019</td>
+    <td><a href="https://cosin.ch/">Cosin</a></td>
+    <td>Biel/Bienne</td>
 </tr><tr>    
     <td>21.-25. August 2019</td>
     <td><a href="https://events.ccc.de">CCCamp 2019</a></td>

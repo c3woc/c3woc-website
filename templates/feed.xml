@@ -10,7 +10,7 @@ set search = "blog" %}
   <author>
     <name>{% if this.author %}{{ this.author }}{% else %}L3D{% endif %}</name>
   </author>
-  <generator uri="https://github.com/ajdavis/lektor-atom" version="0.2">Lektor Atom Plugin</generator>{%
+  <generator uri="https://gitea.see-base.de/c3woc/c3woc" version="0.2">Lektor Atom XML Template</generator>{%
   set pages = site.query('/blog').include_undiscoverable(true).all() %}{%
  for page in pages %}
   <entry xml:base="{{ baseurl }}{{ search }}/{{ page._id }}/">
