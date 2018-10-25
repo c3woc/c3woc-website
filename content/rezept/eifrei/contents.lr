@@ -46,6 +46,7 @@ Weitere Rezepte:
 <a href="/rezept" class="button">normaler Teig</a>
 <a href="/rezept/vegan" class="button">Veganer Teig</a>
 <a href="/rezept/gluten" class="button">Glutenfreier Teig</a>
+<a href="/rezept/gluten" class="button">Fleischhaltiger Teig</a>
 <a href="/rezept/glasur" class="button">Waffelbelag</a>
 
 Weitere Informationen:

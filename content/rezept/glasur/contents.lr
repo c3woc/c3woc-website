@@ -32,6 +32,10 @@ Aber für den Ultimativen Geschmack gibt es einige Zutaten, die sich als sehr le
     <td>Bananen</td>
 </tr><tr>
     <td>Zimt</td>
+</tr><tr>
+    <td>Frischkäse</td>
+</tr><tr>
+    <td>Chickenwings</td>
 </tr></tfoot></table>
 
 In manchen Kulturkreisen ist auch "Waffle with chicken" ein sehr beliebtes Essen. Hierfür sollte aber der Zuckeranteil im Teig drastisch reduziert werden.
@@ -42,6 +46,7 @@ Waffelrezepte:
 <a href="/rezept/eifrei" class="button">Teig ohne Ei</a>
 <a href="/rezept/vegan" class="button">Veganer Teig</a>
 <a href="/rezept/gluten" class="button">Glutenfreier Teig</a>
+<a href="/rezept/gluten" class="button">Fleischhaltiger Teig</a>
 
 ---
 spruch: Waffeln bitte dick belegen!
