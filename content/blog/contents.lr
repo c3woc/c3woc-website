@@ -4,6 +4,6 @@ title: Neuigkeiten
 ---
 sub_title:
 
-        <a>Leckere Neuigkeiten. Jetzt auch als </a><a href="{{ '/feed.xml'|url }}">RSS  <span class="icon fa-rss"></span></a> <br/>
-        <a>Taktische Waffeleinsätze. Jetzt auch als </a><a href="{{ '/waffeln.ics'|url }}">ICS  <span class="icon fa-calendar"></span></a>
+        <a href="/feed.xml">Leckere Neuigkeiten. Jetzt auch als RSS <span class="icon fa-rss"></span></a> <br/>
+        <a href="/waffeln.ics">Taktische Waffeleinsätze. Jetzt auch als ICS  <span class="icon fa-calendar"></span></a>
 
