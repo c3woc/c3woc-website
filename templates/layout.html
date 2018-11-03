@@ -87,30 +87,24 @@
               <img src="{{ '/images/logo/c3woc.svg'|url }}" style="width: 100%;"/>
             </form>
                 <ul class="contact">
-            {% if this.alt == 'en' %}
                     {% for icon, link, name in [
-                      ['fa-envelope', 'mailto:waffle@c3woc.de', 'waffle@c3woc.de'],
-                      ['fa-hashtag', 'ircs://irc.hackint.org/#waffel', 'irc.hackint.org/#waffel'],
-                      ['fa-hashtag', 'https://webirc.hackint.org/#irc://irc.hackint.org/#waffel', 'webirc.hackint.org'],
-                      ['fa-twitter', 'https://twitter.com/@c3WOC', '@c3WOC'],
-                      ['fa-comments', 'https://chaos.social/@c3WOC', 'c3WOC@chaos.social'],
-                      ['fa-user-plus', 'https://c3woc.de/mitmachen', 'Join us!']
+                      ['fa-envelope', 'mailto:waffel@c3woc.de', 'mail'],
+                      ['fa-hashtag', 'ircs://irc.hackint.org/#waffel', 'irc'],
+                      ['fa-hashtag', 'https://webirc.hackint.org/#irc://irc.hackint.org/#waffel', 'webirc'],
+                      ['fa-twitter', 'https://twitter.com/@c3WOC', 'twitter'],
+                      ['fa-comments', 'https://chaos.social/@c3WOC', 'mastodon'],
+                      ['fa-user-plus', '/mitmachen/'|url , 'invite']
                     ] %}
-                    <li class="{{ icon }}"><a href="{{ link }}">{{ name }}</a></li>{%
-                  endfor %}{% else %}
-                    {% for icon, link, name in [
-                      ['fa-envelope', 'mailto:waffel@c3woc.de', 'waffel@c3woc.de'],
-                      ['fa-hashtag', 'ircs://irc.hackint.org/#waffel', 'irc.hackint.org/#waffel'],
-                      ['fa-hashtag', 'https://webirc.hackint.org/#irc://irc.hackint.org/#waffel', 'webirc.hackint.org'],
-                      ['fa-twitter', 'https://twitter.com/@c3WOC', '@c3WOC'],
-                      ['fa-comments', 'https://chaos.social/@c3WOC', 'c3WOC@chaos.social'],
-                      ['fa-user-plus', 'https://c3woc.de/mitmachen', 'Mach bei uns mit']
-                    ] %}
-                    <li class="{{ icon }}"><a href="{{ link }}">{{ name }}</a></li>{%
-                    endfor %}{% endif %}
+                    <li class="{{ icon }}"><a href="{{ link }}">{% if bag('translate', this.alt, name) %}{{ bag('translate', this.alt, name) }}{% 
+                      else %}{{ name }}{% endif %}</a></li>{%
+                    endfor %}
                 </ul>
               <ul class="copyright">
-                  <li>&copy; by L3D.</li><li><a href="{{ '/datenschutz/'|url }}">{% if this.alt == 'en' %}advanced cyber data protection{% else %}Datenschutz{% endif %}</a></li><li><a href="{{ '/impressum/'|url }}">{% if this.alt == 'en' %}imprint{% else %}Impressum{% endif %}</a></li><li>Design inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
+                  <li>&copy; by L3D.</li><li><a href="{{ '/datenschutz/'|url }}">{% if bag('translate', this.alt, 'dataprotection') %}{{ bag('translate', this.alt, 'dataprotection') }}{% 
+                      else %}Cyberschutz{% endif 
+                      %}</a></li><li><a href="{{ '/impressum/'|url }}">{% 
+                      if bag('translate', this.alt, 'imprint') %}{{ bag('translate', this.alt, 'imprint') }}{% 
+                      else %}Impressum{% endif %}</a></li><li>Design inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>
 	    </div>
       </section>
