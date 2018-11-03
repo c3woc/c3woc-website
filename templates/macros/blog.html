@@ -9,8 +9,8 @@
                     {% else %}
                      <h2>{{ post.title }}</h2>
                     {% endif %}
-                    <p class="meta">{% if post.alt == 'en' %}Created by{% else
-                    %}Geschrieben von{% endif %} {%
+                    <p class="meta">{% if bag('translate', post.alt, 'created')
+               %}{{ bag('translate', post.alt, 'created') }}{% else %}Geschrieben von{% endif %} {%
                       if post.twitter_handle %}<a href="https://chaos.social/@{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a>{%
                       else %}{{ post.author }}{%
                       endif %} {% if post.alt == 'en' %}on {{ post.pub_date }}{% else %}am {{ post.pub_date.strftime('%d. %m. %Y') }}{% endif %}</p>
