@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>{% block title %}Start{% endblock %}</title>
@@ -41,41 +36,24 @@
         <div class="inner">
           <h2>Menu</h2>
           <ul class="links">
-            {% if this.alt == 'en' %}
-              <li{% if this._path == '/' %} class="active"{% endif
-                %}><a href="{{ '/'|url }}">home</a></li>{%
-               for href, title in [
-                ['/blog',      'news'],
-                ['/equipment', 'equipment'],
-                ['/rezept',   'waffledough'],
-                ['/hygiene',   'sanitariness'],
-                ['/mitmachen',   'Mitmachen'],
-                ['/impressum', 'imprint'],
-                ['/datenschutz', 'data protection']
-              ] %}
-              <li{% if this.is_child_of(href) %} class="active"{% endif
-                 %}><a href="{{ href|url }}">{{ title }}</a></li>{%
-               endfor %}
+            <li{% if this._path == '/' %} class="active"{% endif
+              %}><a href="{{ '/'|url }}">home</a></li>{%
+             for href, title in [
+              ['/blog',      'news'],
+              ['/equipment', 'equipment'],
+              ['/rezept',   'waffledough'],
+              ['/hygiene',   'sanitariness'],
+              ['/mitmachen',   'participate'],
+              ['/impressum', 'imprint'],
+              ['/datenschutz', 'dataprotection']
+            ] %}
+            <li{% if this.is_child_of(href) %} class="active"{% endif
+               %}><a href="{{ href|url }}">{% if bag('translate', this.alt, title)
+               %}{{ bag('translate', this.alt, title) }}{% else %}{{ title }}{% endif %}</a></li>{%
+             endfor %}
             </ul>
-            <a href="#" class="close">close</a>
-          {% else %}
-              <li{% if this._path == '/' %} class="active"{% endif
-                %}><a href="{{ '/'|url }}">Start</a></li>{%
-               for href, title in [
-                ['/blog',      'Neuigkeiten'],
-                ['/equipment', 'Equipment'],
-                ['/rezept',   'Waffelteig'],
-                ['/hygiene',   'Hygiene'],
-                ['/mitmachen',   'Mitmachen'],
-                ['/impressum', 'Impressum'],
-                ['/datenschutz', 'Datenschmutz']
-              ] %}
-              <li{% if this.is_child_of(href) %} class="active"{% endif
-                 %}><a href="{{ href|url }}">{{ title }}</a></li>{%
-               endfor %}
-            </ul>
-            <a href="#" class="close">Schließen</a>
-          {% endif %}
+            <a href="#" class="close">{% if bag('translate', this.alt, 'close')
+              %}{{ bag('translate', this.alt, 'close') }}{% else %}Schließen{% endif %}</a>
         </div>
       </nav>
 
