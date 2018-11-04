@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ToolboxBodensee/c3woc-website.svg?branch=master)](https://travis-ci.org/ToolboxBodensee/c3woc-website)
 ![C3WOC](https://c3woc.de/images/logo/c3woc.svg "C3WOC")
 
 
@@ -29,7 +30,6 @@ bearbeiten, bevor diese Veröffentlicht werden!
  1. Dieses Repository Forken oder einen neuen Branch machen (übers GitHub Interface)
  2. Geforktes Repository Clonen (``git clone https://github.com/<Your_Name>/c3woc-website.git``)
  3. Öffne deine Komandozeile im geklonten Repository-Fork (``cd c3woc-website``)
- 4. Die Submodule Updaten *(optional, lädt nur das C3WOC Logo runter)* (`git submodule update --init --recursive``)
  4. Lektor starten (``python2 -m lektor server``)
  5. Webseite updaten... (``http://localhost:5000/``)
  6. Lektor Beenden (``Strg. + C``)
