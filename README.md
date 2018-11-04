@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ToolboxBodensee/c3woc-website.svg?branch=master)](https://travis-ci.org/ToolboxBodensee/c3woc-website)
 ![C3WOC](https://c3woc.de/images/logo/c3woc.svg "C3WOC")
 
 
