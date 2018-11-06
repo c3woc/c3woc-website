@@ -1,0 +1,31 @@
+author: L3D
+---
+body:
+
+For quite some time now, the tour dates have been published on the homepage of <a href="/#tourdaten">c3woc.de</a>. Here we want to contribute to satisfy the hunger for waffles and record every event at which we will appear.
+
+Now there is also a calendar as .ICS to subscribe to: <a href="/waffeln.ics">Waffelkalender</a>.
+
+---
+privatebody:
+
+If you want us to plan a tactical weapon mission for you, just write to us!
+
+For example on IRC in the channel <a href="ircs://irc.hackint.org/#waffel">#waffel</a> on hackint.org or directly by mail to <a href="mailto:waffel@c3woc.de">waffle at c3woc.de</a>.
+
+---
+pub_date: 2018-07-21
+---
+subtitle: Stay up to date on our tour dates!
+---
+title: waffle calendar
+---
+twitter_handle: L3D
+---
+xml:
+
+Stay informed about waffles:
+
+https://c3woc.de/feed.xml
+https://c3woc.de/#tourdaten
+https://c3woc.de/waffeln.ics
