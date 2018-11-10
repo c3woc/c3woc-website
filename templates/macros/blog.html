@@ -22,7 +22,7 @@
       <div class="content">
         <h2 class="major">{{ post.title }}</h2>
         <p class="meta">{% if bag('translate', post.alt, 'created')
-           %}{{ bag('translate', post.alt, 'created') }}{% else %}Verfasst von{% endif %}{%
+           %}{{ bag('translate', post.alt, 'created') }}{% else %}Verfasst von{% endif %} {%
            if post.twitter_handle %}<a href="https://chaos.social/@{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a>{%
            else %}{{ post.author }}{%
            endif %} {% if post.alt == 'en' %}on {{ post.pub_date }}{% else %}am {{ post.pub_date.strftime('%d. %m. %Y') }}{% endif %}</p>
