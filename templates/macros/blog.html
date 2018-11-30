@@ -35,12 +35,19 @@
                   <h2 class="major">{{ post.subtitle }}</h2>
                   {{ post.body }}
 {% if from_index == False %}
-{{ post.privatebody }}
+        {{ post.privatebody }}
+        {{ post.galerie }}
+     {% if post.galerie %}
+      <div class="lightgallery" class="row alt">{%
+        for blk in post.galerie.blocks %}
+            {{ blk }}
+            {% endfor %}</div>{% endif %}
 {% else %}
-<h2 class="major">{% if bag('translate', post.alt, 'read')
-               %}{{ bag('translate', post.alt, 'read') }}{% else %}Weiter lesen{% endif %}</h2>  
-                  <a class="button special fit" href="{{ post|url }}">{{ post.title }}</a>
-{% endif %}
+<h2 class="major">{% 
+    if bag('translate', post.alt, 'read')
+        %}{{ bag('translate', post.alt, 'read') }}{% else %}Weiter lesen{% endif %}</h2>  
+         <a class="button special fit" href="{{ post|url }}">{{ post.title }}</a>
+       {% endif %}
                 </div>
               </div>
             <!-- </section>-->

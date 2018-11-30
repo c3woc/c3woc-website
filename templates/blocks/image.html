@@ -1,0 +1,4 @@
+{% set img = record.attachments.images.get(this.image) %}
+  <a href="{{ img.path }}">
+      <img class="image" src="{{ img.thumbnail(360, 360)|url }}" />
+  </a>
