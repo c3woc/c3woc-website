@@ -2,7 +2,7 @@
 ====================
 35c3 Edition
 
-> Optimiert für 20-Faches Rezept
+> Optimiert für 15-Faches Rezept
 *Originalrezept: [c3woc.de/rezept/](https://c3woc.de/rezept/)*
 
 | Menge | Produkt | Metro Art.Nr | Preis laut metro.de Insgesamt (pro stück) | mit MWSt |
@@ -19,4 +19,4 @@
 | 1 Pkg. | Salz | 1x [154301](https://produkte.metro.de/shop/pv/BTY-X351156/0032/0021/aro-Speisesalz-feink%C3%B6rnig-500-g-Packung) | 0,18 | 0,19 |
 | 4 kg | glutenfreies Mehl | 4x [694979](https://produkte.metro.de/shop/pv/BTY-X81625/0032/0021/Sch%C3%A4r-Mehl-feink%C3%B6rnig-1-kg-Faltschachtel) | 13,32 (3,33) | 14,24 (3,56) |
 | | | | | |
-| **Insgesamt** | | | 265,21 € *(ohne MWst)* | ** |
+| **Insgesamt** | | | 265,21 € *(ohne MWst)* | **286,70€** |
