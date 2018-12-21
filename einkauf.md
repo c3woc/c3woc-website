@@ -19,8 +19,11 @@ Gewünschte Menge: **Jeweils pro Congress Tag** *(Tag +1 bis Zag +4):*
 | 1,4 l | Rum | 2x [19550](https://produkte.metro.de/shop/pv/BTY-X19592/0032/0021/Havana-Club-A%C3%B1ejo-3-A%C3%B1os-Rum-40-Vol.-0-7-l-Flasche) | 22,26 (11,13) | 26,48 (13,24) |
 | 30 kg | Mehl | 40 x [61224](https://produkte.metro.de/shop/pv/BTY-X245248/0032/0021/aro-Weizenmehl-Type-405-1-kg-Packung) | 10,80 (0,36) | 11,70 (0,39) |
 | 4 kg | glutenfreies Mehl | 4x [694979](https://produkte.metro.de/shop/pv/BTY-X81625/0032/0021/Sch%C3%A4r-Mehl-feink%C3%B6rnig-1-kg-Faltschachtel) | 13,32 (3,33) | 14,24 (3,56) |
-| | | | | |
-| **Insgesamt** | | | 265,03 € *(ohne MWst)* | **286,51€** |
+| 1 Eimer | Nutella  | 1x [732497](https://produkte.metro.de/shop/pv/BTY-X126723/0032/0021/Ferrero-Nutella-Nuss-Nougat-Creme-3-kg-Eimer) | 19,99 | 21,39 |
+| 5x | Apfelmus | 5x [226249](https://produkte.metro.de/shop/pv/BTY-X715836/0032/0021/aro-Apfelmus-nach-Hausfrauenart-710-g-Packung) | 3,2 (0,64) | 3,40 (0,68) |
+| 5x | Puderzucker | 10x [24133](https://produkte.metro.de/shop/pv/BTY-X24175/0032/0021/Sweet-Family-Puderzucker-250-g-Packung) | 2,30 (0,23) | 2,50 (0.25) |
+| | | | |
+| **Insgesamt** | | | 290.52 € *(ohne MWst)* | **313.80€** |
 
  Am Tag -2 (24.12):
 -----------------------------
