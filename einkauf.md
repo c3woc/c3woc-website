@@ -51,8 +51,8 @@ Gewünschte Menge: **Jeweils pro Congress Tag** *(Tag +1 bis Zag +4):*
 | 2,5 kg | Butter  | 10 x [931441](https://produkte.metro.de/shop/pv/BTY-X314169/0032/0021/aro-QS-Butter-mild-ges%C3%A4uert-82-Fett-250-g-St%C3%BCck) | 15,8 (1,58) | 16,90 (1.69) |
 | 4 l | Frischmilch | 30 x [218401](https://produkte.metro.de/shop/pv/BTY-X702948/0032/0021/aro-frische-Vollmilch-3-5-Fett-1-l-Packung) | 2,60 (0.65) | 2,80 (0,70) |
 | 5 kg | Mehl | 40 x [61224](https://produkte.metro.de/shop/pv/BTY-X245248/0032/0021/aro-Weizenmehl-Type-405-1-kg-Packung) | 1,89 (0,36) | 1.95 (0,39) |
-| | | | | |
-| **Insgesamt** | | |  28,77€ *(ohne MWst)* | **30.72** |
+| 10 Stk | 10l Eimer mit Deckel | 10x [560877](https://produkte.metro.de/shop/pv/BTY-X437952/0032/0021/Hendi-Eimer-mit-Deckel-11-5-l-Wei%C3%9F-Kunststoff-22-x-%C3%98-29-cm) | 39,90 (3,99) | 47,50 (4,75) |
+| **Insgesamt** | | |  68,67€ *(ohne MWst)* | **75.22** |
 
 
 
