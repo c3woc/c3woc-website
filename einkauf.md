@@ -5,6 +5,8 @@
 > Optimiert für 15-Faches Rezept für jeden Congress-Tag
 *Originalrezept: [c3woc.de/rezept/](https://c3woc.de/rezept/)*
 
+Gewünschte Menge: **Jeweils pro Congress Tag** *(Tag +1 bis Zag +4):*
+
 | Menge | Produkt | Metro Art.Nr | Preis laut metro.de Insgesamt (pro stück) | mit MWSt |
 | ----- | ------- |-----|-- |-- |
 | 15kg  | Vollei  | 15 x [187783](https://produkte.metro.de/shop/pv/BTY-X187825/0032/0021/Wiesenhof-Eifix-Vollei-fl%C3%BCssig-pasteurisiert-1-kg-Packung) | 55,35 (3,69) | 59,25 (3,95) |
@@ -35,6 +37,22 @@
 | 5 kg | Mehl | 40 x [61224](https://produkte.metro.de/shop/pv/BTY-X245248/0032/0021/aro-Weizenmehl-Type-405-1-kg-Packung) | 1,89 (0,36) | 1.95 (0,39) |
 | 1 Pkg. | Salz | 1x [154301](https://produkte.metro.de/shop/pv/BTY-X351156/0032/0021/aro-Speisesalz-feink%C3%B6rnig-500-g-Packung) | 0,18 | 0,19 |
 | | | | | |
-| **Insgesamt** | | |  € *(ohne MWst)* | **** |
+| **Insgesamt** | | |  50.57€ *(ohne MWst)* | **55.39** |
+
+
+
+ Am Tag 0 (26.12):
+-----------------------------
+
+| Menge | Produkt | Metro Art.Nr | Preis laut metro.de Insgesamt (pro stück) | mit MWSt |
+| ----- | ------- |-----|-- |-- |
+| 2kg  | Vollei  | 2 x [187783](https://produkte.metro.de/shop/pv/BTY-X187825/0032/0021/Wiesenhof-Eifix-Vollei-fl%C3%BCssig-pasteurisiert-1-kg-Packung) | 7,38 (3,69) | 7,90 (3,95) |
+| 2kg  | Zucker  | 2 x [126538](https://produkte.metro.de/shop/pv/BTY-X322462/0032/0021/aro-Raffinade-Zucker-1-kg-Packung) | 1,10 (0,55) | 1,18 (0,59) |
+| 2,5 kg | Butter  | 10 x [931441](https://produkte.metro.de/shop/pv/BTY-X314169/0032/0021/aro-QS-Butter-mild-ges%C3%A4uert-82-Fett-250-g-St%C3%BCck) | 15,8 (1,58) | 16,90 (1.69) |
+| 4 l | Frischmilch | 30 x [218401](https://produkte.metro.de/shop/pv/BTY-X702948/0032/0021/aro-frische-Vollmilch-3-5-Fett-1-l-Packung) | 2,60 (0.65) | 2,80 (0,70) |
+| 5 kg | Mehl | 40 x [61224](https://produkte.metro.de/shop/pv/BTY-X245248/0032/0021/aro-Weizenmehl-Type-405-1-kg-Packung) | 1,89 (0,36) | 1.95 (0,39) |
+| | | | | |
+| **Insgesamt** | | |  28,77€ *(ohne MWst)* | **30.72** |
+
 
 
