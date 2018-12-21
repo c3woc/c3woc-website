@@ -6,7 +6,7 @@
 *Originalrezept: [c3woc.de/rezept/](https://c3woc.de/rezept/)*
 
 | Menge | Produkt | Metro Art.Nr | Preis laut metro.de Insgesamt (pro stück) | mit MWSt |
-| ----- | ------- |              | | |
+| ----- | ------- |-----|-- |-- |
 | 20kg  | Vollei  | 20 x [187783](https://produkte.metro.de/shop/pv/BTY-X187825/0032/0021/Wiesenhof-Eifix-Vollei-fl%C3%BCssig-pasteurisiert-1-kg-Packung) | 73,80 (3,69) | 79,00 (3,95) |
 | 20kg  | Zucker  | 20 x [126538](https://produkte.metro.de/shop/pv/BTY-X322462/0032/0021/aro-Raffinade-Zucker-1-kg-Packung) | 11,00 (0,55) | 11,79 (0,59) |
 | 25 kg | Butter  | 100 x [931441](https://produkte.metro.de/shop/pv/BTY-X314169/0032/0021/aro-QS-Butter-mild-ges%C3%A4uert-82-Fett-250-g-St%C3%BCck) | 158 (1,58) | 169 ( 1.69 ) |
