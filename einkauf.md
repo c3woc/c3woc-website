@@ -22,8 +22,9 @@ Gewünschte Menge: **Jeweils pro Congress Tag** *(Tag +1 bis Zag +4):*
 | 1 Eimer | Nutella  | 1x [732497](https://produkte.metro.de/shop/pv/BTY-X126723/0032/0021/Ferrero-Nutella-Nuss-Nougat-Creme-3-kg-Eimer) | 19,99 | 21,39 |
 | 5x | Apfelmus | 5x [226249](https://produkte.metro.de/shop/pv/BTY-X715836/0032/0021/aro-Apfelmus-nach-Hausfrauenart-710-g-Packung) | 3,2 (0,64) | 3,40 (0,68) |
 | 5x | Puderzucker | 10x [24133](https://produkte.metro.de/shop/pv/BTY-X24175/0032/0021/Sweet-Family-Puderzucker-250-g-Packung) | 2,30 (0,23) | 2,50 (0.25) |
-| | | | |
-| **Insgesamt** | | | 290.52 € *(ohne MWst)* | **313.80€** |
+| 10x | Küchenrollen | 10x [193954](https://produkte.metro.de/shop/pv/BTY-X513941/0032/0021/Danke-K%C3%BCchenrolle-4-Rollen-%C3%A1-45-Blatt-3-lagig-Packung) | 21,70 (2.17) | 25,8 (2.58) |
+| | | | | |
+| **Insgesamt** | | | 312.22 € *(ohne MWst)* | **339.60€** |
 
  Am Tag -2 (24.12):
 -----------------------------
