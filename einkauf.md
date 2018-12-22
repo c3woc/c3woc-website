@@ -15,16 +15,17 @@ Gewünschte Menge: **Jeweils pro Congress Tag** *(Tag +1 bis Zag +4):*
 | großpackung | Vanillinzucker | 1 x [879765](https://produkte.metro.de/shop/pv/BTY-X267075/0032/0021/Dr.-Oetker-Vanillin-Zucker-1-50-kg) | 7,99 | 8,55 |
 | 200g  | gemalene Vanilleschoten | 2x [29630](https://produkte.metro.de/shop/pv/BTY-X29672/0032/0021/Pickerd-Vanila-skandinavische-Vanille-Spezialit%C3%A4t-mit-gemahlenen-Vanilleschoten-100-g-Dose) | 4,98 (2,49) | 5,32 (2,66) |
 | großpackung | Backpulver | 1 x [468967](https://produkte.metro.de/shop/pv/BTY-X684012/0032/0021/Horeca-Select-Backpulver-1-kg-Packung) | 2,50 | 2,68 |
-| 30 l | Frischmilch | 30 x [218401](https://produkte.metro.de/shop/pv/BTY-X702948/0032/0021/aro-frische-Vollmilch-3-5-Fett-1-l-Packung) | 19,5 (0.65) | 21 (0,70) |
+| 30 l  | Frischmilch | 30 x [218401](https://produkte.metro.de/shop/pv/BTY-X702948/0032/0021/aro-frische-Vollmilch-3-5-Fett-1-l-Packung) | 19,5 (0.65) | 21 (0,70) |
 | 1,4 l | Rum | 2x [19550](https://produkte.metro.de/shop/pv/BTY-X19592/0032/0021/Havana-Club-A%C3%B1ejo-3-A%C3%B1os-Rum-40-Vol.-0-7-l-Flasche) | 22,26 (11,13) | 26,48 (13,24) |
 | 30 kg | Mehl | 40 x [61224](https://produkte.metro.de/shop/pv/BTY-X245248/0032/0021/aro-Weizenmehl-Type-405-1-kg-Packung) | 10,80 (0,36) | 11,70 (0,39) |
-| 4 kg | glutenfreies Mehl | 4x [694979](https://produkte.metro.de/shop/pv/BTY-X81625/0032/0021/Sch%C3%A4r-Mehl-feink%C3%B6rnig-1-kg-Faltschachtel) | 13,32 (3,33) | 14,24 (3,56) |
+| 4 kg  | glutenfreies Mehl | 4x [694979](https://produkte.metro.de/shop/pv/BTY-X81625/0032/0021/Sch%C3%A4r-Mehl-feink%C3%B6rnig-1-kg-Faltschachtel) | 13,32 (3,33) | 14,24 (3,56) |
 | 1 Eimer | Nutella  | 1x [732497](https://produkte.metro.de/shop/pv/BTY-X126723/0032/0021/Ferrero-Nutella-Nuss-Nougat-Creme-3-kg-Eimer) | 19,99 | 21,39 |
-| 5x | Apfelmus | 5x [226249](https://produkte.metro.de/shop/pv/BTY-X715836/0032/0021/aro-Apfelmus-nach-Hausfrauenart-710-g-Packung) | 3,2 (0,64) | 3,40 (0,68) |
-| 5x | Puderzucker | 10x [24133](https://produkte.metro.de/shop/pv/BTY-X24175/0032/0021/Sweet-Family-Puderzucker-250-g-Packung) | 2,30 (0,23) | 2,50 (0.25) |
-| 10x | Küchenrollen | 10x [193954](https://produkte.metro.de/shop/pv/BTY-X513941/0032/0021/Danke-K%C3%BCchenrolle-4-Rollen-%C3%A1-45-Blatt-3-lagig-Packung) | 21,70 (2.17) | 25,8 (2.58) |
+| 5x    | Apfelmus | 5x [226249](https://produkte.metro.de/shop/pv/BTY-X715836/0032/0021/aro-Apfelmus-nach-Hausfrauenart-710-g-Packung) | 3,2 (0,64) | 3,40 (0,68) |
+| 5x    | Puderzucker | 10x [24133](https://produkte.metro.de/shop/pv/BTY-X24175/0032/0021/Sweet-Family-Puderzucker-250-g-Packung) | 2,30 (0,23) | 2,50 (0.25) |
+| 10x   | Küchenrollen | 10x [193954](https://produkte.metro.de/shop/pv/BTY-X513941/0032/0021/Danke-K%C3%BCchenrolle-4-Rollen-%C3%A1-45-Blatt-3-lagig-Packung) | 21,70 (2.17) | 25,8 (2.58) |
+| 1x    | Alufolie | 1x [265979](https://produkte.metro.de/shop/pv/BTY-X11052/0032/0021/Toppits-Alufolie-10-m-x-29-5-cm-Rolle) | 1,39 | 1,65 |
 | | | | | |
-| **Insgesamt** | | | 312.22 € *(ohne MWst)* | **339.60€** |
+| **Insgesamt** | | | 313.61 € *(ohne MWst)* | **341.25€** |
 
  Am Tag -2 (24.12):
 -----------------------------
