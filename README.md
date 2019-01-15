@@ -37,6 +37,13 @@ bearbeiten, bevor diese Veröffentlicht werden!
  8. Änderungen hochladen (``git push``)
  9. Pull-Request Stellen (übers GitHub Interface)
 
+ Große Dateien und Grafiken
+----------------------------
+Für den besseren Umgang mit größeren Dateien haben wir angefangen auf git-lfs zu setzen. Weitere Informationen dazu finden sich auf [git-lfs.github.com](https://git-lfs.github.com/). 
+
+Kurzfassung: Ihr solltet mit eurem Packet Manager git-lfs installieren. Dann funktioniert das in der regel relativ gut!
+
+
  Webseite übersetzen:
 ------------------------
 Lektor bietet in der Admin-Oberfläche die Möglichkeit die C3WOC Webseite auf englisch zu übersetzen.
