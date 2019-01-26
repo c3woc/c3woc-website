@@ -36,12 +36,10 @@
                   {{ post.body }}
 {% if from_index == False %}
         {{ post.privatebody }}
-        {{ post.galerie }}
-     {% if post.galerie %}
-      <div class="lightgallery" class="row alt">{%
+        {% if post.galerie %}{%
         for blk in post.galerie.blocks %}
             {{ blk }}
-            {% endfor %}</div>{% endif %}
+            {% endfor %}{% endif %}
 {% else %}
 <h2 class="major">{% 
     if bag('translate', post.alt, 'read')

@@ -13,3 +13,103 @@ xml:
 Auf dem 35c3 hat das C3WOC eine halbe Tonne Waffelteig gemacht.
 
 Das war eine tolle Veranstaltung. Danke an alle!
+
+---
+galerie:
+
+#### image ####
+image: waffel_act.jpg
+#### image ####
+image: waffel_shift.jpg
+#### image ####
+image: waffel_loc.jpg
+#### image ####
+image: waffel_njom.jpg
+#### image ####
+image: waffel_weg.jpg
+---
+xml_img: waffel_loc.jpg
+---
+body:
+
+Auf dem 35c3 hat das C3WOC eine halbe Tonne Waffelteig gemacht.
+
+
+
+
+<span class="image main">
+      <img class="image" src="/blog/35c3/waffel_love.jpg" />
+</span>
+
+Das war eine tolle Veranstaltung. Danke an alle!
+---
+privatebody:
+
+Seit dem 35c3 haben wir nun auch einen Waffelstempel:
+
+<span class="image main">
+      <img class="image" src="/blog/35c3/waffel_stempel.jpg" /><br/>
+      <img class="image" src="/blog/35c3/waffel_stamp.jpg" />
+</span>
+
+So gab es nicht nur Waffeln zum Essen, sondern auch zum Stempeln.
+
+ Neue kreationen
+--------------------------
+
+Beim Congress haben wir neue Waffelvariationen entwickelt:
+
+<b>Tschunk-Waffel</b>
+
+<span class="image main">
+      <img class="image" src="/blog/35c3/waffel_tschunk_action.jpg" /><br/>
+      <img class="image" src="/blog/35c3/waffel_tschunk.jpg" /><br/>
+      <img class="image" src="/blog/35c3/waffel_tschunk_raw.jpg" />
+</span>
+
+<b>Döner Waffel</b>
+<span class="image main">
+      <img class="image" src="/blog/35c3/waffel_doener.jpg" />
+</span>
+
+ Delivery
+----------------
+Auch die Chaospost hat Waffeln ausgetragen. Außerdem gab es ein paar Dankesbriefe.
+Vielen Dank dafür. Sehr lieb!
+<span class="image main">
+      <img class="image" src="/blog/35c3/waffel_delivery.jpg" />
+</span>
+
+Einkäufe
+------------
+Beim 35c3 haben wir insgesamt um die 500kg Waffelteig angerührt.
+Dafür haben wir auch beim Metro um die 1700€ gelassen.
+
+Trotzdem haben wir insgesamt 2900€ in unserer Spendenbox gefunden. 
+Vielen Dank dafür!
+
+<span class="image main">
+      <img class="image" src="/blog/35c3/waffel_beauty.jpg" />
+</span>
+
+ Spendenaufteilung
+----------------------------
+Wir haben beschlossen den Gewinn der Spenden an dem C3WOC nahe stehenden Hackspacen zu verteilen. Uns so gehen 600€ an die [see-base](https://see-base.de) in Überlingen und 600€ an den [Platinengarten](https://platinengarten.de). Hierfür haben sich die Hackspace aber auch verpflichtet über den Einsatz der Spenden zu berichten.
+
+### see-base
+Die see-base ist gerade dabei ihren Space zu renovieren und neu einzurichten.
+Und um das mit zu finanzieren ist diese Spende gedacht.
+
+### Platinengarten
+Der Platinengarten möchte sich ein Lasergravur-Schneider aus China bestellen um mit Waffelsprüchen versehene Holzbretter herzustellen.
+Außerdem werden die Spenden für ein Gastronom-Waffeleisen ausgegeben sowie für ein Let's Encrypt Zertifikat für deren Webseite.
+
+
+<span class="image main">
+      <img class="image" src="/blog/35c3/waffel_sticker.jpg" />
+</span>
+
+
+Das Waffeln am Congress hat sehr viel Spaß gemacht.
+
+Wir sehen uns als nächstes beim Easterhegg.
