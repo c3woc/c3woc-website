@@ -1,0 +1,52 @@
+{% macro render_blog_post(post, from_index=false) %}
+  {% if from_index %}
+        <section class="4u 6u(medium) 12u(xsmall) project">
+                <span class="icon alt major">
+                    <a href="{{ post|url }}" class="project-creator" title="{%
+                    if bag('translate', post.alt, 'projekt_von')
+          %}{{ bag('translate', post.alt, 'projekt_von') }}{% else
+          %}Von{% endif 
+          %} {{ post.author }} {% if post.pub_date %} {%
+          if bag('translate', post.alt, 'projekt_am')
+          %}{{ bag('translate', post.alt, 'projekt_am') }}{% else
+          %}am{% endif %} {{ post.pub_date.strftime('%d.%m.%Y') }} {%
+          endif %} {% if bag('translate', post.alt, 'projekt_start')
+          %}{{ bag('translate', post.alt, 'projekt_start') }}{% else
+          %}gestarted{% endif %}"><i class="{{ post.icon }} fa-3x iconshiftdown"></i></a>
+          </span>
+          <a href="{{ post|url }}"><h3>{{ post.title }}</h3></a>
+          <article class="teaser">
+              {{ post.teaser }}
+            </article>
+        </section>
+  {% else %}
+        <div id="main" class="wrapper style1">
+          <div class="container">
+            <header class="major">
+                <h2>{{ post.title }}</h2><p>{% if bag('translate', post.alt, 'projekt_launch')
+          %}{{ bag('translate', post.alt, 'projekt_launch') }}{% else
+          %}Das Projekt wurde vom{% endif %} {{ post.author }} {% if post.pub_date %}{%
+          if bag('translate', post.alt, 'projekt_am')
+          %}{{ bag('translate', post.alt, 'projekt_am') }}{% else
+          %}am{% endif %} {{ post.pub_date.strftime('%d.%m.%Y') }} {% endif %}{%
+          if bag('translate', post.alt, 'projekt_start')
+          %}{{ bag('translate', post.alt, 'projekt_start') }}{% else
+          %}gestarted{% endif %}</p>
+            </header>
+          <section id="content">
+            {{ post.body }}
+            {% if post.video_is_embeded %}{% for blk in post.video_embeded.blocks %}
+                {{ blk }} <br/>
+            {% endfor %}{%
+          endif %} 
+            {% if post.project %} 
+            <div class="lightgallery" class="row alt">{%
+              for blk in post.project.blocks %}
+                {{ blk }}
+              {% endfor %}</div>{%
+          endif %}
+            </section>
+        </div>
+      </div>
+  {% endif %}
+{% endmacro %}

@@ -1,54 +1,50 @@
 {% macro render_blog_post(post, from_index=false) %}
-{% if from_index == True %}
-            <!-- Wrapper -->
-            <!-- <section id="wrapper"> -->
-                <header>
-                  <div class="inner">
-                    {% if from_index %}
-                      <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
-                    {% else %}
-                     <h2>{{ post.title }}</h2>
-                    {% endif %}
-                    <p class="meta">{% if bag('translate', post.alt, 'created')
-               %}{{ bag('translate', post.alt, 'created') }}{% else %}Geschrieben von{% endif %} {%
-                      if post.twitter_handle %}<a href="https://chaos.social/@{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a>{%
-                      else %}{{ post.author }}{%
-                      endif %} {% if post.alt == 'en' %}on {{ post.pub_date }}{% else %}am {{ post.pub_date.strftime('%d. %m. %Y') }}{% endif %}</p>
-                  </div>
-                </header>
-{% else %}
-<section class="wrapper alt spotlight style2">
-  <div class="inner">
-      <div class="content">
-        <h2 class="major">{{ post.title }}</h2>
-        <p class="meta">{% if bag('translate', post.alt, 'created')
-           %}{{ bag('translate', post.alt, 'created') }}{% else %}Verfasst von{% endif %} {%
-           if post.twitter_handle %}<a href="https://chaos.social/@{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a>{%
-           else %}{{ post.author }}{%
-           endif %} {% if post.alt == 'en' %}on {{ post.pub_date }}{% else %}am {{ post.pub_date.strftime('%d. %m. %Y') }}{% endif %}</p>
+  {% if from_index %}
+  <br/><hr/><br/>
+  {% endif %}
+  <div class="blog-post">
+    <header class="major">
+    {% if from_index %}
+      <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+    {% else %}
+      <h2>{{ post.title }}</h2>
+    {% endif %}
+      <p class="meta">
+      {% if bag('translate', post.alt, 'blog_von') 
+          %}{{ bag('translate', post.alt, 'blog_von') }}{% else 
+          %}Geschrieben von{% endif %} {% if post.twitter_handle 
+          %}<a href="https://chaos.social/@{{ post.twitter_handle
+          }}">{{ post.author or post.twitter_handle }}</a>{%
+          else %}{{ post.author }}{%
+          endif %}{% if post.pub_date
+          %} {% if bag('translate', post.alt, 'blog_am') 
+          %}{{ bag('translate', post.alt, 'blog_am') }}{% else 
+          %}am{% endif %} {{ post.pub_date.strftime('%d.%m.%Y') }}{%
+          endif %}</p>
+	</header>
+<!-- Content -->
+    <section id="content">
+      {% if from_index %}
+        {{ post.body }}
+      {% else %}
+        {{ post.body }}
+        {{ post.beitrag }}
+      {% endif %}
+    </section>
+    {% if from_index %}
+    <a class="button fit" href="{{ post|url }}">{% if bag('translate', post.alt, 'blog_weiter')
+        %}{{ bag('translate', post.alt, 'blog_weiter') }}{% else        
+        %}weiterlesen{% endif %}</a>
+    <br/>
+    {% else %}
+    {% if post.video_is_embeded %}{% for blk in post.video_embeded.blocks %}
+       {{ blk }} <br/>
+    {% endfor %}{%
+    endif %} {% if post.project %}
+      <div class="lightgallery" class="row alt">{%
+        for blk in post.project.blocks %}
+      {{ blk }}
+      {% endfor %}</div>{% endif %}{%
+    endif %}
   </div>
-</section> 
-{% endif %} 
-              <!-- Content -->
-			  <div class="wrapper">
-			    <div class="inner">
-                  <h2 class="major">{{ post.subtitle }}</h2>
-                  {{ post.body }}
-{% if from_index == False %}
-        {{ post.privatebody }}
-        {% if post.galerie %}{%
-        for blk in post.galerie.blocks %}
-            {{ blk }}
-            {% endfor %}{% endif %}
-{% else %}
-<h2 class="major">{% 
-    if bag('translate', post.alt, 'read')
-        %}{{ bag('translate', post.alt, 'read') }}{% else %}Weiter lesen{% endif %}</h2>  
-         <a class="button special fit" href="{{ post|url }}">{{ post.title }}</a>
-       {% endif %}
-                </div>
-              </div>
-            <!-- </section>-->
-	
-
 {% endmacro %}

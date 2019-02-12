@@ -1,9 +1,0 @@
-_model: blog
----
-title: Neuigkeiten
----
-sub_title:
-
-        <a href="/feed.xml">Leckere Neuigkeiten. Jetzt auch als RSS <span class="icon fa-rss"></span></a> <br/>
-        <a href="/waffeln.ics">Taktische Waffeleinsätze. Jetzt auch als ICS  <span class="icon fa-calendar"></span></a>
-

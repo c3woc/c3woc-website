@@ -1,19 +1,29 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
 {% from "macros/pagination.html" import render_pagination %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block body %}
-<section id="one" class="wrapper alt spotlight style2">
-  <div class="inner">
-    <a class="image"><img src="{{ '/images/c3woc/c3woc.svg'|url }}" alt="" /></a>
-      <div class="content">
-        <h2 class="major">{{ this.title }}</h2>
-        {{ this.sub_title }}
-  </div>
-</section> 
+      {% block title %}{{ this.title }}{% endblock %}
+{% block body %} 
+<!-- Main Blog -->
+<div id="main" class="wrapper style1">
+  <div class="container">
+    <header class="major">
+      <h2>{{ this.title }}</h2>
+      {{ this.description }}
+    </header>
+   <center>  
+      <a href="{{ this.link|url }}" class="button primary fit" >{{ this.spruch }}
+          <i class="fas fa-rss iconshift-right-8" ></i>
+      </a>
+      
+    </center>
+    <section id="content">     
   {% for child in this.pagination.items %}
     {{ render_blog_post(child, from_index=true) }}
   {% endfor %}
-
+      <center>
   {{ render_pagination(this.pagination) }}
+      <center>
+    </section>
+  </div>
+</div>
 {% endblock %}

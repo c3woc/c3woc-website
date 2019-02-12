@@ -1,120 +1,137 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html{% if alt %} lang="{{ alt }}"{% endif %}>
   <head>
-    <title>{% block title %}Start{% endblock %}</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <title>{% block title %}Startseite{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="{{ '/js/ie/html5shiv.js'|url }}"></script><![endif]-->
-    <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="{{ '/css/ie9.css'|url }}" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="{{ '/css/ie8.css'|url }}" /><![endif]-->
-    <link rel="icon" href="{{ '/images/favicon.png'|url }}" type="image/png">
+    <link rel="stylesheet" href="{{ '/css/main.min.css'|url }}" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.min.css'|url }}" /><![endif]-->
+    <meta name="description" content="{% if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% else %}Die Toolbox Bodensee e.V. ist ein gemeinnütziger Maker- und Hackspace in Markdorf am Bodensee!{% endif %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|url }}">
+    <link rel="manifest" href="{{ '/images/icons/site.webmanifest'|url }}">
+    <link rel="mask-icon" href="{{ '/images/icons/safari-pinned-tab.svg'|url }}" color="#e64f2d">
+    <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico'|url }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|url }}">
+    <meta name="theme-color" content="#e64f2d">
     {% block expand_header %}{% endblock %}
-    <style>
-      .active a{
-        color: red;
-      }
-    </style>
+    <script src="{{ '/js/jquery.min.js'|url }}"></script>
   </head>
-  <body>
-
-    <!-- Page Wrapper -->
+  <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
     <div id="page-wrapper">
 
-      <!-- Header -->
-      <header id="header" class="alt">
-        <h1><a href="index.html">c3WOC</a></h1>
-        <nav>{% if this.alt == 'en' %}
-          <a href="/..{{ this._path }}">Deutsch Version aufrufen</a>{%
-              else %}<a href="/en{{ this._path }}">View English version</a>{% endif %}
-          <a href="#menu">Menu</a>
-        </nav>
-      </header>
-
-      <!-- Menu -->
-      <nav id="menu">
-        <div class="inner">
-          <h2>Menu</h2>
-          <ul class="links">
-            <li{% if this._path == '/' %} class="active"{% endif
-              %}><a href="{{ '/'|url }}">home</a></li>{%
-             for href, title in [
-              ['/blog',      'news'],
-              ['/equipment', 'equipment'],
-              ['/rezept',   'waffledough'],
-              ['/hygiene',   'sanitariness'],
-              ['/mitmachen',   'participate'],
-              ['/impressum', 'imprint'],
-              ['/datenschutz', 'dataprotection']
-            ] %}
-            <li{% if this.is_child_of(href) %} class="active"{% endif
-               %}><a href="{{ href|url }}">{% if bag('translate', this.alt, title)
-               %}{{ bag('translate', this.alt, title) }}{% else %}{{ title }}{% endif %}</a></li>{%
-             endfor %}
-            </ul>
-            <a href="#" class="close">{% if bag('translate', this.alt, 'close')
-              %}{{ bag('translate', this.alt, 'close') }}{% else %}Schließen{% endif %}</a>
-        </div>
-      </nav>
-
-      <!-- Banner -->
-      <section id="banner">
-        <div class="inner">
-          <div class="logo"><a href="{{ '/'|url }}"><span class="icon fa-heart"></span></a></div>
-            <h2>C3WOC</h2>
-            <p>{% if bag('translate', this.alt, 'c3woc')
-               %}{{ bag('translate', this.alt, 'c3woc') }}{% else %}C3 Waffel Operation Center{% endif %} <span class="icon fa-heart"></span>
-              {% if bag('translate', this.alt, 'destiny') %}{{ bag('translate', this.alt, 'destiny') }}{%
-              else %}Wir machen Waffeln{% endif %}</p>
-          </div>
-        </section>
-        <!-- Wrapper -->
-        <section id="wrapper">
-          <!-- Main -->
-          {% block body %}{% endblock %}
-        </section>
-
-
-        <!-- Footer -->
-        <section id="footer">
-          <div class="inner">
-              <h2 class="major">{% if bag('translate', this.alt, 'we') %}{{ bag('translate', this.alt, 'we') }}{% 
-                else %}Wir{% endif %} <span class="icon fa-heart"></span> {% if bag('translate', this.alt, 'love')
-               %}{{ bag('translate', this.alt, 'love') }}{% else %}Waffeln, du auch?{% endif %}</h2>
-              <p>{% if bag('translate', this.alt, 'whoami')
-               %}{{ bag('translate', this.alt, 'whoami') }}{% else %}Das C3WOC besteht aus Hackern aus dem Chaosumfeld. Nimm doch mal mit uns Kontakt auf und lass uns zusammen Waffeln machen!</p>{% endif %}
-            <form>
-              <img src="{{ '/images/c3woc.svg'|url }}" style="width: 100%;"/>
-            </form>
-                <ul class="contact">{%
-                  for icon, link, name in [
-                      ['fas fa-envelope', 'mailto:waffel@c3woc.de', 'mail'],
-                      ['fas fa-hashtag', 'ircs://irc.hackint.org/#waffel', 'irc'],
-                      ['fab fa-slack', 'https://webirc.hackint.org/#irc://irc.hackint.org/#waffel', 'webirc'],
-                      ['fab fa-mastodon', 'https://chaos.social/@c3WOC', 'mastodon'],
-                      ['fab fa-twitter', 'https://twitter.com/@c3WOC', 'twitter'],
-                      ['fas fa-handshake', '/mitmachen/'|url , 'invite']
-                    ] %}
-                    <li class="{{ icon }}"><a href="{{ link }}">{% if bag('translate', this.alt, name) %}{{ bag('translate', this.alt, name) }}{% 
-                      else %}{{ name }}{% endif %}</a></li>{%
+       <!-- Header -->
+        <header id="header">
+            <h1 id="logo">
+                <div class="tooltip">
+                    <a id="tb-opened" class="button tb-opened navbar special" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_open') %}{{ bag('translate', this.alt, 'api_open') }}{% else %}offen{% endif %}</a>
+                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_open_text') %}{{ bag('translate', this.alt, 'api_open_text') }}{% else %}Vereinsheim ist gerade offen. Komm gerne vorbei solange wir da sind!{% endif %}</span>
+                </div>
+                <div class="tooltip">
+                    <a id="tb-closed" class="tb-closed" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{% else %}/vereinsheim/{% endif %}">{% if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{% else %}Vereinsheim{% endif %} {% if bag('translate', this.alt, 'api_closed') %}{{ bag('translate', this.alt, 'api_closed') }}{% else %}geschlossen{% endif %}</a>
+                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_opening_time') %}{{ bag('translate', this.alt, 'api_opening_time') }}{% else %}Vereinsheim ist typischerweise Donnerstags 19:30 offen{% endif %}</span>
+                  </div>
+            </h1>
+            <nav id="nav">
+              <ul>
+                <li{% if this._path == '/' %} class="active"{% endif
+                  %}><a href="{{ '/'|url }}">{%
+                  if bag('navigation', this.alt, 'home') %}{{ bag('navigation', this.alt, 'home') }}{%
+                  else %}Home{% endif %}</a></li>{%
+                for href, title, print in [
+                  ['/blog', 'Blog', 1],
+                  ['/projekte', 'Projekte', 1],
+                  ['/verein', 'Verein', 1],
+                  ['/termine', 'Kalender', 1],
+                  ['/kontakt', 'Kontakt', 1]
+                ] %}{% if print %}
+                  <li{% if this.is_child_of(href) %} class="active"{% endif
+                  %}><a href="{{ href|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>{%
+                  if title == 'Projekte' %}
+                    <ul>{% set root = site.get('/projekte/', alt=this.alt) %}{%
+                  for child in root.children recursive %}{% if loop.index <= 7 %}
+                    <li{%
+                      if this._path == child._path %} class="active"{% endif
+                      %}><a href="{% if this.alt == 'de' %}{% else %}/{{ this.alt }}/{{ this.alt }}/{% endif %}{{ child|url }}">{{ child.title }}</a></li>{%
+                  endif %}{% endfor %}
+                      <li><a href="{{ '/projekte/'|url }}">{% if bag('navigation', this.alt, 'show_projekt') %}{{ bag('navigation', this.alt, 'show_projekt') }}{% else %}alle Projekte{% endif %}</a></li>
+                      <li><a href="{{ '/feed_projekte.xml'|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %} {% if bag('navigation', this.alt, 'xml') %}{{ bag('navigation', this.alt, 'xml') }}{% else %}als XML Feed{% endif %}</a></li>
+                    </ul>{%
+                  elif title == 'Verein' %}
+                    <ul><li><a href="{{ '/vereinsheim'|url }}">{% if bag('navigation', this.alt, 'Vereinsheim') %}{{ bag('navigation', this.alt, 'Vereinsheim') }}{% else %}Vereinsheim{% endif %}</a></li>
+                    <li><a href="{{ '/vereinsheim/elektrowerkstatt'|url }}">{% if bag('navigation', this.alt, 'Elektrowerkstatt') %}{{ bag('navigation', this.alt, 'Elektrowerkstatt') }}{% else %}Elektrowerkstatt{% endif %}</a></li>
+                    <li><a href="{{ '/vereinsheim/grobwerkstatt'|url }}">{% if bag('navigation', this.alt, 'Grobwerkstatt') %}{{ bag('navigation', this.alt, 'Grobwerkstatt') }}{% else %}Grobwerkstatt{% endif %}</a></li>
+                    <li><a href="{{ '/vereinsheim/lounge'|url }}">{% if bag('navigation', this.alt, 'Lounge') %}{{ bag('navigation', this.alt, 'Lounge') }}{% else %}Lounge{% endif %}</a></li>
+                    <li><a href="{{ '/verein/presse'|url }}">{% if bag('navigation', this.alt, 'Presse') %}{{ bag('navigation', this.alt, 'Presse') }}{% else %}Presse{% endif %}</a></li>
+                    <li><a href="https://tbbs.me">{% if bag('navigation', this.alt, 'Wiki') %}{{ bag('navigation', this.alt, 'Wiki') }}{% else %}Wiki{% endif %}</a></li>
+                    <li><a href="{{ '/verein/dokumente'|url }}">{% if bag('navigation', this.alt, 'satzung') %}{{ bag('navigation', this.alt, 'satzung') }}{% else %}Satzung und Dokumente{% endif %}</a></li>
+                    <li><a href="{{ '/mitglied-werden'|url }}" class="button special">{% if bag('navigation', this.alt, 'mitglied') %}{{ bag('navigation', this.alt, 'mitglied') }}{% else %}Mitglied werden{% endif %}</a></li>
+                    <li><a href="{{ '/verein/spenden'|url }}">{% if bag('navigation', this.alt, 'spenden') %}{{ bag('navigation', this.alt, 'spenden') }}{% else %}Spenden{% endif %}</a></li>
+                    <li><a href="{{ '/antworten'|url }}">{% if bag('navigation', this.alt, 'fragen') %}{{ bag('navigation', this.alt, 'fragen') }}{% else %}Häufige Fragen{% endif %}</a></li></ul>{%
+                  elif title == 'Kontakt' %}
+                    <ul><li><a href="{{ '/kontakt'|url }}">{% if bag('navigation', this.alt, 'Kontakt') %}{{ bag('navigation', this.alt, 'Kontakt') }}{% else %}Kontakt{% endif %}</a></li>
+                      <li><a href="{{ '/impressum'|url }}">{% if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% else %}Impressum{% endif %}</a></li>
+                      <li><a href="{{ '/datenschutz/'|url }}">{% if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% else %}Datenschutz{% endif %}</a></li>
+                  </ul>{%
+                  elif title == 'Blog' %}
+                    <ul>{% set root = site.get('/blog/', alt=this.alt) %}{%
+                      for child in root.children recursive %}
+                      <li{%
+                      if this._path == child._path %} class="active"{% endif
+                        %}><a href="{{ child|url }}">{{ child.shorttitle }}</a></li>{%
                     endfor %}
-                </ul>
-              <ul class="copyright">
-                  <li>&copy; by L3D.</li><li><a href="{{ '/datenschutz/'|url }}">{% if bag('translate', this.alt, 'dataprotection') %}{{ bag('translate', this.alt, 'dataprotection') }}{% 
-                      else %}Cyberschutz{% endif 
-                      %}</a></li><li><a href="{{ '/impressum/'|url }}">{% 
-                      if bag('translate', this.alt, 'imprint') %}{{ bag('translate', this.alt, 'imprint') }}{% 
-                      else %}Impressum{% endif %}</a></li><li>Design inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
-          </ul>
-	    </div>
-      </section>
+                    <li><a href="{{ '/feed_blog.xml'|url }}">RSS Feed</a></li></ul>{%
+                  endif %}</li>{%
+                 endif %}{%
+               endfor %}
+               <li class="last"><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
+                   <ul class="last">
+                     <li><a href="/..{{ this._path }}">{% if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{% else %}German{% endif %}</a></li>
+                     <li><a href="/en{{ this._path }}">{% if bag('navigation', this.alt, 'Englisch') %}{{ bag('navigation', this.alt, 'Englisch') }}{% else %}english{% endif %} <i>({% if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{% else %}if available{% endif %})</i></a><li>
+                   </ul>
+                 </li>
+              </ul>
+            </nav>
+          </header>
+
+<!-- Main -->
+{% block body %}{% endblock %}
+
+       <!-- Footer -->
+       <footer id="footer">
+         <ul class="icons">
+           {% for label, icon, href in [
+           ['Twitter', 'fab fa-twitter', "https://twitter.com/toolboxbodensee"],
+           ['Mastodon', 'fab fa-mastodon', "https://chaos.social/@toolbox"],
+           ['Facebook', 'fab fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
+           ['Instagram', 'fab fa-instagram', "https://www.instagram.com/toolbox_bodensee/"],
+           ['GitHub', 'fab fa-github', "https://github.com/ToolboxBodensee"],
+           ['YouTube', 'fab fa-youtube', "https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos"],
+           ['Mail', 'fas fa-envelope', "mailto:kontakt@toolbox-bodensee.de"],
+           ['Telefon', 'fas fa-phone', "tel:+4975449667222"],
+           ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed_blog.xml"]
+         ] %}
+           <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>
+         {% endfor %}
+        </ul>
+        <ul class="copyright">
+          <li>&copy;Copyright by Toolbox Bodensee e.V.</li>
+          <li><a href="{{ '/impressum/'|url }}">{% if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% else %}Impressum{% endif %}</a></li>
+          <li><a href="{{ '/datenschutz/'|url }}">{% if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% else %}Datenschutzerklärung{% endif %}</a></li>
+          <li>Design inspired by <a href="http://html5up.net">HTML5 UP</a> </li>
+          <!-- CMS: Lektor | Angepasst durch L3D -->
+          <!-- advertising: Grab your waffle from C3WOC! C3WOC ->Great waffles for everypony. https://c3woc.de/ -->
+        </ul>
+      </footer>
     </div>
+
     <!-- Scripts -->
-    <script src="{{ '/js/skel.min.js'|url }}"></script>
-    <script src="{{ '/js/jquery.min.js'|url }}"></script>
+    <script src="{{ '/js/jquery.scrolly.min.js'|url }}"></script>
     <script src="{{ '/js/jquery.scrollex.min.js'|url }}"></script>
+    <script src="{{ '/js/skel.min.js'|url }}"></script>
     <script src="{{ '/js/util.js'|url }}"></script>
-    <!--[if lte IE 8]><script src="{{ '/js/ie/respond.min.js'|url }}"></script><![endif]-->
     <script src="{{ '/js/main.js'|url }}"></script>
   </body>
 </html>

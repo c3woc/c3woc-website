@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block expand_header %}
+  <link rel="stylesheet" href="{{ '/css/leaflet.css'|url }}" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+  <script src="{{ '/js/leaflet.js'|url }}" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+  <link href="{{ '/css/lightgallery.css'|url }}" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<div id="main" class="wrapper style1">
+  <div class="container">
+    <header class="major">
+      <h2>{{ this.title }}</h2>
+      <p>{{ this.slogan }}</p>
+    </header>
+<!-- Content -->
+    <section id="content">
+        {{ this.precontent }}
+
+<div id="mapid" class="image fit mapid"></div>
+        <br/> 
+        {{ this.content }}
+        {% if this.project %} 
+          <div class="lightgallery" class="row alt">{%
+            for blk in this.project.blocks %}
+              {{ blk }}
+            {% endfor
+          %}</div>{%
+        endif %}
+    </section>
+  </div>
+</div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+      $('.lightgallery').lightGallery();
+    });
+  </script>
+  <script src="{{ '/js/openstreetmap.js'|url }}"></script>
+  <script src="{{ '/js/picturefill.min.js'|url }}"></script>
+  <script src="{{ '/js/lightgallery-all.min.js'|url }}"></script>
+  <script src="{{ '/js/jquery.mousewheel.min.js'|url }}"></script>
+{% endblock %}

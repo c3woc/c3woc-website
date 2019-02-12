@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% from "macros/projekt.html" import render_blog_post %}
+      {% block title %}{{ this.title }}{% endblock %}
+{% block body %} 
+<section id="four" class="wrapper style1 special fade-up">
+  <div class="container">
+    <header class="major">
+        <h2>{{ this.title }}</h2>
+        {{ this.description }}
+    </header>
+    <div class="box alt">
+      <div class="row uniform">
+
+      {% for child in this.pagination.items %}
+        {{ render_blog_post(child, from_index=true) }}
+      {% endfor %}
+ 
+      </div>
+      <footer class="major">
+	    <ul class="actions special">
+            <li><a href="{{ '/feed_projekte.xml'|url }}" class="button">{{ this.abo }}</a></li>
+        </ul>
+      </footer>
+   </div>
+ </div>
+</section>
+{% endblock %}

@@ -1,92 +1,107 @@
-as01b1:
+_model: start
+---
+title: C3 Waffel Operation Center
+---
+slogan: Wir machen Waffeln!
+---
+about_header: Die Waffelformel
+---
+about_text: Mit viel liebe verwandeln wir rohe Zutaten in waffelfähigen Teig. Dabei verwenden wir lang erforschte Rezepturen, die wir euch nicht verheimlichen wollen.
+---
+about_text2: Nach jahrerlanger Forschung ist es uns gelungen, die Formel für den Waffelteig zu rekonstruieren. Diese galt lange als verschollen, wurde jetzt aber durch Quantentechnologie und Blockchain wieder zugänglich gemacht.
+---
+about_text3: Eines der Geheimnisse von guten Waffelteig ist die frische der Zutaten. Ein anderes ist die Qualität.
+---
+about_url: Waffel Rezepturen
+---
+about_url2: /rezept/
+---
+icons_header: Wo kannst du uns treffen?
+---
+icons_text: 
+---
+icons_1_1: fa-code
+---
+icons_1_2: Programmieren
+---
+icons_1_3: Wir entwickeln verschiedenste Software von der Fernsteuerung von Multicoptern über die Steuerung von blinkenden LED-Ketten bis hin zu Übungsprojekten und Internetdiensten.
+---
+icons_2_1: fa-keyboard
+---
+icons_2_2: Hacken
+---
+icons_2_3: Wir verstehen uns als Hacker nach den Prinzipien des Chaos Computer Clubs und handeln dem entsprechend nach der [Hackerethik](https://www.ccc.de/de/hackerethics).
+---
+icons_3_1: fa-cogs
+---
+icons_3_2: Basteln
+---
+icons_3_3: Wir arbeiten an verschiedenen Hardwareprojekten, welche von mechanischen Spielereien, über selbst gelötete Elektronik, bis hin zu komplexeren Steuerungen gehen.
+---
+icons_4_1: fa-puzzle-piece
+---
+icons_4_2: Workshops
+---
+icons_4_3: Wir bieten Workshops und Vorträge an, um den Menschen ein Technikverständnis zu vermitteln, damit Menschen die Technik kontrollieren und nicht anders herum.
+---
+icons_4_url: /termine/
+---
+icons_5_1: fa-heart
+---
+icons_5_2: Waffeln
+---
+icons_5_3: Eine der strategischen Standorte des C3 Waffel Operation Center ist der Bodensee. So geben wir Unterstützung bei der Waffelproduktion und helfen bei taktischen Waffeleinsätzen aus.
+---
+icons_5_url: /projekte/c3woc/
+---
+icons_6_1: fa-calendar-check
+---
+icons_6_2: Veranstaltungen
+---
+icons_6_3: Wir veranstalten immer wieder Veranstaltungen oder nehmen an diesen Teil, um uns besser mit Lebewesen anderer Regionen zu vernetzen.
+---
+icons_6_url: /blog/
+---
+icons_txt: Mitglied werden
+---
+icons_url: https://toolbox-bodensee.de/mitglied-werden/
+---
+red_1: Wir freuen uns über neue Gesichter.
+---
+red_2:
 
-Wir sind Hacker und Nerds aus dem Umfeld des Chaos Computer Club..<br/>Wir haben an einigen strategischen Standorten Waffeleisen plaziert!<br/>
-**Und wir werden Sie einsetzen!**
+Alleine Waffeln zu backen ist langweilig uns anstrengend. Aber zusammen macht das gleich viel mehr spaß.
+Wenn mehr Menschen mitmachen, wird das Waffelnbacken, Planen, Organisieren und essen zu einem mega guten Event!
 ---
-as01h1: Wer ist das C3WOC?
----
-title: Wir sind das C3WOC
----
-as01img: eisen_smal.jpg
----
-as01d1: Strategisches Waffel-Equpment
----
-as01l1: https://c3woc.de/equipment
----
-as02d1: Die Waffelformel
----
-as02h1: Wie backen wir Waffeln
----
-as02l1: /rezept/
----
-as02b1:
+red_3:
 
-Wir bereiten Waffeln mit viel Liebe zu. 
-Und natürlich einen Schluck Club-Mate.<br/>
-Lerne unsere Waffelmixtur kennen
+Nur mit dem backen der Waffel alleine ist es nicht getan. Zur Zubereitung der Waffel gehört eine viel größere Pipeline an Aufgaben, die für die perfekte Waffel gemeistert werden müssen.
+
+Das fängt beim Einkauf und der Logistik an. Wo kauft man Waffelzutaten ein? Wie viele? Bekommt man irgendwo Vollei her? Wo ist der nächste Großmarkt?
+
+Das geht weiter mit der Aufgabe der Kühlkette. Gibt es einen Kühlschrank oder Kühlraum? Wo können die leicht verderblichen Zutaten gelagert werden? Wie viel Grad dürfen die maximal haben ohne dass Sie zu warm gelagert sind und verderben? 
+
+Als nächstes geht es um das herstellen des Teiges. Hatten die Bäcker eine Lebensmittelbelehrung? Sind die Hände gewaschen und die Schürzen angelegt? Ist die Waffelformel bekannt? Und sind alle Zutaten und gefäße wirklich da?
+
+Dann kommt das backen der Waffel. Sind die Waffeleisen ordentlich angeschlossen? Sind die Bäcker erfahren oder brauchen Sie eine einweisung?
+Trägt jeder eine Schürze und hat gewaschene Hände? Ist das Waffeleisen auf +- 230 °C eingestellt? Werden die üblichen Teigspritzer mit Küchenpapier oder Alufolie aufgefangen?  Und ist das Waffeleisen eigentlich sauber?
+
+Nun geht es um die Waffelausgabe. Sind zutaten zum belegen vorhanden? Gibt es Kuchengitter oder Brettchen für die Waffeln zum abstellen? Bilden die Menschen eine schöne schlange? Bekommt jeder der mag einen Aufkleber?
+
+Und zu guter letzt ist das aufräumen und putzen nicht zu unterschätzen!
+Auch hier geht es von den benutzen behältern bis hin zu den Waffeleisen selber. Alles muss sauber sein. Auch die Tische und der Boden!
+
 ---
-as02img: waffel.2.jpg
+red_4: Mach mit beim C3WOC! Wir brauchen deine Unterstützung!
 ---
-as03b1:
-
-Wir sind Nerds und Leben auch im Internet.<br/>
-Komm uns dort doch mal Besuchen!<br/>
-Am besten erreichst du uns im IRC
+icons_1_url: /projekte/
 ---
-as03d1: irc.hackint.org/#waffel
+icons_3_url: /vereinsheim/elektrowerkstatt/
 ---
-as03h1: So erreichst du uns
+hinweis: Wenn du Lust hast, dann
 ---
-as03img: eh18.jpg
+hinweis_txt: mach mit!
 ---
-as03l1: https://webirc.hackint.org/#irc://irc.hackint.org/#waffel
+hinweis_url: /mitmachen/
 ---
-description:
-
-Wir haben es uns zur Aufgabe gemacht an einigen Hackveranstaltungen aufzutauchen und dort Waffeln zu backen.
-Aber natürlich auch ab und zu einfach so in ausgewählten Hackerspacen, zu Freifunk Treffen oder auch mal auf einem Hackerthon.
-
-Selbstverständlich werden wir euch darüber unzuverlässig und unregelmäßig Informieren.
-Dies passiert nicht nur im [IRC](https://webirc.hackint.org/#irc://irc.hackint.org/#waffel), sondern auch über Kanäle wie [Mastodon](https://chaos.social/@c3WOC) oder [Twitter](https://twitter.com/c3WOC). 
-
-Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [ICS Kalender](https://c3woc.de/waffeln.ics) kannst du informiert bleiben.
-
-
-<h3 id="tourdaten" class="major"> Unsere nächsten Events</h3>
----
-where: Wo sind wir als nächstes
----
-tour:
-
-<table><thead><tr><th>Datum</th><th>Veranstaltung</th><th>Ort</th></tr></thead><tbody><tr>
-
-
-<tr> 
-<td>9. - 10. März 2019</td>
-    <td><a href="https://pretix.byte.wtf/CEP/CEP19/">Chili Eskallationsparty 2019</a></td>
-    <td>Heilbronn</td>
-</tr><tr>    
-<td>16. März 2019</td>
-    <td><a href="https://chaostreffbern.ch/einweihung_kyburgstrasse_13_einladung.html">Eröffnung des Chaostreff Berns Hackerspace</a></td>
-    <td>Bern</td>
-</tr><tr>    
-    <td>19. - 22. April 2019</td>
-    <td><a href="https://eh19.easterhegg.eu/">Easterhegg 2019</a></td>
-    <td>Wien</td>
-</tr><tr>    
-    <td>30. Mai - 2. Juni 2019</td>
-    <td><a href="https://entropia.de/GPN19/">GPN19</a></td>
-    <td>Karlsruhe</td>
-</tr><tr>    
-    <td>14. - 16. Juni 2019</td>
-    <td><a href="https://cosin.ch/">Cosin</a></td>
-    <td>Biel/Bienne</td>
-</tr><tr>    
-    <td>21.-25. August 2019</td>
-    <td><a href="https://events.ccc.de">CCCamp 2019</a></td>
-    <td>Ziegeleipark Mildenberg 🚀</td>
-</tr>
-
-
-
-</tfoot></table>
+sections: 
