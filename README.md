@@ -73,9 +73,9 @@ git pull upstream master
 
  Design:
 ---------
-Das Design basiert auf [HTML5UP](https://html5up.net), genauer gesagt auf dem Design [Landed](https://html5up.net/landed). Und wurde natürlich für die Toolbox Webseite angepasst!
+Das Design basiert auf [HTML5UP](https://html5up.net), genauer gesagt auf dem Design [Landed](https://html5up.net/landed). Es ist das selbe Theme wie die [Toolbox Bodensee e.V.](https://toolbox-bodensee.de) verwendet.
+Früher wurde das Design [solid-state](https://html5up.net/solid-state) verwendet. Aber aufgrund von mangelnder mithilfe wurde beschlossen, das selbe und besser gepflegte Design der Toolbox zu verwenden. Wenn auch mit anderen Farben und Icons.
 
-Bei den Menüfarben sollte die Farbauswahl aus dem [Toolbox Presse-Kit](https://github.com/ToolboxBodensee/presskit) berücksichtigt werden. ![#E64F2D](https://placehold.it/15/E64F2D/000000?text=+) `#E64F2D` Orange und ![#9B160F](https://placehold.it/15/9B160F/000000?text=+) `#9B160F` Rot sind hier die Primärfarben.
 
  CSS:
 ------
