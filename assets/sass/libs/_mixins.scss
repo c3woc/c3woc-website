@@ -11,12 +11,14 @@
 			content: $content;
 		}
 
+  font-family: "Font Awesome 5 Free";  /* updated font-family */
+  font-weight: 400; /* regular style/weight */
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
-		font-family: FontAwesome;
+/*		font-family: "Font Awesome 5 Free";
 		font-style: normal;
 		font-weight: normal;
-		text-transform: none !important;
+*/		text-transform: none !important;
 
 	}
 

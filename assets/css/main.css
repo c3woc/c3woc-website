@@ -1069,12 +1069,9 @@ a {
     margin: 0 0 2em 0;
     text-transform: uppercase; }
     a.special:not(.button):before {
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
-      text-transform: none !important; }
+      font-family: "Font Awesome 5 Free";
+      font-weight: 400;
+      }
     a.special:not(.button):before {
       -moz-transition: background-color 0.2s ease-in-out;
       -webkit-transition: background-color 0.2s ease-in-out;
@@ -1262,11 +1259,16 @@ textarea {
   display: block;
   position: relative; }
   .select-wrapper:before {
+    font-family: "Font Awesome 5 Free";
+    /* updated font-family */
+    font-weight: 400;
+    /* regular style/weight */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
+    /*		font-family: "Font Awesome 5 Free";
+		font-style: normal;
+		font-weight: normal;
+*/
     text-transform: none !important; }
   .select-wrapper:before {
     color: rgba(255, 255, 255, 0.125);
@@ -1324,11 +1326,16 @@ input[type="radio"] {
     position: relative; }
     input[type="checkbox"] + label:before,
     input[type="radio"] + label:before {
+      font-family: "Font Awesome 5 Free";
+      /* updated font-family */
+      font-weight: 400;
+      /* regular style/weight */
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
+      /*		font-family: "Font Awesome 5 Free";
+		font-style: normal;
+		font-weight: normal;
+*/
       text-transform: none !important; }
     input[type="checkbox"] + label:before,
     input[type="radio"] + label:before {
@@ -1401,11 +1408,16 @@ input[type="radio"] + label:before {
   border-bottom: none;
   position: relative; }
   .icon:before {
+    font-family: "Font Awesome 5 Free";
+    /* updated font-family */
+    font-weight: 400;
+    /* regular style/weight */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
+    /*		font-family: "Font Awesome 5 Free";
+		font-style: normal;
+		font-weight: normal;
+*/
     text-transform: none !important; }
   .icon > .label {
     display: none; }
@@ -1543,11 +1555,16 @@ ul {
       padding: 0 0 0 3.25em;
       position: relative; }
       ul.contact li:before {
+        font-family: "Font Awesome 5 Free";
+        /* updated font-family */
+        font-weight: 400;
+        /* regular style/weight */
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
+        /*		font-family: "Font Awesome 5 Free";
+		font-style: normal;
+		font-weight: normal;
+*/
         text-transform: none !important; }
       ul.contact li:before {
         border-radius: 100%;
@@ -1880,11 +1897,16 @@ button,
         box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
         padding: 0 1.35em; }
         #header nav a[href="#menu"]:before {
+          font-family: "Font Awesome 5 Free";
+          /* updated font-family */
+          font-weight: 400;
+          /* regular style/weight */
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
-          font-family: FontAwesome;
-          font-style: normal;
-          font-weight: normal;
+          /*		font-family: "Font Awesome 5 Free";
+		font-style: normal;
+		font-weight: normal;
+*/
           text-transform: none !important; }
         #header nav a[href="#menu"]:before {
           content: '\f0c9'; }

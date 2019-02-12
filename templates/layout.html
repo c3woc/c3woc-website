@@ -86,14 +86,14 @@
             <form>
               <img src="{{ '/images/c3woc.svg'|url }}" style="width: 100%;"/>
             </form>
-                <ul class="contact">
-                    {% for icon, link, name in [
-                      ['fa-envelope', 'mailto:waffel@c3woc.de', 'mail'],
-                      ['fa-hashtag', 'ircs://irc.hackint.org/#waffel', 'irc'],
-                      ['fa-hashtag', 'https://webirc.hackint.org/#irc://irc.hackint.org/#waffel', 'webirc'],
-                      ['fa-twitter', 'https://twitter.com/@c3WOC', 'twitter'],
-                      ['fa-comments', 'https://chaos.social/@c3WOC', 'mastodon'],
-                      ['fa-user-plus', '/mitmachen/'|url , 'invite']
+                <ul class="contact">{%
+                  for icon, link, name in [
+                      ['fas fa-envelope', 'mailto:waffel@c3woc.de', 'mail'],
+                      ['fas fa-hashtag', 'ircs://irc.hackint.org/#waffel', 'irc'],
+                      ['fab fa-slack', 'https://webirc.hackint.org/#irc://irc.hackint.org/#waffel', 'webirc'],
+                      ['fab fa-mastodon', 'https://chaos.social/@c3WOC', 'mastodon'],
+                      ['fab fa-twitter', 'https://twitter.com/@c3WOC', 'twitter'],
+                      ['fas fa-handshake', '/mitmachen/'|url , 'invite']
                     ] %}
                     <li class="{{ icon }}"><a href="{{ link }}">{% if bag('translate', this.alt, name) %}{{ bag('translate', this.alt, name) }}{% 
                       else %}{{ name }}{% endif %}</a></li>{%
