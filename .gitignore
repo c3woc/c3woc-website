@@ -5,3 +5,4 @@ assets/solid-state/
 *.directory
 **.tmp
 **.directory
+tmp/
