@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <title>{% block title %}Startseite{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="{{ '/css/main.min.css'|url }}" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.min.css'|url }}" /><![endif]-->
-    <meta name="description" content="{% if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% else %}{{ bag('translate', 'de', 'description') }}{% endif %}" />
+    <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css'|url }}" /><![endif]-->
+    {% block expand_description 
+    %}<meta name="description" content="{% 
+        if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
+        else %}{{ bag('translate', 'de', 'description') }}{% endif %}" />{%
+     endblock %}
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|url }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|url }}">
@@ -15,13 +19,12 @@
     <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico'|url }}">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|url }}">
-    <meta name="theme-color" content="#e64f2d">
-    {% block expand_header %}{% endblock %}
+    <meta name="theme-color" content="#e64f2d">{%
+    block expand_header %}{% endblock %}
     <script src="{{ '/js/jquery.min.js'|url }}"></script>
   </head>
   <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
     <div id="page-wrapper">
-
        <!-- Header -->
         <header id="header">
             <h1 id="logo">
@@ -152,14 +155,12 @@
               </ul>
             </nav>
           </header>
-
 <!-- Main -->
 {% block body %}{% endblock %}
-
        <!-- Footer -->
        <footer id="footer">
-         <ul class="icons">
-           {% for label, icon, href in [
+         <ul class="icons">{%
+         for label, icon, href in [
            ['Twitter', 'fab fa-twitter', "https://twitter.com/toolboxbodensee"],
            ['Mastodon', 'fab fa-mastodon', "https://chaos.social/@toolbox"],
            ['Facebook', 'fab fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
@@ -170,13 +171,17 @@
            ['Telefon', 'fas fa-phone', "tel:+4975449667222"],
            ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed_blog.xml"]
          ] %}
-           <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>
-         {% endfor %}
+           <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>{%
+         endfor %}
         </ul>
         <ul class="copyright">
           <li>&copy;Copyright by Toolbox Bodensee e.V.</li>
-          <li><a href="{{ '/impressum/'|url }}">{% if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% else %}Impressum{% endif %}</a></li>
-          <li><a href="{{ '/datenschutz/'|url }}">{% if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% else %}Datenschutzerklärung{% endif %}</a></li>
+          <li><a href="{{ '/impressum/'|url }}">{% 
+                  if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{%
+                  else %}Impressum{% endif %}</a></li>
+          <li><a href="{{ '/datenschutz/'|url }}">{% 
+                  if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% 
+                  else %}Datenschutzerklärung{% endif %}</a></li>
           <li>Design inspired by <a href="http://html5up.net">HTML5 UP</a> </li>
           <!-- CMS: Lektor | Angepasst durch L3D -->
           <!-- advertising: Grab your waffle from C3WOC! C3WOC ->Great waffles for everypony. https://c3woc.de/ -->

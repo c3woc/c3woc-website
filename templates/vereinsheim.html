@@ -5,6 +5,13 @@
   <script src="{{ '/js/leaflet.js'|url }}" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
   <link href="{{ '/css/lightgallery.css'|url }}" rel="stylesheet">
 {% endblock %}
+{% block expand_description %}
+    <meta name="description" content="{% 
+        if this.teaser %}{{ this.teaser }}{% else %}{%
+            if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
+            else %}{{ bag('translate', 'de', 'description') }}{% endif %}
+        {% endif %}" />
+{% endblock %}
 {% block body %}
 <div id="main" class="wrapper style1">
   <div class="container">
