@@ -52,8 +52,11 @@
 {% endfor %}
 
 <!-- Four -->
-<section id="{{ this.four_id }}" class="fade-up"></section> 
-<section id="scroll-{{ this.sections.blocks|count + 2 }}" class="wrapper style1 special fade-up">
+<section id="scroll-{{ this.sections.blocks|count + 2 }}" class="special wrapper fade-up"></section> 
+<section id={% 
+    if this.four_id|length %}"{{ this.four_id }}"{%
+    else %}"tourdaten"{%
+    endif %} class="wrapper style1 special fade-up">
   <div class="container">
     <header class="major">
       <h2>{{ this.icons_header }}</h2>
