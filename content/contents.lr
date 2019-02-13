@@ -108,3 +108,5 @@ hinweis_txt: mach mit!
 hinweis_url: /mitmachen/
 ---
 sections: 
+---
+render_tourdaten: yes

@@ -61,7 +61,9 @@
     <header class="major">
       <h2>{{ this.icons_header }}</h2>
       {{ this.icons_text }}
-    </header>
+    </header>{% if this.render_tourdaten %}
+        {{ bag('termine', 'termine', 'ort[]') }}
+    {% endif %}
     <div class="box alt">
       <div class="row uniform">
         <section class="4u 6u(medium) 12u$(xsmall)">
