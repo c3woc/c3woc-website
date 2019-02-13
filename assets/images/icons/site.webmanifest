@@ -1,6 +1,6 @@
 {
-    "name": "Toolbox Bodensee e.V.",
-    "short_name": "Toolbox",
+    "name": "C3 Waffel Operation Center",
+    "short_name": "C3WOC",
     "icons": [
         {
             "src": "/images/icons/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#e64f2d",
+    "theme_color": "#ffda1d",
     "background_color": "#191a23",
     "display": "standalone"
 }
