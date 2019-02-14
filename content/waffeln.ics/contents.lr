@@ -3,3 +3,26 @@ _template: waffeln.ics
 _model: waffeln
 ---
 title: C3WOC Tourdaten
+---
+termine:
+
+#### termine ####
+start: 1970-01-23 13:37:23 Europe/Berlin
+----
+ende: 1970-05-23 13:37:23 Europe/Berlin
+----
+event: Chaos Creation Code
+----
+ort: Example
+----
+url: https://example.com
+#### termine ####
+start: 1970-01-23 13:37:23 Europe/Berlin
+----
+ende: 1970-02-23 13:37:23 Europe/Berlin
+----
+event: Foo
+----
+ort: bar
+----
+url: baz

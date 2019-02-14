@@ -1,2 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:{{ this.url }}http://www.example.com/calendarapplication/
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:461092315540@example.com
+ORGANIZER;CN="Alice Balder, Example Inc.":MAILTO:alice@example.com
+LOCATION:Irgendwo
+GEO:48.85299;2.36885
+SUMMARY:Eine Kurzinfo
+DESCRIPTION:Beschreibung des Termines
+CLASS:PUBLIC
+DTSTART:20060910T220000Z
+DTEND:20060919T215900Z
+DTSTAMP:20060812T125900Z
+END:VEVENT
+END:VCALENDAR
 
+{{ this._gid }}
 
+{% for blk in this.termine.blocks %}
+    {{ blk }}
+    {{ blk.start }}
+{% endfor %}
+         {{ this }} 

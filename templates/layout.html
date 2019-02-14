@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html{% if alt %} lang="{{ alt }}"{% endif %}>
+<html{% if this.alt %} lang="{{ this.alt }}"{% endif %}>
   <head>
     <meta charset="utf-8">
     <title>{% block title %}Startseite{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css'|url }}" /><![endif]-->
+    <link rel="stylesheet" href="{{ '/css/main.min.css'|asseturl }}" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.min.css'|asseturl }}" /><![endif]-->
     {% block expand_description 
     %}<meta name="description" content="{% 
         if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
         else %}{{ bag('translate', 'de', 'description') }}{% endif %}" />{%
      endblock %}
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|url }}">
-    <link rel="manifest" href="{{ '/images/icons/site.webmanifest'|url }}">
-    <link rel="mask-icon" href="{{ '/images/icons/safari-pinned-tab.svg'|url }}" color="#e64f2d">
-    <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico'|url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|asseturl }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|asseturl }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|asseturl }}">
+    <link rel="manifest" href="{{ '/images/icons/site.webmanifest'|asseturl }}">
+    <link rel="mask-icon" href="{{ '/images/icons/safari-pinned-tab.svg'|asseturl }}" color="#e64f2d">
+    <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico'|asseturl }}">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|url }}">
+    <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|asseturl }}">
     <meta name="theme-color" content="#e64f2d">{%
     block expand_header %}{% endblock %}
-    <script src="{{ '/js/jquery.min.js'|url }}"></script>
+    <script src="{{ '/js/jquery.min.js'|asseturl }}"></script>
   </head>
   <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
     <div id="page-wrapper">
@@ -140,7 +140,7 @@
                endfor %}
                <li class="last"><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
                    <ul class="last">
-                     <li><a href="/..{{ this._path }}">{% 
+                     <li><a href="{{ this._path }}">{% 
                              if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{%
                              else %}{{ bag('navigation', 'de', 'German') }}{% endif %}</a></li>
                      <li><a href="/en{{ this._path }}">{% 
@@ -190,10 +190,10 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ '/js/jquery.scrolly.min.js'|url }}"></script>
-    <script src="{{ '/js/jquery.scrollex.min.js'|url }}"></script>
-    <script src="{{ '/js/skel.min.js'|url }}"></script>
-    <script src="{{ '/js/util.js'|url }}"></script>
-    <script src="{{ '/js/main.js'|url }}"></script>
+    <script src="{{ '/js/jquery.scrolly.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/jquery.scrollex.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/skel.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/util.js'|asseturl }}"></script>
+    <script src="{{ '/js/main.js'|asseturl }}"></script>
   </body>
 </html>
