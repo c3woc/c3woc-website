@@ -62,7 +62,8 @@
       <h2>{{ this.icons_header }}</h2>
       {{ this.icons_text }}
     </header>{% 
-    if this.render_tourdaten %}<div class="table-wrapper">
+    if this.render_tourdaten %}
+    <div class="table-wrapper">
       <div class="table-wrapper">
         <thead>
           <tr>
@@ -71,14 +72,19 @@
             <th>Ort</th>
           </tr>
         </thead>
-        <tbody>{%
-         for x in range(0, 999) %}{%
-            if bag('termine', 'termine', 'start[' + x|string + ']') is not none %}
+        <tbody>{% 
+            set pages = site.query('/').include_undiscoverable(true).all() %}{% 
+            for page in pages %}{%
+                if page._model == 'waffeln' and page._path == '/waffeln.ics' %}{%
+                    for blk in page.termine.blocks %}
           <tr>
-            <td>{% set start = bag('termine', 'termine', 'start[' + x|string + ']') %}{{ start }}
-            {% endif %}{%
-        endfor %}{%
-    endif %}
+            <th>{{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }} 
+            <th>{{ blk.event }}</th>
+            <th></th>
+                    {% endfor %}{%
+                endif %}{%
+            endfor %}
+    {% endif %}
     <div class="box alt">
       <div class="row uniform">
         <section class="4u 6u(medium) 12u$(xsmall)">
