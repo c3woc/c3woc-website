@@ -3,12 +3,16 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 all: build
 
 sass:
-	sassc ./assets/sass/main.scss ./assets/css/main.css
-	sassc ./assets/sass/ie9.scss ./assets/css/ie9.css
-	rm ./assets/css/main.min.css
-	rm ./assets/css/ie9.min.css
-	python3 ./deployment/cssminify.py -o ./assets/css/main.min.css ./assets/css/main.css
-	python3 ./deployment/cssminify.py -o ./assets/css/ie9.min.css ./assets/css/ie9.css
+	sass -t compressed ./assets/sass/main.scss ./assets/css/main.min.css
+	sass -t compressed ./assets/sass/ie9.scss ./assets/css/ie9.min.css
+	rm ./assets/css/main.min.css.map
+	rm ./assets/css/ie9.min.css.map
+
+sass-uncompressed:
+	sass ./assets/sass/main.scss ./assets/css/main.css
+	sass ./assets/sass/ie9.scss ./assets/css/ie9.css
+	rm ./assets/css/main.css.map
+	rm ./assets/css/ie9.css.map
 
 install:
 	pip install lektor
