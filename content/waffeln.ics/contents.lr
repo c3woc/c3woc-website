@@ -7,22 +7,226 @@ title: C3WOC Tourdaten
 termine:
 
 #### termine ####
-start: 1970-01-23 13:37:23 Europe/Berlin
+start: 2019-08-21 00:00:00 Europe/Berlin
 ----
-ende: 1970-05-23 13:37:23 Europe/Berlin
+ende: 2019-08-25 23:42:23 Europe/Berlin
 ----
-event: Chaos Creation Code
+event: Chaos Communication Camp 2019
 ----
-ort: Example
+ort: Ziegeleipark Mildenberg
 ----
-url: https://example.com
+url: https://events.ccc.de/
+----
+summary: Das Chaos Communication Camp im Sommer 2019. Ohne Waffeln? undenkbar!
+----
+description: Das Chaos Communication Camp findet alle vier Jahre im Sommer statt.\n2019 ist es wieder so weit. Und wir setzen alles dran, dort auch Waffeln zu haben!
+----
+confirmed: no
 #### termine ####
-start: 1970-01-23 13:37:23 Europe/Berlin
+start: 2019-06-14 00:00:00 Europe/Berlin
 ----
-ende: 1970-02-23 13:37:23 Europe/Berlin
+ende: 2019-06-16 23:42:23 Europe/Berlin
 ----
-event: Foo
+event: CoSin 2019
 ----
-ort: bar
+ort: Biel/Bienne
 ----
-url: baz
+url: https://cosin.ch
+----
+summary: Das schweizer Hackertreffen CoSin in Biel. Nur echt mit Waffeln und Glasse!
+----
+description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer Chaos. Der Inhalt erstreckt sich über Technik und Politik zu Kunst und Kultur.
+----
+confirmed: yes
+#### termine ####
+start: 2018-11-23 00:00:00 Europe/Berlin
+----
+ende: 2018-11-25 23:42:23 Europe/Berlin
+----
+event: GlühPN
+----
+ort: HfG/ZKM Karlsruhe
+----
+url: https://entropia.de/GPN18,5
+----
+summary: GlühPN im Winter. Mega geil! Mega Waffel!
+----
+description: Die Glühweinprogrammiernacht, auch GPN18,5, setzt den Schwerpunkt auf Hacken, Lounge und Zusammensein.\nWir wollen versuchen, die Vorzüge von Lounge und Hackcenter in einem zu kombinieren. Ohne großen Aufwand und locker organisiert.\nDie Veranstaltung soll auch wie die GPN freien Eintritt haben und durch Spenden eurerseits finanziert werden. Die Veranstaltung findet vom Fr., 23.11.2018 bis So., 25.11.2018 in der HfG statt.
+----
+confirmed: yes
+#### termine ####
+start: 2018-08-25 00:00:00 Europe/Berlin
+----
+ende: 2018-08-26 23:42:23 Europe/Berlin
+----
+event: FrOSCon
+----
+ort: Sankt Augustin
+----
+url: https://froscon.de/
+----
+summary: Wir wurden eingeladen auf der Froscon Waffeln zu machen.
+----
+description: Wir wurden eingeladen auf der Froscon Waffeln zu machen. Und es wird cool!
+----
+confirmed: yes
+#### termine ####
+start: 2019-04-19 00:00:00 Europe/Berlin
+----
+ende: 2019-04-22 23:42:23 Europe/Berlin
+----
+event: Easterhegg 2019
+----
+ort: Wien
+----
+url: https://eh19.easterhegg.eu
+----
+summary: EH19: Bun Intended! with waffles!
+----
+description: Der Chaos Computer Club Wien freut sich, euch zur Easterhegg 2019 zu Ostern (19.-22.04.2019) nach Wien einladen zu dürfen! Wien ist nicht nur bekannt für Kaffee, Lipizzaner und Sachertorte, sondern auch für den berüchtigten Wiener Schmäh.\nDaher ist das Motto für die EH19: Bun Intended!
+----
+confirmed: 
+#### termine ####
+start: 2019-05-30 00:00:00 Europe/Berlin
+----
+ende: 2019-06-05 23:42:23 Europe/Berlin
+----
+event: Gulasch Programier Nach 2019
+----
+ort: HFG und ZKM Karlsruhe
+----
+url: https://entropia.de/GPN19
+----
+summary: Hacken, Gulasch, Vorträge, Cloud, Tschunk, Workshops, Lounge, Mate, Spaß am Gerät.\nWaffelprogrammiernacht!
+----
+description: Hacken, Gulasch, Vorträge, Cloud, Tschunk, Workshops, Lounge, Mate, Spaß am Gerät.\nGulaschprogrammiernacht klingt fast wie ein Kochmarathon für schlaflose Informatikstudenten. Was 2002 in einem Karlsruher Kellerraum mit ein paar Technikbegeisterten angefangen hat, ist inzwischen zu einer der größten Veranstaltungen des Chaos Computer Clubs gewachsen. Die Themen sind breit gefächert: Den Kern bilden Hard- und Softwareentwicklung, sowie Datensicherheit. Daneben kommen aber auch Datenschutz, Netzpolitik und viele andere faszinierende Themen zum Zug: Wie kocht man das perfekte Gulasch? Kann man aus Hardwareschrott noch schönen Schmuck basteln? Wie funktioniert eigentlich eine Nähmaschine? Wie fliegt man Raumschiffe? Wo kann ich Waffeln machen...\n
+----
+confirmed: no
+#### termine ####
+start: 2019-03-09 14:00:00 Europe/Berlin
+----
+ende: 2019-03-10 08:42:23 Europe/Berlin
+----
+event: Chilli Eskalations Party
+----
+ort: Heilbronn
+----
+url: https://c3woc.de/#tourdaten
+----
+summary: Waffeln! Chilli! Döner!\nWas man da alles machen kann...
+----
+description: Waffeln! Chilli! Döner!\nWas man da alles machen kann...\nNur echt mit Party!
+----
+confirmed: yes
+#### termine ####
+start: 2018-12-27 00:00:00 Europe/Berlin
+----
+ende: 2018-12-30 23:42:23 Europe/Berlin
+----
+event: 35. Chaos Communication Congress
+----
+ort: Leipzig
+----
+url: https://events.ccc.de
+----
+summary: Der Chaos Communication Congress ist ein mehrtägiges, in Deutschland stattfindendes Treffen der internationalen Hackerszene, das gerne Waffeln mag!
+----
+description: Der Chaos Communication Congress ist ein mehrtägiges, in Deutschland stattfindendes Treffen der internationalen Hackerszene, das vom Chaos Computer Club (CCC) ausgerichtet und organisiert wird. Der Kongress widmet sich in zahlreichen Vorträgen und Workshops technischen und gesellschaftspolitischen Themen. \nAußerdem ist er auch L3Ds Geburtstagsparty. Schließlich hat er an Tag 1 Geburtstag.\nLasst uns gemeinsam Waffeln essen und spaß haben!
+----
+confirmed: yes
+#### termine ####
+start: 2018-12-01 09:00:00 Europe/Berlin
+----
+ende: 2018-12-01 18:42:23 Europe/Berlin
+----
+event: Chaotische Adventsbasar
+----
+ort: see-base, Überlingen
+----
+url: https://see-base.de/
+----
+summary: Waffeln auf dem Basar des Hackerspace!
+----
+description: Waffeln auf dem Basar des Hackerspace! Zusammen mit Mate, Löten, rohrpost und jede menge coolen Menschen!
+----
+confirmed: yes
+#### termine ####
+start: 2018-08-09 00:00:00 Europe/Berlin
+----
+ende: 2018-08-12 23:42:23 Europe/Berlin
+----
+event: Freifunk Camp
+----
+ort: see-base, Überlingen
+----
+url: https://ffbsee.de/
+----
+summary: Freifunk. Waffeln. Topp.
+----
+description: Freifunkcamp am Bodensee.\nMit Waffeln \o/\n
+----
+confirmed: yes
+#### termine ####
+start: 2018-11-09 00:00:00 Europe/Berlin
+----
+ende: 2018-11-11 23:42:23 Europe/Berlin
+----
+event: C6 Geekend
+----
+ort: Kiel
+----
+url: https://c3c3.de
+----
+summary: Cluster und Waffeln
+----
+description: Cluster und Waffeln. Was da für synergien entstehen :P
+----
+confirmed: yes
+#### termine ####
+start: 2018-11-17 09:00:00 Europe/Berlin
+----
+ende: 2018-11-17 23:42:23 Europe/Berlin
+----
+event: Tag der offenen Toolbox Tür
+----
+ort: Toolbox Bodensee, Markdorf
+----
+url: https://toolbox-bodensee.de
+----
+summary: Tag der offenen Türe? Nicht ohne Waffel!
+----
+description: Toolbox. Heimat der Waffel. Kommt vorbei!
+----
+confirmed: yes
+#### termine ####
+start: 2019-03-16 14:00:00 Europe/Berlin
+----
+ende: 2019-03-16 23:42:23 Europe/Berlin
+----
+event: Einweihung Chaostreff Bern
+----
+ort: Bern
+----
+url: https://www.chaosbern.ch/
+----
+summary: Chaostreff Bern wird eingeweiht. Mit Waffeln! Kommt vorbei!
+----
+description: Wie am letzten Gettogether bereits angekündigt, haben wir vom Chaostreff Bern neue Räume für einen eigenen Hackerspace gefunden [0].\n Jetzt laden wir alle Lebensformen ein zur Einweihung unseres neuen Hackerspaces an der Kyburgstrasse 13. Ausserdem feiern wir zugleich das vierjährige Bestehen des Chaostreff Bern. \n\n Datum: Samstag, 2019-03-16\n Zeit: Die Türe öffnen wir um 14 Uhr.\n Der Space ist den ganzen Nachmittag hindurch für alle Interessierten geöffnet, am Abend ist open end.\n Ort: Kyburgstrasse 13, 3013 Bern, Schweiz ([1])  \n\nIm Verlauf des Nachmittags und Abends wird es einige kurze Vorträge geben zur Geschichte des Chaostreff Bern, zu unserem neuen Hackerspace und zu unserer Vision des Chaos in Bern. Ausserdem ist ein Abendessen geplant.  \nEin Zeitplan wird folgen, wenn wir uns dem Datum nähern, bis dahin gilt: Rettet das Datum!  \n\n [0] https://chaostreffbern.ch/found_a_room.html [1]\n https://www.openstreetmap.org/?mlat=46.95634&mlon=7.44833#map=19/46.95638/7.44833\n
+----
+confirmed: yes
+#### termine ####
+start: 2019-12-13 18:00:00 Europe/Berlin
+----
+ende: 2019-12-13 23:42:23 Europe/Berlin
+----
+event: Toolbox Weihnachtswaffeln
+----
+ort: Toolbox Bodensee, Markdorf
+----
+url: https://toolbox-bodensee.de/termine
+----
+summary: In der Toolbox in Makrdorf gibt es am 13. Dezember ein Weihnachtswaffeln.
+----
+description: In der Toolbox in Makrdorf gibt es am 13. Dezember ein Weihnachtswaffeln.
+----
+confirmed: yes

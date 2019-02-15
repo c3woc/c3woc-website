@@ -15,7 +15,7 @@ STATUS:{%
   else %}TENTATIVE{% endif %}
 LOCATION:{{ blk.ort }}
 SUMMARY:{{ blk.summary }}
-DESCRIPTION:{{ blk.url }}
+DESCRIPTION:{{ blk.description }}\n{{ blk.url }}
 END:VEVENT{%
   endfor %}
 END:VCALENDAR 
