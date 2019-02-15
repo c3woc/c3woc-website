@@ -230,3 +230,21 @@ summary: In der Toolbox in Makrdorf gibt es am 13. Dezember ein Weihnachtswaffel
 description: In der Toolbox in Makrdorf gibt es am 13. Dezember ein Weihnachtswaffeln.
 ----
 confirmed: yes
+#### termine ####
+start: 2019-06-21 00:00:00 Europe/Berlin
+----
+ende: 2019-12-23 23:42:23 Europe/Berlin
+----
+event: Chao Party Ulm
+----
+ort: Ulm
+----
+url: https://chaos-party-ulm.de/
+----
+summary: Die CPU ist ein kleineres Chaosevent in der Mensa der Uni Ulm. Natürlich mit Waffeln!
+----
+description:
+
+Die CPU ist ein kleineres Chaosevent in der Mensa der Uni Ulm für Erfas, ChaosTreffs, Hackerspaces, chaosnahe Menschen und allgemein jede humanuide Lebensform, die sich für die Veranstaltung interessiert. Wir bieten einen großen Raum zum miteinander herumsitzen und zum austauschen über alle erdenklichen Themen. Außerdem gibt es einen kleineren Workshop- und Seminarraum, in dem wir ein Vortragsprogramm organisieren. Da die hardwaretechnische Seite ab und an auf anderen Events etwas zu kurz kommt, gehen unsere Vorträge und Workshops mehr in diese Richtung. 
+----
+confirmed: yes
