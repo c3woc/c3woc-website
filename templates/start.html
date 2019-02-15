@@ -65,7 +65,7 @@
     if this.render_tourdaten %}
     <div class="table-wrapper">
       <div class="table-wrapper">
-        <thead>
+          <table><thead>
           <tr>
             <th>Datum</th>
             <th>Veranstaltung</th>
@@ -81,7 +81,11 @@
             <th>{{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }} 
             <th>{{ blk.event }}</th>
             <th></th>
-                    {% endfor %}{%
+          </tr>{%
+                    endfor %}
+        </tbody>
+        </table>
+      </div>{%
                 endif %}{%
             endfor %}
     {% endif %}
