@@ -1,9 +1,15 @@
 ﻿language: python
 python: 3.6
+git:
+  lfs_skip_smudge: true
 cache:
   directories:
     - $HOME/.cache/pip
     - $HOME/.cache/lektor/builds
+before_install:
+  - git lfs pull
+  - gem install sass
+  - make sass
 install: "pip install Lektor"
 script: "lektor build"
 before_deploy: "echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' > ~/.ssh/known_hosts"

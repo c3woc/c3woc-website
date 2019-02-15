@@ -1,11 +1,25 @@
-<!DOCTYPE html>
+{% set fqdn = 'c3woc.de' 
+%}<!DOCTYPE html>
 <html{% if this.alt %} lang="{{ this.alt }}"{% endif %}>
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}Startseite{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="{{ '/css/main.min.css'|asseturl }}" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.min.css'|asseturl }}" /><![endif]-->
+    <title>{% block title %}Startseite{% endblock %} - c3woc.de</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />{%
+  if '/css/main.min.css'|asseturl == empty and '/css/main.css'|asseturl == empty %}
+    <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
+    <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />{%
+  endif %}
+    <link rel="stylesheet" href={%
+        if '/css/main.min.css'|asseturl == empty %}{%
+            if '/css/main.css'|asseturl == empty %}"https://{{ fqdn }}/css/main.min.css"{%
+            else %}"{{ '/css/main.css'|asseturl }}"{%
+            endif %}{%
+        else %}"{{ '/css/main.min.css'|asseturl }}"{%
+        endif %} /> 
+    <!--[if lte IE 9]><link rel="stylesheet" href={%
+        if '/css/ie9.min.css'|asseturl == empty %}"https://{{ fqdn }}/css/ie9.min.css"{%
+        else %}"{{ '/css/ie9.min.css'|asseturl }}"{%
+        endif %}" /><![endif]-->
     {% block expand_description 
     %}<meta name="description" content="{% 
         if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
