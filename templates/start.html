@@ -65,34 +65,39 @@
     if this.render_tourdaten %}
     <div class="table-wrapper">
       <div class="table-wrapper">
-          <table><thead>
-          <tr>
-            <th>Datum</th>
-            <th>Veranstaltung</th>
-            <th>Ort</th>
-          </tr>
-        </thead>
-        <tbody>{% 
+        <table>
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Veranstaltung</th>
+              <th>Ort</th>
+            </tr>
+          </thead>
+          <tbody>{% 
             set pages = site.query('/').include_undiscoverable(true).all() %}{% 
             for page in pages %}{%
                 if page._model == 'waffeln' and page._path == '/waffeln.ics' %}{%
                 for blk in page.termine.blocks|sort(attribute='start', reverse = False) %}{%
                 if blk.start.strftime('%Y%m%d%H%M') > none|datetimeformat('yyyyMMddhhmm') %}
-          <tr>
+            <tr>
               <th>{%
-                  if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') %}{{ blk.start.strftime('%d.%m.%y %H') }} - {{  blk.ende.strftime('%H') }} Uhr{%
-                  else %}{{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }}{%
-                  endif %}</th>
-            <th><a href="{{ blk.url }}" title="{{ blk.description|replace("|", " ") }}">{{ blk.event }}</a></th>
-            <th>{{ blk.ort }}</th>
-          </tr>{%
+                    if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') %}{{ blk.start.strftime('%d.%m.%y %H') }} - {{  blk.ende.strftime('%H') }} Uhr{%
+                    else %}{{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }}{%
+                    endif %}</th>
+              <th><a href="{{ blk.url }}" title="{{ blk.description|replace("|", " ") }}">{{ blk.event }}</a></th>
+              <th>{{ blk.ort }}</th>
+            </tr>{%
                     endif %}{%
                 endfor %}
-        </tbody>
-        </table>
+          </tbody>
+        </table><br/>
       </div>{%
                 endif %}{%
             endfor %}
+      <header class="major">
+        <h2>{{ this.icons_header_2 }}</h2>
+        {{ this.icons_text_2 }}
+      </header> 
     {% endif %}
     <div class="box alt">
       <div class="row uniform">
