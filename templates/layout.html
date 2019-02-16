@@ -175,21 +175,23 @@
        <footer id="footer">
          <ul class="icons">{%
          for label, icon, href in [
-           ['Twitter', 'fab fa-twitter', "https://twitter.com/toolboxbodensee"],
-           ['Mastodon', 'fab fa-mastodon', "https://chaos.social/@toolbox"],
-           ['Facebook', 'fab fa-facebook', "https://www.facebook.com/toolboxbodensee/"],
-           ['Instagram', 'fab fa-instagram', "https://www.instagram.com/toolbox_bodensee/"],
-           ['GitHub', 'fab fa-github', "https://github.com/ToolboxBodensee"],
-           ['YouTube', 'fab fa-youtube', "https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos"],
-           ['Mail', 'fas fa-envelope', "mailto:kontakt@toolbox-bodensee.de"],
-           ['Telefon', 'fas fa-phone', "tel:+4975449667222"],
-           ['News', 'fas fa-rss', "https://toolbox-bodensee.de/feed_blog.xml"]
+           ['Mastodon', 'fab fa-mastodon', "https://chaos.social/@c3woc"],
+           ['Twitter', 'fab fa-twitter', "https://twitter.com/c3woc"],
+           ['Webseite', 'fab fa-github', "https://github.com/ToolboxBodensee/c3woc-webseite"],
+           ['Gitea', 'fab fa-gitlab', "https://gitea.see-base.de/c3woc/"],
+           ['Mail', 'fas fa-envelope', "mailto:waffeln@c3woc.de"],
+           ['IRC Chat', 'fas fa-hashtag', "ircs://irc.hackint.org/#waffel"],
+           ['Webirc Chat', 'fab fa-slack', "https://webirc.hackint.org/#irc://irc.hackint.org/#waffel"],
+           ['Rezept-Feed', 'fas fa-receipt', "https://c3woc.de.de/feed_rezepte.xml"],
+           ['News', 'fas fa-rss', "https://c3woc.de/feed_blog.xml"],
+           ['Tourdaten', 'far fa-calendar-plus', "https://c3woc.de/waffeln.ics"],
+           ['Tourdaten', 'fas fa-user-plus', "https://c3woc.de/mitmachen"]
          ] %}
            <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>{%
          endfor %}
         </ul>
         <ul class="copyright">
-          <li>&copy;Copyright by Toolbox Bodensee e.V.</li>
+          <li>&copy;Copyright by C3 Waffel Operation Center.</li>
           <li><a href="{{ '/impressum/'|url }}">{% 
                   if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{%
                   else %}Impressum{% endif %}</a></li>
