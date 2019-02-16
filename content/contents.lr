@@ -23,83 +23,73 @@ icons_text:
 Das C3WOC erfreut sich einer großen beliebtheit. Besonders im Umkreis des Chaos Computer Club und Chaosnahen veranstaltungen.<br/>
 Selbstverständlich sollen dort Waffeln nicht fehlen!
 ---
-icons_1_1: fa-heart
+icons_1_1: fas fa-heart
 ---
 icons_1_2: Seid nett zu einander
 ---
-icons_1_3: Eine Waffel besteht aus fünf Herzen. Das ist nicht zufällig so!
+icons_1_3:
+
+Eine Waffel besteht aus fünf Herzen. Das ist nicht zufällig so!
+Ein Herz steht metaphorisch für Güte und Liebe steht. Ebenso tut dies eine Waffel!
 ---
-icons_2_1: fa-keyboard
+icons_2_1: fas fa-handshake
 ---
-icons_2_2: Hacken
+icons_2_2: Kommt zusammen
 ---
-icons_2_3: Wir verstehen uns als Hacker nach den Prinzipien des Chaos Computer Clubs und handeln dem entsprechend nach der [Hackerethik](https://www.ccc.de/de/hackerethics).
+icons_2_3: Eine einsame Waffel schmeckt bei weiten nicht so gut, wie eine Waffel, die man mit Freunden oder neuen Bekannten genießen kann.
 ---
-icons_3_1: fa-cogs
+icons_3_1: fas fa-flask
 ---
-icons_3_2: Basteln
+icons_3_2: Experimentiert
 ---
-icons_3_3: Wir arbeiten an verschiedenen Hardwareprojekten, welche von mechanischen Spielereien, über selbst gelötete Elektronik, bis hin zu komplexeren Steuerungen gehen.
+icons_3_3: Mit Waffeln lassen sich viele Experimente machen oder verbessern. Angefangen von der Waffel, die die experimentierfreudigen Hacker neu motiviert. Bis hin zu neuen kreationen wie zum Beispiel die [Dönerwaffel](/rezept/doener/).
 ---
-icons_4_1: fa-puzzle-piece
+icons_4_1: fas fa-user-plus
 ---
-icons_4_2: Workshops
+icons_4_2: Mach mit
 ---
-icons_4_3: Wir bieten Workshops und Vorträge an, um den Menschen ein Technikverständnis zu vermitteln, damit Menschen die Technik kontrollieren und nicht anders herum.
+icons_4_3: Einsam Waffeln backen macht keinen Spaß. Mach mit beim C3WOC und lass uns gemeinsam mit Waffeln etwas Freude, Liebe und gute Laune verbreiten!
 ---
-icons_4_url: /termine/
+icons_4_url: /mitmachen/
 ---
-icons_5_1: fa-heart
+icons_5_1: far fa-comments
 ---
-icons_5_2: Waffeln
+icons_5_2: Tauscht euch aus
 ---
-icons_5_3: Eine der strategischen Standorte des C3 Waffel Operation Center ist der Bodensee. So geben wir Unterstützung bei der Waffelproduktion und helfen bei taktischen Waffeleinsätzen aus.
+icons_5_3: Lasst uns gemeinsam über Waffeln reden. Kommt doch bei uns im IRC auf [irc.hackint.org/#waffel](https://hackint.org/connect) vorbei.
 ---
-icons_5_url: /projekte/c3woc/
+icons_5_url: https://webirc.hackint.org/#irc://irc.hackint.org/#waffel
 ---
-icons_6_1: fa-calendar-check
+icons_6_1: fa-calendar-plus
 ---
-icons_6_2: Veranstaltungen
+icons_6_2: Kommt zu Veranstaltungen
 ---
-icons_6_3: Wir veranstalten immer wieder Veranstaltungen oder nehmen an diesen Teil, um uns besser mit Lebewesen anderer Regionen zu vernetzen.
+icons_6_3: Das C3WOC kommt gerne zu chaos nahen Veranstaltung um da mit euch zusammen Waffeln zu machen. Ladet uns einfach mal ein!
 ---
-icons_6_url: /blog/
+icons_6_url: https://c3woc.de/#tourdaten
 ---
-icons_txt: Mitglied werden
+icons_txt: Werde Teil des C3WOC
 ---
-icons_url: https://toolbox-bodensee.de/mitglied-werden/
+icons_url: https://c3woc.de/mitmachen/
 ---
 red_1: Wir freuen uns über neue Gesichter.
 ---
 red_2:
 
-Alleine Waffeln zu backen ist langweilig uns anstrengend. Aber zusammen macht das gleich viel mehr spaß.
-Wenn mehr Menschen mitmachen, wird das Waffelnbacken, Planen, Organisieren und essen zu einem mega guten Event!
+Alleine Waffeln zu backen ist langweilig und mit der Zeit echt anstrengend. Aber zusammen macht das gleich viel mehr spaß.
+Wenn mehr Menschen mitmachen, wird das Waffel backen, Planen, Organisieren und essen zu einem super Erlebnis.
 ---
 red_3:
 
-Nur mit dem backen der Waffel alleine ist es nicht getan. Zur Zubereitung der Waffel gehört eine viel größere Pipeline an Aufgaben, die für die perfekte Waffel gemeistert werden müssen.
+Wir würden uns sehr über mehr aktive Leute, die Spaß an Waffeln haben freuen. Denn nur mit wenigen Menschen etwas zu Planen und durchzuführen ist sehr Anstrengend und funktioniert nicht für unbegrenzte Zeit.
 
-Das fängt beim Einkauf und der Logistik an. Wo kauft man Waffelzutaten ein? Wie viele? Bekommt man irgendwo Vollei her? Wo ist der nächste Großmarkt?
-
-Das geht weiter mit der Aufgabe der Kühlkette. Gibt es einen Kühlschrank oder Kühlraum? Wo können die leicht verderblichen Zutaten gelagert werden? Wie viel Grad dürfen die maximal haben ohne dass Sie zu warm gelagert sind und verderben? 
-
-Als nächstes geht es um das herstellen des Teiges. Hatten die Bäcker eine Lebensmittelbelehrung? Sind die Hände gewaschen und die Schürzen angelegt? Ist die Waffelformel bekannt? Und sind alle Zutaten und gefäße wirklich da?
-
-Dann kommt das backen der Waffel. Sind die Waffeleisen ordentlich angeschlossen? Sind die Bäcker erfahren oder brauchen Sie eine einweisung?
-Trägt jeder eine Schürze und hat gewaschene Hände? Ist das Waffeleisen auf +- 230 °C eingestellt? Werden die üblichen Teigspritzer mit Küchenpapier oder Alufolie aufgefangen?  Und ist das Waffeleisen eigentlich sauber?
-
-Nun geht es um die Waffelausgabe. Sind zutaten zum belegen vorhanden? Gibt es Kuchengitter oder Brettchen für die Waffeln zum abstellen? Bilden die Menschen eine schöne schlange? Bekommt jeder der mag einen Aufkleber?
-
-Und zu guter letzt ist das aufräumen und putzen nicht zu unterschätzen!
-Auch hier geht es von den benutzen behältern bis hin zu den Waffeleisen selber. Alles muss sauber sein. Auch die Tische und der Boden!
-
+Bitte mach bei uns mit!
 ---
-red_4: Mach mit beim C3WOC! Wir brauchen deine Unterstützung!
+red_4: Wir brauchen deine Unterstützung!
 ---
 icons_1_url: https://c3coc.de
 ---
-icons_3_url: /vereinsheim/elektrowerkstatt/
+icons_3_url: /rezepte/
 ---
 hinweis: Wenn du Lust hast, dann
 ---
@@ -118,3 +108,5 @@ icons_text_2:
 Das C3WOC macht nicht einfach Waffeln, die man für Geld kaufen kann. 
 
 <b>Sondern es geht um viel mehr!</b>
+---
+icons_2_url: https://www.ccc.de/de/regional
