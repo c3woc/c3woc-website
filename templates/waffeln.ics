@@ -14,8 +14,7 @@ STATUS:{%
   if blk.confirmed %}CONFIRMED{%
   else %}TENTATIVE{% endif %}
 LOCATION:{{ blk.ort }}
-SUMMARY:{{ blk.summary }}
-DESCRIPTION:{{ blk.description }}\n{{ blk.url }}
+DESCRIPTION:{{ blk.description|replace( "|", "\n") }}\n{{ blk.url }}
 END:VEVENT{%
   endfor %}
 END:VCALENDAR 

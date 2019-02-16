@@ -17,24 +17,6 @@ ort: Ziegeleipark Mildenberg
 ----
 url: https://events.ccc.de/
 ----
-summary: Das Chaos Communication Camp im Sommer 2019. Ohne Waffeln? undenkbar!
-----
-description: Das Chaos Communication Camp findet alle vier Jahre im Sommer statt.\n2019 ist es wieder so weit. Und wir setzen alles dran, dort auch Waffeln zu haben!
-----
-confirmed: no
-#### termine ####
-start: 2019-06-14 00:00:00 Europe/Berlin
-----
-ende: 2019-06-16 23:42:23 Europe/Berlin
-----
-event: CoSin 2019
-----
-ort: Biel/Bienne
-----
-url: https://cosin.ch
-----
-summary: Das schweizer Hackertreffen CoSin in Biel. Nur echt mit Waffeln und Glasse!
-----
 description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer Chaos. Der Inhalt erstreckt sich über Technik und Politik zu Kunst und Kultur.
 ----
 confirmed: yes
@@ -49,9 +31,7 @@ ort: HfG/ZKM Karlsruhe
 ----
 url: https://entropia.de/GPN18,5
 ----
-summary: GlühPN im Winter. Mega geil! Mega Waffel!
-----
-description: Die Glühweinprogrammiernacht, auch GPN18,5, setzt den Schwerpunkt auf Hacken, Lounge und Zusammensein.\nWir wollen versuchen, die Vorzüge von Lounge und Hackcenter in einem zu kombinieren. Ohne großen Aufwand und locker organisiert.\nDie Veranstaltung soll auch wie die GPN freien Eintritt haben und durch Spenden eurerseits finanziert werden. Die Veranstaltung findet vom Fr., 23.11.2018 bis So., 25.11.2018 in der HfG statt.
+description: Die Glühweinprogrammiernacht, auch GPN18,5, setzt den Schwerpunkt auf Hacken, Lounge und Zusammensein.|Wir wollen versuchen, die Vorzüge von Lounge und Hackcenter in einem zu kombinieren. Ohne großen Aufwand und locker organisiert.|Die Veranstaltung soll auch wie die GPN freien Eintritt haben und durch Spenden eurerseits finanziert werden. Die Veranstaltung findet vom Fr., 23.11.2018 bis So., 25.11.2018 in der HfG statt.
 ----
 confirmed: yes
 #### termine ####
@@ -64,8 +44,6 @@ event: FrOSCon
 ort: Sankt Augustin
 ----
 url: https://froscon.de/
-----
-summary: Wir wurden eingeladen auf der Froscon Waffeln zu machen.
 ----
 description: Wir wurden eingeladen auf der Froscon Waffeln zu machen. Und es wird cool!
 ----
@@ -81,9 +59,7 @@ ort: Wien
 ----
 url: https://eh19.easterhegg.eu
 ----
-summary: EH19: Bun Intended! with waffles!
-----
-description: Der Chaos Computer Club Wien freut sich, euch zur Easterhegg 2019 zu Ostern (19.-22.04.2019) nach Wien einladen zu dürfen! Wien ist nicht nur bekannt für Kaffee, Lipizzaner und Sachertorte, sondern auch für den berüchtigten Wiener Schmäh.\nDaher ist das Motto für die EH19: Bun Intended!
+description: Der Chaos Computer Club Wien freut sich, euch zur Easterhegg 2019 zu Ostern (19.-22.04.2019) nach Wien einladen zu dürfen! Wien ist nicht nur bekannt für Kaffee, Lipizzaner und Sachertorte, sondern auch für den berüchtigten Wiener Schmäh.|Daher ist das Motto für die EH19: Bun Intended!
 ----
 confirmed: 
 #### termine ####
@@ -97,9 +73,7 @@ ort: HFG und ZKM Karlsruhe
 ----
 url: https://entropia.de/GPN19
 ----
-summary: Hacken, Gulasch, Vorträge, Cloud, Tschunk, Workshops, Lounge, Mate, Spaß am Gerät.\nWaffelprogrammiernacht!
-----
-description: Hacken, Gulasch, Vorträge, Cloud, Tschunk, Workshops, Lounge, Mate, Spaß am Gerät.\nGulaschprogrammiernacht klingt fast wie ein Kochmarathon für schlaflose Informatikstudenten. Was 2002 in einem Karlsruher Kellerraum mit ein paar Technikbegeisterten angefangen hat, ist inzwischen zu einer der größten Veranstaltungen des Chaos Computer Clubs gewachsen. Die Themen sind breit gefächert: Den Kern bilden Hard- und Softwareentwicklung, sowie Datensicherheit. Daneben kommen aber auch Datenschutz, Netzpolitik und viele andere faszinierende Themen zum Zug: Wie kocht man das perfekte Gulasch? Kann man aus Hardwareschrott noch schönen Schmuck basteln? Wie funktioniert eigentlich eine Nähmaschine? Wie fliegt man Raumschiffe? Wo kann ich Waffeln machen...\n
+description: Hacken, Gulasch, Vorträge, Cloud, Tschunk, Workshops, Lounge, Mate, Spaß am Gerät.|Gulaschprogrammiernacht klingt fast wie ein Kochmarathon für schlaflose Informatikstudenten. Was 2002 in einem Karlsruher Kellerraum mit ein paar Technikbegeisterten angefangen hat, ist inzwischen zu einer der größten Veranstaltungen des Chaos Computer Clubs gewachsen. Die Themen sind breit gefächert: Den Kern bilden Hard- und Softwareentwicklung, sowie Datensicherheit. Daneben kommen aber auch Datenschutz, Netzpolitik und viele andere faszinierende Themen zum Zug: Wie kocht man das perfekte Gulasch? Kann man aus Hardwareschrott noch schönen Schmuck basteln? Wie funktioniert eigentlich eine Nähmaschine? Wie fliegt man Raumschiffe? Wo kann ich Waffeln machen...|
 ----
 confirmed: no
 #### termine ####
@@ -113,9 +87,7 @@ ort: Heilbronn
 ----
 url: https://c3woc.de/#tourdaten
 ----
-summary: Waffeln! Chilli! Döner!\nWas man da alles machen kann...
-----
-description: Waffeln! Chilli! Döner!\nWas man da alles machen kann...\nNur echt mit Party!
+description: Waffeln! Chilli! Döner!|Was man da alles machen kann...|Nur echt mit Party!
 ----
 confirmed: yes
 #### termine ####
@@ -129,9 +101,7 @@ ort: Leipzig
 ----
 url: https://events.ccc.de
 ----
-summary: Der Chaos Communication Congress ist ein mehrtägiges, in Deutschland stattfindendes Treffen der internationalen Hackerszene, das gerne Waffeln mag!
-----
-description: Der Chaos Communication Congress ist ein mehrtägiges, in Deutschland stattfindendes Treffen der internationalen Hackerszene, das vom Chaos Computer Club (CCC) ausgerichtet und organisiert wird. Der Kongress widmet sich in zahlreichen Vorträgen und Workshops technischen und gesellschaftspolitischen Themen. \nAußerdem ist er auch L3Ds Geburtstagsparty. Schließlich hat er an Tag 1 Geburtstag.\nLasst uns gemeinsam Waffeln essen und spaß haben!
+description: Der Chaos Communication Congress ist ein mehrtägiges, in Deutschland stattfindendes Treffen der internationalen Hackerszene, das vom Chaos Computer Club (CCC) ausgerichtet und organisiert wird. Der Kongress widmet sich in zahlreichen Vorträgen und Workshops technischen und gesellschaftspolitischen Themen. |Außerdem ist er auch L3Ds Geburtstagsparty. Schließlich hat er an Tag 1 Geburtstag.|Lasst uns gemeinsam Waffeln essen und spaß haben!
 ----
 confirmed: yes
 #### termine ####
@@ -144,8 +114,6 @@ event: Chaotische Adventsbasar
 ort: see-base, Überlingen
 ----
 url: https://see-base.de/
-----
-summary: Waffeln auf dem Basar des Hackerspace!
 ----
 description: Waffeln auf dem Basar des Hackerspace! Zusammen mit Mate, Löten, rohrpost und jede menge coolen Menschen!
 ----
@@ -161,9 +129,7 @@ ort: see-base, Überlingen
 ----
 url: https://ffbsee.de/
 ----
-summary: Freifunk. Waffeln. Topp.
-----
-description: Freifunkcamp am Bodensee.\nMit Waffeln \o/\n
+description: Freifunkcamp am Bodensee.|Mit Waffeln \o/|
 ----
 confirmed: yes
 #### termine ####
@@ -176,8 +142,6 @@ event: C6 Geekend
 ort: Kiel
 ----
 url: https://c3c3.de
-----
-summary: Cluster und Waffeln
 ----
 description: Cluster und Waffeln. Was da für synergien entstehen :P
 ----
@@ -193,8 +157,6 @@ ort: Toolbox Bodensee, Markdorf
 ----
 url: https://toolbox-bodensee.de
 ----
-summary: Tag der offenen Türe? Nicht ohne Waffel!
-----
 description: Toolbox. Heimat der Waffel. Kommt vorbei!
 ----
 confirmed: yes
@@ -209,9 +171,7 @@ ort: Bern
 ----
 url: https://www.chaosbern.ch/
 ----
-summary: Chaostreff Bern wird eingeweiht. Mit Waffeln! Kommt vorbei!
-----
-description: Wie am letzten Gettogether bereits angekündigt, haben wir vom Chaostreff Bern neue Räume für einen eigenen Hackerspace gefunden [0].\n Jetzt laden wir alle Lebensformen ein zur Einweihung unseres neuen Hackerspaces an der Kyburgstrasse 13. Ausserdem feiern wir zugleich das vierjährige Bestehen des Chaostreff Bern. \n\n Datum: Samstag, 2019-03-16\n Zeit: Die Türe öffnen wir um 14 Uhr.\n Der Space ist den ganzen Nachmittag hindurch für alle Interessierten geöffnet, am Abend ist open end.\n Ort: Kyburgstrasse 13, 3013 Bern, Schweiz ([1])  \n\nIm Verlauf des Nachmittags und Abends wird es einige kurze Vorträge geben zur Geschichte des Chaostreff Bern, zu unserem neuen Hackerspace und zu unserer Vision des Chaos in Bern. Ausserdem ist ein Abendessen geplant.  \nEin Zeitplan wird folgen, wenn wir uns dem Datum nähern, bis dahin gilt: Rettet das Datum!  \n\n [0] https://chaostreffbern.ch/found_a_room.html [1]\n https://www.openstreetmap.org/?mlat=46.95634&mlon=7.44833#map=19/46.95638/7.44833\n
+description: Wie am letzten Gettogether bereits angekündigt, haben wir vom Chaostreff Bern neue Räume für einen eigenen Hackerspace gefunden [0].| Jetzt laden wir alle Lebensformen ein zur Einweihung unseres neuen Hackerspaces an der Kyburgstrasse 13. Ausserdem feiern wir zugleich das vierjährige Bestehen des Chaostreff Bern. || Datum: Samstag, 2019-03-16| Zeit: Die Türe öffnen wir um 14 Uhr.| Der Space ist den ganzen Nachmittag hindurch für alle Interessierten geöffnet, am Abend ist open end.| Ort: Kyburgstrasse 13, 3013 Bern, Schweiz ([1])  ||Im Verlauf des Nachmittags und Abends wird es einige kurze Vorträge geben zur Geschichte des Chaostreff Bern, zu unserem neuen Hackerspace und zu unserer Vision des Chaos in Bern. Ausserdem ist ein Abendessen geplant.  |Ein Zeitplan wird folgen, wenn wir uns dem Datum nähern, bis dahin gilt: Rettet das Datum!  || [0] https://chaostreffbern.ch/found_a_room.html [1]| https://www.openstreetmap.org/?mlat=46.95634&mlon=7.44833#map=19/46.95638/7.44833|
 ----
 confirmed: yes
 #### termine ####
@@ -224,8 +184,6 @@ event: Toolbox Weihnachtswaffeln
 ort: Toolbox Bodensee, Markdorf
 ----
 url: https://toolbox-bodensee.de/termine
-----
-summary: In der Toolbox in Makrdorf gibt es am 13. Dezember ein Weihnachtswaffeln.
 ----
 description: In der Toolbox in Makrdorf gibt es am 13. Dezember ein Weihnachtswaffeln.
 ----
@@ -240,8 +198,6 @@ event: Chao Party Ulm
 ort: Ulm
 ----
 url: https://chaos-party-ulm.de/
-----
-summary: Die CPU ist ein kleineres Chaosevent in der Mensa der Uni Ulm. Natürlich mit Waffeln!
 ----
 description:
 

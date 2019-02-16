@@ -76,13 +76,18 @@
             set pages = site.query('/').include_undiscoverable(true).all() %}{% 
             for page in pages %}{%
                 if page._model == 'waffeln' and page._path == '/waffeln.ics' %}{%
-                    for blk in page.termine.blocks %}
+                for blk in page.termine.blocks %}{%
+                if blk.start.strftime('%Y%m%d%H%M') > none|datetimeformat('yyyyMMddhhmm') %}
           <tr>
-            <th>{{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }} 
-            <th>{{ blk.event }}</th>
-            <th></th>
+              <th>{%
+                  if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') %}{{ blk.start.strftime('%d.%m.%y %H') }} - {{  blk.ende.strftime('%H') }} Uhr{%
+                  else %}{{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }}{%
+                  endif %}</th>
+            <th><a href="{{ blk.url }}" title="{{ blk.description|replace("|", " ") }}">{{ blk.event }}</a></th>
+            <th>{{ blk.ort }}</th>
           </tr>{%
-                    endfor %}
+                    endif %}{%
+                endfor %}
         </tbody>
         </table>
       </div>{%
