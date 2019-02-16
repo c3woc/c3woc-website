@@ -97,7 +97,43 @@ hinweis_txt: mach mit!
 ---
 hinweis_url: /mitmachen/
 ---
-sections: 
+sections:
+
+#### startpage_section ####
+type: right
+----
+header: Der Waffelblog
+----
+text: Wenn du interessiert bist an Bildern und etwas Text zu Veranstaltungen, bei denen das C3WOC involviert ist oder anderen Aktionen, bei denen gewaffelt wurde oder es um Waffeln geht, dann schau doch mal in den C3WOC Blog.
+----
+text2:
+
+Wir würden auch einen Bericht von deinen Waffel Aktionen dort sehr gerne lesen!
+
+Sprech uns hierfür einfach an oder noch besser: Mach einen Pull-Request auf der [Webseite](https://github.com/ToolboxBodensee/c3woc-webseite).
+----
+url_text: Waffel-Blog
+----
+url: /blog/
+----
+background: /images/home/abschnitt2.jpeg
+#### startpage_section ####
+type: left
+----
+header: Equipment
+----
+text:
+
+Für die perfekte Waffel gibt es einige Abhängigkeiten.<br/>
+Eine davon ist ganz klar das Waffeleisen.
+----
+text2: 
+----
+url_text: 
+----
+url: 
+----
+background: /images/home/abschnitt3.jpeg
 ---
 render_tourdaten: yes
 ---
