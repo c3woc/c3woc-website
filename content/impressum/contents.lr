@@ -5,3 +5,29 @@ title: Impressum
 slogan: Hier könnt ihr uns erreichen!
 ---
 teaser: Das Impressum des C3 Waffel Operation Center. Hier findet ihr diverse Kontaktmöglichkeiten um schnell und einfach mit uns in Verbindung zu kommen!
+---
+content:
+
+ IRC:
+-----
+
+```
+Server: irc.hackint.org
+Channel: #waffel
+```
+[irc://irc.hackint.org](ircs://irc.hackint.org/#waffel) - [Web IRC](https://webirc.hackint.org/#irc://irc.hackint.org/#waffel)
+
+ Mail:
+----
+```
+waffel@c3woc.de
+```
+
+ Postanschrift:
+----
+```
+Toolbox Bodensee e.V.
+C3WOC
+Bergheimer Str. 6-12
+88677 Markdorf
+```
