@@ -1,0 +1,9 @@
+_model: blog
+---
+title: Blog
+---
+description: Hier erfährst du über die neusten Projekte, Geschichten, Veranstaltungen oder sonstigen Updates, die mit Waffeln oder dem C3WOC in Zusammenhang stehen.
+---
+link: /feed_blog.xml
+---
+spruch: Bleibe über aktuelle Waffelmeldungen auf dem laufenden!
