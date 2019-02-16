@@ -4,7 +4,7 @@ VERSION:2.0
 CALSCALE:GREGORIAN
 PRODID:https://{{ fqdn }}/{{ this._id }}
 METHOD:PUBLISH{% 
-  for blk in this.termine.blocks %}
+  for blk in this.termine.blocks|sort(attribute='start', reverse = True) %}
 BEGIN:VEVENT
 SUMMARY:{{ blk.event }}
 ORGANIZER;CN="C3 Waffel Operation Center":MAILTO:waffel@{{ fqdn }}

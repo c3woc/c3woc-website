@@ -76,7 +76,7 @@
             set pages = site.query('/').include_undiscoverable(true).all() %}{% 
             for page in pages %}{%
                 if page._model == 'waffeln' and page._path == '/waffeln.ics' %}{%
-                for blk in page.termine.blocks %}{%
+                for blk in page.termine.blocks|sort(attribute='start', reverse = False) %}{%
                 if blk.start.strftime('%Y%m%d%H%M') > none|datetimeformat('yyyyMMddhhmm') %}
           <tr>
               <th>{%
