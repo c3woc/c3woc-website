@@ -23,11 +23,11 @@ icons_text:
 Das C3WOC erfreut sich einer großen beliebtheit. Besonders im Umkreis des Chaos Computer Club und Chaosnahen veranstaltungen.<br/>
 Selbstverständlich sollen dort Waffeln nicht fehlen!
 ---
-icons_1_1: fa-code
+icons_1_1: fa-heart
 ---
-icons_1_2: Programmieren
+icons_1_2: Seid nett zu einander
 ---
-icons_1_3: Wir entwickeln verschiedenste Software von der Fernsteuerung von Multicoptern über die Steuerung von blinkenden LED-Ketten bis hin zu Übungsprojekten und Internetdiensten.
+icons_1_3: Eine Waffel besteht aus fünf Herzen. Das ist nicht zufällig so!
 ---
 icons_2_1: fa-keyboard
 ---
@@ -97,7 +97,7 @@ Auch hier geht es von den benutzen behältern bis hin zu den Waffeleisen selber.
 ---
 red_4: Mach mit beim C3WOC! Wir brauchen deine Unterstützung!
 ---
-icons_1_url: /projekte/
+icons_1_url: https://c3coc.de
 ---
 icons_3_url: /vereinsheim/elektrowerkstatt/
 ---
