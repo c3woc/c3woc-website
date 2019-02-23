@@ -195,12 +195,40 @@ ende: 2019-12-23 23:42:23 Europe/Berlin
 ----
 event: Chao Party Ulm
 ----
-ort: Ulm
+ort: Uni Ulm
 ----
 url: https://chaos-party-ulm.de/
 ----
 description:
 
 Die CPU ist ein kleineres Chaosevent in der Mensa der Uni Ulm für Erfas, ChaosTreffs, Hackerspaces, chaosnahe Menschen und allgemein jede humanuide Lebensform, die sich für die Veranstaltung interessiert. Wir bieten einen großen Raum zum miteinander herumsitzen und zum austauschen über alle erdenklichen Themen. Außerdem gibt es einen kleineren Workshop- und Seminarraum, in dem wir ein Vortragsprogramm organisieren. Da die hardwaretechnische Seite ab und an auf anderen Events etwas zu kurz kommt, gehen unsere Vorträge und Workshops mehr in diese Richtung. 
+----
+confirmed: yes
+#### termine ####
+start: 2019-08-10 13:00:00 Europe/Berlin
+----
+ende: 2019-08-11 17:23:42 Europe/Berlin
+----
+event: FrOSCon
+----
+ort: Hochschule Bonn-Rhein-Sieg
+----
+url: https://www.froscon.org/
+----
+description: Freie Software und Open Source - das sind die Themen der FrOSCon. |Jedes Jahr im Spätsommer veranstaltet der Fachbereich Informatik der Hochschule Bonn-Rhein-Sieg mit Hilfe des FrOSCon e.V. ein spannendes Programm mit Vorträgen und Workshops für Besucher aller Altersklassen, die Freie Software nutzen, kennenlernen wollen oder selbst entwickeln. | |Natürlich kann das das C3WOC als führende Gruppe von Experten im Open-Source Waffel Business nicht fehlen!
+----
+confirmed: 
+#### termine ####
+start: 2019-03-02 13:00:00 Europe/Berlin
+----
+ende: 2019-03-02 18:00:00 Europe/Berlin
+----
+event: Dönergrill einweihung
+----
+ort: Toolbox Bodensee e.V., Markdorf
+----
+url: https:/toolbox-bodensee.de/blog/einweihung-des-doenergrill/
+----
+description: Die Toolbox hat einen Dönergrill. Lass uns den mal ausprobieren und Döner waffeln machen!
 ----
 confirmed: yes
