@@ -1,10 +1,10 @@
 _model: projekte
 ---
-title: Rezepte
+title: Die Formel für eine gute Waffel
 ---
 link: /feed_rezepte.xml
 ---
-abo: Abonniere alle Projekte als XML Feed
+abo: Abonniere alle Rezepte als XML Feed
 ---
 description: Jede Waffel ist einzigartig
 ---
@@ -27,4 +27,16 @@ eine prise Salz
 
 Das Rezept ist optimiert auf einen größeren Waffelhunger als von 3 Menschen.<br/>
 Als "Schüssel" eignet sich hier ein lebensmittelfähiger 10-Liter Eimer perfekt.<br/>
-Genauere Details zu den verschiedenen Rezeptarten und zur Zubereitung gibt es in den folgenden Rezepten:
+
+---
+desc: Die Rezeptsammlung des C3 Waffel Operation Center. Von der veganen Waffel bis hin zur legendären Dönerwaffel ist hier alles vertreten.
+---
+title2: Alle Rezepte
+---
+description2: Für mehr diversität bei den Waffeln ist hier für die meisten etwas dabei!
+---
+trailer:
+
+<br/><br/>
+Wenn du noch eine verwendung für ein Waffeleisen steht, das hier noch nicht steht, dann würden wir uns sehr darüber freuen, wenn du bereit wärst es mit uns zu teilen!
+Natürlich kannst du es auch direkt hier veröffentlichen. Denn diese Webseite kannst du [auf GitHub](https://github.com/ToolboxBodensee/c3woc-website.git) bearbeiten!

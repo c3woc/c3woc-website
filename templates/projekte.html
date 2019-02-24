@@ -19,13 +19,14 @@ endblock %}
     </header>
     <div class="box alt">
       <div class="row uniform">{%
-        for child in this.pagination.items|sort(attribute='number', reverse = True)%}
+        for child in this.pagination.items|sort(attribute='number', reverse = True) %}
           {{ render_blog_post(child, from_index=true) }}
       {% endfor %} 
       </div>
      <footer class="major">
 	    <ul class="actions special">
             <li><a href="{{ '/feed_projekte.xml'|url }}" class="button">{{ this.abo }}</a></li>
+            {{ this.trailer }}
         </ul>
       </footer>
    </div>
