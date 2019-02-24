@@ -13,7 +13,7 @@
     </section>
     <div class="row uniform">
       <div class="box alt">
-      {% for child in this.pagination.items %}
+      {% for child in this.pagination.items|sort(attribute='number', reverse = True)%}
         {{ render_blog_post(child, from_index=true) }}
       {% endfor %} 
       </div>
