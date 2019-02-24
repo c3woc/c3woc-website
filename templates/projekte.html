@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
 {% from "macros/projekt.html" import render_blog_post %}
-      {% block title %}{{ this.title }}{% endblock %}
+{% block title 
+  %}{{ this.title }}{%
+endblock %}
 {% block body %} 
 <section id="four" class="wrapper style1 special fade-up">
   <div class="container">
@@ -11,13 +13,17 @@
     <section id="content">
       {{ this.begruessung }}
     </section>
-    <div class="row uniform">
-      <div class="box alt">
-      {% for child in this.pagination.items|sort(attribute='number', reverse = True)%}
-        {{ render_blog_post(child, from_index=true) }}
+     <header class="major">
+        <h2>{{ this.title2 }}</h2>
+        {{ this.description2 }}
+    </header>
+    <div class="box alt">
+      <div class="row uniform">{%
+        for child in this.pagination.items|sort(attribute='number', reverse = True)%}
+          {{ render_blog_post(child, from_index=true) }}
       {% endfor %} 
       </div>
-      <footer class="major">
+     <footer class="major">
 	    <ul class="actions special">
             <li><a href="{{ '/feed_projekte.xml'|url }}" class="button">{{ this.abo }}</a></li>
         </ul>
@@ -28,9 +34,8 @@
 {% endblock %}
 {% block expand_description %}
     <meta name="description" content="{% 
-        if this.description %}{{ this.description }}{% else %}{%
+        if this.desc %}{{ this.desc }}{% else %}{%
             if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
             else %}{{ bag('translate', 'de', 'description') }}{% endif %}
         {% endif %}" />
 {% endblock %}
-
