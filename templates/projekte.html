@@ -8,13 +8,14 @@
         <h2>{{ this.title }}</h2>
         <p>{{ this.description }}</p>
     </header>
-    <div class="box alt">
-      <div class="row uniform">
-
+    <section id="content">
+      {{ this.begruessung }}
+    </section>
+    <div class="row uniform">
+      <div class="box alt">
       {% for child in this.pagination.items %}
         {{ render_blog_post(child, from_index=true) }}
-      {% endfor %}
- 
+      {% endfor %} 
       </div>
       <footer class="major">
 	    <ul class="actions special">

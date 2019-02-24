@@ -7,3 +7,24 @@ link: /feed_rezepte.xml
 abo: Abonniere alle Projekte als XML Feed
 ---
 description: Jede Waffel ist einzigartig
+---
+begruessung:
+
+Das normale Waffelrezept ist denkbar einfach und lautet wie folgt:
+
+<pre><center><code  style="max-width: 600px; text-align: left;">
+1 l Vollei-Eiklar (oder ca. 20 Eier)
+1 Kg Zucker
+1,25 Kg Butter (weich/geschmolzen)
+20-50g Vanillezucker (am besten aus echter Vanille)
+3 Pck. Backpulver (oder 1-2 EL voll)
+1,5 Liter frische Vollmilch (keine H-Milch)
+2 Kg Mehl
+2 Flaschen Club-Mate oder Flora Power
+etwas (dunklen) Rum
+eine prise Salz
+</code></center></pre>
+
+Das Rezept ist optimiert auf einen größeren Waffelhunger als von 3 Menschen.<br/>
+Als "Schüssel" eignet sich hier ein lebensmittelfähiger 10-Liter Eimer perfekt.<br/>
+Genauere Details zu den verschiedenen Rezeptarten und zur Zubereitung gibt es in den folgenden Rezepten:
