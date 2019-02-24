@@ -41,7 +41,23 @@
     <div id="page-wrapper">
        <!-- Header -->
         <header id="header">
-            <h1 id="logo">
+            <h1 id="logo">{#
+
+
+
+            Hier findet sich der "Waffel Status" der Webseite.
+            Wenn das CSS sagt, dass es Waffeln gibt, 
+            dann wird die Webseite grün und es gibt Waffeln.
+
+            Wenn nicht... nicht!
+
+            Das ganze wird über die SpaceAPI gesteuert.
+            Auch wenn das C3WOC kein echter Hackerspace ist...
+            Aber die Webseite ist dreist von der Toolbox kopiert worden.
+
+
+
+                #}
                 <div class="tooltip">
                     <a id="tb-opened" class="button tb-opened navbar special" href="{%
                         if bag('translate', this.alt, 'api_url_open') %}{{ bag('translate', this.alt, 'api_url_open') }}{%
@@ -68,7 +84,21 @@
                         else %}{{ bag('translate', 'de', 'api_opening_time') }}{% endif %}</span>
                   </div>
             </h1>
-            <nav id="nav">
+            <nav id="nav">{#
+
+
+            Hier beginnt das Menü.
+            Erstmal werden in einer Liste alle elemente definiert, die in dem "root" level des Menüs auftauchen.
+            Anschließend kommen in einer relativ hässlichen if-abfrage der sublevel.
+
+            Das kann man hübscher machen. Aber so ist es zumindest erstmal funktional.
+            Und da am schluss fertig gerendertes HTML raus kommt auch keine kritische Infrastruktur,
+            die besonders schützenswert ist...
+
+            Dennoch würde ich (L3D)  mich hier sehr über etwas beteiligung freuen.
+            Alleine an einer Webseite zu arbeiten... Ist schon cool. Aber zu zweit gleich noch viel cooler!!!
+
+            #}
               <ul>
                 <li{% if this._path == '/' %} class="active"{% endif
                   %}><a href="{{ '/'|url }}">{%
@@ -82,13 +112,26 @@
                   ['/kontakt', 'Kontakt', 1]
                 ] %}{% if print %}
                   <li{% if this.is_child_of(href) %} class="active"{% endif
-                  %}><a href="{{ href|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>{%
+                  %}><a href="{{ href|url }}">{% 
+                     if bag('navigation', this.alt, title) 
+                       %}{{ bag('navigation', this.alt, title) }}{%
+                     else %}{{ title }}{% 
+                     endif %}</a>{#
+
+                    Hier beginnt die vorhin erwähnt if-schleife,
+                    in der die Untermenüs definiert werden.
+        
+                    PLZ Fix me!!!
+                    
+                        -> Eine Idee zum Fix wäre, die obige Tabelle ausweiten...
+
+                    #}{%
                   if title == 'Rezept' %}
                     <ul>{% set root = site.get('/rezept/', alt=this.alt) %}{%
                   for child in root.children recursive %}{% if loop.index <= 8 %}
                     <li{%
                       if this._path == child._path %} class="active"{% endif
-                      %}><a href="{% if this.alt == 'de' %}{% else %}/{{ this.alt }}/{{ this.alt }}/{% endif %}{{ child|url }}">{{ child.title }}</a></li>{%
+                      %}><a href="{% if this.alt == 'de' %}{% else %}/{{ this.alt }}/{% endif %}{{ child|url }}">{{ child.title }}</a></li>{%
                   endif %}{% endfor %}
                       <li><a href="{{ '/rezept/'|url }}">{% 
                               if bag('navigation', this.alt, 'show_projekt') %}{{ bag('navigation', this.alt, 'show_projekt') }}{% 
@@ -137,9 +180,20 @@
                  </li>
               </ul>
             </nav>
-          </header>
+          </header>{#
+
+            Und hier werden nun die eientlichen Seiten eingebunden...
+
+            #}
 <!-- Main -->
-{% block body %}{% endblock %}
+{% block body %}{% endblock %}{#
+
+            Und da wären wir auch schon am Ende der Webseite...
+            Hier noch mal fett Werbung gemacht, wo es alles etwas vom C3WOC gibt...
+
+            So mit Twitter, Mail, IRC, Mastodon und RSS kommt da doch einiges zusammen :P
+
+            #}
        <!-- Footer -->
        <footer id="footer">
          <ul class="icons">{%
