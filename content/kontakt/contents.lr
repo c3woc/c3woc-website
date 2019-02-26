@@ -2,99 +2,20 @@ _model: vereinsheim
 ---
 title: Kontakt
 ---
-slogan: Wo find ich jetzt diese Toolbox nochmal?
+slogan: Dort ist das C3WOC vertreten
 ---
 content:
 
- Adresse:
---------------
-```
-Bergheimer Straße 6,
-88677 Markdorf
-```
-<div class="col-4"> 
-<a href="https://www.openstreetmap.org/way/475282871" target="_blank" rel="noopener" class="button fit">OpenStreetMap</a>
-<a href="https://www.google.de/maps/place/Toolbox+Bodensee+e.V./@47.7123392,9.3993265,153m" target="_blank" rel="noopener" class="button fit">Google Maps</a>
-<a href="https://www.bing.com/maps?osid=2576bb08-7172-4f9c-93e7-1e9fbf421717&cp=47.712416~9.399339&lvl=20&v=2&sV=2&form=S00027" target="_blank" rel="noopener" class="button fit">Bing Maps</a>
-<a href="https://wego.here.com/directions/drive/Bergheimer-Straße-6,-88677-Markdorf,-Germany:47.71239,9.39957/?map=47.71266,9.40209,18" target="_blank" rel="noopener" class="button fit">HERE Maps</a>
-</div>
+ Wer beim C3WOC mitmacht:
+----------------------------------------
 
-Um das Vereinsheim der Toolbox betreten zu können, muss das Firmengelände von intimus betreten werden. Dort ist die Toolbox das erste Gebäude auf der linken Seite, direkt bei dem großen Tor.
-Vor der Toolbox befinden sich Parkplätze für Fahrräder und Autos.
+Das C3WOC besteht aus Chaoten, die bereit sind Ihr Leben der Waffel zu widmen. Hierzu haben folgende Gruppierungen sich bekannt und folgende Hardware einsatzbereit:
 
-Die Eingangstüre ist bei dem kleinen roten Kreis auf der oben eingeblendeten Karte zu finden.
+ Toolbox Bodensee e.V.
+======================
+Die [Toolbox](https://toolbox-bodensee.de) ist ein Hack- und Makerspace in Markdorf am Bodensee.<br/>
+Jeden Donnerstag Abend treffen sich dort Menschen um sich auszutauschen und gemeinsam etwas zu unternehmen. Manchmal werden auch Waffeln gemacht.<br/>
+Hierfür stehen zwei Gastronom-Waffeleisen zur Verfügung. Eines mit der klassischen Herzform. Das andere mit Brüssler Motiv. Außerdem steht ein Dönergrill zur verfügung, um zum Beispiel Dönerwaffeln frisch zuzubereiten.
 
-Besucher der Toolbox sollten sich vor Ihrem Besuch einmal die Benutzungsordnung für Gäste zu Herzen genommen haben: 
-
-<a href="/verein/Benutzungsordnung_Gaeste.pdf" class="button">Benutzungsordnung für Gäste</a> 
-
-Die Benutzungsordung für Mitglieder sowie weitere möglicherweise hilfreiche Dokumente gibt es bei der [Satzung & Ordnung](/verein/dokumente).
-
- E-Mail:
----------------
-<div class="table-wrapper">
-<table><tbody>
-<tr>
-<td>Vorstände</td>
-<td><a href="mailto:vorstand@toolbox-bodensee.de">vorstand@toolbox-bodensee.de</a></td>
-</tr><tr>
-<td>alternative E-mail-Adresse</td>
-<td><a href="mailto:kontakt@toolbox-bodensee.de">kontakt@toolbox-bodensee.de</a></td>
-</tr>
-</tfoot>
-</table>
-</div>
-
-
- Telefon:
-------------
-Wir haben auch eine Telefonnummer:
-<div class="table-wrapper">
-<table><tbody>
-<tr>
-<td>Telefonnummer</td>
-<td><a href="tel:+4975449667222">+49 7544 9667222</a></td>
-</tr>
-</tfoot>
-</table>
-</div>
-
- Im Internet
------------------------
-Du findest uns natürlich auch auf verschiedenen Seiten im Internet. Zum Beispiel hier:
-
-<div class="table-wrapper">
-<table><tbody>
-<tr>
-<td>Twitter</td>
-<td><a href="https://twitter.com/toolboxbodensee" target="_blank" rel="noopener">@ToolboxBodensee</a></td>
-</tr><tr>
-<td>Facebook</td>
-<td><a href="https://www.facebook.com/toolboxbodensee" target="_blank" rel="noopener">toolboxbodensee</a></td>
-</tr><tr>
-<td>Mastodon</td>
-<td><a href="https://chaos.social/@toolbox" target="_blank" rel="noopener">toolbox@chaos.social</a></td>
-</tr><tr>
-<td>Instagram</td>
-<td><a href="https://www.instagram.com/toolbox_bodensee/" target="_blank" rel="noopener">toolbox_bodensee</a></td>
-</tr><tr>
-<td>GitHub</td>
-<td><a href="https://github.com/ToolboxBodensee" target="_blank" rel="noopener">ToolboxBodensee</a></td>
-</tr><tr>
-<td>YouTube</td>
-<td><a href="https://www.youtube.com/channel/UCoTB8frSN0OT2mZl2IXSsDA/videos" target="_blank" rel="noopener">Toolbox Bodensee e.V.</a></td>
-</tr><tr>
-<td>Hackerspaces.org</td>
-<td><a href="https://wiki.hackerspaces.org/Toolbox_Bodensee_e.V." target="_blank" rel="noopener">Toolbox_Bodensee_e.V.</a></td>
-</tr><tr>
-<td>Google Plus</td>
-<td><a href="https://plus.google.com/107375280456568167018" target="_blank" rel="noopener">Toolbox_Bodensee_e.V.</a></td>
-</tr>
-</tfoot>
-</table>
-</div>
 ---
-teaser:
-
-Die Toolbox ist ein Hack- und Makerspace in Markdorf am Bodensee.
-Wie genau du dort hinkommst, das erfährst du hier auf dieser Unterseite!
+teaser: Das C3WOC hat an strategisch wichtigen Orten Waffeleisen deponiert. Wo genau? Das erfährst du hier!
