@@ -17,5 +17,25 @@ Die [Toolbox](https://toolbox-bodensee.de) ist ein Hack- und Makerspace in Markd
 Jeden Donnerstag Abend treffen sich dort Menschen um sich auszutauschen und gemeinsam etwas zu unternehmen. Manchmal werden auch Waffeln gemacht.<br/>
 Hierfür stehen zwei Gastronom-Waffeleisen zur Verfügung. Eines mit der klassischen Herzform. Das andere mit Brüssler Motiv. Außerdem steht ein Dönergrill zur verfügung, um zum Beispiel Dönerwaffeln frisch zuzubereiten.
 
+<div class="lightgallery">
+<a href="/kontakt/eisen.jpg">
+      <img class="image" src="/kontakt/eisen@360x360.jpg">
+  </a>
+<a href="/kontakt/case.jpg">
+      <img class="image" src="/kontakt/case@360x360.jpg">
+  </a>
+</div>
+
 ---
 teaser: Das C3WOC hat an strategisch wichtigen Orten Waffeleisen deponiert. Wo genau? Das erfährst du hier!
+---
+project:
+
+#### pro_img ####
+image: eisen.jpg
+#### pro_img ####
+image: case.jpg
+#### pro_img ####
+image: doppeleisen.jpg
+#### pro_img ####
+image: big_case.jpg
