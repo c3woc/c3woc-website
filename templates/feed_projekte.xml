@@ -5,19 +5,18 @@ set search = "rezept" %}
   <title type="text">{%
         if bag('translate', this.alt, 'projectfeed') %}{{ bag('translate', this.alt, 'projectfeed') }}{%
         else %}Rezepte des C3WOC{% endif %}</title>
-  <id>{{ baseurl }}feed_projekte.xml</id>
+  <id>{{ baseurl }}feed_rezepte.xml</id>
   <updated>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
   <link href="{{ baseurl }}{{ search }}/" />
-  <link href="{{ baseurl }}feed_projekte.xml" rel="self" />
+  <link href="{{ baseurl }}feed_rezepte.xml" rel="self" />
   <author>
     <name>{% if this.author %}{{ this.author }}{% else %}C3WOC{% endif %}</name>
   </author>{%
-  set pages = site.query('/projekte').include_undiscoverable(true).all() %}{%
+  set pages = site.query('/rezept').include_undiscoverable(true).all() %}{%
   for page in pages %}{% if not page._hidden %}
   <entry xml:base="{{ baseurl }}{{ search }}/{{ page._id }}/">
     <title type="text">{{ page.title }}</title>
     <id>{{ baseurl }}{{ search }}/{{ page._id }}</id>
-    <updated>{{ page.pub_date|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
     <link href="{{ search }}/{{ page._id }}/" xml:base="{{ baseurl }}" />
     <author>
       <name>{% if page.author %}{{ page.author }}{% else %}C3WOC{% endif %}</name>

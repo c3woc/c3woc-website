@@ -1,14 +1,13 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    RewriteRule ^projekte.xml https://toolbox-bodensee.de/feed_projekte.xml
-    RewriteRule ^f33d.xml https://toolbox-bodensee.de/feed_projekte.xml
-    RewriteRule ^feed.xml https://toolbox-bodensee.de/feed_blog.xml
+    RewriteRule ^rezepte.xml https://c3woc.de/feed_rezepte.xml
+    RewriteRule ^feed.xml https://c3woc.de/feed_blog.xml
 
     ### Redirect certain domains to ffbsee.net
     RewriteCond %{HTTP_HOST} ^toolbox\.cyber\.yt [NC,OR]
-    RewriteCond %{HTTP_HOST} ^www\.toolbox-bodensee\.de [NC]
-    RewriteRule (.*) https://toolbox-bodensee.de/$1 [R=301,L]
+    RewriteCond %{HTTP_HOST} ^www\.c3woc\.de [NC]
+    RewriteRule (.*) https://c3woc.de/$1 [R=301,L]
 </IfModule>
 
 # COMPRESSION WITH MOD_DEFLATE
