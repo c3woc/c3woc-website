@@ -24,8 +24,42 @@ Hierfür stehen zwei Gastronom-Waffeleisen zur Verfügung. Eines mit der klassis
 <a href="/kontakt/case.jpg">
       <img class="image" src="/kontakt/case@360x360.jpg">
   </a>
+<a href="/kontakt/eisen_bruessel.jpg">
+      <img class="image" src="/kontakt/eisen_bruessel@360x360.jpg">
+  </a>
 </div>
+<br/><br/><br/>
 
+ see-base
+==============
+Die [see-base](https://see-base.de) ist ein Hackspace in Überlingen. Dort kommen Chaoten und Hacker zusammen um gemeinsam an Projekten zu basteln, zu löten, spaß am Gerät zu haben und sich auszutauschen.<br/>
+Natürlich auch mit einem ordentlichen Equipment an Snacks und Getränken. Und hier darf das Doppel-Gastro-Waffeleisen nicht fehlen.
+
+<div class="lightgallery">
+<a href="/kontakt/doppeleisen.jpg">
+      <img class="image" src="/kontakt/doppeleisen@360x360.jpg">
+  </a>
+<a href="/kontakt/big_case.jpg">
+      <img class="image" src="/kontakt/big_case@360x360.jpg">
+  </a>
+</div>
+<br/><br/><br/>
+
+ Platinengarten e.V.
+=======================
+Der Platinengarten ist ein Verein in Darmstadt, der sich um das Thema Computer und Waffeln engagiert.<br/>
+Hierfür werden Rowenta Waffeleisen eingesetzt.
+
+
+<div class="lightgallery">
+<a href="/kontakt/rowenta.jpg">
+      <img class="image" src="/kontakt/rowenta@360x360.jpg">
+  </a>
+</div>
+<br/><br/><br/>
+
+ Bilder von unserem Equipment:
+----------------------------------------
 ---
 teaser: Das C3WOC hat an strategisch wichtigen Orten Waffeleisen deponiert. Wo genau? Das erfährst du hier!
 ---
@@ -36,6 +70,10 @@ image: eisen.jpg
 #### pro_img ####
 image: case.jpg
 #### pro_img ####
+image: eisen_bruessel.jpg
+#### pro_img ####
 image: doppeleisen.jpg
 #### pro_img ####
 image: big_case.jpg
+#### pro_img ####
+image: rowenta.jpg
