@@ -32,3 +32,5 @@ project:
 image: waffel_1.jpg
 #### pro_img ####
 image: waffel_2.jpg
+---
+xml_img: waffel_1.jpg
