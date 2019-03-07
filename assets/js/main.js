@@ -168,7 +168,7 @@
 						if (skel.canUse('transition')) {
 
 							$this.scrollex({
-								top:		250,
+								top:		120,
 								bottom:		0,
 								initialize:	function(t) { $this.addClass('inactive'); },
 								terminate:	function(t) { $this.removeClass('inactive'); },
