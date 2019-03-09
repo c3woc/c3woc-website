@@ -155,11 +155,12 @@
                   </ul>{%
                   elif title == 'Blog' %}
                     <ul>{% set root = site.get('/blog/', alt=this.alt) %}{%
-                      for child in root.children recursive %}
+                      for child in root.children recursive %}{% if loop.index <= 8 %}
                       <li{%
                       if this._path == child._path %} class="active"{% endif
                         %}><a href="{{ child|url }}">{{ child.shorttitle }}</a></li>{%
-                    endfor %}
+                    endif %}{% endfor %}
+                    <li><a href="{{ '/blog/'|url }}">Alle Beiträge</a></li>
                     <li><a href="{{ '/feed_blog.xml'|url }}">RSS Feed</a></li></ul>{%
                   endif %}</li>{%
                  endif %}{%
