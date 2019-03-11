@@ -21,6 +21,8 @@ sass-uncompressed:
 install:
 	pip install lektor --user
 	gem install sass
+	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y imagemagick; else echo -e "Please install Imagemagick"; fi
+
 
 build: sass
 	lektor build
