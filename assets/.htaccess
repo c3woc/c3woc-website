@@ -5,7 +5,7 @@
     RewriteRule ^feed.xml https://c3woc.de/feed_blog.xml
 
     ### Redirect certain domains to ffbsee.net
-    RewriteCond %{HTTP_HOST} ^toolbox\.cyber\.yt [NC,OR]
+    RewriteCond %{HTTP_HOST} ^waffel\.cyber\.yt [NC,OR]
     RewriteCond %{HTTP_HOST} ^www\.c3woc\.de [NC]
     RewriteRule (.*) https://c3woc.de/$1 [R=301,L]
 </IfModule>
