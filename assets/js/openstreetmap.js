@@ -79,7 +79,7 @@ L.polygon([
         color: 'orange',
 		fillColor: 'orange',
 		fillOpacity: 0.5
-        }).addTo(mymap).bindPopup("<aside><b>Toolbox Bodensee e.V.</b><br /><a id='tb-closed' class='special button' style='background: FireBrick;'>Vereinsheim geschlossen!</a><a id='tb-opened' class='special button' style='background-color: LimeGreen !important;'>Vereinsheim offen!</a></aside>");
+        }).addTo(mymap).bindPopup("<aside><b>Toolbox Bodensee e.V.</b><br /><a id='no-waffles' class='special button' style='background: FireBrick;'>Vereinsheim geschlossen!</a><a id='waffel-available' class='special button' style='background-color: LimeGreen !important;'>Vereinsheim offen!</a></aside>");
 
     L.circle([47.71229545, 9.39956009], 2, {
 		color: 'red',

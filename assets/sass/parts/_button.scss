@@ -78,7 +78,7 @@ input[type="button"],
     opacity: 0.25;
   }
 
-  &.tb-opened {
+  &.waffel-available {
     background-color: LimeGreen !important;
 
     &.navbar {
@@ -87,7 +87,7 @@ input[type="button"],
   }
 }
 
-.tb-closed {
+.no-waffles {
   color: #d23128ff;
 }
 

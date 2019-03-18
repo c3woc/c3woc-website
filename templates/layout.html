@@ -59,7 +59,7 @@
 
                 #}
                 <div class="tooltip">
-                    <a id="tb-opened" class="button tb-opened navbar special" href="{%
+                    <a id="waffel-available" class="button waffel-available navbar special" href="{%
                         if bag('translate', this.alt, 'api_url_open') %}{{ bag('translate', this.alt, 'api_url_open') }}{%
                         else %}{{ bag('translate', 'de', 'api_url_open') }}{% endif 
                     %}">{%
@@ -72,7 +72,7 @@
                         else %}{{ bag('translate', 'de', 'api_open_text') }}{% endif %}</span>
                 </div>
                 <div class="tooltip">
-                    <a id="tb-closed" class="tb-closed" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{%
+                    <a id="no-waffles" class="no-waffles" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{%
                         else %}{{ bag('translate', 'de', 'api_url') }}{% endif 
                     %}">{% 
                         if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{%
