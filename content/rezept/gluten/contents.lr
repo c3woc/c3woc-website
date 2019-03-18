@@ -1,21 +1,22 @@
-_model: site
+title: Glutenfreier Teig
 ---
-title: Glutenfreie Waffeln
+author: L3D
 ---
 body:
 
-Menschen mit Glutenunverträglichkeit haben es nicht immer Leicht. Viele Lebensmittel enthalten Gluten. Auch der normale Waffelteig.
-Aber das soll uns nicht aufhalten. Bei dieser variante des Glutenfreien Teig ersetzen wir das normale Mehr durch glutenfreies Mehl und fügen noch ein paar Bananen hinzu.
+Menschen mit Glutenunverträglichkeit haben es nicht immer so einfach.<br/>
+Zum Glück ist es relativ einfach, glutenfreie Waffeln herzustellen.
 
-Wichtig ist noch zu erwähnen, dass wir uns nicht anmaßen können, einen Teig der garantiert 100,00% Glutenfrei ist anzurühren. Aber wir sind stets bemüht Glutenarmen Teig nach folgenden Rezept zu entwerfen und so den Anteil an Gluten nahezu an 0 Prozent zu nähern.
+Glutenfreies Mehl gibt es mitlerweile in den meisten Supermärkten. 
+
+Wichtig ist noch zu erwähnen, dass wir uns nicht anmaßen können, einen Teig der garantiert 100,00% Glutenfrei ist anzurühren. Es könnte immer ein hauch gluten in der Luft sein. Aber wir sind stets bemüht glutenarmen Teig nach folgenden Rezept zu entwerfen und so den Anteil an Gluten nahezu an 0 Prozent zu nähern. Außerdem gibt es Backpulver, das auf der packung stehen hat, dass es spuren von gluten enthalten kann.
 
 ```
-1 Packung Eiklar (oder 20 Eier)
-1-3 Bananen
+1 l Vollei-Eiklar (oder ca. 20 Eier)
 1 Kg Zucker
 1,25 Kg Butter (weich/geschmolzen)
-6 Pck. Vanillezucker (am besten aus echter Vanille)
-3 Pck. Backpulver
+20-50g Vanillezucker (am besten aus echter Vanille)
+3 Pck. Backpulver (oder 1-2 EL voll)
 1,5 Liter frische Vollmilch (keine H-Milch)
 2 Kg glutenfreies Mehl
 2 Flaschen Club-Mate oder Flora Power
@@ -23,32 +24,19 @@ etwas (dunklen) Rum
 eine prise Salz
 ```
 
- Zubereitung
-============
-Weiche oder geschmolzene Butter mit zerkleinerten oder pürrierten Bananen, Ei und Zucker in einem 10-Liter Eimer oder einer Schüssel klumpenfrei verrühren.
-Unter ständigen rühren die weiteren Zutaten hinzugeben.
-Zu guter letzt den Teig abschmecken und die Zutaten nach Gefühl variieren.
 
- Wichtig!
-===========
-Die Qualität der Zutaten hat einen hohen Einfluss darauf, wie der Teig schmeckt. Hier ist es stark vorteilhaft, hochwertige Produkte zu verwenden. So schmeckt man, ob billige H-Milch verwendet wurde oder hochwertige Vollmilch, womöglich direkt vom Bauern seiner Vertrauens. Gerade auch bei der Vanille schmeckt der Teig viel besser, wen anstelle billigen Vanillin echter Vanillezucker verwendet wird, der womöglich noch kleine Stücken Vanille enthält.
-Natürlich funktioniert der Teig auch mit den günstigen Produkten. Er ist dann eben nicht mehr ganz so lecker.
-
-Weitere Rezepte:
--------------------------
-<a href="/rezept" class="button">normaler Waffelteig</a>
-<a href="/rezept/eifrei" class="button">Teig ohne Ei</a>
-<a href="/rezept/vegan" class="button">Veganer Teig</a>
-<a href="/rezept/glasur" class="button">Waffelbelag</a>
-<a href="/rezept/fleisch" class="button">Fleischhaltiger Teig</a>
-
-Weitere Informationen:
+  Zubereitung
 -----------
 
-<a href="/rezept/tipps" class="button">Tipps zur Teigzubereitung</a>
-<a href="/hygiene" class="button">Hygiene</a>
+Weiche oder geschmolzene Butter mit zerkleinerten oder pürrierten Bananen, Ei und Zucker in einem 10-Liter Eimer oder einer Schüssel klumpenfrei verrühren. Unter ständigen rühren die weiteren Zutaten hinzugeben. Zu guter letzt den Teig abschmecken und die Zutaten nach Gefühl variieren.
 
+ Wichtig!
+----------------
+
+Die Qualität der Zutaten hat einen hohen Einfluss darauf, wie der Teig schmeckt. Hier ist es stark vorteilhaft, hochwertige Produkte zu verwenden. So schmeckt man, ob billige H-Milch verwendet wurde oder hochwertige Vollmilch, womöglich direkt vom Bauern seiner Vertrauens. Gerade auch bei der Vanille schmeckt der Teig viel besser, wen anstelle billigen Vanillin echter Vanillezucker verwendet wird, der womöglich noch kleine Stücken Vanille enthält. Natürlich funktioniert der Teig auch mit den günstigen Produkten. Er ist dann eben nicht mehr ganz so lecker.
 ---
-spruch: Glutenunverträglichkeit soll dich nicht am Waffeln essen hindern!
+number: 88
 ---
-subtitle: Waffeln für alle!
+icon: fas fa-bread-slice
+---
+teaser: Glutenfreie Waffeln sind sehr simpel. Einfach das normale Mehl durch glutenfreies Mehl ersetzen.

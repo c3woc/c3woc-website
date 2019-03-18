@@ -2,36 +2,35 @@ title: Faszination Waffeleisenputzen
 ---
 author: L3D
 ---
-body:
+beitrag:
 
-Bei der [#GPN18](https://entropia.de/GPN18) wurde echt viel Gewaffelt. Und das ist auch gut so. Dennoch muss natürlich hinterher das Waffeleisen gründlich gepflegt und geputzt werden. Denn es ging durchaus nicht jeder Teig an die richtige Stelle im Eisen.
-
-<span class="image main">
-  <img src="/blog/gpn18-waffelputzen/waffeleisen.jpg" />
-</span>
----
-privatebody:
-
-Und so hat haben wir beim putzen des Waffeleisens dieses echt komplett auseinander nehmen müssen.
-Der Teig ist echt bis in den hintersten Winkel gekrochen.
-
-<span class="image main">
-  <img src="/blog/gpn18-waffelputzen/steinwolle.jpg" />
-</span>
+Und so hat haben wir beim putzen des Waffeleisens dieses echt komplett auseinander nehmen müssen. Der Teig ist echt bis in den hintersten Winkel gekrochen.
 
 Sogar die Steinwolle im Waffeleisen selber war nicht mehr ganz sauber und musste getauscht werden. Das war etwas unerwartet, wir haben es aber trotzdem gemacht ;-)
 
 Nun sind wir bereit auf den nächsten Veranstaltungen nur um so mehr Waffeln zu machen ;-)
 ---
+body:
+
+ Wo überall im Waffeleisen der Teig hinkommt...
+==================================
+
+Bei der #GPN18 wurde echt viel Gewaffelt. Und das ist auch gut so. Dennoch muss natürlich hinterher das Waffeleisen gründlich gepflegt und geputzt werden. Denn es ging durchaus nicht jeder Teig an die richtige Stelle im Eisen.
+
+---
 pub_date: 2018-05-26
 ---
-subtitle: Wo überall im Waffeleisen der Teig hinkommt...
+shorttitle: Eisen putzen
 ---
 twitter_handle: L3D
 ---
-xml:
-
-Bei der GPN18 wurde echt viel Gewaffelt. Und das ist auch gut so. Dennoch muss natürlich hinterher das Waffeleisen gründlich gepflegt und geputzt werden. Denn es ging durchaus nicht jeder Teig an die richtige Stelle im Eisen.
-
+xml: Bei der #GPN18 wurde echt viel Gewaffelt. Und das ist auch gut so. Dennoch muss natürlich hinterher das Waffeleisen gründlich gepflegt und geputzt werden. Denn es ging durchaus nicht jeder Teig an die richtige Stelle im Eisen.
 ---
-xml_img: waffeleisen.jpg
+project:
+
+#### pro_img ####
+image: steinwolle.jpg
+#### pro_img ####
+image: waffeleisen.jpg
+---
+xml_img: steinwolle.jpg

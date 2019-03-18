@@ -1,36 +1,29 @@
-title: Aufbau Makerfaire  2018
+title: Aufbau Makerfaire 2018
 ---
 author: L3D
 ---
-pub_date: 2018-05-31
----
-subtitle: Der aufbau läuft - C3WOC ist vor Ort!
----
-twitter_handle: L3D
+beitrag: Wir freuen uns darauf, die Waffelvernichtungsmassen mit Massenvernichtungswaffeln zu versorgen!
 ---
 body:
 
-Der Aufbau der Makerfaire 2018 läuft aktuell. Hier hat das C3WOC seinen Platz neben den Hackerspacen [see-base](https://see-base.de), [Toolbox Bodensee e.V.](https://toolbox-bodensee.de), [CCCZH](https://ccczh.ch) und der Freifunk Community [Freifunk Bodensee](https://ffbsee.de) gefunden. Hier wird sich auf ein taktisches Waffeln vorbereitet.
+ Der aufbau läuft - C3WOC ist vor Ort!
+=================================
 
- Es folgen erste Bilder des Waffelstand:
------
-
-<span class="image main">
-  <img src="/blog/makerfaire-buildup/cat-01.jpg" />
-</span>
-
+Der Aufbau der Makerfaire 2018 läuft aktuell. Hier hat das C3WOC seinen Platz neben den Hackerspacen see-base, Toolbox Bodensee e.V., CCCZH und der Freifunk Community Freifunk Bodensee gefunden. Hier wird sich auf ein taktisches Waffeln vorbereitet.
 ---
-privatebody:
-
-<span class="image main">
-  <img src="/blog/makerfaire-buildup/cat-03.jpg" />
-</span>
-<span class="image main">
-  <img src="/blog/makerfaire-buildup/cat-02.jpg" />
-</span>
-
-Wir freuen uns darauf, die Waffelvernichtungsmassen mit Massenvernichtungswaffeln zu versorgen!
+pub_date: 2018-05-31
 ---
-xml: Es wird Waffeln geben... auf der Makerfaire Bodensee \o/
+shorttitle: Makerfaire 18
 ---
-xml_img: cat-01.jpg
+twitter_handle: L3D
+---
+xml: Der Aufbau der Makerfaire 2018 läuft aktuell. Hier hat das C3WOC seinen Platz neben den Hackerspacen see-base, Toolbox Bodensee e.V., CCCZH und der Freifunk Community Freifunk Bodensee gefunden. Hier wird sich auf ein taktisches Waffeln vorbereitet.
+---
+project:
+
+#### pro_img ####
+image: cat-01.jpg
+#### pro_img ####
+image: cat-03.jpg
+#### pro_img ####
+image: cat-02.jpg

@@ -1,7 +1,51 @@
-assets/solid-state/
-*.swp
-**.swp
-*.tmp
-*.directory
-**.tmp
-**.directory
+# ---> Vim
+# swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
+# ---> Windows
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# DS-Store
+**.DS_Store
+*.DS_Store
+
+# C3WOC Website files
+assets/css/main.css
+assets/css/main.min.css
+assets/css/ie9.css
+assets/css/ie9.min.css
+.sass-cache/
+assets/css/main.css.map
+assets/css/ie9.css.map
+assets/css/main.min.css.map
+assets/css/ie9.min.css.map
+tmp/
+

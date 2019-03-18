@@ -1,58 +1,23 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
+{% block expand_description %}
+    <meta name="description" content="{% 
+        if this.teaser %}{{ this.teaser }}{% else %}{%
+            if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
+            else %}{{ bag('translate', 'de', 'description') }}{% endif %}
+        {% endif %}" />
+{% endblock %}
 {% block body %}
-
-            <!-- One -->
-            <section id="one" class="wrapper spotlight style1">
-              <div class="inner">
-                <a href="{{ this.as01l1 }}" class="image"><img src=" {{ this.as01img }}" alt="" /></a>
-                <div class="content">
-                  <h2 class="major">{{ this.as01h1 }}</h2>
-                  {{ this.as01b1 }}
-                  <a href="{{ this.as01l1 }}" class="special">{{ this.as01d1 }}</a>
-                </div>
-              </div>
-            </section>
-
- 
-            <!-- Two -->
-            <section id="two" class="wrapper alt spotlight style2">
-              <div class="inner">
-                <a href="{{ this.as02l1 }}" class="image"><img src=" {{ this.as02img }}" alt="" /></a>
-                <div class="content">
-                  <h2 class="major">{{ this.as02h1 }}</h2>
-                  {{ this.as02b1 }}
-                  <a href="{{ this.as02l1 }}" class="special">{{ this.as02d1 }}</a>
-                </div>
-              </div>
-            </section>
-
-
-            <!-- Three -->
-            <section id="three" class="wrapper spotlight style3">
-              <div class="inner">
-                <a href="{{ this.as03l1 }}" class="image"><img src=" {{ this.as03img }}" alt="" /></a>
-                <div class="content">
-                  <h2 class="major">{{ this.as03h1 }}</h2>
-                  {{ this.as03b1 }}
-                  <a href="{{ this.as03l1 }}" class="special">{{ this.as03d1 }}</a>
-                </div>
-              </div>
-            </section>
-
-            <!-- Four -->
-            <section id="four" class="wrapper alt style1">
-              <div class="inner">
-                <h2 class="major">{{ this.where }}</h2>
-                <ul class="actions">
-                  {{ this.description }}
-                  {{ this.tour }} 
-                  <li><a href="{{ 'feed.xml'|url }}" class="button">RSS Feed</a></li>
-                  <li><a href="{{ 'waffeln.ics'|url }}" class="button">ICS Kalender</a></li>
-                 </ul>
-               </div>
-             </section>
-
-
-
+<div id="main" class="wrapper style1">
+  <div class="container">
+    <header class="major">
+      <h2>{{ this.title }}</h2>
+      <p>{{ this.slogan }}</p>
+    </header>
+<!-- Content -->
+    <section id="content">
+      {{ this.content }}
+    </section>
+  </div>
+</div>
 {% endblock %}

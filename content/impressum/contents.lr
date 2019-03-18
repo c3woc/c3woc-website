@@ -1,8 +1,12 @@
-_model: site
+_model: page
 ---
 title: Impressum
 ---
-body:
+slogan: Hier könnt ihr uns erreichen!
+---
+teaser: Das Impressum des C3 Waffel Operation Center. Hier findet ihr diverse Kontaktmöglichkeiten um schnell und einfach mit uns in Verbindung zu kommen!
+---
+content:
 
  IRC:
 -----
@@ -27,7 +31,3 @@ C3WOC
 Bergheimer Str. 6-12
 88677 Markdorf
 ```
----
-subtitle: Kontaktmöglichkeiten
----
-spruch: So kann man uns erreichen...

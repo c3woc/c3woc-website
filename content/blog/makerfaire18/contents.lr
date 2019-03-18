@@ -2,46 +2,36 @@ title: Makerfaire Bodensee 2018
 ---
 author: L3D
 ---
+beitrag: Sogar mit dem ersten Waffel-Livestream vom CH-VOC
+---
 body:
 
-<span class="image main">
-  <img src="/images/winkekatze.jpg" />
-</span>
+ In der Messe Friedrichshafen wurde fleißig gewaffelt
+=============================================
 
-
-<span class="image main">
-  <img src="/blog/makerfaire18/ballpit.jpg" />
-</span>
 
 ---
-pub_date: 2018-06-04
+pub_date: 2018-06-06
 ---
-subtitle: In der Messe Friedrichshafen wurde fleißig gewaffelt
+shorttitle: Makerfaire
 ---
-twitter_handle: c3woc
+twitter_handle: L3D
 ---
-privatebody:
-
-<br/><br/><br/><br/><br/>
-<span class="image main" style="    -webkit-transform: rotate(270deg);    -moz-transform: rotate(270deg);    -o-transform: rotate(90deg);    -ms-transform: rotate(270deg);    transform: rotate(270deg);">
-  <img src="/blog/makerfaire18/action01.jpg" />
-</span>
-<br/><br/><br/><br/><br/>
-
-<span class="image main">
-  <img src="/images/winkekatze02.jpg" />
-</span>
-
-
-<span class="image main">
-  <img src="/blog/makerfaire18/action02.jpg" />
-</span>
-
-<span class="image main">
-  <img src="/blog/makerfaire18/waffelstillstand.jpg" />
-</span>
-
+xml: In der Messe Friedrichshafen wurde fleißig gewaffelt
 ---
-xml: Waffeln auf der Makerfaire Bodensee!
+project:
+
+#### pro_img ####
+image: ballpit.jpg
+#### pro_img ####
+image: winkekatze02.jpg
+#### pro_img ####
+image: winkekatze.jpg
+#### pro_img ####
+image: action02.jpg
+#### pro_img ####
+image: waffelstillstand.jpg
+#### pro_img ####
+image: action01.jpg
 ---
 xml_img: action02.jpg

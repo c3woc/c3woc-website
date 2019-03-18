@@ -1,8 +1,0 @@
-title: News
----
-sub_title:
-
-        <a>Tasty news. Now available as  </a><a href="{{ '/feed.xml'|url }}">RSS  <span class="icon fa-rss"></span></a> <br/>
-        <a>tactical waffle operations. now available as
-</a><a href="{{ '/waffeln.ics'|url }}">ICS  <span class="icon fa-calendar"></span></a>
-

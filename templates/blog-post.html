@@ -1,6 +1,35 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
+{% if this.project %}{% block expand_header %}
+<link href="{{ '/css/lightgallery.css'|url }}" rel="stylesheet">
+{% if this.video_is_embeded %} <!-- Embed Video -->
+<script src="{{ '/js/webcomponents.min.js'|url }}"></script/>
+<link rel="import" href="{{ '/youtube-embed.html'|url }}"> {% endif %}
+{% endblock %}{% endif %}
 {% block title %}{{ this.title }}{% endblock %}
+{% block expand_description %}
+    <meta name="description" content="{% 
+        if this.xml %}{{ this.xml }}{% else %}{%
+            if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
+            else %}{{ bag('translate', 'de', 'description') }}{% endif %}
+        {% endif %}" />
+{% endblock %}
 {% block body %}
-  {{ render_blog_post(this) }}
+<!-- Main -->
+<div id="main" class="wrapper style1">
+  <div class="container">
+    {{ render_blog_post(this) }}
+  </div>
+</div>
+{% if this.project %}
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+      $('.lightgallery').lightGallery();
+    });
+  </script>
+  <script src="{{ '/js/picturefill.min.js'|url }}"></script>
+  <script src="{{ '/js/lightgallery-all.min.js'|url }}"></script>
+  <script src="{{ '/js/jquery.mousewheel.min.js'|url }}"></script>
+{% endif %}
 {% endblock %}

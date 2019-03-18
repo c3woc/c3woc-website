@@ -1,120 +1,241 @@
-<!DOCTYPE HTML>
-<html>
+{% set fqdn = 'c3woc.de' 
+%}<!DOCTYPE html>
+<html{% if this.alt %} lang="{{ this.alt }}"{% endif %}>
   <head>
-    <title>{% block title %}Start{% endblock %}</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="{{ '/js/ie/html5shiv.js'|url }}"></script><![endif]-->
-    <link rel="stylesheet" href="{{ '/css/main.css'|url }}" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="{{ '/css/ie9.css'|url }}" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="{{ '/css/ie8.css'|url }}" /><![endif]-->
-    <link rel="icon" href="{{ '/images/favicon.png'|url }}" type="image/png">
-    {% block expand_header %}{% endblock %}
-    <style>
-      .active a{
-        color: red;
-      }
-    </style>
+    <meta charset="utf-8">
+    <title>{% block title %}Startseite{% endblock %} - c3woc.de</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />{%
+  if '/css/main.min.css'|asseturl == empty and '/css/main.css'|asseturl == empty %}
+    <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
+    <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />{%
+  endif %}
+    <link rel="stylesheet" href={%
+        if '/css/main.min.css'|asseturl == empty %}{%
+            if '/css/main.css'|asseturl == empty %}"https://{{ fqdn }}/css/main.min.css"{%
+            else %}"{{ '/css/main.css'|asseturl }}"{%
+            endif %}{%
+        else %}"{{ '/css/main.min.css'|asseturl }}"{%
+        endif %} /> 
+    <!--[if lte IE 9]><link rel="stylesheet" href={%
+        if '/css/ie9.min.css'|asseturl == empty %}"https://{{ fqdn }}/css/ie9.min.css"{%
+        else %}"{{ '/css/ie9.min.css'|asseturl }}"{%
+        endif %}" /><![endif]-->
+    {% block expand_description 
+    %}<meta name="description" content="{% 
+        if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
+        else %}{{ bag('translate', 'de', 'description') }}{% endif %}" />{%
+     endblock %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|asseturl }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|asseturl }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|asseturl }}">
+    <link rel="manifest" href="{{ '/images/icons/site.webmanifest'|asseturl }}">
+    <link rel="mask-icon" href="{{ '/images/icons/safari-pinned-tab.svg'|asseturl }}" color="#e64f2d">
+    <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico'|asseturl }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|asseturl }}">
+    <meta name="theme-color" content="#e64f2d">{%
+    block expand_header %}{% endblock %}
+    <script src="{{ '/js/jquery.min.js'|asseturl }}"></script>
   </head>
-  <body>
-
-    <!-- Page Wrapper -->
+  <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
     <div id="page-wrapper">
-
-      <!-- Header -->
-      <header id="header" class="alt">
-        <h1><a href="index.html">c3WOC</a></h1>
-        <nav>{% if this.alt == 'en' %}
-          <a href="/..{{ this._path }}">Deutsch Version aufrufen</a>{%
-              else %}<a href="/en{{ this._path }}">View English version</a>{% endif %}
-          <a href="#menu">Menu</a>
-        </nav>
-      </header>
-
-      <!-- Menu -->
-      <nav id="menu">
-        <div class="inner">
-          <h2>Menu</h2>
-          <ul class="links">
-            <li{% if this._path == '/' %} class="active"{% endif
-              %}><a href="{{ '/'|url }}">home</a></li>{%
-             for href, title in [
-              ['/blog',      'news'],
-              ['/equipment', 'equipment'],
-              ['/rezept',   'waffledough'],
-              ['/hygiene',   'sanitariness'],
-              ['/mitmachen',   'participate'],
-              ['/impressum', 'imprint'],
-              ['/datenschutz', 'dataprotection']
-            ] %}
-            <li{% if this.is_child_of(href) %} class="active"{% endif
-               %}><a href="{{ href|url }}">{% if bag('translate', this.alt, title)
-               %}{{ bag('translate', this.alt, title) }}{% else %}{{ title }}{% endif %}</a></li>{%
-             endfor %}
-            </ul>
-            <a href="#" class="close">{% if bag('translate', this.alt, 'close')
-              %}{{ bag('translate', this.alt, 'close') }}{% else %}Schließen{% endif %}</a>
-        </div>
-      </nav>
-
-      <!-- Banner -->
-      <section id="banner">
-        <div class="inner">
-          <div class="logo"><a href="{{ '/'|url }}"><span class="icon fa-heart"></span></a></div>
-            <h2>C3WOC</h2>
-            <p>{% if bag('translate', this.alt, 'c3woc')
-               %}{{ bag('translate', this.alt, 'c3woc') }}{% else %}C3 Waffel Operation Center{% endif %} <span class="icon fa-heart"></span>
-              {% if bag('translate', this.alt, 'destiny') %}{{ bag('translate', this.alt, 'destiny') }}{%
-              else %}Wir machen Waffeln{% endif %}</p>
-          </div>
-        </section>
-        <!-- Wrapper -->
-        <section id="wrapper">
-          <!-- Main -->
-          {% block body %}{% endblock %}
-        </section>
+       <!-- Header -->
+        <header id="header">
+            <h1 id="logo">{#
 
 
-        <!-- Footer -->
-        <section id="footer">
-          <div class="inner">
-              <h2 class="major">{% if bag('translate', this.alt, 'we') %}{{ bag('translate', this.alt, 'we') }}{% 
-                else %}Wir{% endif %} <span class="icon fa-heart"></span> {% if bag('translate', this.alt, 'love')
-               %}{{ bag('translate', this.alt, 'love') }}{% else %}Waffeln, du auch?{% endif %}</h2>
-              <p>{% if bag('translate', this.alt, 'whoami')
-               %}{{ bag('translate', this.alt, 'whoami') }}{% else %}Das C3WOC besteht aus Hackern aus dem Chaosumfeld. Nimm doch mal mit uns Kontakt auf und lass uns zusammen Waffeln machen!</p>{% endif %}
-            <form>
-              <img src="{{ '/images/c3woc.svg'|url }}" style="width: 100%;"/>
-            </form>
-                <ul class="contact">
-                    {% for icon, link, name in [
-                      ['fa-envelope', 'mailto:waffel@c3woc.de', 'mail'],
-                      ['fa-hashtag', 'ircs://irc.hackint.org/#waffel', 'irc'],
-                      ['fa-hashtag', 'https://webirc.hackint.org/#irc://irc.hackint.org/#waffel', 'webirc'],
-                      ['fa-twitter', 'https://twitter.com/@c3WOC', 'twitter'],
-                      ['fa-comments', 'https://chaos.social/@c3WOC', 'mastodon'],
-                      ['fa-user-plus', '/mitmachen/'|url , 'invite']
-                    ] %}
-                    <li class="{{ icon }}"><a href="{{ link }}">{% if bag('translate', this.alt, name) %}{{ bag('translate', this.alt, name) }}{% 
-                      else %}{{ name }}{% endif %}</a></li>{%
-                    endfor %}
-                </ul>
-              <ul class="copyright">
-                  <li>&copy; by L3D.</li><li><a href="{{ '/datenschutz/'|url }}">{% if bag('translate', this.alt, 'dataprotection') %}{{ bag('translate', this.alt, 'dataprotection') }}{% 
-                      else %}Cyberschutz{% endif 
-                      %}</a></li><li><a href="{{ '/impressum/'|url }}">{% 
-                      if bag('translate', this.alt, 'imprint') %}{{ bag('translate', this.alt, 'imprint') }}{% 
-                      else %}Impressum{% endif %}</a></li><li>Design inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
-          </ul>
-	    </div>
-      </section>
+
+            Hier findet sich der "Waffel Status" der Webseite.
+            Wenn das CSS sagt, dass es Waffeln gibt, 
+            dann wird die Webseite grün und es gibt Waffeln.
+
+            Wenn nicht... nicht!
+
+            Das ganze wird über die SpaceAPI gesteuert.
+            Auch wenn das C3WOC kein echter Hackerspace ist...
+            Aber die Webseite ist dreist von der Toolbox kopiert worden.
+
+
+
+                #}
+                <div class="tooltip">
+                    <a id="waffel-available" class="button waffel-available navbar special" href="{%
+                        if bag('translate', this.alt, 'api_url_open') %}{{ bag('translate', this.alt, 'api_url_open') }}{%
+                        else %}{{ bag('translate', 'de', 'api_url_open') }}{% endif 
+                    %}">{%
+                        if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{%
+                        else %}{{ bag('translate', 'de', 'api_space') }}{% endif %} {%
+                        if bag('translate', this.alt, 'api_open') %}{{ bag('translate', this.alt, 'api_open') }}{%
+                        else %}{{ bag('translate', 'de', 'api_open') }}{% endif %}</a>
+                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_open_text') 
+                        %}{{ bag('translate', this.alt, 'api_open_text') }}{%
+                        else %}{{ bag('translate', 'de', 'api_open_text') }}{% endif %}</span>
+                </div>
+                <div class="tooltip">
+                    <a id="no-waffles" class="no-waffles" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{%
+                        else %}{{ bag('translate', 'de', 'api_url') }}{% endif 
+                    %}">{% 
+                        if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{%
+                        else %}{{ bag('translate', 'de', 'api_space') }}{% 
+                        endif %} {% if bag('translate', this.alt, 'api_closed') %}{{ bag('translate', this.alt, 'api_closed') }}{% 
+                        else %}{{ bag('translate', 'de', 'api_closed') }}{% endif %}</a>
+                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_opening_time') 
+                        %}{{ bag('translate', this.alt, 'api_opening_time') }}{% 
+                        else %}{{ bag('translate', 'de', 'api_opening_time') }}{% endif %}</span>
+                  </div>
+            </h1>
+            <nav id="nav">{#
+
+
+            Hier beginnt das Menü.
+            Erstmal werden in einer Liste alle elemente definiert, die in dem "root" level des Menüs auftauchen.
+            Anschließend kommen in einer relativ hässlichen if-abfrage der sublevel.
+
+            Das kann man hübscher machen. Aber so ist es zumindest erstmal funktional.
+            Und da am schluss fertig gerendertes HTML raus kommt auch keine kritische Infrastruktur,
+            die besonders schützenswert ist...
+
+            Dennoch würde ich (L3D)  mich hier sehr über etwas beteiligung freuen.
+            Alleine an einer Webseite zu arbeiten... Ist schon cool. Aber zu zweit gleich noch viel cooler!!!
+
+            #}
+              <ul>
+                <li{% if this._path == '/' %} class="active"{% endif
+                  %}><a href="{{ '/'|url }}">{%
+                  if bag('navigation', this.alt, 'home') %}{{ bag('navigation', this.alt, 'home') }}{%
+                  else %}{{ bag('navigation', 'de', 'home') }}{% endif %}</a></li>{%
+                for href, title, print in [
+                  ['/blog', 'Blog', 1],
+                  ['/rezept', 'Rezept', 1],
+                  ['/mitmachen', 'Mitmachen', 1],
+                  ['/hunger', 'Wo gibt es Waffeln?', 1],
+                  ['/kontakt', 'Kontakt', 1]
+                ] %}{% if print %}
+                  <li{% if this.is_child_of(href) %} class="active"{% endif
+                  %}><a href="{{ href|url }}">{% 
+                     if bag('navigation', this.alt, title) 
+                       %}{{ bag('navigation', this.alt, title) }}{%
+                     else %}{{ title }}{% 
+                     endif %}</a>{#
+
+                    Hier beginnt die vorhin erwähnt if-schleife,
+                    in der die Untermenüs definiert werden.
+        
+                    PLZ Fix me!!!
+                    
+                        -> Eine Idee zum Fix wäre, die obige Tabelle ausweiten...
+
+                    #}{%
+                  if title == 'Rezept' %}
+                    <ul>{% set root = site.get('/rezept/', alt=this.alt) %}{%
+                  for child in root.children recursive %}{% if loop.index <= 8 %}
+                    <li{%
+                      if this._path == child._path %} class="active"{% endif
+                      %}><a href="{% if this.alt == 'de' %}{% else %}/{{ this.alt }}/{% endif %}{{ child|url }}">{{ child.title }}</a></li>{%
+                  endif %}{% endfor %}
+                      <li><a href="{{ '/rezept/'|url }}">{% 
+                              if bag('navigation', this.alt, 'show_projekt') %}{{ bag('navigation', this.alt, 'show_projekt') }}{% 
+                              else %}{{ bag('navigation', 'de', 'show_projekt') }}{% endif %}</a></li>
+                      <li><a href="{{ '/feed_projekte.xml'|url }}">{% 
+                              if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% 
+                              else %}{{ title }}{% endif %} {% 
+                              if bag('navigation', this.alt, 'xml') %}{{ bag('navigation', this.alt, 'xml') }}{% 
+                              else %}{{ bag('navigation', 'de', 'xml') }}{% endif %}</a></li>
+                    </ul>{%
+                  elif title == 'Kontakt' %}
+                    <ul><li><a href="{{ '/kontakt'|url }}">{% 
+                              if bag('navigation', this.alt, 'Kontakt') %}{{ bag('navigation', this.alt, 'Kontakt') }}{% 
+                              else %}{{ bag('navigation', 'de', 'Kontakt') }}{% endif %}</a></li>
+                      <li><a href="{{ '/impressum'|url }}">{% 
+                              if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% 
+                              else %}Impressum{% endif %}</a></li>
+                      <li><a href="{{ '/datenschutz/'|url }}">{% 
+                              if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% 
+                              else %}Datenschutz{% endif %}</a></li>
+                  </ul>{%
+                  elif title == 'Blog' %}
+                    <ul>{% set root = site.get('/blog/', alt=this.alt) %}{%
+                      for child in root.children recursive %}{% if loop.index <= 8 %}
+                      <li{%
+                      if this._path == child._path %} class="active"{% endif
+                        %}><a href="{{ child|url }}">{{ child.shorttitle }}</a></li>{%
+                    endif %}{% endfor %}
+                    <li><a href="{{ '/blog/'|url }}">Alle Beiträge</a></li>
+                    <li><a href="{{ '/feed_blog.xml'|url }}">RSS Feed</a></li></ul>{%
+                  endif %}</li>{%
+                 endif %}{%
+               endfor %}
+               <li class="last"><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
+                   <ul class="last">
+                     <li><a href="{{ this._path }}">{% 
+                             if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{%
+                             else %}{{ bag('navigation', 'de', 'German') }}{% endif %}</a></li>
+                     <li><a href="/en{{ this._path }}">{% 
+                             if bag('navigation', this.alt, 'Englisch') %}{{ bag('navigation', this.alt, 'Englisch') }}{% 
+                             else %}{{ bag('navigation', 'de', 'Englisch') }}{% 
+                         endif %} <i>({%
+                             if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{%
+                             else %}{{ bag('navigation', 'de', 'falls') }}{% 
+                        endif %})</i></a><li>
+                   </ul>
+                 </li>
+              </ul>
+            </nav>
+          </header>{#
+
+            Und hier werden nun die eientlichen Seiten eingebunden...
+
+            #}
+<!-- Main -->
+{% block body %}{% endblock %}{#
+
+            Und da wären wir auch schon am Ende der Webseite...
+            Hier noch mal fett Werbung gemacht, wo es alles etwas vom C3WOC gibt...
+
+            So mit Twitter, Mail, IRC, Mastodon und RSS kommt da doch einiges zusammen :P
+
+            #}
+       <!-- Footer -->
+       <footer id="footer">
+         <ul class="icons">{%
+         for label, icon, href in [
+           ['Mastodon', 'fab fa-mastodon', "https://chaos.social/@c3woc"],
+           ['Twitter', 'fab fa-twitter', "https://twitter.com/c3woc"],
+           ['Webseite', 'fab fa-github', "https://github.com/ToolboxBodensee/c3woc-webseite"],
+           ['Gitea', 'fab fa-gitlab', "https://gitea.see-base.de/c3woc/"],
+           ['Mail', 'fas fa-envelope', "mailto:waffeln@c3woc.de"],
+           ['IRC Chat', 'fas fa-hashtag', "ircs://irc.hackint.org/#waffel"],
+           ['Webirc Chat', 'fab fa-slack', "https://webirc.hackint.org/#irc://irc.hackint.org/#waffel"],
+           ['Rezept-Feed', 'fas fa-receipt', "https://c3woc.de.de/feed_rezepte.xml"],
+           ['News', 'fas fa-rss', "https://c3woc.de/feed_blog.xml"],
+           ['Tourdaten', 'far fa-calendar-plus', "https://c3woc.de/waffeln.ics"],
+           ['Tourdaten', 'fas fa-user-plus', "https://c3woc.de/mitmachen"]
+         ] %}
+           <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>{%
+         endfor %}
+        </ul>
+        <ul class="copyright">
+          <li>&copy;Copyright by C3 Waffel Operation Center.</li>
+          <li><a href="{{ '/impressum/'|url }}">{% 
+                  if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{%
+                  else %}Impressum{% endif %}</a></li>
+          <li><a href="{{ '/datenschutz/'|url }}">{% 
+                  if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% 
+                  else %}Datenschutzerklärung{% endif %}</a></li>
+          <li>Design inspired by <a href="http://html5up.net">HTML5 UP</a> </li>
+          <!-- CMS: Lektor | Angepasst durch L3D -->
+          <!-- advertising: Grab your waffle from C3WOC! C3WOC ->Great waffles for everypony. https://c3woc.de/ -->
+        </ul>
+      </footer>
     </div>
+
     <!-- Scripts -->
-    <script src="{{ '/js/skel.min.js'|url }}"></script>
-    <script src="{{ '/js/jquery.min.js'|url }}"></script>
-    <script src="{{ '/js/jquery.scrollex.min.js'|url }}"></script>
-    <script src="{{ '/js/util.js'|url }}"></script>
-    <!--[if lte IE 8]><script src="{{ '/js/ie/respond.min.js'|url }}"></script><![endif]-->
-    <script src="{{ '/js/main.js'|url }}"></script>
+    <script src="{{ '/js/jquery.scrolly.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/jquery.scrollex.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/skel.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/util.js'|asseturl }}"></script>{%
+  block  mainjs %}
+    <script src="{{ '/js/main.js'|asseturl }}"></script>{%
+  endblock %}
   </body>
 </html>

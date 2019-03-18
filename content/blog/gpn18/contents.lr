@@ -1,52 +1,52 @@
-title: Gulasch Programier Nacht
+title: Waffeln auf der #GPN18
 ---
 author: L3D
 ---
-body:
+beitrag:
 
-Die [Gulaschprogrammiernacht](https://gulas.ch) ist eine viertägige Konferenz für Hacker, Technikbegeisterte und interessierte Laien und mit über 1000 Teilnehmern die zweitgrößte jährliche Veranstaltung des Chaos Computer Club. Hier Treffen sich Hacker, Chaoten und viele weitere Lebensformen im HFG und ZKM in Karlsruhe.
-
-Natürlich darf dort das C3WOC auch nicht fehlen. Daher sind wir dort bereits am Donnerstag, den ersten Tag der GPN mit den ersten Waffeleisen aufgeschlagen.
-
-<span class="image main">
-  <img src="/blog/gpn18/eroberung.jpg" />
-</span>
+ Daher sind wir dort bereits am Donnerstag, den ersten Tag der GPN mit den ersten Waffeleisen aufgeschlagen.
 
 Selbstverständlich haben wir sofort losgewaffelt!
----
-pub_date: 2018-05-10
----
-subtitle: Waffeln auf der #GPN18
----
-twitter_handle: c3woc
----
-privatebody:
 
-Der Entropia hat uns in der mitte der GPN plaziert. Genauer gesagt gegenüber der großen Bar.
-<span class="image main">
-  <img src="/blog/gpn18/bei_der_bar.jpg" />
-</span>
+Der Entropia hat uns in der mitte der GPN plaziert. Genauer gesagt gegenüber der großen Bar. 
 
-Dort haben wir Strom, Internet und Tschunk, also alles, was der Nerd begehrt.
-Auch wenn wir es am Tag1 mit nur eingeschränkter Waffel-Manschaft langsam angehen wollten, haben wir direkt 10 Liter Waffelteig verbacken!
+Dort haben wir Strom, Internet und Tschunk, also alles, was der Nerd begehrt. Auch wenn wir es am Tag1 mit nur eingeschränkter Waffel-Manschaft langsam angehen wollten, haben wir direkt 10 Liter Waffelteig verbacken!
 
-<span class="image main" style="float: left;">
-<img src="/blog/gpn18/waffelpower_1.jpg" style="width: 48%; float: left; padding: 1%;"/>
-<img src="/blog/gpn18/waffelpower_3.jpg" style="width: 48%; float: left; padding: 1%;" />
-</span>
-
-Hierbei ein herzliches Dankeschön an Obelix und an die ganze GPN Orga, die die Zutaten für den Waffelteig besorgt haben und die ausübung der Waffelgewalt zugelassen haben. Aber auch Danke an alle, die etwas in die Spendenkasse geworfen haben.
-Das waren schon am ersten Tag 142 Euro. Das Geld wir verwendet um Primär die Zutaten zu bezahlen, aber auch um Merch wie die Aufkleber und Schürzen zu finanzieren und uns auch ein großen Banner zu besorgen, damit man uns finden kann.
-Das restliche Geld kommt den Veranstaltern der GPN, also dem Entropia e.V. zu gute.
-
-<span class="image main">
-  <img src="/blog/gpn18/waffelpower_2.jpg" />
-</span>
+Hierbei ein herzliches Dankeschön an Obelix und an die ganze GPN Orga, die die Zutaten für den Waffelteig besorgt haben und die ausübung der Waffelgewalt zugelassen haben. Aber auch Danke an alle, die etwas in die Spendenkasse geworfen haben. Das waren schon am ersten Tag 142 Euro. Das Geld wir verwendet um Primär die Zutaten zu bezahlen, aber auch um Merch wie die Aufkleber und Schürzen zu finanzieren und uns auch ein großen Banner zu besorgen, damit man uns finden kann. Das restliche Geld kommt den Veranstaltern der GPN, also dem Entropia e.V. zu gute.
 
 Wenn Ihr uns auch weiter auf der GPN Unterstützen möchtet, freuen wir uns natürlich über Finanzielle Spenden. Noch viel lieber sind aber Trolle gesehen, die Teig machen oder sogar das Backen der Waffeln übernehmen.
 
 Hierbei nochmal ein herzlichstes Dankeschön an die Trolle von Tag 1.
 ---
-xml: Die Gulaschprogrammiernacht ist eine viertägige Konferenz für Hacker, Technikbegeisterte und interessierte Laien und mit über 1000 Teilnehmern die zweitgrößte jährliche Veranstaltung des Chaos Computer Club. Hier Treffen sich Hacker, Chaoten und viele weitere Lebensformen im HFG und ZKM in Karlsruhe.
+body:
+
+Die Gulaschprogrammiernacht ist eine viertägige Konferenz für Hacker, Technikbegeisterte und interessierte Laien und mit über 1000 Teilnehmern die zweitgrößte jährliche Veranstaltung des Chaos Computer Club. Hier Treffen sich Hacker, Chaoten und viele weitere Lebensformen im HFG und ZKM in Karlsruhe.
+
+Natürlich mit Waffeln!
+---
+pub_date: 2018-05-10
+---
+shorttitle: #GPN18
+---
+twitter_handle: L3D
+---
+xml:
+
+Die Gulaschprogrammiernacht ist eine viertägige Konferenz für Hacker, Technikbegeisterte und interessierte Laien und mit über 1000 Teilnehmern die zweitgrößte jährliche Veranstaltung des Chaos Computer Club. Hier Treffen sich Hacker, Chaoten und viele weitere Lebensformen im HFG und ZKM in Karlsruhe.
+
+Natürlich mit Waffeln!
+---
+project:
+
+#### pro_img ####
+image: bei_der_bar.jpg
+#### pro_img ####
+image: eroberung.jpg
+#### pro_img ####
+image: waffelpower_3.jpg
+#### pro_img ####
+image: waffelpower_1.jpg
+#### pro_img ####
+image: waffelpower_2.jpg
 ---
 xml_img: bei_der_bar.jpg

@@ -1,77 +1,59 @@
 title: GlühPN
 ---
-xml: Auf der GlühPN haben wir 501€ Spenden gesammelt. Diese wurden an dern Open Infrastructure Orbit beim 35c3 gespendet.
----
 author: L3D
 ---
-pub_date: 2018-11-26
----
-subtitle: Waffeln für den OiO
----
-twitter_handle: L3D
----
-xml_img: spende.jpg
----
-body:
-
-
-Auf der Gulasch Programmier Nacht ([GPN18,5](https://entropia.de/GPN18,5) haben wir auch dieses Jahr wieder Waffeln gebacken.
-
-Und da der Chaos Communication Congress direkt vor der Türe steht haben wir beschlossen Spenden zu sammeln und diese dem Open Infrastructure Orbit zukommen zu lassen.
-
-<span class="image main">
-  <img src="/blog/gluehpn/spende.jpg" />
-</span>
+beitrag:
 
 Insgesamt haben wir zum Ende der GPN ein Plus von 501€ die wir dem Orbit zukommen lassen haben.
 
 Zur Information: Den Spendenaufruf dazu gibt es hier: [blog.freifunk.net](https://blog.freifunk.net/2018/11/19/oio-auf-dem-35c3-call-for-participation-call-for-donations/)<br/>
 Spendenhistory bei Betterplaces: [betterplace.org](https://www.betterplace.org/de/projects/12172-freifunk-net/opinions#ppp-sticky-anchor)
 
-<span class="image main">
-  <img src="/images/waffle.jpg" />
-</span>
----
-privatebody:
-
 Insgesamt kamen sogar fast 740€ in den Spendentopf über die drei Tage. Doch die Zutaten sowie der Belag der Waffeln haben etwa 240€ gekostet.
-
-
 Da waren dann aber auch u.a. Zutaten für den Veganen Teig dabei.
-
-<span class="image main">
-  <img src="/blog/gluehpn/vegan.jpg" />
-</span>
-
-<span class="image main">
-  <img src="/blog/gluehpn/practise.jpg" />
-</span>
-
 
 Viele Leute haben uns angesprochen und meinten, dass die Waffeln sehr lecker waren. So etwas ist immer toll zu hören und bestätigt uns in unserem vorhaben!
 
-<span class="image main">
-  <img src="/blog/gluehpn/waffle.jpg" />
-</span>
-
 Am Freitag war erst ein kleiner Teil vom C3WOC vom Bodensee vertreten. Genauer gesagt der L3D. Dankenswerter Weise haben sich aber trotzdem auch ein paar Leute gefunden die beim Zutaten einkaufen, Teig machen oder Waffeln backen mitgeholfen haben.
-Vielen lieben Dank hierfür!
 
-<span class="image main">
-  <img src="/blog/gluehpn/beginning.jpg" />
-</span>
+Vielen lieben Dank hierfür!
 
 Am Samstag ist dann auch die Unterstützung aus Darmstadt aufgetaucht. Und es hat sich nur einmal mehr gezeigt: zusammen macht das Waffeln machen nur noch mehr spaß!
 
-<span class="image main">
-  <img src="/blog/gluehpn/fine.jpg" />
-</span>
+---
+body:
+
+Auf der Gulasch Programmier Nacht ([GPN18,5](https://entropia.de/GPN18,5)) haben wir auch dieses Jahr wieder Waffeln gebacken.
+
+Und da der Chaos Communication Congress direkt vor der Türe steht haben wir beschlossen Spenden zu sammeln und diese dem Open Infrastructure Orbit zukommen zu lassen.
+---
+pub_date: 2018-11-26
+---
+shorttitle: GPN18,5
+---
+twitter_handle: L3D
+---
+xml:
+
+Auf der Gulasch Programmier Nacht (GPN18,5) haben wir auch dieses Jahr wieder Waffeln gebacken.
+
+Und da der Chaos Communication Congress direkt vor der Türe steht haben wir beschlossen Spenden zu sammeln und diese dem Open Infrastructure Orbit zukommen zu lassen.
 ---
 project:
 
-#### image ####
+#### pro_img ####
+image: waffle.jpg
+#### pro_img ####
+image: waffle_.jpg
+#### pro_img ####
 image: vegan.jpg
-#### image ####
-image: vegan.jpg
+#### pro_img ####
+image: beginning.jpg
+#### pro_img ####
+image: practise.jpg
+#### pro_img ####
+image: spende.jpg
+#### pro_img ####
+image: fine.jpg
 ---
-galerie: 
+xml_img: waffle.jpg

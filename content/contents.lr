@@ -1,101 +1,148 @@
-as01b1:
+_model: start
+---
+title: C3 Waffel Operation Center
+---
+slogan: Wir machen Waffeln!
+---
+about_header: Die Waffelformel
+---
+about_text: Mit viel liebe verwandeln wir rohe Zutaten in waffelfähigen Teig. Dabei verwenden wir lang erforschte Rezepturen, die wir euch nicht verheimlichen wollen.
+---
+about_text2: Nach jahrerlanger Forschung ist es uns gelungen, die Formel für den Waffelteig zu rekonstruieren. Diese galt lange als verschollen, wurde jetzt aber durch Quantentechnologie und Blockchain wieder zugänglich gemacht.
+---
+about_text3: Eines der Geheimnisse von guten Waffelteig ist die frische der Zutaten. Ein anderes ist die Qualität.
+---
+about_url: Waffel Rezepturen
+---
+about_url2: /rezept/
+---
+icons_header: Wo kannst du uns treffen?
+---
+icons_text:
 
-Wir sind Hacker und Nerds aus dem Umfeld des Chaos Computer Club..<br/>Wir haben an einigen strategischen Standorten Waffeleisen plaziert!<br/>
-**Und wir werden Sie einsetzen!**
+Das C3WOC erfreut sich einer großen beliebtheit. Besonders im Umkreis des Chaos Computer Club und Chaosnahen veranstaltungen.<br/>
+Selbstverständlich sollen dort Waffeln nicht fehlen!
 ---
-as01h1: Wer ist das C3WOC?
+icons_1_1: fas fa-heart
 ---
-title: Wir sind das C3WOC
+icons_1_2: Seid nett zu einander
 ---
-as01img: eisen_smal.jpg
----
-as01d1: Strategisches Waffel-Equpment
----
-as01l1: https://c3woc.de/equipment
----
-as02d1: Die Waffelformel
----
-as02h1: Wie backen wir Waffeln
----
-as02l1: /rezept/
----
-as02b1:
+icons_1_3:
 
-Wir bereiten Waffeln mit viel Liebe zu. 
-Und natürlich einen Schluck Club-Mate.<br/>
-Lerne unsere Waffelmixtur kennen
+Eine Waffel besteht aus fünf Herzen. Das ist nicht zufällig so!
+Ein Herz steht metaphorisch für Güte und Liebe steht. Ebenso tut dies eine Waffel!
 ---
-as02img: waffel.2.jpg
+icons_2_1: fas fa-handshake
 ---
-as03b1:
-
-Wir sind Nerds und Leben auch im Internet.<br/>
-Komm uns dort doch mal Besuchen!<br/>
-Am besten erreichst du uns im IRC
+icons_2_2: Kommt zusammen
 ---
-as03d1: irc.hackint.org/#waffel
+icons_2_3: Eine einsame Waffel schmeckt bei weiten nicht so gut, wie eine Waffel, die man mit Freunden oder neuen Bekannten genießen kann.
 ---
-as03h1: So erreichst du uns
+icons_3_1: fas fa-flask
 ---
-as03img: eh18.jpg
+icons_3_2: Experimentiert
 ---
-as03l1: https://webirc.hackint.org/#irc://irc.hackint.org/#waffel
+icons_3_3: Mit Waffeln lassen sich viele Experimente machen oder verbessern. Angefangen von der Waffel, die die experimentierfreudigen Hacker neu motiviert. Bis hin zu neuen kreationen wie zum Beispiel die [Dönerwaffel](/rezept/doener/).
 ---
-description:
-
-Wir haben es uns zur Aufgabe gemacht an einigen Hackveranstaltungen aufzutauchen und dort Waffeln zu backen.
-Aber natürlich auch ab und zu einfach so in ausgewählten Hackerspacen, zu Freifunk Treffen oder auch mal auf einem Hackerthon.
-
-Selbstverständlich werden wir euch darüber unzuverlässig und unregelmäßig Informieren.
-Dies passiert nicht nur im [IRC](https://webirc.hackint.org/#irc://irc.hackint.org/#waffel), sondern auch über Kanäle wie [Mastodon](https://chaos.social/@c3WOC) oder [Twitter](https://twitter.com/c3WOC). 
-
-Und natürlich wird darüber auch ab und zu im Blog berichtet. Über unseren [ICS Kalender](https://c3woc.de/waffeln.ics) kannst du informiert bleiben.
-
-
-<h3 id="tourdaten" class="major"> Unsere nächsten Events</h3>
+icons_4_1: fas fa-user-plus
 ---
-where: Wo sind wir als nächstes
+icons_4_2: Mach mit
 ---
-tour:
+icons_4_3: Einsam Waffeln backen macht keinen Spaß. Mach mit beim C3WOC und lass uns gemeinsam mit Waffeln etwas Freude, Liebe und gute Laune verbreiten!
+---
+icons_4_url: /mitmachen/
+---
+icons_5_1: far fa-comments
+---
+icons_5_2: Tauscht euch aus
+---
+icons_5_3: Lasst uns gemeinsam über Waffeln reden. Kommt doch bei uns im IRC auf [irc.hackint.org/#waffel](https://hackint.org/connect) vorbei.
+---
+icons_5_url: https://webirc.hackint.org/#irc://irc.hackint.org/#waffel
+---
+icons_6_1: fa-calendar-plus
+---
+icons_6_2: Kommt zu Veranstaltungen
+---
+icons_6_3: Das C3WOC kommt gerne zu chaos nahen Veranstaltung um da mit euch zusammen Waffeln zu machen. Ladet uns einfach mal ein!
+---
+icons_6_url: https://c3woc.de/#tourdaten
+---
+icons_txt: Werde Teil des C3WOC
+---
+icons_url: https://c3woc.de/mitmachen/
+---
+red_1: Wir freuen uns über neue Gesichter.
+---
+red_2:
 
-<table><thead><tr><th>Datum</th><th>Veranstaltung</th><th>Ort</th></tr></thead><tbody><tr>
+Alleine Waffeln zu backen ist langweilig und mit der Zeit echt anstrengend. Aber zusammen macht das gleich viel mehr spaß.
+Wenn mehr Menschen mitmachen, wird das Waffel backen, Planen, Organisieren und essen zu einem super Erlebnis.
+---
+red_3:
 
+Wir würden uns sehr über mehr aktive Leute, die Spaß an Waffeln haben freuen. Denn nur mit wenigen Menschen etwas zu Planen und durchzuführen ist sehr Anstrengend und funktioniert nicht für unbegrenzte Zeit.
 
-<tr> 
-<td>3. März 2019</td>
-    <td><a href="https://toolbox-bodensee.de/">Döner Waffel experimetier party</a></td>
-    <td>Markdorf, Bodensee</td>
-</tr><tr>  
-  <td>9. - 10. März 2019</td>
-    <td><a href="https://pretix.byte.wtf/CEP/CEP19/">Chili Eskallationsparty 2019</a></td>
-    <td>Heilbronn</td>
-</tr><tr>    
-<td>16. März 2019</td>
-    <td><a href="https://chaostreffbern.ch/einweihung_kyburgstrasse_13_einladung.html">Eröffnung des Chaostreff Berns Hackerspace</a></td>
-    <td>Bern</td>
-</tr><tr>    
-    <td>19. - 22. April 2019</td>
-    <td><a href="https://eh19.easterhegg.eu/">Easterhegg 2019</a></td>
-    <td>Wien</td>
-</tr><tr>    
-    <td>30. Mai - 2. Juni 2019</td>
-    <td><a href="https://entropia.de/GPN19/">GPN19</a></td>
-    <td>Karlsruhe</td>
-</tr><tr>    
-    <td>14. - 16. Juni 2019</td>
-    <td><a href="https://cosin.ch/">Cosin</a></td>
-    <td>Biel/Bienne</td>
-</tr><tr>
-     <td>10. - 11. August 2019</td>
-    <td><a href="https://froscon.org/">FrOSCon</a></td>
-    <td>Hochschule Bonn-Rhein-Sieg</td>
-</tr><tr>    
-10th and 11th August 2019
-    <td>21.-25. August 2019</td>
-    <td><a href="https://events.ccc.de">CCCamp 2019</a></td>
-    <td>Ziegeleipark Mildenberg 🚀</td>
-</tr>
+Bitte mach bei uns mit!
+---
+red_4: Wir brauchen deine Unterstützung!
+---
+icons_1_url: https://c3coc.de
+---
+icons_3_url: /rezepte/
+---
+hinweis: Wenn du Lust hast, dann
+---
+hinweis_txt: mach mit!
+---
+hinweis_url: /mitmachen/
+---
+sections:
 
+#### startpage_section ####
+type: right
+----
+header: Der Waffelblog
+----
+text: Wenn du interessiert bist an Bildern und etwas Text zu Veranstaltungen, bei denen das C3WOC involviert ist oder anderen Aktionen, bei denen gewaffelt wurde oder es um Waffeln geht, dann schau doch mal in den C3WOC Blog.
+----
+text2:
 
+Wir würden auch einen Bericht von deinen Waffel Aktionen dort sehr gerne lesen!
 
-</tfoot></table>
+Sprech uns hierfür einfach an oder noch besser: Mach einen Pull-Request auf der [Webseite](https://github.com/ToolboxBodensee/c3woc-webseite).
+----
+url_text: Waffel-Blog
+----
+url: /blog/
+----
+background: /images/home/abschnitt2.jpeg
+#### startpage_section ####
+type: left
+----
+header: Equipment
+----
+text:
+
+Für die perfekte Waffel gibt es einige Abhängigkeiten.<br/>
+Eine davon ist ganz klar das Waffeleisen.
+----
+text2: Hier setzt das C3WOC auf professionelles Gastronomie Equipment.
+----
+url_text: Waffellager
+----
+url: /equipment/
+----
+background: /images/home/abschnitt3.jpeg
+---
+render_tourdaten: yes
+---
+icons_header_2: Worum geht es bei den Waffeln
+---
+icons_text_2:
+
+Das C3WOC macht nicht einfach Waffeln, die man für Geld kaufen kann. 
+
+<b>Sondern es geht um viel mehr!</b>
+---
+icons_2_url: https://www.ccc.de/de/regional

@@ -1,25 +1,24 @@
-title: Logo
+title: Logo des C3WOC
 ---
 author: L3D
 ---
-body:
-
-Das C3WOC hat nun endlich auch ein Logo:
-
-<span class="image main">
-<img src="/images/logo/c3woc.svg"/>
-</span>
-
+beitrag: Dieses gibt es selbstverständlich als Vektorgrafik im [git](https://gitea.see-base.de/C3WOC/c3woc-logo.git).
 ---
-twitter_handle: DO1JLR
+body: Das C3WOC hat nun ein offizielles Waffel-Logo!
 ---
 pub_date: 2018-03-01
 ---
-privatebody:
-
-
-Natürlich gibts das auch im Netz als SVG im [Git](https://git.see-base.de/c3woc/c3woc-logo).
+shorttitle: Logo
 ---
-xml:
+twitter_handle: L3D
+---
+xml: Das C3WOC hat nun ein offizielles Waffel-Logo.
+---
+project:
 
-Das C3WOC hat nun endlich auch ein Logo \o/ 
+#### pro_img ####
+image: c3woc.svg.png
+---
+video_embeded: 
+---
+xml_img: c3woc.svg.png

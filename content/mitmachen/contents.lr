@@ -1,33 +1,41 @@
-_model: site
+_model: vereinsheim
 ---
-title: Sei Teil des C3WOC
+title: Mitmachen
 ---
-spruch: Waffelbacken kann jeder.
+slogan: Denn geteilte Freude ist doppelte Freude!
 ---
-subtitle: Aber damit es perfekt wird, muss auch der Teig und die Hygiene stimmen
+teaser: Das C3 Waffel Operation Center braucht Verstärung. Findest du Waffeln lecker? Kennst du jemanden, der ein eigenes Waffeleisen hat? Dann mach mit! Werde Teil des C3WOC. Backe und Organisiere Waffeln. Auf lokelen kleinen Veranstaltungen bei dir und bei intergalaktischen Events wie den Chaos Communication Congress. mach einfach mit und hab spaß - am Waffelgerät!
 ---
-body:
+precontent:
 
-Wir vom C3WOC freuen uns über jeden, der auch gute und Qualitativ hochwertige Waffeln zu schätzen weiß. 
+Das C3WOC besteht aus Menschen, die sich zum [Chaos Computer Club](https://ccc.de) hingezogen fühlen.<br/>
+Außerdem finden diese Menchen Waffeln nicht ganz unsympatisch.
 
-Aber noch viel besser wäre es, wenn in jedem Hackerspace eine erfahrene Waffelcrew hat, die sich als ein Teil des C3WOC empfindet.
+Wenn du dich hier wieder erkennst, dann würden wir uns sehr freuen, wenn du beim C3WOC mitmachen willst!
 
+```
+E-Mail: waffel@c3woc.de
+```
 
-Doch um beim C3WOC mitmachen zu dürfen, muss man gewisse Qualitätsanforderungen erfüllen, ohne die ein Waffelanschlag schnell einem Biowaffenanschlag gleich kommen kann. Dies umfasst folgende Punkte:
+Was dich erwartet, sind dankbare hungrige Chaoten, denen du als Teil vom C3WOC Waffeln backen wirst. 
 
-<a href="/rezept/" class="button">Qualität der Zutaten</a>
-<a href="/hygiene" class="button">Hygiene</a>
-<a href="/equipment/" class="button">gepflegtes Equipment</a>
+Außerdem kommen Aufgaben wir das Planen und Organisieren von Waffelaktionen auf dich zu.
 
-Werden diese Punkte erfüllt, würden wir uns sehr freuen, dich als Teil des C3WOC aufzunehmen.
+Natürlich machen wir das bei bekannteren Veranstaltungen zusammen. Nur kleine regionale Events wie das monatliche Freeifunker-Treffen, der Chaostreff-abend oder ähnliche Events machen mehr sinn von den lokalen Menschen vor Ort - also von dir - bewaffelt zu werden.<br/>
+Auf großen Events wie der GPN, dem Congress oder dem Easterhegg machen wir das natürlich gemeinsam mit allen anwesenden C3WOC-Menschen.
 
-Als Mitglied vom C3WOC hast du die selbstregulierte Verpflichtung leckere Waffeln mit hohen C3WOC Qualitätsstandards so oft du Lust hast zu machen.
-Außerdem würden wir es sehr schätzen, mit dir bei unterschiedlichsten, meistens chaosnahen Veranstaltungen zu Waffeln.
-Eigeninitiative wie das unabhängige Aufschlagen bei regionalen Events in deiner nähe schätzen wir auch sehr. Über ein paar schicke Bilder dazu für den C3WOC Blog freuen wir uns auch sehr.
+Außerdem ist das gelegentliche Updaten der C3WOC Seite eine echt großartige Sache!
 
-Als Teil des C3WOC erhältst du natürlich bestmöglichen Waffelsupport. So bekommst du auf Wunsch eine @c3woc.de Adresse und wirst mit in den Verteiler aufgenommen. Außerdem versuchen wir stets bei jeden einige C3WOC Aufkleber vorrätig zu haben.
+Erkläre dein Hackerspace, Makerspace, Fablab oder Chaostreff mit zu einer offiziellen Außenstelle des C3WOC.
 
-Melde dich bei uns und werde Teil des C3WOC:
+ Die C3WOC Außenstellen:
+---------------------------
+---
+content:
 
-<a href="mailt:waffel@c3woc.de" class="button special">waffel@c3woc.de</a>
+Als Teil des C3WOC stehen dir natürlich umfassende privilegien zu wie den Operator-Status im [IRC](ircs://irc.hackint.org/#waffel) oder auch die aufnahme deiner Mailadresse unter den ``waffel@c3woc.de`` Verteiler.<br/>
+Außerdem bekommst du bei interesse dein eigenes ``@c3woc.de`` Postfach oder weiterleitung!
 
+Mach mit bei uns. Denn zusammen macht es gleich viel mehr spaß!
+
+Bewerbe dich an [waffel@c3woc.de](mailto:waffel@c3woc.de)!

@@ -2,50 +2,52 @@ title: Waffeln auf dem Schiff
 ---
 author: L3D
 ---
-body:
+beitrag:
 
-Der [Umma Hüsla Hackathon](https://uh18.diin.io/) 2018 [#uh18](https://twitter.com/hashtag/uh18) ist ein 28-Stunden-Event, bei dem sich TeilnehmerInnen aus allen Sparten zusammenfinden. Ziel des Hackathons ist es, im Team oder auch alleine, nützliche, kreative oder unterhaltsame Prototypen und Projekte umzusetzen.
-
-In diesem Jahr fand der Hackathon länderübergreifend statt – genauer gesagt auf dem Bodensee, noch genauer auf einem Schiff. Das Motto des diesjährigen Hackathons lautet “Ship it”.  selbstverständlich war das c3WOC auch vor Ort und hat auf dem Bodensee Waffeln gemacht!
----
-pub_date: 2018-05-05
----
-subtitle: Umma Hüsla Hackathon
----
-twitter_handle: L3D
----
-privatebody:
-
-
-<span class="image main" style="float: left;">
-<img src="/blog/uh18/schiff_2.jpg" style="width: 48%; float: left; padding: 1%;"/>
-<img src="/blog/uh18/schiff_1.jpg" style="width: 48%; float: left; padding: 1%;" />
-</span>
+In diesem Jahr fand der Hackathon länderübergreifend statt – genauer gesagt auf dem Bodensee, noch genauer auf einem Schiff. Das Motto des diesjährigen Hackathons lautet “Ship it”. selbstverständlich war das c3WOC auch vor Ort und hat auf dem Bodensee Waffeln gemacht!
 
 Der Hackerthon fand auf dem Schiff Voralberg statt. Los ging es im Bregenzer Hafen einmal rund um den Bodensee.
 
-
-<span class="image main" style="float: left;">
-<img src="/blog/uh18/hacker_1.jpg" style="width: 48%; float: left; padding: 1%;"/>
-<img src="/blog/uh18/hacker_2.jpg" style="width: 48%; float: left; padding: 1%;" />
-</span>
-
-Selbstverständlich haben wir ein wenig Chaos auf dem Schiff gemacht und erstmal einen Sticker-Exchange aufgebaut. Und ein funktionierendes WLAN ([Freifunk](https://ffbsee.de)) zur Verfügung gestellt.
-
-<span class="image main" style="float: left;">
-<img src="/blog/uh18/waffel_2.jpg" style="width: 48%; float: left; padding: 1%;"/>
-<img src="/blog/uh18/waffel_1.jpg" style="width: 48%; float: left; padding: 1%;" />
-</span>
+Selbstverständlich haben wir ein wenig Chaos auf dem Schiff gemacht und erstmal einen Sticker-Exchange aufgebaut. Und ein funktionierendes WLAN (Freifunk) zur Verfügung gestellt.
 
 Mit funktionierender Infrastruktur, also einem Internet mit Uplink, konnten wir uns auch den wichtigen Dingen zuneigen: Dem Waffeln machen!
 
-<h3 class="major">Nun steht fest:</h3>
+ Nun steht fest:
+===============
+
 Das C3WOC ist auch in der Lage auf dem Wasser Waffeln zu machen. Und Waffeln auf einem Schiff zu machen macht echt spaß!
+---
+body:
+
+Der Umma Hüsla Hackathon 2018 #uh18 ist ein 28-Stunden-Event, bei dem sich TeilnehmerInnen aus allen Sparten zusammenfinden. Ziel des Hackathons ist es, im Team oder auch alleine, nützliche, kreative oder unterhaltsame Prototypen und Projekte umzusetzen.
+
+Und was, wenn nicht Waffeln trifft darauf zu?
+---
+pub_date: 2018-05-05
+---
+shorttitle: #uh18
+---
+twitter_handle: L3D
 ---
 xml:
 
-Der Umma Hüsla Hackathon 2018 ist ein 28-Stunden-Event, bei dem sich TeilnehmerInnen aus allen Sparten zusammenfinden. Ziel des Hackathons ist es, im Team oder auch alleine, nützliche, kreative oder unterhaltsame Prototypen und Projekte umzusetzen.
+Der Umma Hüsla Hackathon 2018 #uh18 ist ein 28-Stunden-Event, bei dem sich TeilnehmerInnen aus allen Sparten zusammenfinden. Ziel des Hackathons ist es, im Team oder auch alleine, nützliche, kreative oder unterhaltsame Prototypen und Projekte umzusetzen.
 
-In diesem Jahr fand der Hackathon länderübergreifend statt – genauer gesagt auf dem Bodensee, noch genauer auf einem Schiff. Das Motto des diesjährigen Hackathons lautet “Ship it”.  selbstverständlich war das c3WOC auch vor Ort und hat auf dem Bodensee Waffeln gemacht!
+Und was, wenn nicht Waffeln trifft darauf zu?
 ---
-xml_img: schiff_1.jpg
+project:
+
+#### pro_img ####
+image: schiff_2.jpg
+#### pro_img ####
+image: waffel_1.jpg
+#### pro_img ####
+image: schiff_1.jpg
+#### pro_img ####
+image: hacker_1.jpg
+#### pro_img ####
+image: waffel_2.jpg
+#### pro_img ####
+image: hacker_2.jpg
+---
+xml_img: schiff_2.jpg

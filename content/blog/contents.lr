@@ -1,9 +1,9 @@
 _model: blog
 ---
-title: Neuigkeiten
+title: Blog
 ---
-sub_title:
-
-        <a href="/feed.xml">Leckere Neuigkeiten. Jetzt auch als RSS <span class="icon fa-rss"></span></a> <br/>
-        <a href="/waffeln.ics">Taktische Waffeleinsätze. Jetzt auch als ICS  <span class="icon fa-calendar"></span></a>
-
+description: Hier erfährst du über die neusten Projekte, Geschichten, Veranstaltungen oder sonstigen Updates, die mit Waffeln oder dem C3WOC in Zusammenhang stehen.
+---
+link: /feed_blog.xml
+---
+spruch: Bleibe über aktuelle Waffelmeldungen auf dem laufenden!

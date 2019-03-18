@@ -1,0 +1,169 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<!-- Banner -->
+<section id="banner">
+  <div class="content">
+    <header>
+      <h2>{{ this.title }}</h2>
+      <p>{{ this.slogan }}</p>
+      <p>{{ this.hinweis }} {% if this.hinweis_txt %}<a href="{% if this.hinweis_url %}{{this.hinweis_url }}{% else %}#four{% endif %}">{{ this.hinweis_txt }}</a>{% endif %}</p>
+    </header>
+    <span class="image"> 
+      <img src="{{ '/images/logo.svg'|url }}" alt="" />
+    </span>
+  </div>
+  <a href="#scroll-1" class="goto-next scrolly">Next</a>
+</section>
+
+<!-- One -->
+<section id="scroll-1" class="spotlight style1 bottom">
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="4u 12u$(medium)">
+          <header>
+            <h2>{{ this.about_header }}</h2>
+            {{ this.about_text }}
+          </header>
+        </div>
+        <div class="4u 12u$(medium)">
+            {{ this.about_text2 }}
+        </div>
+        <div class="4u$ 12u$(medium)">
+            {{ this.about_text3 }}
+          <ul class="actions">
+            <li><a href="{{ this.about_url2 }}" class="button">{{ this.about_url }}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#scroll-2" class="goto-next scrolly">Next</a>
+</section>
+
+{% for blk in this.sections.blocks %}
+    <section id="scroll-{{ loop.index0 + 2 }}"
+             class="spotlight style2 {{ blk.type }}" style="background-image:url({{ blk.background }})">
+    {{ blk }}
+    <a href="#scroll-{{ loop.index0 + 3 }}" class="goto-next scrolly">Next</a>
+    </section>
+{% endfor %}
+
+<!-- Four -->
+<section id="scroll-{{ this.sections.blocks|count + 2 }}" class="special wrapper fade-up"></section> 
+<section id={% 
+    if this.four_id|length %}"{{ this.four_id }}"{%
+    else %}"tourdaten"{%
+    endif %} class="wrapper style1 special fade-up">
+  <div class="container">
+    <header class="major">
+      <h2>{{ this.icons_header }}</h2>
+      {{ this.icons_text }}
+    </header>{% 
+    if this.render_tourdaten %}
+    <div class="table-wrapper">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Veranstaltung</th>
+              <th>Ort</th>
+            </tr>
+          </thead>
+          <tbody>{% 
+            set pages = site.query('/').include_undiscoverable(true).all() %}{% 
+            for page in pages %}{%
+                if page._model == 'waffeln' and page._path == '/waffeln.ics' %}{%
+                for blk in page.termine.blocks|sort(attribute='start', reverse = False) %}{%
+                if blk.start.strftime('%Y%m%d%H%M') > none|datetimeformat('yyyyMMddhhmm') %}
+            <tr>
+              <th>{%
+                    if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') %}{{ blk.start.strftime('%d.%m.%y %H') }} - {{  blk.ende.strftime('%H') }} Uhr{%
+                    else %}{{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }}{%
+                    endif %}</th>
+              <th><a href="{{ blk.url }}" title="{{ blk.description|replace("|", " ") }}">{{ blk.event }}</a></th>
+              <th>{{ blk.ort }}</th>
+            </tr>{%
+                    endif %}{%
+                endfor %}
+          </tbody>
+        </table><br/>
+      </div>{%
+                endif %}{%
+            endfor %}
+      <header class="major">
+        <h2>{{ this.icons_header_2 }}</h2>
+        {{ this.icons_text_2 }}
+      </header> 
+    {% endif %}
+    <div class="box alt">
+      <div class="row uniform">
+        <section class="4u 6u(medium) 12u$(xsmall)">
+           <span class="icon alt major">
+            <i class="fas {{ this.icons_1_1 }} fa-3x iconshiftdown"></i>
+          </span>
+          <a href="{{ this.icons_1_url }}"><h3>{{ this.icons_1_2 }}</h3></a>
+          {{ this.icons_1_3 }}
+        </section>
+        <section class="4u 6u$(medium) 12u$(xsmall)">
+           <span class="icon alt major">
+            <i class="fas {{ this.icons_2_1 }} fa-3x iconshiftdown"></i>
+          </span>
+          <a href="{{ this.icons_2_url }}"><h3>{{ this.icons_2_2 }}</h3></a>
+          {{ this.icons_2_3 }}
+        </section>
+        <section class="4u$ 6u(medium) 12u$(xsmall)">
+           <span class="icon alt major">
+            <i class="fas {{ this.icons_3_1 }} fa-3x iconshiftdown"></i>
+          </span>
+          <a href="{{ this.icons_3_url }}"><h3>{{ this.icons_3_2 }}</h3></a>
+         {{ this.icons_3_3 }}
+        </section>
+        <section class="4u 6u$(medium) 12u$(xsmall)">
+           <span href="{{ this.icons_4_url }}" class="icon alt major">
+            <i class="fas {{ this.icons_4_1 }} fa-3x iconshiftdown"></i>
+          </span>
+          <a href="{{ this.icons_4_url }}"><h3>{{ this.icons_4_2 }}</h3></a>
+          {{ this.icons_4_3 }}
+        </section>
+        <section class="4u 6u(medium) 12u$(xsmall)">
+           <span class="icon alt major">
+            <i class="fas {{ this.icons_5_1 }} fa-3x iconshiftdown"></i>
+          </span>
+          <a href="{{ this.icons_5_url }}#"><h3>{{ this.icons_5_2 }}</h3></a>
+          {{ this.icons_5_3 }}
+        </section>
+        <section class="4u$ 6u$(medium) 12u$(xsmall)">
+          <span class="icon alt major">
+            <i class="fas {{ this.icons_6_1 }} fa-3x iconshiftdown"></i>
+          </span>
+          <a href="{{ this.icons_6_url }}"><h3>{{ this.icons_6_2 }}</h3></a>
+          {{ this.icons_6_3 }}
+        </section>
+      </div>
+    </div>
+    <footer class="major">
+      <ul class="actions">
+        <li><a href="{{ this.icons_url }}" class="button">{{ this.icons_txt }}</a></li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+<!-- Five -->
+<section id="scroll-{{ this.sections.blocks|count + 3 }}" class="wrapper style2 special fade">
+  <div class="container">
+    <header>
+      <h2>{{ this.red_1 }}</h2>
+      {{ this.red_2 }}
+    </header>
+    {{ this.red_3 }}
+    <h2>{{ this.red_4 }}</h2>
+  </div>
+</section>
+
+
+{% endblock %}

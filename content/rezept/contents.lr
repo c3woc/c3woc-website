@@ -1,12 +1,18 @@
-_model: material
+_model: projekte
 ---
-title: Rezept
+title: Die Formel für eine gute Waffel
 ---
-body:
+link: /feed_rezepte.xml
+---
+abo: Abonniere alle Rezepte als XML Feed
+---
+description: Jede Waffel ist einzigartig
+---
+begruessung:
 
-Der Standard-Waffelteig des C3WOC ist für einen 10 Liter Eimer optimiert, um auf mittleren und größeren Veranstaltungen den optimalen Waffelzustand zu erreichen!
+Das normale Waffelrezept ist denkbar einfach und lautet wie folgt:
 
-```
+<pre><center><code  style="max-width: 600px; text-align: left;">
 1 l Vollei-Eiklar (oder ca. 20 Eier)
 1 Kg Zucker
 1,25 Kg Butter (weich/geschmolzen)
@@ -17,39 +23,20 @@ Der Standard-Waffelteig des C3WOC ist für einen 10 Liter Eimer optimiert, um au
 2 Flaschen Club-Mate oder Flora Power
 etwas (dunklen) Rum
 eine prise Salz
-```
+</code></center></pre>
 
- Zubereitung
-============
-Weiche oder geschmolzene Butter mit Ei und Zucker in einem 10-Liter Eimer oder einer Schüssel klumpenfrei verrühren.
-Unter ständigen rühren die weiteren Zutaten hinzugeben.
-Zu guter letzt den Teig abschmecken und die Zutaten nach Gefühl variieren.
-
- Wichtig!
-===========
-Die Qualität der Zutaten hat einen hohen Einfluss darauf, wie der Teig schmeckt. Hier ist es stark vorteilhaft, hochwertige Produkte zu verwenden. So schmeckt man, ob billige H-Milch verwendet wurde oder hochwertige Vollmilch, womöglich direkt vom Bauern seiner Vertrauens. Gerade auch bei der Vanille schmeckt der Teig viel besser, wen anstelle billigen Vanillin echter Vanillezucker verwendet wird, der womöglich noch kleine Stücken Vanille enthält.
-Natürlich funktioniert der Teig auch mit den günstigen Produkten. Er ist dann eben nicht mehr ganz so lecker.
-
-Weitere Rezepte:
--------------------------
-<a href="/rezept/eifrei" class="button">Teig ohne Ei</a>
-<a href="/rezept/vegan" class="button">Veganer Teig</a>
-<a href="/rezept/gluten" class="button">Glutenfreier Teig</a>
-<a href="/rezept/fleisch" class="button">Fleischhaltiger Teig</a>
-<a href="/rezept/glasur" class="button">Waffelbelag</a>
-
-Weitere Informationen:
------------
-
-<a href="/rezept/tipps" class="button">Tipps zur Teigzubereitung</a>
-<a href="/hygiene" class="button">Hygiene</a>
-
-
-
+Das Rezept ist optimiert auf einen größeren Waffelhunger als von 3 Menschen.<br/>
+Als "Schüssel" eignet sich hier ein lebensmittelfähiger 10-Liter Eimer perfekt.<br/>
 
 ---
-spruch: Ohne guten Teig hilft auch das beste Waffeleisen nicht weiter
+desc: Die Rezeptsammlung des C3 Waffel Operation Center. Von der veganen Waffel bis hin zur legendären Dönerwaffel ist hier alles vertreten.
 ---
-subtitle: Waffelteig
+title2: Alle Rezepte
 ---
-_template: site.html
+description2: Für mehr diversität bei den Waffeln ist hier für die meisten etwas dabei!
+---
+trailer:
+
+<br/><br/>
+Wenn du noch eine verwendung für ein Waffeleisen steht, das hier noch nicht steht, dann würden wir uns sehr darüber freuen, wenn du bereit wärst es mit uns zu teilen!
+Natürlich kannst du es auch direkt hier veröffentlichen. Denn diese Webseite kannst du [auf GitHub](https://github.com/ToolboxBodensee/c3woc-website.git) bearbeiten!

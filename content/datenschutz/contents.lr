@@ -1,8 +1,4 @@
-_model: site
----
-title: Datenschutz
----
-body:
+content:
 
 Datenschutz ist auch für Waffeln und waffelnahen Lebensformen ein wichtiger Schwerpunkt. Deshalb versuchen wir hier mal
 verständlich zu machen, was diese Website kann und tut und darf. Bei Verständnisfragen oder Inkonsistenzen fragt bitte!
@@ -23,6 +19,8 @@ garantieren, dass nicht irgendwo im HTTPS-Protokoll oder den Implementierungen, 
 
 Zu unserem eigenen Schutz: Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
 ---
-spruch: Mit Waffeln Daten schützen!
+slogan: Welche Gefahren drohen dir hier?
 ---
-subtitle: Welche gefahren drohen dir hier?
+teaser: Welche Gefahren drohen dir auf c3woc.de? Hier erfährst du, was wir von dir speichern und wieso.
+---
+title: Datenschutz

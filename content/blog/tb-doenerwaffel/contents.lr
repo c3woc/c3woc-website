@@ -1,43 +1,45 @@
+title: Döner Waffel - selber gemacht
+---
 author: L3D
+---
+beitrag:
+
+```
+Event: Döner Waffel herstellen
+Ort: Toolbox Bodensee e.V.
+Datum: 3. März 2019, ab 14 Uhr
+Adresse: Bergheimer Straße 6, Markdorf
+```
+
+Mit der Dönerzubereitung haben wir noch keine Erfahrung. Aber Waffeln in der gewohnten Qualität wird es auf jeden Fall geben.
 ---
 body:
 
-Der Hack- und Makerspace Toolbox Bodensee e.V. am Bodensee hat einen Dönergrill besorgt.
-Am 3. März weihen wir diesen ein und probieren es... Wir machen eine Dönerwaffel! 
+Der Hack- und Makerspace Toolbox Bodensee e.V. am Bodensee hat einen Dönergrill besorgt. Am 3. März weihen wir diesen ein und probieren es... Wir machen eine Dönerwaffel!
+
+Das soll nächstes Wochenende. am Sonntag den 3. März 2019 statt finden. In dem Vereinsheim der Toolbox in Markdorf.
 ---
 pub_date: 2019-02-21
 ---
-subtitle: Wir haben einen Kebabgrill
----
-title: Döner Waffel - selber gemacht
+shorttitle: Dönerwaffel
 ---
 twitter_handle: L3D
 ---
 xml:
 
-Der Hack- und Makerspace Toolbox Bodensee e.V. am Bodensee hat einen Dönergrill besort.
-Am 3. März weihen wir diesen ein und probieren es... Wir machen eine Dönerwaffel! 
----
-privatebody:
+Der Hack- und Makerspace Toolbox Bodensee e.V. am Bodensee hat einen Dönergrill besorgt. Am 3. März weihen wir diesen ein und probieren es... Wir machen eine Dönerwaffel!
+
 Das soll nächstes Wochenende. am Sonntag den 3. März 2019 statt finden. In dem Vereinsheim der Toolbox in Markdorf.
-
-````
-Event: Döner Waffel herstellen
-Ort: Toolbox Bodensee e.V.
-Datum: 3. März 2019, ab 14 Uhr
-Adresse: Bergheimer Straße 6, Markdorf
-````
-Mit der Dönerzubereitung haben wir noch keine Erfahrung. 
-Aber Waffeln in der gewohnten Qualität wird es auf jeden Fall geben.
-
 ---
-galerie:
+project:
 
-#### image ####
+#### pro_img ####
 image: grill.jpg
-#### image ####
+#### pro_img ####
 image: messer.jpg
-#### image ####
+#### pro_img ####
 image: ovp.jpg
+---
+video_embeded: 
 ---
 xml_img: grill.jpg

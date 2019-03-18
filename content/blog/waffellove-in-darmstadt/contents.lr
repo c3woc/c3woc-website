@@ -2,49 +2,35 @@ title: Egal ob Wind, Regen oder Sonnenschein...
 ---
 author: Kiara
 ---
-pub_date: 2018-06-24
----
-subtitle: ...wir waffeln unsere Seelen rein!
----
 body:
 
-<span class="image main">
-    <img src="/blog/waffellove-in-darmstadt/waffel_1.jpg"/>
-</span>
-<span class="image main">
-    <img src="/blog/waffellove-in-darmstadt/waffel_4.jpg"/>
-</span>
----
-privatebody:
+ ...wir waffeln unsere Seelen rein!
+---------------------------------------------------
 
-<span class="image main">
-    <img src="/blog/waffellove-in-darmstadt/waffel_5.jpg"/>
-</span>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<span class="main" >
-    <img src="/blog/waffellove-in-darmstadt/waffel_2.jpg" style="transform: rotate(90deg); width: 168%;margin-left: -34%; "/>
-</span>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<span class="image main">
-    <img src="/blog/waffellove-in-darmstadt/waffel_6.jpg"/>
-</span>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<span class="main" >
-    <img src="/blog/waffellove-in-darmstadt/waffel_8.jpg" style="transform: rotate(90deg); width: 168%;margin-left: -34%; "/>
-</span>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<span class="image main">
-    <img src="/blog/waffellove-in-darmstadt/waffel_7.jpg"/>
-</span>
 ---
-xml: Egal ob Wind, Regen oder Sonnenschein wir waffeln unsere Seelen rein! Auch in Darmstadt!
+pub_date: 2018-06-24
 ---
-xml_img: waffel_4.jpg
+shorttitle: Darmstadt waffelt
+---
+twitter_handle: 
+---
+xml: Egal ob Wind, Regen oder Sonnenschein, Darmstadt waffeln seine Seelen rein! Denn der Platinengarten Waffelt jetzt auch mit.
+---
+project:
+
+#### pro_img ####
+image: waffel_1.jpg
+#### pro_img ####
+image: waffel_6.jpg
+#### pro_img ####
+image: waffel_4.jpg
+#### pro_img ####
+image: waffel_7.jpg
+#### pro_img ####
+image: waffel_8.jpg
+#### pro_img ####
+image: waffel_5.jpg
+---
+xml_img: waffel_7.jpg
+---
+beitrag: Der [Platinengarten](http://platinengarten.de) ist beim Waffeln nun auch dabei.
