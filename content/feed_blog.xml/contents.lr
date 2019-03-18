@@ -1,0 +1,5 @@
+_template: feed_blog.xml
+---
+_model: none
+_discoverable: no
+_hidden: yes
