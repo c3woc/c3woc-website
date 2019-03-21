@@ -40,7 +40,7 @@
   <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
     <div id="page-wrapper">
        <!-- Header -->
-        <header id="header">
+       <header id="header">
             <h1 id="logo">{#
 
 
@@ -186,8 +186,46 @@
             Und hier werden nun die eientlichen Seiten eingebunden...
 
             #}
+    
+
+<div id="overwrite" style="z-index: 1 !important; position: fixed !important;   top: 10%;  left: 15%; width: 70%; text-align: center; background: white; color: black; padding:30px;font-size: 9pt; text-decoration: none">
+<style type="text/css">
+ a:link{color:#300;}
+ a:visited{color:#511;}
+ a:hover{color:#f00;}
+ a:active{color:#f00;}
+</style>
+<h2 style="color:red">#SaveYourInternet</h2>
+<p>Liebe Besucherin, lieber Besucher,
+
+vielen Dank für Ihr Interesse. Leider steht unser Service heute nicht zur Verfügung. Wir protestieren gemeinsam mit der Autorenschaft der Wikipedia gegen Teile der geplanten EU-Urheberrechtsreform, die im Parlament der Europäischen Union Ende März verabschiedet werden soll, und schalten unsere Seite für 24 Stunden ab.
+<br/>
+<br/>
+Ausgetragen wird dieser Konflikt auf den Rücken der Internetnutzer und Kreativen. Diese müssen nach dem aktuellen Entwurf mit erheblichen Einschränkungen rechnen. Das freie Internet, wie wir es kennen, könnte zu einem „Filternet“ verkommen, in dem Plattformbetreiber darüber entscheiden müssen, was wir schreiben, hochladen und sehen dürfen. Denn das geplante Gesetz schreibt Internetseiten und Apps vor, dass sie hochgeladene Inhalte präventiv auf Urheberrechtsverletzungen prüfen müssen. Selbst kleinere Unternehmen müssten demnach fehleranfällige, teure und technisch unausgereifte Uploadfilter einsetzen (Artikel 13) und für minimale Textausschnitte aus Presseerzeugnissen Lizenzen erwerben, um das sogenannte Leistungsschutzrecht einzuhalten (Artikel 11).
+
+Wenn Sie unsere Kritik an der geplanten Urheberrechtsreform teilen, werden Sie aktiv:
+</p>
+<ul style="text-align: left"><li>unterzeichnen Sie die Petition <a href="https://www.change.org/p/stoppt-die-zensurmaschine-rettet-das-internet-uploadfilter-artikel13-saveyourinternet">"Stoppt die Zensurmaschine – Rettet das Internet!"</a>,</li>
+    <li><a href="https://pledge2019.eu/de">kontaktieren Sie die Abgeordneten des Europäischen Parlaments</a>,</li> 
+
+    <li><a href="https://savetheinternet.info/demos">gehen Sie am 23. März auf die Straße</a>,</li> 
+
+    <li>nehmen Sie Ihr demokratisches Recht wahr und gehen Sie am 26. Mai zur Wahl.</li></ul>
+
+
+</div>
+
 <!-- Main -->
-{% block body %}{% endblock %}{#
+<div id="block_me">
+{% block body %}{% endblock %}
+</div>
+
+    <script>
+        document.getElementById("block_me").style.opacity = "0.023";
+    </script>
+
+
+{#
 
             Und da wären wir auch schon am Ende der Webseite...
             Hier noch mal fett Werbung gemacht, wo es alles etwas vom C3WOC gibt...
