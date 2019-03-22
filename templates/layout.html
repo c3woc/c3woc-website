@@ -1,4 +1,5 @@
 {% set fqdn = 'c3woc.de' 
+%}{% set ausnahmezustand = False 
 %}<!DOCTYPE html>
 <html{% if this.alt %} lang="{{ this.alt }}"{% endif %}>
   <head>
@@ -108,7 +109,7 @@
                   ['/blog', 'Blog', 1],
                   ['/rezept', 'Rezept', 1],
                   ['/mitmachen', 'Mitmachen', 1],
-                  ['/hunger', 'Wo gibt es Waffeln?', 1],
+                  ['/hunger', 'Wo gibt es Waffeln?', 0],
                   ['/kontakt', 'Kontakt', 1]
                 ] %}{% if print %}
                   <li{% if this.is_child_of(href) %} class="active"{% endif
@@ -187,7 +188,7 @@
 
             #}
     
-
+{% if ausnahmezustand %}
 <div id="overwrite" style="display: none; z-index: 1 !important; position: fixed !important;   top: 10%;  left: 15%; width: 70%; text-align: center; background: white; color: black; padding:30px;font-size: 9pt; text-decoration: none">
 <style type="text/css">
  a:link{color:#300;}
@@ -217,14 +218,19 @@ Wenn Sie unsere Kritik an der geplanten Urheberrechtsreform teilen, werden Sie a
 
 <!-- Main -->
 <div id="block_me">
+{% else %}
+<!-- Main -->
+{% endif %}
 {% block body %}{% endblock %}
+
+{% if ausnahmezustand %}
 </div>
 
     <script>
         document.getElementById("block_me").style.opacity = "0.023";
         document.getElementById("overwrite").style.display = "block";
     </script>
-
+{% endif %}
 
 {#
 
