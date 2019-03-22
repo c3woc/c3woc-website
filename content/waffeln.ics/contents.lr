@@ -232,3 +232,31 @@ url: https:/toolbox-bodensee.de/blog/einweihung-des-doenergrill/
 description: Die Toolbox hat einen Dönergrill. Lass uns den mal ausprobieren und Döner waffeln machen!
 ----
 confirmed: yes
+#### termine ####
+start: 2019-03-22 19:00:00 Europe/Berlin
+----
+ende: 2019-03-22 23:00:00 Europe/Berlin
+----
+event: Waffeln beim Spielzimmer.org
+----
+ort: St. Gallen
+----
+url: https://www.spielzimmer.org/events/spielzimmer-talks-3
+----
+description: 
+----
+confirmed: yes
+#### termine ####
+start: 2019-03-23 09:00:00 Europe/Berlin
+----
+ende: 2019-03-23 23:00:00 Europe/Berlin
+----
+event: #SaveYourInternet
+----
+ort: Europaweit
+----
+url: https://savetheinternet.info/demos
+----
+description: Save Your Internet und komm zur Demo!| Auch wenn es da nicht überall Waffeln gibt.
+----
+confirmed: no
