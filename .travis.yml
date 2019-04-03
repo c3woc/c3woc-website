@@ -7,7 +7,7 @@ cache:
     - $HOME/.cache/pip
 before_install:
   - git lfs pull
-  - gem install sass
+  - make install-sassc
 install:
   - "pip install Lektor"
   - make sass
