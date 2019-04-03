@@ -16,8 +16,11 @@ sass-uncompressed:
 
 install:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick python3 python3-pip -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick python python-pip --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick  python3 python3-pip; else echo -e "Please install Imagemagick, Python3 and Pip!"; fi
-	if [ ! -d './sassc' ]; then git clone https://github.com/sass/sassc.git sassc; . sassc/script/bootstrap ; make -C sassc -j4 ; fi
 	pip install lektor --user
+	make install-sassc
+
+install-sassc:
+	if [ ! -d './sassc' ]; then git clone https://github.com/sass/sassc.git sassc; . sassc/script/bootstrap ; make -C sassc -j4 ; fi
 
 build: sass
 	lektor build
