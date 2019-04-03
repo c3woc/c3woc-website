@@ -1,4 +1,4 @@
-    var mymap = L.map('mapid').setView([47, 9.2], 7);
+    var mymap = L.map('mapid').setView([47, 9.2], 6);
 
 var greenIcon = L.icon({
     iconUrl: '/images/map.png',
@@ -12,12 +12,15 @@ var greenIcon = L.icon({
 });
 
 
-	L.tileLayer('https://tiles.ffbsee.de:9090/{z}/{x}/{y}.png', {
+//	L.tileLayer('https://tiles.ffbsee.de:9090/{z}/{x}/{y}.png', {
+	L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 		maxZoom: 19,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> ' 
 	}).addTo(mymap);
 
+    L.marker([51.4385, 7.0250], {icon: greenIcon}).addTo(mymap)
+    .bindPopup("<aside><center><h3 style='color: black;'>Chaospott:</h3><a href='https://chaospott.de/'>Chaos Computer Club Essen</a><br/>Chaospott Essen</center></aside>").openPopup();
 
 	L.marker([47.71234, 9.39956], {icon: greenIcon}).addTo(mymap)
     .bindPopup("<aside><center><h3 style='color: black;'>Waffellager Bodensee:</h3><a href='https://toolbox-bodensee.de/'>Hack- und Makespace Toolbox Bodensee e.V.</a><br/>Kleines Waffeleisen</center></aside>").openPopup();
@@ -27,6 +30,7 @@ var greenIcon = L.icon({
 
 	L.marker([47.77243, 9.19943], {icon: greenIcon}).addTo(mymap)
     .bindPopup("<aside><center><h3 style='color: black;'>Waffellager Bodensee:</h3><a href='https://see-base.de'>Hackerspace see-base</a><br/>Großes Waffeleisen</center></aside>").openPopup();
+
 
 
 L.polygon([
