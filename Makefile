@@ -1,22 +1,10 @@
 LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 
-travis:
-	git clone https://github.com/sass/sassc.git
-	. sassc/script/bootstrap
-	make -C sassc -j4
-	./sassc/bin/sassc -t compressed ./assets/sass/main.scss ./assets/css/main.min.css
-	./sassc/bin/sassc -t compressed ./assets/sass/ie9.scss ./assets/css/ie9.min.css
-	lektor clean --yes
-	lektor build
-
-
 all: build
 
 sass:
 	./sassc/bin/sassc -t compressed ./assets/sass/main.scss ./assets/css/main.min.css
 	./sassc/bin/sassc -t compressed ./assets/sass/ie9.scss ./assets/css/ie9.min.css
-	rm ./assets/css/main.min.css.map
-	rm ./assets/css/ie9.min.css.map
 	lektor clean --yes
 	lektor build
 
@@ -28,11 +16,7 @@ sass-uncompressed:
 
 install:
 	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick python3 python3-pip -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick python python-pip --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick  python3 python3-pip; else echo -e "Please install Imagemagick, Python3 and Pip!"; fi
-	if [ ! -d "sassc" ]; then
-	git clone https://github.com/sass/sassc.git sassc
-	. sassc/script/bootstrap
-	make -C sassc -j4
-	endif
+	if [ ! -d './sassc' ]; then git clone https://github.com/sass/sassc.git sassc; . sassc/script/bootstrap ; make -C sassc -j4 ; fi
 	pip install lektor --user
 
 build: sass
