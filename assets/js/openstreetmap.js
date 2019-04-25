@@ -19,6 +19,9 @@ var greenIcon = L.icon({
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> ' 
 	}).addTo(mymap);
 
+    L.marker([49.00985, 12.11898], {icon: greenIcon}).addTo(mymap)
+    .bindPopup("<aside><center><h3 style='color: black;'>Binary Kitchen:</h3><a href='https://binary-kitchen.de/'>Hackspace Regensburg</a><br/>Binary Kitchen</center></aside>").openPopup();
+
     L.marker([51.4385, 7.0250], {icon: greenIcon}).addTo(mymap)
     .bindPopup("<aside><center><h3 style='color: black;'>Chaospott:</h3><a href='https://chaospott.de/'>Chaos Computer Club Essen</a><br/>Chaospott Essen</center></aside>").openPopup();
 

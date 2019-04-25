@@ -15,7 +15,7 @@ sass-uncompressed:
 	lektor build
 
 install:
-	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick python3 python3-pip -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy imagemagick python python-pip --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick  python3 python3-pip; else echo -e "Please install Imagemagick, Python3 and Pip!"; fi
+	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick python3 python3-pip -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy graphicsmagick glibc lib32-glibc python python-pip --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick  python3 python3-pip; else echo -e "Please install Imagemagick, Python3 and Pip!"; fi
 	pip install lektor --user
 	make install-sassc
 
