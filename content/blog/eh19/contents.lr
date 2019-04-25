@@ -1,33 +1,61 @@
-title: Easterhegg Würzburg
+title: Das Oster-Waffel-Wochenende
 ---
 author: L3D
 ---
 body:
 
- In Würzburg wollte es keine Waffeln geben
-=======================
+Diese Ostern wurde fleißig gewaffelt.
 
-Auf dem Easterhegg Würzburg war das c3WOC auch vertreten. Aber auf wunsch der Orga leider ohne Waffelequipment. So wurden leider keine essbaren Waffeln produziert, sondern wir haben uns auf Waffeln in Pixelform auf der Pixelflut beschränkt.
+<div class="lightgallery">
+<a href="/blog/eh19/chaospott.png">
+      <img class="image" src="/blog/eh19/chaospott.png">
+</a></div>
+
+Nicht nur auf dem Easterhegg, sondern auch im Chaospott in Essen wurden Oserwaffeln gemacht.
 ---
-pub_date: 2018-04-02
+pub_date: 2019-04-23
 ---
-shorttitle: EH18
+shorttitle: Osterwaffel
 ---
 twitter_handle: L3D
 ---
-xml: Auf dem Easterhegg Würzburg war das c3WOC auch vertreten. Aber auf wunsch der Orga leider ohne Waffelequipment. So wurden leider keine essbaren Waffeln produziert, sondern wir haben uns auf Waffeln in Pixelform auf der Pixelflut beschränkt.
+video_embeded:
+
+#### pro_video ####
+video: ruehren.mp4
+----
+video_url: 
+---
+video_is_embeded: yes
+---
+project:
+
+#### pro_img ####
+image: chaospott.png
+#### pro_img ####
+image: stream.png
+#### pro_img ####
+image: ruehren.jpg
 ---
 beitrag:
 
-Und einige neue großartige Verknüpfungen ins Chaos geknüpft um auf zukünftigen Events mit noch viel mehr Waffeln zu Waffeln.
+Auf dem [Easterhegg](https://eh19.easterhegg.eu) in Wien haben Venty und L3D in Kooperation mit dem [Video Operation Center](https://c3voc.de) eine Waffel-Unterhaltungsprogramm angeboten. Dieses gibt es auf [media.ccc.de](https://media.ccc.de/v/eh19-124-das-groe-eh19-gewaffel) zu sehen.
 
-Das nächste größere Chaosevent mit Waffelunterstützung ist die GPN in Karlsruhe.
+<iframe width="1024" height="576" src="https://media.ccc.de/v/eh19-124-das-groe-eh19-gewaffel/oembed" frameborder="0" allowfullscreen></iframe>
 
- Easterhegg war trotzdem toll
-==============================
+*Ein besonderes Dank an das [VOC](https://c3voc.de) und die A/V Bunnys und Waffel Bunnys, die das möglich gemacht haben. Besonders an @sophie, @jwacalex, @equescalculi und @psycho.*
 
-Aber auch ohne essbare Waffeln war der Easterhegg ein tolles Event. So haben sich mehr Leute gefunden, die auch einen an der Waffel haben. So können wir auf der GPN mit noch mehr vereinter Waffelpower Waffelgewalt ausüben.
 
-Und auch erste Verbindungen zu C3GELB wurden geknüpft. Seit dem arbeiten wir daran zum Congress Hygienezertifiziert zu sein. Das Stichwort hierzu lautet Frikadellendiplom.
+Neu an der Waffelei am Easterhegg war der leicht überdimenisionierte Rührer des [C3W](https://c3w.at).
+
+Auch der Chaospott hat Waffeln gemacht und dabei Streams vom Easterhegg geschaut.
+
+Bei der Waffelei kamen ca. 420€ an spenden zusammen, von denen 350 in die Zutateneinkäufe des C3W gesteckt wurden. Der rest wird in neue Schürzen, Schöpfkellen und Rührstäbe unvestiert.
 ---
-xml_img: eh18-pxl.jpg
+xml:
+
+Diese Ostern wurde nicht nur am Easterhegg waffeln gemacht, sondern an mehreren Standorten zur selben Zeit.
+
+Der Chaospott Essen hat die mitteldeutsche Waffelversorgung sichergestellt während die Osterwaffeln des Easterhegg teilweise von VOC aufgezeichnet wurden.
+---
+xml_img: ruehren.jpg
