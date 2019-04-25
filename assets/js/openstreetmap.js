@@ -1,4 +1,4 @@
-    var mymap = L.map('mapid').setView([47, 9.2], 6);
+    var mymap = L.map('mapid').setView([50, 9.5], 6);
 
 var greenIcon = L.icon({
     iconUrl: '/images/map.png',
