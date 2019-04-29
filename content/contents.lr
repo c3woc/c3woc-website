@@ -10,7 +10,7 @@ about_text: Mit viel liebe verwandeln wir rohe Zutaten in waffelfähigen Teig. D
 ---
 about_text2: Nach jahrerlanger Forschung ist es uns gelungen, die Formel für den Waffelteig zu rekonstruieren. Diese galt lange als verschollen, wurde jetzt aber durch Quantentechnologie und Blockchain wieder zugänglich gemacht.
 ---
-about_text3: Eines der Geheimnisse von guten Waffelteig ist die frische der Zutaten. Ein anderes ist die Qualität.
+about_text3: Eines der Geheimnisse von gutem Waffelteig ist die Frische der Zutaten. Ein anderes ist die Qualität.
 ---
 about_url: Waffel Rezepturen
 ---
@@ -20,7 +20,7 @@ icons_header: Wo kannst du uns treffen?
 ---
 icons_text:
 
-Das C3WOC erfreut sich einer großen beliebtheit. Besonders im Umkreis des Chaos Computer Club und Chaosnahen veranstaltungen.<br/>
+Das C3WOC erfreut sich einer großen Beliebtheit. Besonders im Umkreis des Chaos Computer Club und chaosnahen Veranstaltungen.<br/>
 Selbstverständlich sollen dort Waffeln nicht fehlen!
 ---
 icons_1_1: fas fa-heart
@@ -42,7 +42,7 @@ icons_3_1: fas fa-flask
 ---
 icons_3_2: Experimentiert
 ---
-icons_3_3: Mit Waffeln lassen sich viele Experimente machen oder verbessern. Angefangen von der Waffel, die die experimentierfreudigen Hacker neu motiviert. Bis hin zu neuen kreationen wie zum Beispiel die [Dönerwaffel](/rezept/doener/).
+icons_3_3: Mit Waffeln lassen sich viele Experimente machen oder verbessern. Angefangen von der Waffel, die die experimentierfreudigen Hacker neu motiviert. Bis hin zu neuen Kreationen wie zum Beispiel die [Dönerwaffel](/rezept/doener/).
 ---
 icons_4_1: fas fa-user-plus
 ---
@@ -64,7 +64,7 @@ icons_6_1: fa-calendar-plus
 ---
 icons_6_2: Kommt zu Veranstaltungen
 ---
-icons_6_3: Das C3WOC kommt gerne zu chaos nahen Veranstaltung um da mit euch zusammen Waffeln zu machen. Ladet uns einfach mal ein!
+icons_6_3: Das C3WOC kommt gerne zu chaosnahen Veranstaltungen, um dort mit euch zusammen Waffeln zu machen. Ladet uns einfach mal ein!
 ---
 icons_6_url: https://c3woc.de/#tourdaten
 ---
@@ -81,7 +81,7 @@ Wenn mehr Menschen mitmachen, wird das Waffel backen, Planen, Organisieren und e
 ---
 red_3:
 
-Wir würden uns sehr über mehr aktive Leute, die Spaß an Waffeln haben freuen. Denn nur mit wenigen Menschen etwas zu Planen und durchzuführen ist sehr Anstrengend und funktioniert nicht für unbegrenzte Zeit.
+Wir würden uns sehr über mehr aktive Leute, die Spaß an Waffeln haben freuen. Denn nur mit wenigen Menschen etwas zu Planen und durchzuführen ist anstrengend und funktioniert nicht für unbegrenzte Zeit.
 
 Bitte mach bei uns mit!
 ---
@@ -110,7 +110,7 @@ text2:
 
 Wir würden auch einen Bericht von deinen Waffel Aktionen dort sehr gerne lesen!
 
-Sprech uns hierfür einfach an oder noch besser: Mach einen Pull-Request auf der [Webseite](https://github.com/ToolboxBodensee/c3woc-webseite).
+Sprich uns hierfür einfach an oder noch besser: Mach einen Pull-Request auf der [Webseite](https://github.com/ToolboxBodensee/c3woc-webseite).
 ----
 url_text: Waffel-Blog
 ----
