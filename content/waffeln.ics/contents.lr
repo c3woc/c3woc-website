@@ -17,7 +17,7 @@ ort: Ziegeleipark Mildenberg
 ----
 url: https://events.ccc.de/
 ----
-description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer Chaos. Der Inhalt erstreckt sich über Technik und Politik zu Kunst und Kultur.
+description: Das Chaos Communication Camp ist ein internationales Treffen von Hackern, das seit 1999 alle vier Jahre in der Nähe von Berlin stattfindet. Es wird organisiert vom Chaos Computer Club.
 ----
 confirmed: yes
 #### termine ####
@@ -61,7 +61,7 @@ url: https://eh19.easterhegg.eu
 ----
 description: Der Chaos Computer Club Wien freut sich, euch zur Easterhegg 2019 zu Ostern (19.-22.04.2019) nach Wien einladen zu dürfen! Wien ist nicht nur bekannt für Kaffee, Lipizzaner und Sachertorte, sondern auch für den berüchtigten Wiener Schmäh.|Daher ist das Motto für die EH19: Bun Intended!
 ----
-confirmed: 
+confirmed: yes
 #### termine ####
 start: 2019-05-30 10:00:00 Europe/Berlin
 ----
@@ -75,7 +75,7 @@ url: https://entropia.de/GPN19
 ----
 description: Hacken, Gulasch, Vorträge, Cloud, Tschunk, Workshops, Lounge, Mate, Spaß am Gerät.|Gulaschprogrammiernacht klingt fast wie ein Kochmarathon für schlaflose Informatikstudenten. Was 2002 in einem Karlsruher Kellerraum mit ein paar Technikbegeisterten angefangen hat, ist inzwischen zu einer der größten Veranstaltungen des Chaos Computer Clubs gewachsen. Die Themen sind breit gefächert: Den Kern bilden Hard- und Softwareentwicklung, sowie Datensicherheit. Daneben kommen aber auch Datenschutz, Netzpolitik und viele andere faszinierende Themen zum Zug: Wie kocht man das perfekte Gulasch? Kann man aus Hardwareschrott noch schönen Schmuck basteln? Wie funktioniert eigentlich eine Nähmaschine? Wie fliegt man Raumschiffe? Wo kann ich Waffeln machen...|
 ----
-confirmed: no
+confirmed: yes
 #### termine ####
 start: 2019-03-09 14:00:00 Europe/Berlin
 ----
@@ -217,7 +217,7 @@ url: https://www.froscon.org/
 ----
 description: Freie Software und Open Source - das sind die Themen der FrOSCon. |Jedes Jahr im Spätsommer veranstaltet der Fachbereich Informatik der Hochschule Bonn-Rhein-Sieg mit Hilfe des FrOSCon e.V. ein spannendes Programm mit Vorträgen und Workshops für Besucher aller Altersklassen, die Freie Software nutzen, kennenlernen wollen oder selbst entwickeln. | |Natürlich kann das das C3WOC als führende Gruppe von Experten im Open-Source Waffel Business nicht fehlen!
 ----
-confirmed: 
+confirmed: yes
 #### termine ####
 start: 2019-03-02 13:00:00 Europe/Berlin
 ----
@@ -259,4 +259,18 @@ url: https://savetheinternet.info/demos
 ----
 description: Save Your Internet und komm zur Demo!| Auch wenn es da nicht überall Waffeln gibt.
 ----
-confirmed: no
+confirmed: yes
+#### termine ####
+start: 2019-06-14 13:37:42 Europe/Berlin
+----
+ende: 2019-06-16 17:23:42 Europe/Berlin
+----
+event: CoSin
+----
+ort: Biel/Bienne
+----
+url: https://cosin.ch
+----
+description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer Chaos. Der Inhalt erstreckt sich über Technik und Politik zu Kunst und Kultur.|Bis hinein in die heilige Kunst der Waffel- und Glacce zubereitung.
+----
+confirmed: yes
