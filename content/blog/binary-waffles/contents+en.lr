@@ -1,0 +1,43 @@
+author:
+
+Corinna 
+---
+beitrag:
+
+In the Binary Kitchen people meet regularly on Mondays, but also on many other days,
+to work together on the 3D printer, the laser, your own laptop or just the
+to work the newly acquired waffle irons. Our "Hello World" had the
+Waffle iron with Belgian waffles from yeast dough, but rumouredly
+and hearty waffles will soon be added." 
+
+Further information about binary kitchens can be found at <a href="https://www.binary-kitchen.de/">binary-kitchen.de</a>.
+---
+body:
+
+We've got reinforcements in the waffle area. 
+
+The Binary Kitchen is a hackerspace from Regensburg in Bavaria and now also participates in the C3WOC.
+
+<div class="lightgallery">     
+  <a href="/blog/binary-waffles/binary.png">
+      <img class="image" src="/blog/binary-waffles/binary@360x360.png">
+  </a></div>
+---
+project:
+
+#### pro_img ####
+image: binary.png
+---
+pub_date: 2019-04-25
+---
+shorttitle: binary waffles
+---
+title: The Binary Kitchen now also makes waffles
+---
+xml:
+
+The Binary Kitchen is a Hackspace from Regensburg in Bavaria. People
+meet there regularly on Mondays, but also on many other days,
+to eat waffles together.
+---
+xml_img: binary.png
