@@ -274,3 +274,17 @@ url: https://cosin.ch
 description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer Chaos. Der Inhalt erstreckt sich über Technik und Politik zu Kunst und Kultur.|Bis hinein in die heilige Kunst der Waffel- und Glacce zubereitung.
 ----
 confirmed: yes
+#### termine ####
+start: 2019-08-01 10:00:42 Europe/Berlin
+----
+ende: 2019-08-04 18:42:00 Europe/Berlin
+----
+event: Technik Camp
+----
+ort: Campus der Waldorfschule Überlingen
+----
+url: https://ffbsee.net/camp/
+----
+description: 
+----
+confirmed: yes
