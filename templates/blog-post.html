@@ -7,6 +7,7 @@
 <link rel="import" href="{{ '/youtube-embed.html'|url }}"> {% endif %}
 {% endblock %}{% endif %}
 {% block title %}{{ this.title }}{% endblock %}
+{% block expand_ogg_image %}"{% if this.xml_img %}{{ this.xml_img|url }}{% else %}{{ '/images/waffel.jpeg'|asseturl }}{% endif %}"{% endblock %}
 {% block expand_description %}
     <meta name="description" content="{% 
         if this.xml %}{{ this.xml }}{% else %}{%
