@@ -4,11 +4,11 @@ title: C3 Waffel Operation Center
 ---
 slogan: Wir machen Waffeln!
 ---
-about_header: Die Waffelformel
+about_header: Die Waffel Formel
 ---
 about_text: Mit viel liebe verwandeln wir rohe Zutaten in waffelfähigen Teig. Dabei verwenden wir lang erforschte Rezepturen, die wir euch nicht verheimlichen wollen.
 ---
-about_text2: Nach jahrerlanger Forschung ist es uns gelungen, die Formel für den Waffelteig zu rekonstruieren. Diese galt lange als verschollen, wurde jetzt aber durch Quantentechnologie und Blockchain wieder zugänglich gemacht.
+about_text2: Nach jahrelanger Forschung ist es uns gelungen, die Formel für den Waffelteig zu rekonstruieren. Diese galt lange als verschollen, wurde jetzt aber durch Quantentechnologie und Blockchain wieder zugänglich gemacht.
 ---
 about_text3: Eines der Geheimnisse von gutem Waffelteig ist die Frische der Zutaten. Ein anderes ist die Qualität.
 ---
@@ -20,7 +20,7 @@ icons_header: Wo kannst du uns treffen?
 ---
 icons_text:
 
-Das C3WOC erfreut sich einer großen Beliebtheit. Besonders im Umkreis des Chaos Computer Club und chaosnahen Veranstaltungen.<br/>
+Das C3WOC erfreut sich einer großen Beliebtheit. Besonders im Umkreis des Chaos Computer Club und Chaos nahen Veranstaltungen.<br/>
 Selbstverständlich sollen dort Waffeln nicht fehlen!
 ---
 icons_1_1: fas fa-heart
@@ -76,8 +76,8 @@ red_1: Wir freuen uns über neue Gesichter.
 ---
 red_2:
 
-Alleine Waffeln zu backen ist langweilig und mit der Zeit echt anstrengend. Aber zusammen macht das gleich viel mehr spaß.
-Wenn mehr Menschen mitmachen, wird das Waffel backen, Planen, Organisieren und essen zu einem super Erlebnis.
+Alleine Waffeln zu backen ist langweilig und mit der Zeit echt anstrengend. Aber zusammen macht das gleich viel mehr Spaß.
+Wenn mehr Menschen mitmachen, wird das backen, Planen, Organisieren und essen von Waffeln zu einem super Erlebnis.
 ---
 red_3:
 
@@ -108,7 +108,7 @@ text: Wenn du interessiert bist an Bildern und etwas Text zu Veranstaltungen, be
 ----
 text2:
 
-Wir würden auch einen Bericht von deinen Waffel Aktionen dort sehr gerne lesen!
+Wir würden auch einen Bericht von deinen Waffel-Aktionen dort sehr gerne lesen!
 
 Sprich uns hierfür einfach an oder noch besser: Mach einen Pull-Request auf der [Webseite](https://github.com/ToolboxBodensee/c3woc-webseite).
 ----
