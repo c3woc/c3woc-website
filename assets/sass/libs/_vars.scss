@@ -24,8 +24,8 @@ $size: (
 $font: (
   family: ('Roboto', Helvetica, sans-serif),
   family-fixed: ('Courier New', monospace),
-  weight: 400,
-  weight-bold: 500
+  weight: 300,
+  weight-bold: 400
 );
 
 // Palette.
@@ -51,5 +51,5 @@ $palette: (
 
 //pictures startpage
 $picture-startpage: (
-  scroll-1: url(../images/home/abschnitt1.jpeg),
+  scroll-1: url(/images/home/abschnitt1.jpeg),
 );
