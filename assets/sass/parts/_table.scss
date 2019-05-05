@@ -1,12 +1,9 @@
 /* Table */
-.table-wrapper {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
-}
-
 table {
   margin: 0 0 _size(element-margin) 0;
   width: 100%;
+  word-wrap:break-word;
+  table-layout: fixed;
 
   tbody {
     tr {
@@ -71,5 +68,34 @@ table {
       border-top: 0;
     }
   }
+
+  ul {
+    margin: 0 0 0 0;
+  }
+
+  @include breakpoint(mobileonly) {
+    td {
+      width:100%;
+      display: block;
+      margin:10px 0px;
+      text-align: center;
+    }
+  }
 }
 
+.table-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  &.code {
+    border-radius: 5px;
+    font-style: italic;
+    table {
+      margin: 0 0 0 0;
+      tbody {
+        tr {
+          border: 0;
+        }
+      }
+    }
+  }
+}
