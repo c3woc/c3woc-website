@@ -107,69 +107,36 @@
               <ul>
                 <li{% if this._path == '/' %} class="active"{% endif
                   %}><a href="{{ '/'|url }}">{%
-                  if bag('navigation', this.alt, 'home') %}{{ bag('navigation', this.alt, 'home') }}{%
+                if bag('navigation', this.alt, 'home') %}{{ bag('navigation', this.alt, 'home') }}{%
                   else %}{{ bag('navigation', 'de', 'home') }}{% endif %}</a></li>{%
-                for href, title, print in [
-                  ['/blog', 'Blog', 1],
-                  ['/rezept', 'Rezept', 1],
-                  ['/mitmachen', 'mitglied', 1],
-                  ['/hunger', 'Wo gibt es Waffeln?', 0],
-                  ['/kontakt', 'Kontakt', 1]
-                ] %}{% if print %}
-                  <li{% if this.is_child_of(href) %} class="active"{% endif
-                  %}><a href="{{ href|url }}">{% 
-                     if bag('navigation', this.alt, title) 
-                       %}{{ bag('navigation', this.alt, title) }}{%
-                     else %}{{ title }}{% 
-                     endif %}</a>{#
-
-                    Hier beginnt die vorhin erwähnt if-schleife,
-                    in der die Untermenüs definiert werden.
-        
-                    PLZ Fix me!!!
-                    
-                        -> Eine Idee zum Fix wäre, die obige Tabelle ausweiten...
-
-                    #}{%
-                  if title == 'Rezept' %}
-                    <ul>{% set root = site.get('/rezept/', alt=this.alt) %}{%
-                  for child in root.children recursive %}{% if loop.index <= 8 %}
-                    <li{%
-                      if this._path == child._path %} class="active"{% endif
-                      %}><a href="{% if this.alt == 'de' %}{% else %}/{{ this.alt }}/{% endif %}{{ child|url }}">{{ child.title }}</a></li>{%
-                  endif %}{% endfor %}
-                      <li><a href="{{ '/rezept/'|url }}">{% 
-                              if bag('navigation', this.alt, 'show_projekt') %}{{ bag('navigation', this.alt, 'show_projekt') }}{% 
-                              else %}{{ bag('navigation', 'de', 'show_projekt') }}{% endif %}</a></li>
-                      <li><a href="{{ '/feed_projekte.xml'|url }}">{% 
-                              if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% 
-                              else %}{{ title }}{% endif %} {% 
-                              if bag('navigation', this.alt, 'xml') %}{{ bag('navigation', this.alt, 'xml') }}{% 
-                              else %}{{ bag('navigation', 'de', 'xml') }}{% endif %}</a></li>
-                    </ul>{%
-                  elif title == 'Kontakt' %}
-                    <ul><li><a href="{{ '/kontakt'|url }}">{% 
-                              if bag('navigation', this.alt, 'Kontakt') %}{{ bag('navigation', this.alt, 'Kontakt') }}{% 
-                              else %}{{ bag('navigation', 'de', 'Kontakt') }}{% endif %}</a></li>
-                      <li><a href="{{ '/impressum'|url }}">{% 
-                              if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{% 
-                              else %}Impressum{% endif %}</a></li>
-                      <li><a href="{{ '/datenschutz/'|url }}">{% 
-                              if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% 
-                              else %}Datenschutz{% endif %}</a></li>
-                  </ul>{%
-                  elif title == 'Blog' %}
-                    <ul>{% set root = site.get('/blog/', alt=this.alt) %}{%
-                      for child in root.children recursive %}{% if loop.index <= 8 %}
-                      <li{%
-                      if this._path == child._path %} class="active"{% endif
-                        %}><a href="{{ child|url }}">{{ child.shorttitle }}</a></li>{%
-                    endif %}{% endfor %}
-                    <li><a href="{{ '/blog/'|url }}">Alle Beiträge</a></li>
-                    <li><a href="{{ '/feed_blog.xml'|url }}">RSS Feed</a></li></ul>{%
-                  endif %}</li>{%
-                 endif %}{%
-               endfor %}
+                    for title, href in bag('nav-bar', "NavBar").items() %}
+                    <li{% if this.is_child_of(href) %} class="active"{% endif
+                    %}><a href="{{ href|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>
+                      <ul>
+                        {% if bag('nav-bar', 'list', title) %}
+                          {% set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) %}{%
+                          for child in root.children recursive %}{% if loop.index <= 7 %}
+                            <li{% if this._path == child._path %} class="active"{% endif %}>
+                              <a href="{{ child|url }}">
+                                {{ child.shorttitle if child.shorttitle else child.title  }}
+                              </a></li>
+                          {% endif %}{% endfor %}
+                        {% endif %}
+                        {% if  bag('nav-bar', title) %}
+                          {% for nav_title, nav_url in bag('nav-bar', title).items() %}
+                            <li><a href={{ nav_url if 'http' in nav_url else nav_url|url }}
+                              {% if bag('nav-bar', 'button', nav_title) %}
+                                class="button special"
+                              {% endif %}>
+                              {{ bag('navigation', this.alt, nav_title)
+                                if bag('navigation', this.alt, nav_title) 
+                                else bag('navigation', 'de', nav_title) }}
+                            </a></li>
+                          {% endfor %}
+                        {% endif %}
+                      </ul>
+                    </li>
+                  {% endfor %}
                <li class="last"><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
                    <ul class="last">
                      <li><a href="{{ this._path }}">{% 
