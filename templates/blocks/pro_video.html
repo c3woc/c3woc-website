@@ -1,11 +1,8 @@
-{% if this.video_url 
-%}<div class="fit">
+<div class="fit">
     <youtube-embed embed="{{ this.video_url }}"></youtube-embed>
+    <noscript>
+        <div class="youtube">
+            <iframe src='https://invidio.us/embed/{{ this.video_url }}?rel=0' frameborder='0' allow="autoplay; encrypted-media" allowfullscreen scrolling="no"></iframe>
+        </div>
+    </noscript>
 </div>
-<a class="button" href="https://www.youtube.com/watch?v={{ this.video_url }}{% if this.alt %}&gl={{ this.alt }}&hl={{ this.alt }}{% endif %}" target="_blank" rel="noopener">{%
-    if bag('translate', this.alt, 'directytlink') %}{{ bag('translate', this.alt, 'directytlink') }}{%
-    else %}Direkt zum YouTube-Video{% endif %}</a>{% endif %}{% if this.video
-    %} <a class="button" href="{{ this.video|url }}" download>{%
-    if bag('translate', this.alt, 'directlink') %}{{ bag('translate', this.alt, 'directlink') }}{%
-    else %}Download Video{% endif %}</a>{% endif %}
-<br/>

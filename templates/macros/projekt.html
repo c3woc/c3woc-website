@@ -25,7 +25,15 @@
           <section id="content">
             {{ post.body }}
             {% if post.video_is_embeded %}{% for blk in post.video_embeded.blocks %}
-                {{ blk }} <br/>
+              {% if blk.video_url %}
+              {{ blk }} <br/>
+              <a class="button" href="https://www.youtube.com/watch?v={{ blk.video_url }}{% if post.alt %}&gl={{ post.alt }}&hl={{ post.alt }}{% endif %}" target="_blank" rel="noopener">{%
+                if bag('translate', post.alt, 'directlink') %}{{ bag('translate', post.alt, 'directlink') }}{%
+                else %}{{post.url}}{% endif %}</a>{% endif %}{% if blk.video
+                %} <a class="button" href="{{ blk.video|url }}" download>{%
+                if bag('translate', post.alt, 'directlink') %}{{ bag('translate', post.alt, 'directlink') }}{%
+                else %}Download Video{% endif %}</a>{% endif %}
+              <br/>
             {% endfor %}{%
           endif %} 
             {% if post.project %} 
