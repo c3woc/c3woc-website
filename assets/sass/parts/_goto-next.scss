@@ -14,7 +14,7 @@
   z-index: 1;
 
   &::before {
-    background-image: url('images/arrow.svg');
+    background-image: url('/css/images/arrow.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -35,4 +35,3 @@
     }
   }
 }
-

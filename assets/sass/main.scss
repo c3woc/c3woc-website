@@ -1,8 +1,8 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import url("../css/font-awesome.min.css");
-@import url("../fonts/roboto.css");
+@import url("/css/font-awesome.min.css");
+@import url("/fonts/roboto.css");
 @import url("https://c3woc.de/css/spacestatus.css");
 @import "libs/skel";
 @import 'parts/startpage';
@@ -17,7 +17,7 @@ Modified by Toolbox Bodensee e.V.
 @include skel-breakpoints((
   xlarge: '(max-width: 1680px)',
   large: '(max-width: 1280px)',
-  medium: '(max-width: 980px)',
+  medium: '(max-width: 1100px)',
   small: '(max-width: 933px)',
   xsmall: '(max-width: 480px)'
 ));
@@ -32,7 +32,7 @@ Modified by Toolbox Bodensee e.V.
   }
 
   @else if $point == tablet {
-    @media (max-width: 980px) { @content ; }
+    @media (max-width: 1100px) { @content ; }
   }
 
   @else if $point == phablet {
@@ -116,4 +116,4 @@ $size-wrapper-pad-lr: 3em;
 @import 'parts/footer';
 @import 'parts/project';
 @import 'parts/col';
-
+@import 'parts/youtube';

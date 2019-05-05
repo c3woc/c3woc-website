@@ -142,13 +142,8 @@
       height: 101%;
       padding: $size-wrapper-pad-tb $size-wrapper-pad-lr;
       top: 0;
-      width: 28em;
+      width: 30em;
       min-width: 25%;
-
-      @include breakpoint(laptop) {
-        padding: $size-wrapper-pad-tb $size-wrapper-pad-lr;
-        width: 25em;
-      }
     }
   }
 

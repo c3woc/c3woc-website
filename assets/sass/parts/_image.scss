@@ -56,5 +56,13 @@
   &.mapid {
     height: 70vh;
   }
+  &.lightgallery {
+    width: 33%;
+    @include breakpoint(tablet) {
+      width: 49%;
+    }
+    @include breakpoint(phablet) {
+      width: 100%;
+    }
+  }
 }
-
