@@ -9,6 +9,10 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content={% block expand_ogg_image 
     %}"{{ '/images/banner.jpg'|asseturl }}"{% endblock %} />
+    <link href="https://c3woc.de/feed_blog.xml" rel="alternate" title="[C3WOC] - Neuigkeiten" type="application/rss+xml">
+    <link href="https://c3woc.de/en/feed_blog.xml" rel="alternate" title="[C3WOC] - News [EN]" type="application/rss+xml">
+    <link href="https://c3woc.de/feed_rezepte.xml" rel="alternate" title="Waffelrezepte" type="application/rss+xml">
+    <link href="https://c3woc.de/en/feed_rezepte.xml" rel="alternate" title="Waffle Recipes" type="application/rss+xml">
     <meta name="viewport" content="width=device-width, initial-scale=1" />{%
   if '/css/main.min.css'|asseturl == empty and '/css/main.css'|asseturl == empty %}
     <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
