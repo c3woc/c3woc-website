@@ -5,7 +5,7 @@
 > Optimiert für 15-Faches Rezept für jeden Congress-Tag
 *Originalrezept: [c3woc.de/rezept/](https://c3woc.de/rezept/)*
 
-Gewünschte Menge: **Jeweils pro Congress Tag** *(Tag +1 bis Zag +4):*
+Gewünschte Menge: **Jeweils pro Congress Tag** *(Tag +1 bis Tag +4):*
 
 | Menge | Produkt | Metro Art.Nr | Preis laut metro.de Insgesamt (pro stück) | mit MWSt |
 | ----- | ------- |-----|-- |-- |
@@ -24,8 +24,9 @@ Gewünschte Menge: **Jeweils pro Congress Tag** *(Tag +1 bis Zag +4):*
 | 5x    | Puderzucker | 10x [24133](https://produkte.metro.de/shop/pv/BTY-X24175/0032/0021/Sweet-Family-Puderzucker-250-g-Packung) | 2,30 (0,23) | 2,50 (0.25) |
 | 10x   | Küchenrollen | 10x [193954](https://produkte.metro.de/shop/pv/BTY-X513941/0032/0021/Danke-K%C3%BCchenrolle-4-Rollen-%C3%A1-45-Blatt-3-lagig-Packung) | 21,70 (2.17) | 25,8 (2.58) |
 | 1x    | Alufolie | 1x [265979](https://produkte.metro.de/shop/pv/BTY-X11052/0032/0021/Toppits-Alufolie-10-m-x-29-5-cm-Rolle) | 1,39 | 1,65 |
+| 1x    | Sonnenblumenöl | 1x [207379](https://produkte.metro.de/shop/pv/BTY-X315595/0032/0021/aro-Pflanzen%C3%B6l-PET-1-l-Flasche | 0,93 | 1,00 |
 | | | | | |
-| **Insgesamt** | | | 313.61 € *(ohne MWst)* | **341.25€** |
+| **Insgesamt** | | | 314.54 € *(ohne MWst)* | **342.25€** |
 
  Am Tag -2 (24.12):
 -----------------------------
