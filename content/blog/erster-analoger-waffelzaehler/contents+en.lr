@@ -1,0 +1,41 @@
+author: L3D
+---
+beitrag:
+
+This results in the following information:
+
+* A bucket of waffle dough weighs about 6 kg.
+* One bucket of waffle dough is enough for about 50-60 waffles
+* A waffle weighs about 110g and has a diameter of 21 cm and a height of 7 mm.
+* A waffle could have around 342 calories.
+---
+body:
+
+On May 10th the C3WOC visited the Hackerspace Odenwilusenz in Schaffhausen.
+
+There waffles were baked and the first analogue waffle counter could determine the first statistics for the C3WOC!
+---
+project:
+
+#### pro_img ####
+image: overview.jpg
+#### pro_img ####
+image: backing.jpg
+#### pro_img ####
+image: waffelzaehler.jpg
+---
+pub_date: 2019-05-18
+---
+shorttitle: waffle counter
+---
+title: First analog waffel counter
+---
+twitter_handle: L3D
+---
+xml:
+
+On May 10th the C3WOC visited the Hackerspace Odenwilusenz in Schaffhausen.
+
+There waffles were baked and the first analogue waffle counter could determine the first statistics for the C3WOC!
+---
+xml_img: waffelzaehler.jpg
