@@ -67,6 +67,20 @@ input[type="button"],
     }
   }
 
+  &.nav {
+    background-color: _palette(nav-accent);
+    box-shadow: none;
+    color: _palette(fg-bold) !important;
+
+    &:hover {
+      background-color: lighten(_palette(nav-accent), 5);
+    }
+
+    &:active {
+      background-color: darken(_palette(nav-accent), 5);
+    }
+  }
+
   &.disabled,
   &:disabled {
     background-color: _palette(border) !important;

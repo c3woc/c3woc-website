@@ -58,6 +58,9 @@
   }
   &.lightgallery {
     width: 33%;
+    height: 200pt;
+    object-fit: cover;
+    
     @include breakpoint(tablet) {
       width: 49%;
     }
