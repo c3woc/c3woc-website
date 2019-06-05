@@ -115,42 +115,48 @@
                   else %}{{ bag('navigation', 'de', 'home') }}{% endif %}</a></li>{%
                     for title, href in bag('nav-bar', "NavBar").items() %}
                     <li{% if this.is_child_of(href) %} class="active"{% endif
-                    %}><a href="{{ href|url }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>
-                      <ul>
-                        {% if bag('nav-bar', 'list', title) %}
-                          {% set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) %}{%
+                    %}><a href="{{ href|string }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>
+                      <ul>{%
+                          if bag('nav-bar', 'list', title) %}{%
+                          set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) %}{%
                           for child in root.children recursive %}{% if loop.index <= 7 %}
                             <li{% if this._path == child._path %} class="active"{% endif %}>
-                              <a href="{{ child|url }}">
-                                {{ child.shorttitle if child.shorttitle else child.title  }}
-                              </a></li>
-                          {% endif %}{% endfor %}
-                        {% endif %}
-                        {% if  bag('nav-bar', title) %}
-                          {% for nav_title, nav_url in bag('nav-bar', title).items() %}
-                            <li><a href={{ nav_url if 'http' in nav_url else nav_url|url }}
-                              {% if bag('nav-bar', 'button', nav_title) %}
-                                class="button special"
-                              {% endif %}>
-                              {{ bag('navigation', this.alt, nav_title)
+                              <a href="{{ child|url }}">{{ child.shorttitle if child.shorttitle else child.title  }}</a></li>{%
+                             endif %}{% endfor %}{%
+                          endif %}
+                        {% if  bag('nav-bar', title) %} {%
+                             for nav_title, nav_url in bag('nav-bar', title).items()
+                          %}<li><a href={{ nav_url if 'http' in nav_url else nav_url|url }}{%
+                                if bag('nav-bar', 'button', nav_title) 
+                              %}class="button special"{% endif 
+                                %}>{{ bag('navigation', this.alt, nav_title)
                                 if bag('navigation', this.alt, nav_title) 
-                                else bag('navigation', 'de', nav_title) }}
-                            </a></li>
-                          {% endfor %}
-                        {% endif %}
+                                else bag('navigation', 'de', nav_title) }}</a></li>{% 
+                        endfor %}{% endif %}
                       </ul>
-                    </li>
-                  {% endfor %}
-               <li class="last"><a href="/{% if bag('navigation', this.alt, 'default_path') %}{{ bag('navigation', this.alt, 'default_path') }}{% else %}..{% endif %}{{ this._path }}">{% if bag('navigation', this.alt, 'sprache') %}{{ bag('navigation', this.alt, 'sprache') }}{% else %}Sprache{% endif %}</a>
+                    </li>{% endfor %}
+               <li class="last"><a href="/{%
+                     if bag('navigation', this.alt, 'default_path') 
+                        %}{{ bag('navigation', this.alt, 'default_path') }}{% 
+                     else %}..{% 
+                     endif %}{{ this._path }}">{% 
+                     if bag('navigation', this.alt, 'sprache') 
+                            %}{{ bag('navigation', this.alt, 'sprache') }}{% 
+                     else %}Sprache{% 
+                     endif %}</a>
                    <ul class="last">
                      <li><a href="{{ this._path }}">{% 
-                             if bag('navigation', this.alt, 'German') %}{{ bag('navigation', this.alt, 'German') }}{%
-                             else %}{{ bag('navigation', 'de', 'German') }}{% endif %}</a></li>
+                             if bag('navigation', this.alt, 'German')
+                                    %}{{ bag('navigation', this.alt, 'German') }}{%
+                             else %}{{ bag('navigation', 'de', 'German') }}{%
+                             endif %}</a></li>
                      <li><a href="/en{{ this._path }}">{% 
-                             if bag('navigation', this.alt, 'Englisch') %}{{ bag('navigation', this.alt, 'Englisch') }}{% 
+                             if bag('navigation', this.alt, 'Englisch') 
+                                %}{{ bag('navigation', this.alt, 'Englisch') }}{% 
                              else %}{{ bag('navigation', 'de', 'Englisch') }}{% 
                          endif %} <i>({%
-                             if bag('navigation', this.alt, 'falls') %}{{ bag('navigation', this.alt, 'falls') }}{%
+                             if bag('navigation', this.alt, 'falls') 
+                                %}{{ bag('navigation', this.alt, 'falls') }}{%
                              else %}{{ bag('navigation', 'de', 'falls') }}{% 
                         endif %})</i></a><li>
                    </ul>
@@ -226,7 +232,7 @@ Wenn Sie unsere Kritik an der geplanten Urheberrechtsreform teilen, werden Sie a
            ['Mail', 'fas fa-envelope', "mailto:waffeln@c3woc.de"],
            ['IRC Chat', 'fas fa-hashtag', "ircs://irc.hackint.org/#waffel"],
            ['Webirc Chat', 'fab fa-slack', "https://webirc.hackint.org/#irc://irc.hackint.org/#waffel"],
-           ['Rezept-Feed', 'fas fa-receipt', "https://c3woc.de/feed_rezepte.xml"],
+           ['Rezept-Feed', 'fas fa-receipt', "https://c3woc.de.de/feed_rezepte.xml"],
            ['News', 'fas fa-rss', "https://c3woc.de/feed_blog.xml"],
            ['Tourdaten', 'far fa-calendar-plus', "https://c3woc.de/waffeln.ics"],
            ['Tourdaten', 'fas fa-user-plus', "https://c3woc.de/mitmachen"]
