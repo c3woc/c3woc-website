@@ -3,8 +3,9 @@
 
     RewriteRule ^rezepte.xml https://c3woc.de/feed_rezepte.xml
     RewriteRule ^feed.xml https://c3woc.de/feed_blog.xml
-    RewriteRule ^equipment/ https://c3woc.de/kontakt/
-    RewriteRule ^hunger/ https://c3woc.de/#tourdaten
+    RewriteRule ^equipment https://c3woc.de/kontakt/
+    RewriteRule ^hunger https://c3woc.de/#tourdaten
+    RewriteRule ^rezepte https://c3woc.de/rezept
 
     ### Redirect certain domains to ffbsee.net
     RewriteCond %{HTTP_HOST} ^waffel\.cyber\.yt [NC,OR]
