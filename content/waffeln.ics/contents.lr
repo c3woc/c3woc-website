@@ -288,3 +288,17 @@ url: https://ffbsee.net/camp/
 description: 
 ----
 confirmed: yes
+#### termine ####
+start: 2019-10-03 10:00:42 Europe/Berlin
+----
+ende: 2019-10-06 18:42:00 Europe/Berlin
+----
+event: 10 Jahre Flipdot Hackerspace
+----
+ort: Kassel
+----
+url: https://flipdot.org/
+----
+description: flipdot ist der Kasseler Hacker- und Makerspace seit 2009. Also wird es Zeit für die 10-Jahres Jubiläumsfeier. Mit Waffeln und allem, was dazu gehört.
+----
+confirmed: yes
