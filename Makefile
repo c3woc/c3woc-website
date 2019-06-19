@@ -20,7 +20,7 @@ install:
 	make install-sassc
 
 install-sassc:
-	if [ ! -d './sassc' ]; then git clone https://github.com/sass/sassc.git sassc; . sassc/script/bootstrap ; make -C sassc -j4 ; fi
+	if [ ! -d './sassc' ]; then git clone https://github.com/sass/sassc.git sassc; cd sassc; git reset tags/3.5.0; cd ..; . sassc/script/bootstrap ; make -C sassc -j4 ; fi
 
 build: sass
 	lektor build
