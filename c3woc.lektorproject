@@ -2,6 +2,7 @@
 name = c3woc
 url = https://c3woc.de/
 url_style = absolute
+excluded_assets = sass, sass/*, *.scss
 
 [servers.c3woc]
 name = c3woc
@@ -22,3 +23,6 @@ name = Englisch
 locale = en_US
 url_prefix = /en/
 
+
+[packages]
+lektor-scsscompile = 1.0.1
