@@ -3,28 +3,32 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 all: build
 
 sass:
-	./sassc/bin/sassc -t compressed ./assets/sass/main.scss ./assets/css/main.min.css
-	./sassc/bin/sassc -t compressed ./assets/sass/ie9.scss ./assets/css/ie9.min.css
 	lektor clean --yes
-	lektor build
+	lektor server -f jsminify 
 
-sass-uncompressed:
-	./sassc/bin/sassc ./assets/sass/main.scss ./assets/css/main.css
-	./sassc/bin/sassc ./assets/sass/ie9.scss ./assets/css/ie9.css
-	lektor clean --yes
-	lektor build
-
+.ONESHELL:
 install:
-	if hash apt 2>/dev/null; then sudo apt update; sudo apt install imagemagick python3 python3-pip -y; elif hash pacman 2>/dev/null; then sudo pacman -Sy graphicsmagick glibc lib32-glibc python python-pip --noconfirm; elif hash dnf 2>/dev/null; then sudo dnf install -y ImageMagick  python3 python3-pip; else echo -e "Please install Imagemagick, Python3 and Pip!"; fi
+	if hash apt-get 2>/dev/null; then
+	  sudo apt-get update -qq >/dev/null && sudo apt-get install -qq apt-utils imagemagick python3-pip python3-setuptools gcc
+	elif hash pacman 2>/dev/null; then
+	  sudo pacman -Syu imagemagick python-pip glibc lib32-glibc gcc --noconfirm
+	elif hash dnf 2>/dev/null; then
+	  sudo dnf install -y ImageMagick python3-pip gcc
+	else 
+	  echo -e "Please install Imagemagick, python3-pip and gcc"
+	fi
 	pip install lektor --user
-	make install-sassc
+	# pip3 install wheel --user
+	lektor plugin flush-cache
 
 install-sassc:
-	if [ ! -d './sassc' ]; then git clone https://github.com/sass/sassc.git sassc; cd sassc; git reset tags/3.5.0; cd ..; . sassc/script/bootstrap ; make -C sassc -j4 ; fi
+	lektor plugin flush-cache
+	lektor clean --yes
+	lektor build -f jsminify
 
-build: sass
-	lektor build
+build:
+	lektor clean --yes
+	lektor build -f jsminify 
 
 server:
 	lektor server $(LEKTOR_SERVER_FLAGS)
-
