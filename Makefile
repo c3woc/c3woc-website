@@ -32,4 +32,3 @@ build:
 
 server:
 	lektor server $(LEKTOR_SERVER_FLAGS)
-
