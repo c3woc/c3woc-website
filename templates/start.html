@@ -1,6 +1,6 @@
-{% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block body %}
+{%- extends "layout.html" -%}
+{%- block title -%}{{ this.title }}{%- endblock -%}
+{%- block body %}
 
 <!-- Banner -->
 <section id="banner">
@@ -8,10 +8,20 @@
     <header>
       <h2>{{ this.title }}</h2>
       <p>{{ this.slogan }}</p>
-      <p>{{ this.hinweis }} {% if this.hinweis_txt %}<a href="{% if this.hinweis_url %}{{this.hinweis_url }}{% else %}#four{% endif %}">{{ this.hinweis_txt }}</a>{% endif %}</p>
+      <p>{{ this.hinweis }}{{ ' ' }} 
+        {%- if this.hinweis_txt -%}
+          <a href="
+            {%- if this.hinweis_url -%}
+              {{this.hinweis_url }}
+            {%- else -%}
+                #four
+            {%- endif -%}
+          ">{{ this.hinweis_txt }}</a>
+        {%- endif -%}
+      </p>
     </header>
     <span class="image"> 
-      <img src="{{ '/images/logo.svg'|url }}" alt="" />
+      <img src="{{ '/images/logo.svg'|asseturl }}" alt="" />
     </span>
   </div>
   <a href="#scroll-1" class="goto-next scrolly">Next</a>
@@ -61,8 +71,9 @@
     <header class="major">
       <h2>{{ this.icons_header }}</h2>
       {{ this.icons_text }}
-    </header>{% 
-    if this.render_tourdaten %}
+    <a class="button special" href="/waffeln.ics">Kalender Abonieren</a><br/>
+    </header>
+    {%- if this.render_tourdaten %}
     <div class="table-wrapper">
       <div class="table-wrapper">
         <table>
@@ -73,27 +84,30 @@
               <th>Ort</th>
             </tr>
           </thead>
-          <tbody>{% 
-            set pages = site.query('/').include_undiscoverable(true).all() %}{% 
-            for page in pages %}{%
-                if page._model == 'waffeln' and page._path == '/waffeln.ics' %}{%
-                for blk in page.termine.blocks|sort(attribute='start', reverse = False) %}{%
-                if blk.start.strftime('%Y%m%d%H%M') > none|datetimeformat('yyyyMMddhhmm') %}
+          <tbody>
+            {%- set pages = site.query('/').include_undiscoverable(true).all() -%}
+            {%- for page in pages -%}
+              {%- if page._model == 'waffeln' and page._path == '/waffeln.ics' -%}
+                {%- for blk in page.termine.blocks|sort(attribute='start', reverse = False) -%}
+                  {%- if blk.start.strftime('%Y%m%d%H%M') > none|datetimeformat('yyyyMMddhhmm') -%}
             <tr>
-              <th>{%
-                    if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') %}{{ blk.start.strftime('%d.%m.%y %H') }} - {{  blk.ende.strftime('%H') }} Uhr{%
-                    else %}{{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }}{%
-                    endif %}</th>
+              <th>
+                  {%- if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') -%}
+                    {{ blk.start.strftime('%d.%m.%y %H') }} - {{  blk.ende.strftime('%H') }} Uhr
+                  {%- else -%}
+                    {{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }}
+                  {%- endif -%}
+                </th>
               <th><a href="{{ blk.url }}" title="{{ blk.description|replace("|", " ") }}">{{ blk.event }}</a></th>
               <th>{{ blk.ort }}</th>
-            </tr>{%
-                    endif %}{%
-                endfor %}
+            </tr>
+                {%- endif -%}
+              {%- endfor -%}
           </tbody>
         </table><br/>
-      </div>{%
-                endif %}{%
-            endfor %}
+      </div>
+        {%- endif -%}
+        {%- endfor %}
       <header class="major">
         <h2>{{ this.icons_header_2 }}</h2>
         {{ this.icons_text_2 }}
