@@ -26,4 +26,4 @@ url_prefix = /en/
 
 
 [packages]
-lektor-scsscompile = 1.2.1
+lektor-scsscompile = 1.2.2
