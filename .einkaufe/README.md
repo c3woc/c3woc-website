@@ -1,0 +1,6 @@
+ Einkaufssammlung
+=====================
+
+Hier gibt es eine Sammlung von Einkäufen...
+
+Ist noch nicht perfekt... aber besser als nichts...
