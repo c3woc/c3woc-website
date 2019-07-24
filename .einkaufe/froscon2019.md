@@ -47,7 +47,8 @@ Eikaufsliste für das [C3WOC](https://c3woc.de)
 | <!-- 20 x 2kg --> 40 kg | Mehl | - |
 | <!-- 2 x 2kg --> 4kg    | glutenfreies Mais oder Roggenmehl | - |
 | <!-- 22 x 1kg --> 22 kg | Zucker | - |
-| <!-- 22 x 0.14kg --> 3 Packungen | Vanillezucker | - |
+| <!-- 22 x 0.14kg --> 3 Packungen | Vanillinzucker | - |
+| <!-- 22 x 0.25 --> 6 Packungen | Vanille Zucker | - |
 | <!-- 22 x 0.1kg -->  2 Packungen | Backpulver | - |
 | <!-- 22 x 1/22 Pkg --> 1 Packung | Salz | - | 
 |               |||
@@ -58,3 +59,9 @@ Eikaufsliste für das [C3WOC](https://c3woc.de)
 | **Zubehör**   |||
 | <!-- max Teig/Tag --> 14 Eimer |
 | <!-- if needed for cccamp --> 7 Kästen | 30x40x20cm Kasten | - |
+|               |||
+| **Süßkram**   |||
+| <!-- 22 x ? --> 10 Packungen | Apfelmus | - |
+| <!-- 22 x ? --> 6 Packungen  | Puderzucker | - |
+| <!-- 22 x ? --> 8 Gläser | Nutella | - |
+
