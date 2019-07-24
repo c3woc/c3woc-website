@@ -10,7 +10,7 @@ Eikaufsliste für das [C3WOC](https://c3woc.de)
  - Freitag Abend:
    + nach dem Aufbau
  - Samstag Nachmittag
-   + 14-18 Uhr
+   + 14-17:30 Uhr
  - Sonntag Nachmittag
    + 14-16:30 Uhr
 
@@ -22,7 +22,39 @@ Eikaufsliste für das [C3WOC](https://c3woc.de)
 -> je 2.2KW Strom benötigt
 ```
 
+### Teigmengen:
+ - Freitag: 1 Eimer
+ - Samstag: 13 Eimer (davon 2 Glutenfrei)
+ - Sonntag: 8 Eimer
+<!-- Insgesamt 22 Eimer - 2 davon glutenfrei -->
 
+### nicht vergessen:
+ + Eimer
+ + Belag
 
  Detailierter Einkaufszettel
 -------------------------------
+
+| Menge | Produkt | METRO |
+| ----- | ------- | ----- |
+| **gekühlte Produkte** |||
+| <!-- 22 x 1 --> 22 Packungen | Vollei | - |
+| <!-- 22 x 1.25kg --> 27.5 kg | Butter | - |
+| <!-- 22 x 1.5L + 5 --> 38 Liter | Frischmilch | - |
+| <!-- if doenergrill --> 6kg | marinierte Hähnchenbrustfillet | - |
+|               |||
+| **Backwaren** |||
+| <!-- 20 x 2kg --> 40 kg | Mehl | - |
+| <!-- 2 x 2kg --> 4kg    | glutenfreies Mais oder Roggenmehl | - |
+| <!-- 22 x 1kg --> 22 kg | Zucker | - |
+| <!-- 22 x 0.14kg --> 3 Packungen | Vanillezucker | - |
+| <!-- 22 x 0.1kg -->  2 Packungen | Backpulver | - |
+| <!-- 22 x 1/22 Pkg --> 1 Packung | Salz | - | 
+|               |||
+| **Getränke**  |||
+| <!-- 22 * 2 Fl --> 3 Kästen | Flora Power | - |
+| <!-- 22 * 0.25 --> 5 Flaschen | Rum | - |
+|               |||
+| **Zubehör**   |||
+| <!-- max Teig/Tag --> 14 Eimer |
+| <!-- if needed for cccamp --> 7 Kästen | 30x40x20cm Kasten | - |
