@@ -32,36 +32,42 @@ Eikaufsliste für das [C3WOC](https://c3woc.de)
  + Eimer
  + Belag
 
+### Metro:
+[METRO St. Augustin](https://www.metro.de/standorte/sankt-augustin)
+
  Detailierter Einkaufszettel
 -------------------------------
 
 | Menge | Produkt | METRO |
 | ----- | ------- | ----- |
 | **gekühlte Produkte** |||
-| <!-- 22 x 1 --> 22 Packungen | Vollei | - |
-| <!-- 22 x 1.25kg --> 27.5 kg | Butter | - |
-| <!-- 22 x 1.5L + 5 --> 38 Liter | Frischmilch | - |
-| <!-- if doenergrill --> 6kg | marinierte Hähnchenbrustfillet | - |
+| <!-- 22 x 1 --> 22 Packungen | Vollei | 22 x [187783](https://produkte.metro.de/shop/pv/BTY-X187825/0032/0021/) |
+| <!-- 22 x 1.25kg --> 27.5 kg | Butter | 110 x [931441](https://produkte.metro.de/shop/pv/BTY-X314169/0032/0021/) |
+| <!-- 22 x 1.5L + 7 --> 40 Liter | Frischmilch | 40 x [218401](https://produkte.metro.de/shop/pv/BTY-X702948/0032/0021/) |
+| <!-- if doenergrill --> 6 kg | Hähnchenbrustfillet | 6x [A000171](https://produkte.metro.de/shop/pv/BTY-Z213/0032/0021/) |
+| <!-- if doenergrill --> 7 Packungen | Knoblauchmarinade | 7x [929786](https://produkte.metro.de/shop/pv/BTY-X312382/0032/0021/) |
 |               |||
 | **Backwaren** |||
-| <!-- 20 x 2kg --> 40 kg | Mehl | - |
-| <!-- 2 x 2kg --> 4kg    | glutenfreies Mais oder Roggenmehl | - |
-| <!-- 22 x 1kg --> 22 kg | Zucker | - |
-| <!-- 22 x 0.14kg --> 3 Packungen | Vanillinzucker | - |
-| <!-- 22 x 0.25 --> 6 Packungen | Vanille Zucker | - |
-| <!-- 22 x 0.1kg -->  2 Packungen | Backpulver | - |
-| <!-- 22 x 1/22 Pkg --> 1 Packung | Salz | - | 
+| <!-- 20 x 2kg --> 40 kg | Mehl | 40x [61224](https://produkte.metro.de/shop/pv/BTY-X245248/0032/0021/) |
+| <!-- 2 x 2kg --> 4kg    | glutenfreies Mais oder Roggenmehl | 4x [694979](https://produkte.metro.de/shop/pv/BTY-X81625/0032/0021/) |
+| <!-- 22 x 1kg --> 22 kg | Zucker | [126538](https://produkte.metro.de/shop/pv/BTY-X322462/0032/0021/) |
+| <!-- 22 x 0.14kg --> 3 Packungen | Vanillinzucker |3x [930656](https://produkte.metro.de/shop/pv/BTY-X313259/0032/0021/) |
+| <!-- 22 x 0.33 --> 8 Packungen | Vanille Zucker | 8x [29630](https://produkte.metro.de/shop/pv/BTY-X29672/0032/0021/) |
+| <!-- 22 x 0.1kg -->  2 Packungen | Backpulver | 2x [243762](https://produkte.metro.de/shop/pv/BTY-X178154/0032/0021/) |
+| <!-- 22 x 1/22 Pkg --> 1 Packung | Salz | 1x [154301](https://produkte.metro.de/shop/pv/BTY-X351156/0032/0021/) |
 |               |||
 | **Getränke**  |||
-| <!-- 22 * 2 Fl --> 3 Kästen | Flora Power | - |
-| <!-- 22 * 0.25 --> 5 Flaschen | Rum | - |
+| <!-- 22 * 2 Fl --> 3 Kästen | Flora Power | **NICHT BEI METRO** |
+| <!-- 22 * 0.25 --> 4 Flaschen | Rum | 4x [93044](https://produkte.metro.de/shop/pv/BTY-X22163/0032/0021/) |
 |               |||
 | **Zubehör**   |||
-| <!-- max Teig/Tag --> 14 Eimer |
-| <!-- if needed for cccamp --> 7 Kästen | 30x40x20cm Kasten | - |
+| <!-- max Teig/Tag --> 15 Stück | 11.5l Eimer mit Deckel | 15x [560877](https://produkte.metro.de/shop/pv/BTY-X437952/0032/0021/)
+| <!-- if needed for cccamp --> 8 Stück | Eurobox 40x30x22cm | 8x [612739](https://produkte.metro.de/shop/pv/BTY-X888208/0032/0021/) |
+| <!-- if needed for cccamp --> 1 Stück *(optional)* | Rollwagen | 1x [612758](https://produkte.metro.de/shop/pv/BTY-X888863/0032/0021/) |
 |               |||
 | **Süßkram**   |||
-| <!-- 22 x ? --> 10 Packungen | Apfelmus | - |
-| <!-- 22 x ? --> 6 Packungen  | Puderzucker | - |
-| <!-- 22 x ? --> 8 Gläser | Nutella | - |
+| <!-- 22 x ? --> 10 Packungen | Apfelmus | 10x [226249](https://produkte.metro.de/shop/pv/BTY-X715836/0032/0021/) |
+| <!-- 22 x ? --> 6 Packungen  | Puderzucker | 6x [144727](https://produkte.metro.de/shop/pv/BTY-X595024/0032/0021/) |
+| <!-- 22 x ? --> 7 Eimer | Nutella | 7x [732497](https://produkte.metro.de/shop/pv/BTY-X126723/0032/0021/) |
+
 
