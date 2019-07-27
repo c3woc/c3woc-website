@@ -70,6 +70,7 @@ Eikaufsliste für das [C3WOC](https://c3woc.de)
 | 8 Packungen | Küchenrolle | 8x [835554](https://produkte.metro.de/shop/pv/BTY-X225078/) |
 | 1 Packung   | Küchentücher | 1x [898032](https://produkte.metro.de/shop/pv/BTY-X284704/0032/0021/)
 | 1 Packung   | Schwämme | 1x [953111](https://produkte.metro.de/shop/pv/BTY-X331566/0032/0021/)
+| 3 Dosen     | Trennfett | 3x [298401](https://produkte.metro.de/shop/pv/BTY-X376798/0032/0021/)
 |               |||
 | **Süßkram**   |||
 | <!-- 22 x ? --> 10 Packungen | Apfelmus | 10x [226249](https://produkte.metro.de/shop/pv/BTY-X715836/0032/0021/) |
