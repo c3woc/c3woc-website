@@ -46,6 +46,9 @@ Eikaufsliste für das [C3WOC](https://c3woc.de)
 | <!-- 22 x 1.5L + 7 --> 40 Liter | Frischmilch | 40 x [218401](https://produkte.metro.de/shop/pv/BTY-X702948/0032/0021/) |
 | <!-- if doenergrill --> 6 kg | Hähnchenbrustfillet | 6x [A000171](https://produkte.metro.de/shop/pv/BTY-Z213/0032/0021/) |
 | <!-- if doenergrill --> 7 Packungen | Knoblauchmarinade | 7x [929786](https://produkte.metro.de/shop/pv/BTY-X312382/0032/0021/) |
+| <!-- if doenergrill --> 2kg | Tsaziki | 1x [885017](https://produkte.metro.de/shop/pv/BTY-X271502/0032/0021/) |
+| <!-- if doenergrill --> 2 Packungen | Knoblauhsoße | 2x [436215](https://produkte.metro.de/shop/pv/BTY-X619099/0032/0021/) |
+| <!-- if doenergrill --> 2 Packungen | Knoblauchcreme | 2x [214233](https://produkte.metro.de/shop/pv/BTY-X377826/0032/0021/) |
 |               |||
 | **Backwaren** |||
 | <!-- 20 x 2kg --> 40 kg | Mehl | 40x [61224](https://produkte.metro.de/shop/pv/BTY-X245248/0032/0021/) |
@@ -57,13 +60,14 @@ Eikaufsliste für das [C3WOC](https://c3woc.de)
 | <!-- 22 x 1/22 Pkg --> 1 Packung | Salz | 1x [154301](https://produkte.metro.de/shop/pv/BTY-X351156/0032/0021/) |
 |               |||
 | **Getränke**  |||
-| <!-- 22 * 2 Fl --> 3 Kästen | Flora Power | **NICHT BEI METRO** |
+| <!-- 22 * 2 Fl --> 3 Kästen | Flora Power oder Club Mate | **NICHT BEI METRO** |
 | <!-- 22 * 0.25 --> 4 Flaschen | Rum | 4x [93044](https://produkte.metro.de/shop/pv/BTY-X22163/0032/0021/) |
 |               |||
 | **Zubehör**   |||
 | <!-- max Teig/Tag --> 15 Stück | 11.5l Eimer mit Deckel | 15x [560877](https://produkte.metro.de/shop/pv/BTY-X437952/0032/0021/)
 | <!-- if needed for cccamp --> 8 Stück | Eurobox 40x30x22cm | 8x [612739](https://produkte.metro.de/shop/pv/BTY-X888208/0032/0021/) |
 | <!-- if needed for cccamp --> 1 Stück *(optional)* | Rollwagen | 1x [612758](https://produkte.metro.de/shop/pv/BTY-X888863/0032/0021/) |
+| 8 Packungen | Küchenrolle | 8x [835554](https://produkte.metro.de/shop/pv/BTY-X225078/) |
 |               |||
 | **Süßkram**   |||
 | <!-- 22 x ? --> 10 Packungen | Apfelmus | 10x [226249](https://produkte.metro.de/shop/pv/BTY-X715836/0032/0021/) |
