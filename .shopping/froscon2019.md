@@ -67,7 +67,7 @@ Eikaufsliste für das [C3WOC](https://c3woc.de)
 | <!-- max Teig/Tag --> 15 Stück | 11.5l Eimer mit Deckel | 15x [560877](https://produkte.metro.de/shop/pv/BTY-X437952/0032/0021/)
 | <!-- if needed for cccamp --> 8 Stück | Eurobox 40x30x22cm | 8x [612739](https://produkte.metro.de/shop/pv/BTY-X888208/0032/0021/) |
 | <!-- if needed for cccamp --> 1 Stück *(optional)* | Rollwagen | 1x [612758](https://produkte.metro.de/shop/pv/BTY-X888863/0032/0021/) |
-| 8 Packungen | Küchenrolle | 8x [835554](https://produkte.metro.de/shop/pv/BTY-X225078/) |
+| 9 Packungen | Küchenrolle | 9x [835554](https://produkte.metro.de/shop/pv/BTY-X225078/) |
 | 1 Packung   | Küchentücher | 1x [898032](https://produkte.metro.de/shop/pv/BTY-X284704/0032/0021/)
 | 1 Packung   | Schwämme | 1x [953111](https://produkte.metro.de/shop/pv/BTY-X331566/0032/0021/)
 | 3 Dosen     | Trennfett | 3x [298401](https://produkte.metro.de/shop/pv/BTY-X376798/0032/0021/)
