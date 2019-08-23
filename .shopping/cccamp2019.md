@@ -22,7 +22,7 @@ Eikaufsliste für das [C3WOC](https://c3woc.de)
 | <!-- 16 x 1kg --> 16 kg | Zucker | 16x [126538](https://produkte.metro.de/shop/pv/BTY-X322462/0032/0021/) |
 |               |||
 | **Getränke**  |||
-| <!-- 22 * 0.25 --> 9 Flaschen (5x ubaBot) | Rum | 9x [93044](https://produkte.metro.de/shop/pv/BTY-X22163/0032/0021/) |
+| <!-- 22 * 0.25 --> 4 Flaschen | Rum | 4x [93044](https://produkte.metro.de/shop/pv/BTY-X22163/0032/0021/) |
 | <!-- 22 * 0.25 --> 1 Liter (ubaBot) | Mandelsirup | 1x [39158](https://produkte.metro.de/shop/pv/BTY-X538489/0033/0021/) |
 |               |||
 | **Zubehör**   |||
