@@ -5,6 +5,7 @@ git:
 cache:
   directories:
     - $HOME/.cache/pip
+    - .git/lfs
 before_install:
   - git lfs pull
 install:
