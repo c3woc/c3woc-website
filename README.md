@@ -7,6 +7,13 @@ Status
 Dies ist der Quellcode der aktuellen Webseite des C3 Waffel Operation Center.
 Diese findet man unter [c3woc.de](https://c3woc.de/)
 
+ ACHTUNG
+-----------
+Die GitHub Version ist nur ein Mirror von [https://gitea.see-base.de/C3WOC/c3woc-webseite.git](https://gitea.see-base.de/C3WOC/c3woc-webseite.git).
+Versucht wenn möglich nach gitea zu gehen und euch dort einzubringen.<br/>
+Da dies für viele eine leider sehr große Hürde ist, versuchen wir Issues und Pull Requeste von github auch zu bearbeiten, können hier aber für nichts garantieren!
+
+
  Lektor CMS:
 ------------
 Das CMS für diese Webseite ist [Lektor](https://www.getlektor.com/).
