@@ -1,10 +1,9 @@
 LEKTOR_SERVER_FLAGS=-h 127.0.0.1
+# minify javascript assets, compile scss assets
+LEKTOR_PLUGIN_FLAGS=-f scss
+LEKTOR_DEPLOY_FLAGS=
 
 all: build
-
-sass:
-	lektor clean --yes
-	lektor server -f jsminify 
 
 .ONESHELL:
 install:
@@ -17,18 +16,20 @@ install:
 	else 
 	  echo -e "Please install Imagemagick, python3-pip and gcc"
 	fi
-	pip install lektor --user
-	# pip3 install wheel --user
-	lektor plugin flush-cache
+	pip3 install wheel --user
+	pip3 install lektor --user
 
-install-sassc:
-	lektor plugin flush-cache
-	lektor clean --yes
-	lektor build -f jsminify
 
 build:
 	lektor clean --yes
-	lektor build -f jsminify 
+	lektor plugin flush-cache 
+	lektor build $(LEKTOR_PLUGIN_FLAGS)
 
 server:
-	lektor server $(LEKTOR_SERVER_FLAGS)
+	lektor server $(LEKTOR_SERVER_FLAGS) $(LEKTOR_PLUGIN_FLAGS)
+	
+deploy:
+	lektor clean --yes
+	lektor plugin flush-cache
+	lektor build $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)
+	lektor deploy $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)

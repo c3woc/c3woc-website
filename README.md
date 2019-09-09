@@ -89,8 +89,10 @@ Früher wurde das Design [solid-state](https://html5up.net/solid-state) verwende
 Das CSS Design wird mit [sass](https://sass-lang.com/) generiert.
 Das vereinfacht die Verständlichkeit der einzelnen Design Elemente
 und ermöglicht auch das anpassen des Designs durch das simple verändern weniger variablen.
-Example use:
-```bash
-sassc assets/sass/main.scss > assets/css/main.css
-```
 
+Dies geschieht mitlerweile über das Plugin [lektor-scss](https://github.com/chaos-bodensee/lektor-scss.git)
+
+```bash
+# Example use
+make server
+```
