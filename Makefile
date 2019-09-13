@@ -23,10 +23,10 @@ install:
 build:
 	lektor clean --yes
 	lektor plugin flush-cache 
-	lektor build $(LEKTOR_PLUGIN_FLAGS)
+	python3 -m lektor build $(LEKTOR_PLUGIN_FLAGS)
 
 server:
-	lektor server $(LEKTOR_SERVER_FLAGS) $(LEKTOR_PLUGIN_FLAGS)
+	python3 -m lektor server $(LEKTOR_SERVER_FLAGS) $(LEKTOR_PLUGIN_FLAGS)
 	
 deploy:
 	lektor clean --yes
