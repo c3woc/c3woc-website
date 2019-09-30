@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Chaos Intern"
+AuthUserFile /var/www/clients/client8/web4/private/.htpasswd
+Require valid-user
