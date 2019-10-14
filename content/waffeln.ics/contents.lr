@@ -316,3 +316,17 @@ url: https://events.ccc.de/
 description: Wir sind am Congres... | Macht mit, kommt vorbei, seid dabei!
 ----
 confirmed: yes
+#### termine ####
+start: 2020-06-12 13:37:23 Europe/Berlin
+----
+ende: 2020-06-14 18:00:42 Europe/Berlin
+----
+event: CoSin
+----
+ort: Villa Ritter in Biel
+----
+url: https://cosin.ch/
+----
+description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer Chaos. Der Inhalt erstreckt sich über Technik und Politik zu Kunst und Kultur.|Bis hinein in die heilige Kunst der Waffel- und Glacce zubereitung.
+----
+confirmed: yes
