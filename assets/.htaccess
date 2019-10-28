@@ -8,10 +8,11 @@
     RewriteRule ^hunger https://c3woc.de/#tourdaten
     RewriteRule ^rezepte https://c3woc.de/rezept
 
-    ### Redirect certain domains to ffbsee.net
+    ### Redirect certain domains to c3woc.org
     RewriteCond %{HTTP_HOST} ^waffel\.cyber\.yt [NC,OR]
     RewriteCond %{HTTP_HOST} ^www\.c3woc\.de [NC]
-    RewriteRule (.*) https://c3woc.de/$1 [R=301,L]
+    RewriteCond %{HTTP_HOST} ^angel\.systems [NC]
+    RewriteRule (.*) https://c3woc.org/$1 [R=302,L]
 </IfModule>
 
 # COMPRESSION WITH MOD_DEFLATE
