@@ -118,3 +118,38 @@ image: rowenta.jpg
 image: chaospott.png
 #### pro_img ####
 image: binary.png
+---
+precontent:
+
+Das C3WOC erreichst du über unterschiedliche Wege.
+
+ Mail
+-----------
+```
+mailto:waffel@c3woc.de
+```
+*Hier lesen alle Menschen mit, die sich so sehr für Waffeln interessieren, das sie sich auf den Waffelverteiler haben schreiben lassen. Dies soll hpffentlich bald eine richtige Mailingliste werden, wo ihr euch selber drauf setzen könntet.
+
+ IRC
+----------
+```
+ircs://irc.hackint.org/#waffel
+```
+*Ein paar der Waffelnerds sind - natürlich - im IRC. Dort findest du sie im Kanal ``#waffel`` auf dem Hackint Server.*
+
+ Social Media
+------
+```
+https://chaos.social/@c3woc
+https://twitter.com/@c3woc
+```
+Wer wären wir, wenn wir nicht auf Mastodon und Twitter sind.
+*Protipp: Auf Mastodon gibt es manche exklusivinhalte, die nicht nach Twitter wandern!*
+
+ Rocket.Chat
+---------
+```
+https://rocket.events.ccc.de/channel/waffel
+```
+*Für Chaosnahe Kommunikation*
+
