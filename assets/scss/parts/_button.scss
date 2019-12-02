@@ -44,6 +44,14 @@ input[type="button"],
     height: auto;
     white-space: normal;
   }
+  
+  &.smallfit {
+    margin: 0 0 (_size(element-margin) * 0.5) 0;
+    max-width: 100%;
+    height: auto;
+    white-space: normal;
+  }
+    
 
   &.small {
     font-size: 0.8em;
@@ -90,7 +98,7 @@ input[type="button"],
     opacity: 0.25;
   }
 
-  &.waffel-available {
+  &.space-opened {
     background-color: LimeGreen !important;
 
     &.navbar {
@@ -99,7 +107,7 @@ input[type="button"],
   }
 }
 
-.no-waffles {
+.space-closed {
   color: #d23128ff;
 }
 
