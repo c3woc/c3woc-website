@@ -27,12 +27,8 @@
       <!-- Header -->
       <header id="header">
         <h1 id="logo">
-
 {% include "partials/spacestate.html" -%}
-
         </h1>
-
-
 
 {#-
  # Navigation Bar
@@ -89,6 +85,7 @@
                      {{- translator('German', 'navigation', this.alt) -}}
                    </a>
                  </li>
+{#
                  <li>
                    <a href="{{ '.'|url(alt='sxu') }}">
                      {{- translator('Saechsisch', 'navigation', this.alt) }}
@@ -97,6 +94,7 @@
                      )</i>
                    </a>
                  </li>
+#}
                  <li>
                    <a href="{{ '.'|url(alt='en') }}">
                      {{- translator('Englisch', 'navigation', this.alt) }}
