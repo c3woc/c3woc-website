@@ -1,227 +1,121 @@
-{% set fqdn = 'c3woc.de' 
-%}{% set ausnahmezustand = False 
-%}<!DOCTYPE html>
-<html{% if this.alt %} lang="{{ this.alt }}"{% endif %}>
+{%- from "macros/translator.j2" import translator -%}
+<!DOCTYPE html>
+<html
+  {%- if alt %} lang="{{ alt }}"
+  {%- endif %}>
   <head>
-    <meta charset="utf-8">
-    <title>{% block title %}Startseite{% endblock %} - c3woc.de</title>
-    <meta property="og:title" content="{{ this.title }}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content={% block expand_ogg_image 
-    %}"{{ '/images/banner.jpg'|asseturl }}"{% endblock %} />
-    <link href="https://c3woc.de/feed_blog.xml" rel="alternate" title="[C3WOC] - Neuigkeiten" type="application/rss+xml">
-    <link href="https://c3woc.de/en/feed_blog.xml" rel="alternate" title="[C3WOC] - News [EN]" type="application/rss+xml">
-    <link href="https://c3woc.de/feed_rezepte.xml" rel="alternate" title="Waffelrezepte" type="application/rss+xml">
-    <link href="https://c3woc.de/en/feed_rezepte.xml" rel="alternate" title="Waffle Recipes" type="application/rss+xml">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />{%
-  if '/css/main.min.css'|asseturl == empty and '/css/main.css'|asseturl == empty %}
-    <link rel="stylesheet" href="{{ '/css/font-awesome.min.css'|asseturl }}" />
-    <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />{%
-  endif %}
-    <link rel="stylesheet" href={%
-        if '/css/main.min.css'|asseturl == empty %}{%
-            if '/css/main.css'|asseturl == empty %}"https://{{ fqdn }}/css/main.min.css"{%
-            else %}"{{ '/css/main.css'|asseturl }}"{%
-            endif %}{%
-        else %}"{{ '/css/main.min.css'|asseturl }}"{%
-        endif %} /> 
-    <!--[if lte IE 9]><link rel="stylesheet" href={%
-        if '/css/ie9.min.css'|asseturl == empty %}"https://{{ fqdn }}/css/ie9.min.css"{%
-        else %}"{{ '/css/ie9.min.css'|asseturl }}"{%
-        endif %}" /><![endif]-->
-    {% block expand_description 
-    %}<meta name="description" content="{% 
-        if bag('translate', this.alt, 'description') %}{{ bag('translate', this.alt, 'description') }}{% 
-        else %}{{ bag('translate', 'de', 'description') }}{% endif %}" />{%
-     endblock %}
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|asseturl }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|asseturl }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|asseturl }}">
-    <link rel="manifest" href="{{ '/images/icons/site.webmanifest'|asseturl }}">
-    <link rel="mask-icon" href="{{ '/images/icons/safari-pinned-tab.svg'|asseturl }}" color="#e64f2d">
-    <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico'|asseturl }}">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|asseturl }}">
-    <meta name="theme-color" content="#e64f2d">{%
-    block expand_header %}{% endblock %}
-    <script src="{{ '/js/jquery.min.js'|asseturl }}"></script>
-    <script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
+    <title>
+      {%- block title -%}
+        Startseite
+      {%- endblock -%}
+    </title>
+    {%- block expand_description %}
+      <meta name="description" content="{{- translator('description', 'translate', this.alt) }}" />
+    {%- endblock %}
+    {%- block expand_header %}
+    {%- endblock %}
+    {% include "partials/head.html" -%}
+
+
   </head>
-  <body class="{% if this._path == '/' %}landing {% endif %} is-preload">
+
+  <body class="
+    {%- if this._path == '/' -%}
+      landing 
+    {%- endif %} is-preload">
     <div id="page-wrapper">
-       <!-- Header -->
-       <header id="header">
-            <h1 id="logo">{#
-
-
-
-            Hier findet sich der "Waffel Status" der Webseite.
-            Wenn das CSS sagt, dass es Waffeln gibt, 
-            dann wird die Webseite grün und es gibt Waffeln.
-
-            Wenn nicht... nicht!
-
-            Das ganze wird über die SpaceAPI gesteuert.
-            Auch wenn das C3WOC kein echter Hackerspace ist...
-            Aber die Webseite ist dreist von der Toolbox kopiert worden.
-
-
-
-                #}
-                <div class="tooltip">
-                    <a id="waffel-available" class="button waffel-available navbar special" href="{%
-                        if bag('translate', this.alt, 'api_url_open') %}{{ bag('translate', this.alt, 'api_url_open') }}{%
-                        else %}{{ bag('translate', 'de', 'api_url_open') }}{% endif 
-                    %}">{%
-                        if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{%
-                        else %}{{ bag('translate', 'de', 'api_space') }}{% endif %} {%
-                        if bag('translate', this.alt, 'api_open') %}{{ bag('translate', this.alt, 'api_open') }}{%
-                        else %}{{ bag('translate', 'de', 'api_open') }}{% endif %}</a>
-                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_open_text') 
-                        %}{{ bag('translate', this.alt, 'api_open_text') }}{%
-                        else %}{{ bag('translate', 'de', 'api_open_text') }}{% endif %}</span>
-                </div>
-                <div class="tooltip">
-                    <a id="no-waffles" class="no-waffles" href="{% if bag('translate', this.alt, 'api_url') %}{{ bag('translate', this.alt, 'api_url') }}{%
-                        else %}{{ bag('translate', 'de', 'api_url') }}{% endif 
-                    %}">{% 
-                        if bag('translate', this.alt, 'api_space') %}{{ bag('translate', this.alt, 'api_space') }}{%
-                        else %}{{ bag('translate', 'de', 'api_space') }}{% 
-                        endif %} {% if bag('translate', this.alt, 'api_closed') %}{{ bag('translate', this.alt, 'api_closed') }}{% 
-                        else %}{{ bag('translate', 'de', 'api_closed') }}{% endif %}</a>
-                    <span class="tooltiptext">{% if bag('translate', this.alt, 'api_opening_time') 
-                        %}{{ bag('translate', this.alt, 'api_opening_time') }}{% 
-                        else %}{{ bag('translate', 'de', 'api_opening_time') }}{% endif %}</span>
-                  </div>
-            </h1>
-            <nav id="nav">{#
-
-
-            Hier beginnt das Menü.
-            Erstmal werden in einer Liste alle elemente definiert, die in dem "root" level des Menüs auftauchen.
-            Anschließend kommen in einer relativ hässlichen if-abfrage der sublevel.
-
-            Das kann man hübscher machen. Aber so ist es zumindest erstmal funktional.
-            Und da am schluss fertig gerendertes HTML raus kommt auch keine kritische Infrastruktur,
-            die besonders schützenswert ist...
-
-            Dennoch würde ich (L3D)  mich hier sehr über etwas beteiligung freuen.
-            Alleine an einer Webseite zu arbeiten... Ist schon cool. Aber zu zweit gleich noch viel cooler!!!
-
-            #}
-              <ul>
-                <li{% if this._path == '/' %} class="active"{% endif
-                  %}><a href="{{ '/'|url }}">{%
-                if bag('navigation', this.alt, 'home') %}{{ bag('navigation', this.alt, 'home') }}{%
-                  else %}{{ bag('navigation', 'de', 'home') }}{% endif %}</a></li>{%
-                    for title, href in bag('nav-bar', "NavBar").items() %}
-                    <li{% if this.is_child_of(href) %} class="active"{% endif
-                    %}><a href="{{ href|string }}">{% if bag('navigation', this.alt, title) %}{{ bag('navigation', this.alt, title) }}{% else %}{{ title }}{% endif %}</a>
-                      <ul>{%
-                          if bag('nav-bar', 'list', title) %}{%
-                          set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) %}{%
-                          for child in root.children recursive %}{% if loop.index <= 7 %}
-                            <li{% if this._path == child._path %} class="active"{% endif %}>
-                              <a href="{{ child|url }}">{{ child.shorttitle if child.shorttitle else child.title  }}</a></li>{%
-                             endif %}{% endfor %}{%
-                          endif %}
-                        {% if  bag('nav-bar', title) %} {%
-                             for nav_title, nav_url in bag('nav-bar', title).items()
-                          %}<li><a href={{ nav_url if 'http' in nav_url else nav_url|url }}{%
-                                if bag('nav-bar', 'button', nav_title) 
-                              %}class="button special"{% endif 
-                                %}>{{ bag('navigation', this.alt, nav_title)
-                                if bag('navigation', this.alt, nav_title) 
-                                else bag('navigation', 'de', nav_title) }}</a></li>{% 
-                        endfor %}{% endif %}
-                      </ul>
-                    </li>{% endfor %}
-               <li class="last"><a href="/{%
-                     if bag('navigation', this.alt, 'default_path') 
-                        %}{{ bag('navigation', this.alt, 'default_path') }}{% 
-                     else %}..{% 
-                     endif %}{{ this._path }}">{% 
-                     if bag('navigation', this.alt, 'sprache') 
-                            %}{{ bag('navigation', this.alt, 'sprache') }}{% 
-                     else %}Sprache{% 
-                     endif %}</a>
-                   <ul class="last">
-                     <li><a href="{{ this._path }}">{% 
-                             if bag('navigation', this.alt, 'German')
-                                    %}{{ bag('navigation', this.alt, 'German') }}{%
-                             else %}{{ bag('navigation', 'de', 'German') }}{%
-                             endif %}</a></li>
-                     <li><a href="/en{{ this._path }}">{% 
-                             if bag('navigation', this.alt, 'Englisch') 
-                                %}{{ bag('navigation', this.alt, 'Englisch') }}{% 
-                             else %}{{ bag('navigation', 'de', 'Englisch') }}{% 
-                         endif %} <i>({%
-                             if bag('navigation', this.alt, 'falls') 
-                                %}{{ bag('navigation', this.alt, 'falls') }}{%
-                             else %}{{ bag('navigation', 'de', 'falls') }}{% 
-                        endif %})</i></a><li>
-                   </ul>
-                 </li>
-              </ul>
-            </nav>
-          </header>{#
-
-            Und hier werden nun die eientlichen Seiten eingebunden...
-
-            #}
-    
-{% if ausnahmezustand %}
-<div id="overwrite" style="display: none; z-index: 1 !important; position: fixed !important;   top: 10%;  left: 15%; width: 70%; text-align: center; background: white; color: black; padding:30px;font-size: 9pt; text-decoration: none">
-<style type="text/css">
- a:link{color:#300;}
- a:visited{color:#511;}
- a:hover{color:#f00;}
- a:active{color:#f00;}
-</style>
-<h2 style="color:red">#SaveYourInternet</h2>
-<p>Liebe Besucherin, lieber Besucher,
-
-vielen Dank für Ihr Interesse. Leider steht unser Service heute nicht zur Verfügung. Wir protestieren gemeinsam mit der Autorenschaft der Wikipedia gegen Teile der geplanten EU-Urheberrechtsreform, die im Parlament der Europäischen Union Ende März verabschiedet werden soll, und schalten unsere Seite für 24 Stunden ab.
-<br/>
-<br/>
-Ausgetragen wird dieser Konflikt auf den Rücken der Internetnutzer und Kreativen. Diese müssen nach dem aktuellen Entwurf mit erheblichen Einschränkungen rechnen. Das freie Internet, wie wir es kennen, könnte zu einem „Filternet“ verkommen, in dem Plattformbetreiber darüber entscheiden müssen, was wir schreiben, hochladen und sehen dürfen. Denn das geplante Gesetz schreibt Internetseiten und Apps vor, dass sie hochgeladene Inhalte präventiv auf Urheberrechtsverletzungen prüfen müssen. Selbst kleinere Unternehmen müssten demnach fehleranfällige, teure und technisch unausgereifte Uploadfilter einsetzen (Artikel 13) und für minimale Textausschnitte aus Presseerzeugnissen Lizenzen erwerben, um das sogenannte Leistungsschutzrecht einzuhalten (Artikel 11).
-
-Wenn Sie unsere Kritik an der geplanten Urheberrechtsreform teilen, werden Sie aktiv:
-</p>
-<ul style="text-align: left"><li>unterzeichnen Sie die Petition <a href="https://www.change.org/p/stoppt-die-zensurmaschine-rettet-das-internet-uploadfilter-artikel13-saveyourinternet">"Stoppt die Zensurmaschine – Rettet das Internet!"</a>,</li>
-    <li><a href="https://pledge2019.eu/de">kontaktieren Sie die Abgeordneten des Europäischen Parlaments</a>,</li> 
-
-    <li><a href="https://savetheinternet.info/demos">gehen Sie am 23. März auf die Straße</a>,</li> 
-
-    <li>nehmen Sie Ihr demokratisches Recht wahr und gehen Sie am 26. Mai zur Wahl.</li></ul>
-
-
-</div>
-
-<!-- Main -->
-<div id="block_me">
-{% else %}
-<!-- Main -->
-{% endif %}
-{% block body %}{% endblock %}
-
-{% if ausnahmezustand %}
-</div>
-
-    <script>
-        document.getElementById("block_me").style.opacity = "0.023";
-        document.getElementById("overwrite").style.display = "block";
-    </script>
-{% endif %}
-
+      <!-- Header -->
+      <header id="header">
+        <h1 id="logo">
 {#
+{% include "partials/spacestate.html" -%}
+#}
+        </h1>
 
-            Und da wären wir auch schon am Ende der Webseite...
-            Hier noch mal fett Werbung gemacht, wo es alles etwas vom C3WOC gibt...
 
-            So mit Twitter, Mail, IRC, Mastodon und RSS kommt da doch einiges zusammen :P
 
-            #}
+{#-
+ # Navigation Bar
+ #}
+        <nav id="nav">
+          <ul>
+            <li{% if this._path == '/' %} class="active"{% endif %}>
+              <a href="{{ '/'|url }}">
+                {{- translator('home', 'navigation', this.alt) -}}
+              </a>
+            </li>
+{%- for title, href in bag('nav-bar', "NavBar").items() %}
+            <li{% if this.is_child_of(href) %} class="active"{% endif %}>
+              <a href="{{ href|url }}">
+                {{- translator(title, 'navigation', this.alt) -}}
+              </a>
+              <ul>
+  {%- if bag('nav-bar', 'list', title) %}
+    {%- set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) %}
+    {%- for child in root.children recursive %}
+      {%- if loop.index <= 7 %}
+                <li{% if this._path == child._path %} class="active"{% endif %}>
+                  <a href="{{ child|url }}">{{ child.shorttitle if child.shorttitle else child.title  }}</a>
+                </li>
+      {%- endif %}
+    {%- endfor %}
+  {%- endif %}
+  {%- if  bag('nav-bar', title) %}
+    {%- for nav_title, nav_url in bag('nav-bar', title).items() %}
+                <li>
+                  <a href={{ nav_url if 'http' in nav_url else nav_url|url }}
+      {%- if bag('nav-bar', 'button', nav_title) %} class="button nav"
+      {%- endif -%}
+                  >
+                    {{- translator(nav_title, 'navigation', this.alt) -}}
+                  </a>
+                </li>
+    {%- endfor %}
+  {%- endif %}
+              </ul>
+            </li>
+{%- endfor %}
+
+{#-
+  # the language selection is currently not included into the template above, because we did not find a proper solution to integrate them yet
+  #}
+             <li class="last">
+               <a href="{{ '.'|url(alt=translator('default_path', 'navigation', this.alt, 'en')) }}">
+               {{- translator('sprache', 'navigation', this.alt) -}}
+               </a>
+               <ul class="last">
+                 <li>
+                   <a href="{{ '.'|url(alt='') }}">
+                     {{- translator('German', 'navigation', this.alt) -}}
+                   </a>
+                 </li>
+                 <li>
+                   <a href="{{ '.'|url(alt='sxu') }}">
+                     {{- translator('Saechsisch', 'navigation', this.alt) }}
+                     <i>(
+                       {{- translator('falls', 'navigation', this.alt) -}}
+                     )</i>
+                   </a>
+                 </li>
+                 <li>
+                   <a href="{{ '.'|url(alt='en') }}">
+                     {{- translator('Englisch', 'navigation', this.alt) }}
+                     <i>(
+                       {{- translator('falls', 'navigation', this.alt) -}}
+                     )</i>
+                   </a>
+                 </li>
+               </ul>
+             </li>
+           </ul>
+         </nav>
+       </header>
+
+
+
+      <!-- Main -->
+      {%- block body %}
+      {%- endblock %}
        <!-- Footer -->
        <footer id="footer">
          <ul class="icons">{%
