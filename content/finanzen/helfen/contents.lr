@@ -1,0 +1,86 @@
+_model: page
+---
+title: Helfen
+---
+content:
+
+Waffeln werden von sehr vielen Menschen gerne gegessen. Aber wenn es um mehr geht, wird das leider eng.
+Glücklicher weise fanden sich bisher immer Menschen, die mitgeholfen haben Waffeln zu backen oder Teig zu machen.
+
+Aber wenn es darum geht verantwortung zu tragen oder gewaffel wirklich zu organisieren, dann sieht es noch ausbaufähig aus.
+
+Aktuell übernimmt diese ganzen organisatorischen Aufgaben der [L3D](https://chaos.social/@l3d). Gelegendlich gibt es Leute die ihm dabei helfen. Aber zuverlässig eine Aufgabe dauerhaft (oder auch nur für ein Event) abzunehmen hat leider noch niemand geschafft.
+
+Solltest du also mit der Chaosfamilie vertraut sein und dir vorstellen können dich bei einem Event um eine der Aufgaben (natürlich mit Hilfe) zu kümmern, dann wäre dir L3D echt mega Dankbar.
+
+**Was gibt es für Aufgaben?**
+
+ + Helfer Koordination und Planung
+
+```
+Für die Hilfe die wir beim Waffeln backen bekommen, sind wir mega Dankbar. Dennoch muss das jemand Koordinieren.
+Wann sollen wo wie viele Helfer sein?
+Wissen die Helfer was zu tun ist?
+Sind alle Helfer versorgt und haben frisch gewaschene Hände?
+```
+
+ + Einkauf und Logistik
+
+```
+Beim 35c3 haben wir fast 500kg Zutaten vernichtet. Das erfordert einiges an logistischen Anstrengungen.
+Da das C3WOC kein offizielles "Gewerk" ist, kann es hier nur teilweise mit den supercoolen Menschen vom LOC zusammen arbeiten.
+Vieles muss selber gemacht werden.
+Sowie der Einkauf von Zutaten als auch der Transport des Waffel-Equipment!
+In der vergangenheit hat uns das LOC hier schon sehr viel geholfen. Vielen vielen Dank dafür!
+```
+
+ + Kasse
+
+```
+Eins der kritischsten Themen in der heutigen Welt ist die Kasse.
+Wenn die nicht stimmt, bricht die Zivilisation zusammen und es herscht Krieg.
+Wenn sie stimmt aber jemand daran Zweifel hat, ist meistens auch alles verloren oder auf viele Jahre geschädigt.
+
+Dabei wollen wir vom C3WOC eigentlich *NICHTS* mit Geld am hut haben.
+Leider sind wir aber unglaublich schlecht dadrin Sponsoren zu finden, die das statt dessen bezahlen.
+Und auch nicht reich genug, um das alles einfach selber zu bezahlen.
+
+Es gab zum 35c3 auch die Frage an cpunkt ob das Gewaffel oder der Spendenüberschuss nicht an die CCCV GmbH gehen sollte. 
+Wo uns zu verstehen gegeben wurde, dass das doch eine selten dämliche Idee ist und wir das dann auch wieder gelassen haben.
+
+Dennoch suchen wir hier jemanden, der das vertrauen der Chaos-Communiy genießt und Lust hat diese Aufgabe zu übernehmen!
+```
+
+ + Konzept und Planung
+
+```
+Wie überall braucht es Menschen, die sich überlegen, wie etwas aufgebaut sein soll.
+Wie soll zum beispiel der C3WOC-Aufbau auf dem Congress sein?
+Wie viele Stühle, Tische, Strom und Waffeleisen haben wir, brauchen wir oder sind überhaupt realistisch.
+Wie viele Zutaten...
+
+Alles sehr verzwickte Fragen bei denen es maximal blöd ist diese alleine zu entscheiden!
+```
+
+ + Technik
+
+```
+Natürlich braucht es auch Technik so ein C3WOC zu haben.
+
+Angefangen von Webseite über git-Repositorys und Mailinglisten, die es zu bauen,
+zu pflegen und zu Administrieren und erweitern gilt.
+
+Aktuell bräuchten wir noch ganz dringend Hilfe bei:
+
++ waffel@c3woc.de als richtige (Mailman) Mailingliste. (Mit GPG) und zum selber registrieren. Am besten aufgesetzt mit ansible.
++ Inhalte auf der Webseite.
++ gute Waffel-bilder, Fotos etc.
++ Social-Media
+```
+
+Ihr seht also, das wir diesen Roll-Up Banner mit "Wir brauchen dich" dabei haben und immer wieder nach unterstützung fragen ist nicht, weil wir uns an der Chaos-Community bereichern wollen.
+Es ist, weil wir etwas **gemeinsam** mit allen Schaffen wollen und dafür eure Hilfe brauchen! Denn alleine kann man nichts gemeinsam machen.
+---
+slogan: Gemeinsam können wir alles Schaffen. Also mach mit!
+---
+teaser: Wie kann man beim C3WOC helfen? Was gibt es für Aufgaben? Und wer übernimmt diese?
