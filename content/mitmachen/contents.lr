@@ -4,11 +4,14 @@ title: Mitmachen
 ---
 slogan: Denn geteilte Freude ist doppelte Freude!
 ---
-teaser: Das C3 Waffel Operation Center braucht Verstärung. Findest du Waffeln lecker? Kennst du jemanden, der ein eigenes Waffeleisen hat? Dann mach mit! Werde Teil des C3WOC. Backe und Organisiere Waffeln. Auf lokelen kleinen Veranstaltungen bei dir und bei intergalaktischen Events wie den Chaos Communication Congress. Mach einfach mit und hab spaß - am Waffelgerät!
+teaser:
+
+Das C3 Waffel Operation Center braucht deine Hilfe. Entweder als Waffelbäcker*In oder sogar als Fotograf*In oder Mensch der in der Organisation hilft.
+Mach einfach mit und hab spaß - am Waffelgerät!
 ---
 precontent:
 
-Das C3WOC besteht aus Menschen, die sich zum [Chaos Computer Club](https://ccc.de) hingezogen fühlen.<br/>
+Beim C3WOC machen Menschen mit, die sich zum [Chaos Computer Club](https://ccc.de) hingezogen fühlen.<br/>
 Außerdem finden diese Menschen Waffeln nicht ganz unsympathisch.
 
 Wenn du dich hier wieder erkennst, dann würden wir uns sehr freuen, wenn du beim C3WOC mitmachen willst!
@@ -21,13 +24,32 @@ Wenn du dich hier wieder erkennst, dann würden wir uns sehr freuen, wenn du bei
  Wie kannst du helfen?
 ----------------------------------
 
+Es gibt viele Aufgaben, die beim Waffeln verteilen auftreten. Hierbei sind wir auf deine Mithilfe angewiesen.
+Meistens organisieren wir uns über das offizielle Helfersystem bei dem Event.
+
+
+### Deine Aufgabe als Waffel-Helfer:
+
  + **Waffeln backen:**
 
-Bei Veranstaltungen, bei denen wir vertreten sind, ist Hilfe beim Waffeln backen oder dem Zubereiten von Teig immer sehr gerne gesehen. Manchmal haben wir dafür auch Engelschichten organisiert. Oder man hilft einfach so! Und sobald man nicht mehr alleine am Waffeleisen ist, macht das ganze auch gleich doppelt so viel spaß 😉.
+Unsere Waffeln werden frisch im Waffeleisen gebacken. Dies ist nicht besonders kompliziert, bringt aber eine gewisse Verbrennungsgefahr mit sich.
+Vielen vielen Dank an jeden, der uns hier hilft.
 
-+ **Planen von Waffeleinsätzen:**
++ **Teig anrühren**:
 
-Helfe oder übernimm die Planung der Waffeln bei Veranstaltungen. Hierzu gehört es, im Vorfeld alles wichtige abzustimmen. Gibt es genügend Strom und Kühlmöglichkiten. Sind zutaten organisiert und geplant? Wird es ein Engelsystem geben, bei dem wir mit rein dürfen? Gibt es auflagen, die es zu erfüllen gilt? Gibt es möglichkeiten den Abwasch zu erledigen? 
+Wir rühren unseren Waffelteig aus frischen Zutaten an. Live vor Ort. Dafür verwenden wir unsere Open Source Rezepte von [c3woc.de/rezept](https://c3woc.de/rezept). Ein ganz großes Dankeschön an jeden, der uns hier unterstützt.
+
++ **Putzen**:
+
+Saubere Werkzeuge ist ein essentieller Bestandteil beim Waffeln backen und Teig zuzubereiten. Ein extrem großes Danke an alle, die hier helfen!
+
++ **Crowd Control**:
+
+Bei größeren Veranstaltungen ist es manchmal wichtig, den ausgehungerten Hacksen und Hackern zu helfen, den sicheren Weg zur Waffel zu finden ohne die Nutelle über die Aufkleber auszuschütten oder eine Massenpanik aus
+zulösen.
+
+
+### Weitere Aufgaben bei den Waffeln:
 
 + **Fotografieren der Waffeln:**
 
@@ -41,6 +63,13 @@ Gerade wenn ihr euch etwas mit Fotografieren auskennt, wäre es echt cool das ei
 Bringe die Waffeln in deinen Hackerspace. Und gründe dort ein lokales C3WOC.
 Berichte von der heimischen Waffel im [Waffelblog](/blog/) und zaubere anderen Hackern ein lächeln ins Gesicht, wenn du für den nötigen Waffelvorrat sorgst.
 
+
++ **Helf uns bei der Planung**:
+
+Das Waffeln planen ist für eine Person echt viel Arbeit. Wenn mehr Menschen zuverlässig bei einem Event eine der Planungs-Aufgaben übernehmen oder beim Planen und Brainstormen helfen, dann entlastet das sehr.
+Bitte unterstützt den L3D und - wenn ihr euch das zutraut, helft mit beim Nachdenken über das Waffelkonzept einer veranstaltung und erklärt euch bereit Teilaufgaben zu übernehmen. *(Zum Beispiel Transport, Einkauf, Helfer Koordination oder anderes)*.
+
+
 + **Verbessere die Webseite**:
 
 Hast du etwas erlebt oder Fotografiert, das in den Waffelblog gehört? Trage es dort ein!<br/>
@@ -48,6 +77,9 @@ Gründest du ein lokales C3WOC? Dann trage es hier ein!<br/>
 Hast du etwas, was du Beitragen kannst oder möchtest? Trage es bei!<br/>
 Hast du Lust die C3WOC Webseite zu Übersetzen? In andere Sprachen oder Dialekte? Bitte mach es!<br/>
 Bei Fragen helfen wir natürlich gerne mit git, github und dem von uns verwendeten Static Side Generator.
+
+Wenn dir das alles zu kompliziert ist und du einfach nur dein Foto an uns schicken willst... Nutze einen unserer [Kontaktmöglichkeiten](/kontakt)
+
 
 + **Sage Danke!**
 
