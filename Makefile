@@ -47,6 +47,7 @@ pull:
 	  git remote add gitea gitea@gitea.see-base.de:C3WOC/c3woc-webseite.git
 	  git pull gitea master
 	fi
+	git pull origin master
 
 push:
 	if git config remote.gitea.url > /dev/null; then
