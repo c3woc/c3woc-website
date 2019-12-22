@@ -33,3 +33,17 @@ deploy:
 	lektor plugin flush-cache
 	lektor build $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)
 	lektor deploy $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)
+
+pull:
+	if git config remote.github.url > /dev/null; then
+	  git pull github master
+	else
+	  git remote add github git@github.com:c3woc/c3woc-website.git
+	  git pull github master
+	fi
+	if git config remote.gitea.url > /dev/null; then
+	  git pull gitea master
+	else
+	  git remote add gitea gitea@gitea.see-base.de:C3WOC/c3woc-webseite.git
+	  git pull gitea master
+	fi
