@@ -6,7 +6,7 @@ slogan: Wir machen Waffeln!
 ---
 about_header: Die Waffel Formel
 ---
-about_text: Mit viel liebe verwandeln wir rohe Zutaten in waffelfähigen Teig. Dabei verwenden wir lang erforschte Rezepturen, die wir euch nicht verheimlichen wollen.
+about_text: Mit viel Liebe verwandeln wir rohe Zutaten in waffelfähigen Teig. Dabei verwenden wir lang erforschte Rezepturen, die wir euch nicht verheimlichen wollen.
 ---
 about_text2: Nach jahrelanger Forschung ist es uns gelungen, die Formel für den Waffelteig zu rekonstruieren. Diese galt lange als verschollen, wurde jetzt aber durch Quantentechnologie und Blockchain wieder zugänglich gemacht.
 ---
@@ -81,7 +81,7 @@ Wenn mehr Menschen mitmachen, wird das backen, Planen, Organisieren und essen vo
 ---
 red_3:
 
-Wir würden uns sehr über mehr aktive Leute, die Spaß an Waffeln haben freuen. Denn nur mit wenigen Menschen etwas zu Planen und durchzuführen ist anstrengend und funktioniert nicht für unbegrenzte Zeit.
+Wir würden uns sehr über mehr aktive Leute, die Spaß an Waffeln haben, freuen. Denn mit nur wenigen Menschen etwas zu Planen und durchzuführen ist anstrengend und funktioniert nicht für unbegrenzte Zeit.
 
 Bitte mach bei uns mit!
 ---
@@ -112,7 +112,7 @@ text2:
 
 Wir würden auch einen Bericht von deinen Waffel-Aktionen dort sehr gerne lesen!
 
-Sprich uns hierfür einfach an oder noch besser: Mach einen Pull-Request auf der [Webseite](https://github.com/ToolboxBodensee/c3woc-webseite).
+Sprich uns hierfür einfach an oder noch besser: Mach einen Pull-Request auf der [Webseite](https://github.com/c3woc/c3woc-website).
 ----
 url_text: Waffel-Blog
 ----
