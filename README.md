@@ -1,44 +1,55 @@
 [![Build Status](https://travis-ci.org/c3woc/c3woc-website.svg?branch=master)](https://travis-ci.org/c3woc/c3woc-website)
 ![C3WOC](https://c3woc.de/images/logo/c3woc.svg "C3WOC")
 
-
-Status
-------------
+ Waffel Webseite
+-----------------
 Dies ist der Quellcode der aktuellen Webseite des C3 Waffel Operation Center.
 Diese findet man unter [c3woc.de](https://c3woc.de/)
 
- ACHTUNG
------------
-Die GitHub Version ist nur ein Mirror von [https://gitea.see-base.de/C3WOC/c3woc-webseite.git](https://gitea.see-base.de/C3WOC/c3woc-webseite.git).
-Versucht wenn möglich nach gitea zu gehen und euch dort einzubringen.<br/>
-Da dies für viele eine leider sehr große Hürde ist, versuchen wir Issues und Pull Requeste von github auch zu bearbeiten, können hier aber für nichts garantieren!
-
+ GESYNCT GIT
+-------------------
+Die [GitHub](https://github.com/c3woc/c3woc-website.git) Version und die [gitea](https://gitea.see-base.de/C3WOC/c3woc-webseite.git) Version sollten beide auf dem selben stand sein.<br/>
+Bringt euch da ein, wo ihr euch am wohlsten fühlt.
+Sollte es probelem mit LFS geben, empfehlen wir die gitea version dieses Repo!
 
  Lektor CMS:
 ------------
 Das CMS für diese Webseite ist [Lektor](https://www.getlektor.com/).
 Die Installationsanleitung gibt es [hier](https://www.getlektor.com/downloads/).
-Lektor ist auch als Python Modul verfügbar und kann mit ``python2 -m lektor`` verwendet werden.
-Auch die Installation über pip *(in einem [virtuellen Enviroment](https://docs.python.org/3/tutorial/venv.html)* ist möglich:
-```bash
-virtualenv venv
-. venv/bin/activate
-pip install lektor
+Lektor ist auch als Python Modul verfügbar und kann mit ``python3 -m lektor`` verwendet werden.
+```
+# TL; DR
+pip3 install lektor
 ```
 
-Zum Starten von Lektor muss man mit der Komandozeile in das root Verzeichnis der Webseite gehen
-und dort mit dem Befehl ``lektor server`` startet man Lektor und öffnen auf 127.0.0.1 den Port 5000 über den die Webseite
-bearbeitbar ist. Die Versionskontrolle der Webseite findet über Git statt. Daher wenn möglich Bilder erst
-bearbeiten, bevor diese Veröffentlicht werden!
+ INSTALLIEREN DER ABHÄNGIGKEITEN
+-----------------------------
+Es gibt ein Makefile mit dem ihr die Abhängigkeiten für dieses Repo installieren könnt.<br/>
+Dieses ruft ihr so auf:
+```bash
+# installiere git um git aufzurufen
+sudo apt install git-lfs
 
+# clont das git (hier von gitea)
+git clone https://gitea.see-base.de/C3WOC/c3woc-webseite.git
+
+# installiere make um das Makefile auszuführen
+sudo apt install make
+
+# betrete das geklonte repo:
+cd c3woc-webseite
+
+# installiere lektor + abhängigkeiten
+make install
+```
 
  Zur neuen Webseite Beitragen:
 ------------------------
- 1. Dieses Repository Forken oder einen neuen Branch machen (übers GitHub Interface)
- 2. Geforktes Repository Clonen (``git clone https://github.com/<Your_Name>/c3woc-website.git``)
+ 1. Dieses Repository Forken oder einen neuen Branch machen (übers Gitea/GitHub Interface)
+ 2. Geforktes Repository Clonen (``git clone https://...<REPO-URL>.../c3woc-website.git``)
  3. Öffne deine Komandozeile im geklonten Repository-Fork (``cd c3woc-website``)
- 4. Lektor starten (``python2 -m lektor server``)
- 5. Webseite updaten... (``http://localhost:5000/``)
+ 4. Lektor starten (``make server``)
+ 5. Webseite updaten... (auf ``http://localhost:5000/``)
  6. Lektor Beenden (``Strg. + C``)
  7. Änderungen commiten (``git add --all; git commit -m "An der C3WOC Webseite habe ich _____ geändert"``)
  8. Änderungen hochladen (``git push``)
@@ -92,7 +103,3 @@ und ermöglicht auch das anpassen des Designs durch das simple verändern wenige
 
 Dies geschieht mitlerweile über das Plugin [lektor-scss](https://github.com/chaos-bodensee/lektor-scss.git)
 
-```bash
-# Example use
-make server
-```
