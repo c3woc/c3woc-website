@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/c3woc/c3woc-website.svg?branch=master)](https://travis-ci.org/c3woc/c3woc-website)
+[![lektor check](https://github.com/c3woc/c3woc-website/workflows/lektor%20check/badge.svg)](https://github.com/c3woc/c3woc-website/actions?query=workflow%3A%22lektor+check%22)
 ![C3WOC](https://c3woc.de/images/logo/c3woc.svg "C3WOC")
 
  Waffel Webseite
