@@ -18,6 +18,16 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+    - name: Cache lfs data
+      uses: actions/cache@v1
+      with:
+        path: ~/.git
+        key: lfs
+        restore-keys: lfs
+    - name: install and pull lfs
+      run: |
+        apt-get install git-lfs
+        git lfs pull
     - name: check with lektor
       run: |
         pip install lektor
