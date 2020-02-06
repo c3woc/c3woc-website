@@ -23,10 +23,9 @@ jobs:
       with:
         path: ~/.git
         key: lfs
-        restore-keys: lfs
     - name: install and pull lfs
       run: |
-        apt-get install git-lfs
+        sudo apt-get install git-lfs
         git lfs pull
     - name: check with lektor
       run: |
