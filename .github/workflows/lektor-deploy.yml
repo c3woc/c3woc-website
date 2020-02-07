@@ -34,7 +34,7 @@ jobs:
     - name: install git-lfs && lektor
       run: |
         sudo apt-get install git-lfs
-        pip install lektor
+        make install
     - name: Cache lektor .cache
       uses: actions/cache@v1
       with:
@@ -44,7 +44,7 @@ jobs:
       run: git lfs pull
     - name: build with lektor
       run: |
-        lektor build -f scss
+        make build
     - name: deploy new site
       run: |
         echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' | sudo tee /etc/ssh/ssh_known_hosts

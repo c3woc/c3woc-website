@@ -33,7 +33,7 @@ jobs:
         sudo apt-get install git-lfs
         git lfs pull
     - name: install lektor
-      run: pip install lektor
+      run: make install
     - name: build with lektor
       run: |
-        lektor build -f scss
+        make build

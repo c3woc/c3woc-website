@@ -21,8 +21,6 @@ install:
 
 
 build:
-	lektor clean --yes
-	lektor plugin flush-cache 
 	python3 -m lektor build $(LEKTOR_PLUGIN_FLAGS)
 
 server:
