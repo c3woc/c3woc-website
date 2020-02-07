@@ -12,6 +12,9 @@ Session.vim
 # auto-generated tag files
 tags
 
+# lektor
+.cache/
+ 
 # ---> Windows
 # Windows thumbnail cache files
 Thumbs.db

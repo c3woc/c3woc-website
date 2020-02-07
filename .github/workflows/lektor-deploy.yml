@@ -7,7 +7,7 @@ on:
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
+  LEKTOR_DEPLOY_KEY: ${{ secrets.LEKTOR_DEPLOY_KEY }}
 
 jobs:
   build:
@@ -29,30 +29,22 @@ jobs:
     - name: Cache lfs data
       uses: actions/cache@v1
       with:
-        path: ~/.git
-        key: |
-          0
-          1
-          2
-          3
-          4
-          5
-          6
-          7
-          8
-          9
-          lfs
-    - name: install git-lfs
+        path: .git 
+        key: .git/lfs
+    - name: install git-lfs && lektor
       run: |
         sudo apt-get install git-lfs
-        sudo apt-get autoremove
+        pip install lektor
+    - name: Cache lektor .cache
+      uses: actions/cache@v1
+      with:
+        path: ~/.cache/lektor
+        key: lektorcache
     - name: pull lfs data
       run: git lfs pull
     - name: build with lektor
       run: |
-        pip install lektor
-        # stop the build if there are Python syntax errors or undefined names
-        lektor build -f scss 
+        lektor build -f scss
     - name: deploy new site
       run: |
         echo 'c3woc.de ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC5NslYj+wtriBuKIxJfDRm9E2hnlstWR8durQ6pKvVvP7wjcoXIyAxe41GvJ9SoEhSjF7oVlzlw+zAkzl5WOZ4=' | sudo tee /etc/ssh/ssh_known_hosts

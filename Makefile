@@ -50,6 +50,7 @@ pull:
 	git pull origin master
 
 push:
+	rm .lfsconfig
 	if git config remote.gitea.url > /dev/null; then
 	  git push gitea master
 	else
@@ -62,3 +63,4 @@ push:
 	  git remote add github git@github.com:c3woc/c3woc-website.git
 	  git push github master
 	fi
+	git restore .lfsconfig
