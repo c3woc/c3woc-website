@@ -16,9 +16,8 @@ install:
 	else 
 	  echo -e "Please install Imagemagick, python3-pip git-lfs and gcc"
 	fi
-	pip3 install wheel --user --upgrade
-	pip3 install lektor --user --upgrade
-
+	sudo pip3 install wheel  --upgrade
+	sudo pip3 install lektor --upgrade
 
 build:
 	python3 -m lektor build $(LEKTOR_PLUGIN_FLAGS)
