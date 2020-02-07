@@ -49,9 +49,9 @@ cd c3woc-webseite
 make install
 ```
 
- Zur neuen Webseite Beitragen:
+ Zur C3WOC Webseite etwas beitragen:
 ------------------------
- 1. Dieses Repository Forken oder einen neuen Branch machen (übers Gitea/GitHub Interface)
+ 1. Dieses Repository Forken oder einen neuen Branch erstellen (übers Gitea oder GitHub Interface)
  2. Geforktes Repository Clonen (``git clone https://...<REPO-URL>.../c3woc-website.git``)
  3. Öffne deine Komandozeile im geklonten Repository-Fork (``cd c3woc-website``)
  4. Lektor starten (``make server``)
