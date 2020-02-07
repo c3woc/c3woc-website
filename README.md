@@ -1,6 +1,11 @@
-[![Build Status](https://travis-ci.org/c3woc/c3woc-website.svg?branch=master)](https://travis-ci.org/c3woc/c3woc-website)
-[![lektor check](https://github.com/c3woc/c3woc-website/workflows/lektor%20check/badge.svg)](https://github.com/c3woc/c3woc-website/actions?query=workflow%3A%22lektor+check%22)
-![C3WOC](https://c3woc.de/images/logo/c3woc.svg "C3WOC")
+[![<TRAVIS> Build Status ](https://travis-ci.org/c3woc/c3woc-website.svg?branch=master)](https://travis-ci.org/c3woc/c3woc-website)
+[![<ACTIONS> lektor check ](https://github.com/c3woc/c3woc-website/workflows/lektor%20check/badge.svg)](https://github.com/c3woc/c3woc-website/actions?query=workflow%3A%22lektor+check%22)
+[![<ACTIONS> Build and Deploy c3woc website ](https://github.com/c3woc/c3woc-website/workflows/Build%20and%20Deploy%20c3woc%20website/badge.svg?branch=master)](https://github.com/c3woc/c3woc-website/actions?query=workflow%3A%22Build+and+Deploy+c3woc+website%22)
+
+ C3WOC Webseite
+================
+
+![C3WOC](https://c3woc.de/images/banner.jpg "C3WOC")
 
  Waffel Webseite
 -----------------
@@ -56,6 +61,16 @@ make install
  8. Änderungen hochladen (``git push``)
  9. Pull-Request Stellen (übers GitHub Interface)
 
+```txt
+Solltet ihr hier Probleme haben, wendet euch für verständnisfragen
+an den nächsten Hackerspace. Wenn ihr freundlich fragt, zeigen die
+dir in der Regel gerne, wie git und git-lfs funktioniert und ihr
+python Programme wie lektor installieren und verwenden könnt.
+
+Wenn euch das zu kompliziert ist, öffnet für die Änderungswünsche
+bitte ein Issue oder schreibt uns an mailto:waffel@c3woc.de.
+```
+
  Große Dateien und Grafiken
 ----------------------------
 Für den besseren Umgang mit größeren Dateien haben wir angefangen auf git-lfs zu setzen. Weitere Informationen dazu finden sich auf [git-lfs.github.com](https://git-lfs.github.com/). 
@@ -71,18 +86,6 @@ Als Übersetzer mit guten Ergebnissen kann man beispielsweise [deepl](https://ww
 Links auf Seiten haben in der Englischen Version ein ``/en/`` vor der Adresse. 
 So wird ``https://c3woc.de/rezept/vegan/`` zu ``https://c3woc.de/en/rezept/vegan/``.
 
- Fork aktuell halten ohne neu zu forken:
-------------------------
-```bash
-cd c3woc-website
-
-# Das Original Repository der Toolbox einbinden:
-git remote add upstream https://github.com/c3woc/c3woc-website.git
-git fetch upstream
-
-# Deinen Fork lokal aktualisieren:
-git pull upstream master
-```
 
  Pull Request Reviewen
 -----------------------
