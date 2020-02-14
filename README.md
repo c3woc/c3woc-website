@@ -96,9 +96,8 @@ So wird ``https://c3woc.de/rezept/vegan/`` zu ``https://c3woc.de/en/rezept/vegan
 
  Design:
 ---------
-Das Design basiert auf [HTML5UP](https://html5up.net), genauer gesagt auf dem Design [Landed](https://html5up.net/landed). Es ist das selbe Theme wie die [Toolbox Bodensee e.V.](https://toolbox-bodensee.de) verwendet.
-Früher wurde das Design [solid-state](https://html5up.net/solid-state) verwendet. Aber aufgrund von mangelnder mithilfe wurde beschlossen, das selbe und besser gepflegte Design der Toolbox zu verwenden. Wenn auch mit anderen Farben und Icons.
-
+Das Design basiert auf [HTML5UP](https://html5up.net), genauer gesagt auf dem Design [Landed](https://html5up.net/landed). Dieses wurden von L3D angepasst um mit dem CMS hier zu funktionieren.
+Früher wurde das Design [solid-state](https://html5up.net/solid-state) verwendet.
 
  CSS:
 ------
