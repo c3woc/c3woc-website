@@ -1,6 +1,9 @@
 name: Build and Deploy c3woc website
 
 on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '42 0 * * 0'
   push:
     branches:
     - master
