@@ -13,7 +13,7 @@ install:
 	  sudo pacman -Syu imagemagick python-pip glibc lib32-glibc gcc git-lfs --noconfirm
 	elif hash dnf 2>/dev/null; then
 	  sudo dnf install -y ImageMagick python3-pip gcc git-lfs
-	else 
+	else
 	  echo -e "Please install Imagemagick, python3-pip git-lfs and gcc"
 	fi
 	sudo pip3 install wheel  --upgrade
@@ -32,7 +32,7 @@ server:
 	else
 	  lektor server $(LEKTOR_SERVER_FLAGS) $(LEKTOR_PLUGIN_FLAGS)
 	fi
-	
+
 deploy:
 	lektor clean --yes
 	lektor plugin flush-cache
