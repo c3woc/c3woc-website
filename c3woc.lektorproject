@@ -12,7 +12,7 @@ url_style = absolute
 enabled = yes
 default = yes
 locale = de_DE
-target = rsync://webwaffel@c3woc.org/srv/www/c3woc.org/
+target = rsync://webwaffel@c3woc.de/srv/www/c3woc.de/
 
 [alternatives.de]
 name = Deutsch
