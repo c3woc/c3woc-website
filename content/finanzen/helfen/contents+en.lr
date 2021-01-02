@@ -1,0 +1,84 @@
+content:
+
+Waffles are enjoyed by a great many people. But when it comes to more, things unfortunately get tight.
+Fortunately, there have always been people who have helped to bake waffles or make dough.
+
+But when it comes to taking responsibility or really organising waffles, it still looks like there is room for improvement.
+
+Currently, the [L3D](https://chaos.social/@l3d) takes care of all these organisational tasks. Occasionally there are people who help him with this. But unfortunately no one has yet managed to take over a reliable task permanently (or even just for one event).
+
+So if you are familiar with the chaos family and can imagine to take care of one of the tasks at an event (with help, of course), L3D would be very grateful.
+
+**What are the tasks?**
+
+ + Helpers coordination and planning
+
+```
+We are very grateful for the help we get with baking waffles. However, someone has to coordinate this.
+How many helpers should be where and when?
+Do the helpers know what to do?
+Are all the helpers fed and do they have freshly washed hands?
+```
+
+ + Purchasing and logistics
+
+```
+At 35c3 we destroyed almost 500kg of ingredients. That requires some logistical effort.
+As the C3WOC is not an official "trade", it can only partially work together with the super cool people from the LOC here.
+A lot has to be done by themselves.
+Like the purchase of ingredients as well as the transport of the waffle equipment!
+In the past, the LOC has helped us a lot. Thank you very much for that!
+```
+
+ + cash desk
+
+```
+One of the most critical issues in the world today is the cash register.
+If it is not right, civilisation collapses and war breaks out.
+If it is right but someone has doubts about it, everything is usually lost or damaged for many years.
+
+We at C3WOC actually want to have *NOTHING* to do with money.
+Unfortunately we are unbelievably bad at finding sponsors who will pay for it instead.
+And we are not rich enough to pay for everything ourselves.
+
+At 35c3 there was also the question to cpunkt if the money or the surplus should not go to the CCCV GmbH. 
+We were told that this was a stupid idea and we decided not to do it.
+
+Nevertheless we are looking for someone who enjoys the trust of the Chaos-Communiy and wants to take over this task!
+```
+
+ + Concept and planning
+
+```
+Like everywhere else, it needs people who think about how something should be built.
+For example, how should the C3WOC be set up at the Congress?
+How many chairs, tables, electricity and waffle irons do we have, do we need or are realistic at all.
+How many ingredients...
+
+These are all very tricky questions and it is stupid to decide them alone!
+```
+
+ + Technology
+
+```
+Of course it also needs technology to have a C3WOC.
+
+Starting with a website, git repositories and mailing lists that need to be built,
+to maintain, administer and expand.
+
+Currently we urgently need help with:
+
++ waffel@c3woc.de as a real (Mailman) mailing list. (With GPG) and to register ourselves. Best set up with ansible.
++ Content on the website.
++ Good waffle pictures, photos etc.
++ social media
+```
+
+So you see, the fact that we have this roll-up banner with "We need you" on it and keep asking for support is not because we want to get rich off the chaos community.
+It is because we want to create something **together** with everyone and need your help! Because alone you can't do anything together.
+---
+slogan: Together we can do anything. So join us!
+---
+teaser: How can you help with the C3WOC? What are the tasks? And who takes them on?
+---
+title: Help us

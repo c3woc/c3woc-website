@@ -1,0 +1,40 @@
+abo: Subscribe to all recipes as XML feed
+---
+begruessung:
+
+The general waffle recipe is easy looks like:
+
+<pre><center><code  style="max-width: 600px; text-align: left;">
+4 Eggs
+200g Sugar
+250g Butter
+15g Vanilla sugar
+10g Baking powder
+200ml Full-cream milk
+400g Flour
+120ml Mate
+A bit Rum
+A bit salt
+</code></center></pre>
+
+The recipe is for a big waffle hunger of more then 3 persons.<br/>
+A food-grade 10-liter bucket is perfect as a "bowl" here.<br/>
+
+---
+desc: The recipe collection of the C3 Waffle Operation Center. From the vegan waffle to the legendary kebab waffle, everything is represented here.
+---
+description: Every waffle is awesome
+---
+description2: For more diversity in waffles, there's something here for most!
+---
+link: /feed_rezepte.xml
+---
+title: The waffle formula
+---
+title2: All recipes
+---
+trailer:
+
+<br/><br/>
+Do you know any other ways to use a waffle iron? We would be very happy if you share your recipes and ideas with us.
+You can do that by e-mail. Alternatively you can publish it here yourself. Because you can edit this website [on GitHub](https://github.com/C3WOC/c3woc-website.git)!
