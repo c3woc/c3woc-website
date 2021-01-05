@@ -1,7 +1,7 @@
 [![<TRAVIS> Build Status ](https://travis-ci.org/c3woc/c3woc-website.svg?branch=master)](https://travis-ci.org/c3woc/c3woc-website)
 [![<ACTIONS> lektor check ](https://github.com/c3woc/c3woc-website/workflows/lektor%20check/badge.svg)](https://github.com/c3woc/c3woc-website/actions?query=workflow%3A%22lektor+check%22)
 [![<ACTIONS> Build and Deploy c3woc website ](https://github.com/c3woc/c3woc-website/workflows/Build%20and%20Deploy%20c3woc%20website/badge.svg?branch=master)](https://github.com/c3woc/c3woc-website/actions?query=workflow%3A%22Build+and+Deploy+c3woc+website%22)
-[![MIT License](https://github.com/c3woc/c3woc-website/blob/master/.github/license.svg)](https://github.com/c3woc/c3woc-website/blob/master/LICENCE)
+[![MIT License](https://raw.githubusercontent.com/c3woc/c3woc-website/master/.github/license.svg)](LICENCE)
 
  C3WOC Webseite
 ================
