@@ -25,11 +25,10 @@ etwas Rum
 eine prise Salz
 </code></center></pre>
 
-Das Rezept ist optimiert auf einen größeren Waffelhunger von mehr als 3 Menschen.<br/>
-Als "Schüssel" eignet sich hier ein lebensmittelfähiger 10-Liter Eimer perfekt.<br/>
+Dieses Rezept wurde reduziert auf den kleinen Waffelhunger mit dem engsten Freundeskreis<br/>
 
 ---
-desc: Die Rezeptsammlung des C3 Waffel Operation Center. Von der veganen Waffel bis hin zur legendären Dönerwaffel ist hier alles vertreten.
+desc: Die Rezeptsammlung des C3 Waffel Operation Center. Von der klassischen Waffel bis hin zu exotischen Entwicklung ist hier vieles vertreten.
 ---
 title2: Alle Rezepte
 ---
@@ -39,4 +38,4 @@ trailer:
 
 <br/><br/>
 Du kennst noch weitere Möglichkeiten ein Waffeleisen zu verwenden? Wir freuen uns sehr, wenn du uns deine Rezepte und Ideen weiter gibst.
-Das geht per E-Mail. Alternativ kannst du es selbst hier veröffentlichen. Denn diese Webseite kannst du [auf GitHub](https://github.com/ToolboxBodensee/c3woc-website.git) bearbeiten!
+Das geht per E-Mail. Alternativ kannst du es selbst hier veröffentlichen. Denn diese Webseite kannst du [auf GitHub](https://github.com/c3woc/c3woc-website.git) bearbeiten!
