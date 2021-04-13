@@ -41,41 +41,29 @@ deploy:
 
 pull:
 	if git config remote.github.url > /dev/null; then
-	  git pull github master
+	  git pull github main
 	else
 	  git remote add github git@github.com:c3woc/c3woc-website.git
-	  git pull github master
-	fi
-	if git config remote.gitea.url > /dev/null; then
-	  git pull gitea master
-	else
-	  git remote add gitea gitea@gitea.see-base.de:C3WOC/c3woc-webseite.git
-	  git pull gitea master
+	  git pull github main
 	fi
 	if git config remote.backwesen.url > /dev/null; then
-	  git pull backwesen master
+	  git pull backwesen main
 	else
-	  git remote add backwesen gitea@backwesen.de:l3d/webseite.git
-	  git pull backwesen master
+	  git remote add backwesen gitea@backwesen.de:c3woc/webseite.git
+	  git pull backwesen main
 	fi
-	git pull origin master
+	git pull origin main
 
 push:
-	if git config remote.gitea.url > /dev/null; then
-	  git push gitea master
-	else
-	  git remote add gitea gitea@gitea.see-base.de:C3WOC/c3woc-webseite.git
-	  git push gitea master
-	fi
 	if git config remote.github.url > /dev/null; then
-	  git push github master
+	  git push github main
 	else
 	  git remote add github git@github.com:c3woc/c3woc-website.git
-	  git push github master
+	  git push github main
 	fi
 	if git config remote.backwesen.url > /dev/null; then
-	  git push backwesen master
+	  git push backwesen main
 	else
 	  git remote add backwesen gitea@backwesen.de:l3d/webseite.git
-	  git push github master
+	  git push github main
 	fi
