@@ -2,20 +2,21 @@ _model: page
 ---
 title: Impressum
 ---
-slogan: Hier könnt ihr uns erreichen!
+slogan: Die Wege der Waffel sind unergründlich. Aber dieser hier führt zu uns.
 ---
-teaser: Das Impressum des C3 Waffel Operation Center. Hier findet ihr diverse Kontaktmöglichkeiten um schnell und einfach mit uns in Verbindung zu kommen!
+teaser: Das Impressum des C3 Waffel Operation Center. Hier findet ihr die zentralen Kontaktmöglichkeiten um mit uns kommunizieren zu können.
 ---
 content:
 
- IRC:
------
-
+ Anschrift:
+---------------
 ```
-Server: irc.hackint.org
-Channel: #waffel
+Toolbox Bodensee e.V.
+z. Hd. C3WOC
+Bergheimer Str. 6-12
+88677 Markdorf
 ```
-[irc://irc.hackint.org](ircs://irc.hackint.org/#waffel) - [Web IRC](https://webirc.hackint.org/#irc://irc.hackint.org/#waffel)
+<i>Zurzeit kommt Post hier nicht sehr zuverlässig an. Irgend jemand hat sich ausgedacht das Vereinsleben durch eine Pandemie einzuschränken :P</i>
 
  Mail:
 ----
@@ -23,11 +24,21 @@ Channel: #waffel
 waffel@c3woc.de
 ```
 
- Postanschrift:
-----
-```
-Toolbox Bodensee e.V.
-C3WOC
-Bergheimer Str. 6-12
-88677 Markdorf
-```
+ Streitschlichtung
+----------------
+Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Lass uns doch lieber zusammen eine Waffel essen und darüber reden!
+
+ Weitere online Präsenzen
+---------------------
+Das C3WOC gibt es u.a. auch dort im Cyberspace:
+
++ Mastodon: [chaos.social/@c3woc](https://chaos.social/@c3woc)
++ Twitter: [twitter.com/@c3woc](https://twitter.com/@c3woc)
++ YouTube: [youtube.com/c3woc](https://youtube.com/c3woc)
++ Twitch: [twitch.tv/c3woc](https://twitch.tv/c3woc)
++ Telegram: [t.me/c3woc](https://t.me/c3woc)
++ Reddit: [waffel.reddit.com](https://waffel.reddit.com)
++ Github: [github.com/c3woc](https://github.com/c3woc)
++ Gitea: [backwesen.de/c3woc](https://backwesen.de/c3woc)
+
+Und gelegentlich an manch anderen Orten bei denen es nach Waffeln duftet!
