@@ -1,6 +1,6 @@
 LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 # minify javascript assets, compile scss assets
-LEKTOR_PLUGIN_FLAGS=-f scss
+LEKTOR_PLUGIN_FLAGS=-f scss -f pretifyhtml
 LEKTOR_DEPLOY_FLAGS=
 
 all: build

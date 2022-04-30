@@ -330,3 +330,31 @@ url: https://cosin.ch/
 description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer Chaos. Der Inhalt erstreckt sich über Technik und Politik zu Kunst und Kultur.|Bis hinein in die heilige Kunst der Waffel- und Glacce zubereitung.
 ----
 confirmed: yes
+#### termine ####
+start: 2022-05-19 13:37:23 Europe/Berlin
+----
+ende: 2022-05-22 16:00:00 Europe/Berlin
+----
+event: GPN
+----
+ort: HfG und ZKM
+----
+url: https://entropia.de/GPN20
+----
+description: Gulaschprogrammiernacht klingt fast wie ein Kochmarathon für schlaflose Informatikstudenten. Doch es ist ein fantastisches Event für Hacker, Haecksen und chaosnahe Wesen sich über knusprige Waffeln und leckers Gulasch zu freuen.
+----
+confirmed: yes
+#### termine ####
+start: 2022-07-22 13:37:23 Europe/Berlin
+----
+ende: 2022-07-26 13:37:23 Europe/Berlin
+----
+event: MCH2022
+----
+ort: Netherlands
+----
+url: https://mch2022.org/
+----
+description: 
+----
+confirmed: yes
