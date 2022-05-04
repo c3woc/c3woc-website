@@ -75,7 +75,7 @@ Zeiträume GPN20:
 + 2x [Trennfett](https://produkte.metro.de/shop/pv/BTY-X610695/0032/0021/)
 :::
 
-### klassische Waffeln *(x16 Mengen):
+### klassische Waffeln *(x16 Mengen)*:
 
 + Vollei: 16 l
 + Zucker: 16 kg
