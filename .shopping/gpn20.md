@@ -10,18 +10,18 @@ Mengen GPN19 **(alt)**:
  - Mit ca. 30 kg Marmelade, 5 kg Puderzucker, 55 kg Apfelmus und etwas Nutella. (max 1/4 davon)
 
 Menge GPN20:
-  Insgesamt 30x Waffeln
+ * Insgesamt 30x Waffeln
     + 4x glutenfrei
     + 10x laktosefrei oder ggf. zur hälfte vegan, wenn Ei-ersatz funktioniert
     + 16x klassisch
     + 200 panierte Croissants
-  Belag:
+ * Belag:
     + 6x Puderzuckermühle
     + 15kg Apfelmus
     + 5kg Marmelade
     + 6 Gläser Nutella
     + 8x RIOBA Sprühsahne
-  Other:
+ * Other:
     + Eimer
     + Küchenrolle
     + ggf. Servietten
