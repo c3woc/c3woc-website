@@ -1,0 +1,327 @@
+_template: zutaten.yaml
+---
+oven_fan: Off
+---
+oven_type: Waffeleisen
+---
+recipe_name: Berliner Currywurst
+---
+render_hygiene: yes
+---
+title: Berliner Currywurst-Waffel
+---
+x_ignore_1: yes
+---
+x_license: https://backwesen.de/c3woc/webseite/src/branch/main/LICENCE
+---
+ingredients:
+
+#### flow_ingredients ####
+ingredient: Vollei
+----
+usda_num: 1171
+----
+amounts:
+
+##### flow_amounts #####
+amount: 0,5
+-----
+unit: l
+----
+substitutions:
+
+##### flow_substitutions #####
+ingredient: Eier
+-----
+usda_num: 1123
+-----
+amounts:
+
+###### flow_amounts ######
+amount: 10
+------
+unit: Stück
+-----
+processing:
+
+###### flow_processing ######
+process: rohe Eier strikt räumlich getrennt von anderen Lebensmitteln verarbeiten
+------
+short: 
+###### flow_processing ######
+process: Ei vor dem Aufschlagen waschen und wenn möglich desinfizieren
+------
+short: 
+###### flow_processing ######
+process: alle Teile des Ei sind nach dem Aufschlagen so schnell wie möglich zu verarbeiten
+------
+short: 
+-----
+notes: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Zucker
+----
+usda_num: 19335
+----
+amounts:
+
+##### flow_amounts #####
+amount: 250
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Butter
+----
+usda_num: 1001
+----
+amounts:
+
+##### flow_amounts #####
+amount: 625
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Backpulver
+----
+usda_num: 18371
+----
+amounts:
+
+##### flow_amounts #####
+amount: 50
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Milch
+----
+usda_num: 1077
+----
+amounts:
+
+##### flow_amounts #####
+amount: 1
+-----
+unit: l
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: frische Vollmilch
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Fruchtbuttermilch
+----
+usda_num: 011110906151
+----
+amounts: 
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: Multivitamin
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Mehl
+----
+usda_num: 20481
+----
+amounts:
+
+##### flow_amounts #####
+amount: 1
+-----
+unit: kg
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: Weizen, Type 550
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Vollkornmehl
+----
+usda_num: 100274
+----
+amounts:
+
+##### flow_amounts #####
+amount: 1
+-----
+unit: kg
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Cola
+----
+usda_num: 92410310
+----
+amounts:
+
+##### flow_amounts #####
+amount: 750
+-----
+unit: ml
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Curry-Pulver
+----
+usda_num: 2015
+----
+amounts:
+
+##### flow_amounts #####
+amount: 40
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Curry-Wurst ohne Darm
+----
+usda_num: 100173
+----
+amounts:
+
+##### flow_amounts #####
+amount: 2
+-----
+unit: kg
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: grob geschnitten
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Knoblauch
+----
+usda_num: 
+----
+amounts:
+
+##### flow_amounts #####
+amount: 6
+-----
+unit: each
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: Knolle
+-----
+short: yes
+##### flow_processing #####
+process: klein geschnitten
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Salz
+----
+usda_num: 2047
+----
+amounts: 
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Zitronensaft
+----
+usda_num: 9152
+----
+amounts: 
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+---
+servings:
+
+#### flow_servings ####
+serving_number: 70
+----
+serving_units: Waffeln
+---
+source_authors: c-base
+---
+steps:
+
+#### flow_steps ####
+step: Am besten erst einmal das Mehl mit dem Zucker, Backpulver und Currypulver vermengen, dann die Flüssigkeiten unterrühren und die Currywurst-Stücke und den Knoblauch unterheben.
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step: Mit Salz und Zitronensaft abschmecken.
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 

@@ -1,0 +1,32 @@
+{%- extends "layout.html" -%}
+{%- block header %}
+  <header>
+    <div class="header__top_box">
+      <div class="header__logo_box">
+        <a class="header__homelink" href="{{ '/'|url }}" title="Startseite">
+          {% if '/images/logo.svg'|asseturl is defined -%}
+            <img class="header__logo" src="{{ '/images/logo.svg'|asseturl }}" style="height: 7rem;" alt="C3WOC Logo">
+          {%- endif %}
+        </a>
+      </div>
+      <nav class="header__secondary_nav">
+        <ul class="secondary_nav__navlist">
+        {%- for alt in get_alts(this) -%}
+          {%- if this.alt != alt -%}
+            {{- '\n          ' -}} <li class="secondary_nav__navitem">
+            {{- '\n            ' -}} <a class="secondary_nav__navlink" href="{{ '.'|url(alt=alt) }}">{{ alt|title|upper }}</a>
+            {{- '\n          ' -}} </li>
+          {%- endif -%}
+        {%- endfor %}
+        </ul>
+      </nav>
+    </div>
+    <div class="header__slim_box">
+      {%- include "blocks/navigation.html" %}
+      <div class="slim_box__top_bar_left"></div>
+      <div class="slim_box__top_bar_middle"></div>
+      <div class="slim_box__top_bar_right"></div>
+      <div class="slim_box__unicorns"></div>
+    </div>
+  </header>
+{% endblock -%}

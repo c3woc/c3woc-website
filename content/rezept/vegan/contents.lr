@@ -1,45 +1,11 @@
-title: vegane Waffeln
+title: veganer Waffelteig
 ---
 author: L3D
 ---
-body:
-
-**Achtung: Das Rezept ist noch nicht ganz ausgereift und klebt mitunter gewaltig im Waffeleisen!**
-
-```
-2 Kg Mehl
-800-1000g Zucker
-2 Bananen
-750g vegane Butter/Margarine  (zb. Alsan)
-1,5 L Soja/Hafer/Mandelmilch
-1-2 Flasche Club-Mate oder Flora Power
-etwas Vanillezucker
-etwas (dunklen) Rum
-eine prise Salz
-```
-
- Zubereitung
--------------------
-
-Kleingeschnittene oder pürierte Bananen zusammen mit weicher oder geschmolzener Margarine und Zucker in einem 10-Liter Eimer oder einer Schüssel klumpenfrei verrühren. Unter ständigem Rühren die weiteren Zutaten hinzugeben. Zu guter Letzt den Teig abschmecken und die Zutaten nach Gefühl variieren.
-Etwas mehr Öl oder Trennfett im Waffeleisen verwenden, da der Teig mitunter gewaltig kleben kann.
-
- Wichtig!
------------------
-
-Die Qualität der Zutaten hat einen hohen Einfluss darauf, wie der Teig schmeckt. Hier ist es stark vorteilhaft, hochwertige Produkte zu verwenden. So schmeckt man, ob billiges Leitungswasser im Teig bei weiten nicht so gut wie Mandel- oder Hafermilch. Ganz abgesehen davon, dass das die grundlegende Konsistenz des Teiges stark verändern würde. Gerade auch bei der Vanille schmeckt der Teig viel besser, wen anstelle billigen Vanillin echter Vanillezucker verwendet wird, der womöglich noch kleine Stücken Vanille enthält. Natürlich funktioniert der Teig auch mit den günstigen Produkten. Er ist dann eben nicht mehr ganz so lecker und es könnten Waffeln entstehen, die nicht ganz der erhofften Konsistenz entsprechen.
-
- Experimentiertipp:
-----------------------
-Margarine könnte man auch durch z. B. Rapsöl ersetzen. Hierbei muss man aber einen (großzügigen) Schuss Zitrone mit in den Teig geben. Und ein halber Liter reicht als Ersatz für das Kilo Margarine vermutlich aus.
-
+body: 
 ---
-icon: fas fa-leaf
+pub_date: 2022-05-05
 ---
-number: 142
+orf: yes
 ---
-teaser:
-
-Die Formel für veganen Waffelteig. 
-Ganz ohne tierische Produkte wie Milch, Butter oder Eier.
-Dafür aber mit Banane und Apfelmus.
+weight: 2

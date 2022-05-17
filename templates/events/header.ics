@@ -1,0 +1,14 @@
+{#- © by L3D <l3d@c3woc.de> #}
+VERSION:2.0
+PRODID:-//C3WOC//Tourdaten//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:{{ this._gid }}
+URL:{{ this.moreinfourl }}
+REFRESH-INTERVAL;VALUE=DURATION:P2D
+SOURCE;VALUE=URI:{{ this._path | url(external=true) }}
+COLOR:{{ this.color }}
+{# NAME;LANGUAGE={{ this.lang }}:{{ this.name | wordwrap(width=45, wrapstring='\n   ') }} #}
+DESCRIPTION;LANGUAGE={{ this.lang }}:{{ this.description | wordwrap(width=45, wrapstring='\n   ') }}
+X-WR-CALNAME:{{ this.name  | wordwrap(width=45, wrapstring='\n   ') }}
+X-WR-CALDESC:{{ this.description  | wordwrap(width=45, wrapstring='\n   ') }}

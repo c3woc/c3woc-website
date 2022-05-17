@@ -1,58 +1,22 @@
-{% macro render_blog_post(post, from_index=false) %}
-  {% if from_index %}
-  <br/><hr/><br/>
-  {% endif %}
-  <div class="blog-post">
-    <header class="major">
-    {% if from_index %}
-      <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
-    {% else %}
-      <h2>{{ post.title }}</h2>
-    {% endif %}
-      <p class="meta">
-      {% if bag('translate', post.alt, 'blog_von') 
-          %}{{ bag('translate', post.alt, 'blog_von') }}{% else 
-          %}Geschrieben von{% endif %} {% if post.twitter_handle 
-          %}<a href="https://chaos.social/@{{ post.twitter_handle
-          }}">{{ post.author or post.twitter_handle }}</a>{%
-          else %}{{ post.author }}{%
-          endif %}{% if post.pub_date
-          %} {% if bag('translate', post.alt, 'blog_am') 
-          %}{{ bag('translate', post.alt, 'blog_am') }}{% else 
-          %}am{% endif %} {{ post.pub_date.strftime('%d.%m.%Y') }}{%
-          endif %}</p>
-	</header>
-<!-- Content -->
-    <section id="content">
-      {% if from_index %}
-        {{ post.body }}
-      {% else %}
-        {{ post.body }}
-        {{ post.beitrag }}
-      {% endif %}
+{% macro render_blog_post(post, from_index=false, section_class='-odd') %}
+    <section class="content {{ section_class }}">
+        <div class="content__box -heading">
+            <div class="content__inner_box">
+                {% if from_index %}
+                    <h2><a class="content__blog_link {{ section_class }}" href="{{ post|url }}">{{ post.title }}</a></h2>
+                {% else %}
+                    <h2>{{ post.title }}</h2>
+                {% endif %}
+                <hr class="{{ section_class }}">
+                <p class="content__meta">
+                    <i>geschrieben von {{ post.author }} am {{ post.pub_date }}</i>
+                </p>
+            </div>
+        </div>
+        <div class="content__box -columns">
+            <div class="content__inner_box">
+                {{ post.body }}
+            </div>
+        </div>
     </section>
-    {% if from_index %}
-    <a class="button fit" href="{{ post|url }}">{% if bag('translate', post.alt, 'blog_weiter')
-        %}{{ bag('translate', post.alt, 'blog_weiter') }}{% else        
-        %}weiterlesen{% endif %}</a>
-    <br/>
-    {% else %}
-    {% if post.video_is_embeded %}{% for blk in post.video_embeded.blocks %}
-      {% if blk.video_url %}
-      {{ blk }} <br/>
-      <a class="button" href="https://www.youtube.com/watch?v={{ blk.video_url }}{% if post.alt %}&gl={{ post.alt }}&hl={{ post.alt }}{% endif %}" target="_blank" rel="noopener">{%
-        if bag('translate', post.alt, 'directytlink') %}{{ bag('translate', post.alt, 'directytlink') }}{%
-        else %}Direkt zum YouTube-Video{% endif %}</a>{% endif %}{% if blk.video
-        %} <a class="button" href="{{ blk.video|url }}" download>{%
-        if bag('translate', post.alt, 'directlink') %}{{ bag('translate', post.alt, 'directlink') }}{%
-        else %}Download Video{% endif %}</a>{% endif %}
-        <br/><br/>
-    {% endfor %}{%
-    endif %} {% if post.project %}
-      <div class="lightgallery" class="row alt">{%
-        for blk in post.project.blocks %}
-      {{ blk }}
-      {% endfor %}</div>{% endif %}{%
-    endif %}
-  </div>
 {% endmacro %}

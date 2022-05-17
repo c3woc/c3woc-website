@@ -1,0 +1,35 @@
+{#-
+  Die Zubereitung des Rezept...
+-#}
+{{- '\n      ' -}} <div class="content__box">
+{{- '\n        ' -}} <div class="content__inner_box">
+{{- '\n          ' -}} <h2>Zubereitung</h2>
+{{- '\n          ' -}} <ul class="zubereitung">
+{%- for stp in child.steps.blocks -%}
+  {%- if stp.step is defined and stp.step != "" -%}
+    {{- '\n            ' -}} <li>
+    {{- '\n              ' -}} <span>{{ stp.step }}</span>
+    {%- if stp.haccp_type is defined and stp.haccp_type != "" and stp.haccp_string is defined and stp.haccp_string != "" and not only_render_steps | default(false) -%}
+      {{- '\n              ' -}} <ul>
+      {{- '\n                ' -}} <li>
+      {{- '\n                  ' -}}<span class="{{- stp.haccp_type|lower -}}">{{ stp.haccp_string }}</span>
+      {{- '\n                ' -}} </li>
+      {{- '\n              ' -}} </ul>
+    {%- endif %}
+    {%- if stp.notes is defined and stp.notes != "" and stp.notes.blocks is defined and not only_render_steps | default(false) -%}
+      {%- if stp.notes.blocks != [] -%}
+        {{- '\n              ' -}} <ul>
+        {%- for nde in stp.notes.blocks -%}
+          {{- '\n                ' -}} <li>
+          {{- '\n                  ' -}} <span>{{- nde.note -}}</span>
+          {{- '\n                ' -}} </li>
+        {%- endfor -%}
+      {{- '\n              ' -}} </ul>
+      {%- endif -%}
+    {%- endif -%}
+    {{- '\n            ' -}} </li>
+  {%- endif %}
+{%- endfor -%}
+{{- '\n          ' -}} </ul>
+{{- '\n        ' -}} </div>
+{{- '\n      ' -}} </div>

@@ -1,5 +1,4 @@
-_template: feed_projekte.xml
+_template: rezept_feed.xml
 ---
 _model: none
 _discoverable: no
-_hidden: yes

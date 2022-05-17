@@ -1,0 +1,63 @@
+{% extends "header_slim.html" %}
+{%- block title -%}{{ this.title }}{%- endblock -%}
+{%- block meta_description -%}
+  {%- if this.meta_description is defined and this.meta_description != "" -%}
+    {{ this.meta_description }}
+  {%- else -%}
+    C3WOC
+  {%- endif -%}
+{%- endblock -%}
+{% block body %}
+    <div class="content__box">
+        <div class="content__inner_box">
+            <h1>{{ this.title }}</h1>
+        </div>
+    </div>
+    <section class="content -odd">
+        <div class="content__box">
+            <div class="content__inner_box">
+                {{ this.body }}
+            </div>
+        </div>
+    </section>
+
+    <section class="content -no_pad">
+        {% set blog_posts = site.get('/blog').children.order_by('-pub_date').limit(3) %}
+        <div class="content__aggregate_box">
+            {% for post in blog_posts %}
+                <div class="content__inner_aggregate_box">
+                    <h3 class="content__aggregate_heading">
+                        <a class="content__blog_link -odd" href="{{ post.path|url }}">
+                            <img class="content__rss_logo_heading" src="{{ '/images/icons/social/feed.svg'|asseturl }}" alt="Feed Logo"> {{ post.title }}
+                        </a>
+                    </h3>
+                    <hr class="-odd">
+                    <p class="content__meat">
+                        <i>geschrieben von {{ post.author }} am {{ post.pub_date }}</i>
+                    </p>
+                    <p>
+                        {{ post.meta_description }}
+                    </p>
+                </div>
+            {% endfor %}
+
+            {% set episodes = site.get('/podcast').children.order_by('-pub_date').limit(3) %}
+            {% for episode in episodes %}
+                <div class="content__inner_aggregate_box">
+                    <h3 class="content__aggregate_heading">
+                        <a class="content__blog_link -odd" href="{{ episode.path|url }}">
+                            <img class="content__podcast_logo_heading" src="{{ '/images/podcast_logo.svg'|asseturl }}" alt="Podcast Logo"> {{ episode.title }}
+                        </a>
+                    </h3>
+                    <hr class="-odd">
+                    <p class="content__meat">
+                        <i>geschrieben von {{ episode.author }} am {{ episode.pub_date }}</i>
+                    </p>
+                    <p>
+                        {{ episode.podcast_teaser }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

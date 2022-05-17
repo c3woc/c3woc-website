@@ -1,0 +1,28 @@
+{#- define social Media stuff -#}
+  {{- '\n            ' -}}<p>{{ this.sm_what }}{{ ' ' }}
+  {%- if this.title is defined and this.title != '' -%}
+    <a href="{{ this.sm_link }}">{{ this.title }}</a>
+  {%- endif -%}
+  {%- if this.sm_what_2 is defined and this.sm_what_2 != '' -%}
+    {{- '\n            ' -}}
+    {{- this.sm_what_2 -}}
+    {{- ' ' -}}
+    <a href=" {{ this.sm_link_2 }}">{{ this.title_2 }}</a>
+  {%- endif -%}
+  {{- '\n            ' -}}
+  &emsp;<a href="{{ this.sm_link }}">
+  {{- '\n              ' -}}
+  <img class="content__inline_image" src="{{ this.sm_image }}" alt="{{ this.title }} Logo" height="16">
+  {{- '\n            ' -}}
+  </a>
+  {%- if this.sm_link_2 is defined and this.sm_link_2 != '' -%}
+    {{- '\n            ' -}}
+    <a href="{{ this.sm_link_2 }}">
+    {{- '\n              ' -}}
+    <img class="content__inline_image" src="{{ this.sm_image_2 }}" alt="{{ this.title_2 }} Logo" height="16">
+    {{- '\n            ' -}}
+    </a>
+  {%- endif -%}
+  {{- '\n            ' -}}
+  </p>
+{#- TEMPLATE ENDE -#}

@@ -1,0 +1,25 @@
+{#- © by L3D <l3d@c3woc.de> #}
+{% set fqdn = '/' | url(external=true) | string  -%}
+
+BEGIN:VEVENT
+UID:{{ blk.start.strftime('%m%H%d%M%Y%S') }}{{ blk.event[:1] }}{{ blk.event[-1:] }}{{ blk.ende.strftime('%m%H%d%M%Y%S') }}@{{ fqdn[8:-1] }}
+DTSTART;VALUE=DATE-TIME;TZID=Europe/Berlin:{{ blk.start.strftime('%Y%m%dT%H%M%S') }}
+DTSTAMP;VALUE=DATE-TIME;TZID=Europe/Berlin:{{ blk.start.strftime('%Y%m%dT%H%M%S') }}
+CLASS:PUBLIC
+DESCRIPTION;LANGUAGE={{ this.lang }}:{{ blk.description|replace( "|", "\\n")  | wordwrap(width=45, wrapstring='\n   ') }}
+{%- if blk.url is defined and not blk.url == '' %}\n
+  Weiteres dazu auf {{ blk.url }}{% endif %}
+LOCATION;LANGUAGE={{ this.lang }}:{{ blk.ort  | wordwrap(width=45, wrapstring='\n   ') }}
+STATUS:
+  {%- if blk.confirmed -%}
+    CONFIRMED
+  {%- else -%}
+    TENTATIVE
+  {%- endif %}
+SUMMARY;LANGUAGE={{ this.lang }}:{{ blk.event  | wordwrap(width=45, wrapstring='\n   ') }}
+TRANSP:OPAQUE
+URL:{{ blk.url }}
+DTEND;VALUE=DATE-TIME;TZID=Europe/Berlin:{{ blk.ende.strftime('%Y%m%dT%H%M%S') }}
+CONTACT;LANGUAGE={{ this.lang }}:{{ blk.mail }}
+COLOR:{{ blk.color }}
+END:VEVENT

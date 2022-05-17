@@ -1,0 +1,50 @@
+{#- HTML Calender Renderer for Startpage -#}
+  {%- set pages = site.query('/').include_undiscoverable(true).all() -%}
+  {%- set counter = ['1'] -%}
+  {%- for page in pages -%}
+    {%- if page._path == this.calendar_name -%}
+      {%- for blk in page.dates.blocks|sort(attribute='ende', reverse = False) -%}
+        {%- if blk.start.strftime('%Y%m%d%H%M') > none|datetimeformat('yyyyMMddhhmm') -%}
+          {%- if counter == ['1'] -%}
+            <table class="template">
+              <thead>
+                <tr>
+                  <th>Datum</th>
+                  <th>Veranstaltung</th>
+                  <th>Ort</th>
+                </tr>
+              </thead>
+              <tbody>
+          {%- endif -%}
+          {%- if counter.append('X') -%}
+            {#- Counter zum zaehlen ob es mehr wie 1 Temrin gibt -#}
+          {%- endif -%}
+            <tr>
+              <th>
+          {%- if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') -%}
+            {{- '\n                        ' -}}
+            {{ blk.start.strftime('%d.%m.%y %H') }} - {{  blk.ende.strftime('%H') }} Uhr
+          {%- else -%}
+            {{- '\n                        ' -}}
+            {{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }}
+          {%- endif -%}
+          {{- '\n                      ' -}} </th>
+          {{- '\n                      ' -}} <th>
+          {{- '\n                        ' -}} <a href="{{ blk.url }}" title="{{ blk.description|replace("|", " ") }}">
+          {{- blk.event -}}
+          </a>
+          {{- '\n                      ' -}} </th>
+          {{- '\n                      ' -}} <th>{{ blk.ort }}</th>
+          {{- '\n                    ' -}} </tr>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if counter|length < 1 and loop.index == 1 %}
+      {{- '\n                    ' -}} <p><i>Leider derzeit noch keine neuen Termine geplant!</i></p>
+    {%- endif -%}
+  {%- endfor %}
+  {%- if counter|length > 1 -%}
+    {{- '\n                  ' -}} </tbody>
+    {{- '\n                ' -}}</table>
+    {{- '\n                ' -}}<br/>
+  {%- endif -%}

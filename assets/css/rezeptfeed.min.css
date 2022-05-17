@@ -1,0 +1,1 @@
+﻿feed:before{content:"Dies ist der XML-Feed, mit dem man Änderungen der Rezepte beobachten kann.";padding-top:10px;padding-bottom:20px;display:block;padding-left:0.5em;font-size:16pt}id,updated,author,content{display:none}entry{display:block;border:1px solid gray;margin:0.5em;padding:0.5em;background-color:whitesmoke;list-style:none;color:black}

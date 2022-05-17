@@ -1,3 +1,6 @@
+# lektor
+packages/
+
 # ---> Vim
 # swap
 [._]*.s[a-v][a-z]
@@ -14,7 +17,12 @@ tags
 
 # lektor
 .cache/
- 
+.content/
+.models/
+.flowblocks/
+temp/
+packages/
+
 # ---> Windows
 # Windows thumbnail cache files
 Thumbs.db
@@ -54,4 +62,7 @@ tmp/
 libsass/
 sass-spec/
 sassc/
-
+# validator
+./rezept.json
+./rezept.yaml
+./schema.json

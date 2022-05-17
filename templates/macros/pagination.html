@@ -1,15 +1,23 @@
-{% macro render_pagination(pagination) %}
-  <div class="pagination">
-    {% if pagination.has_prev %}
-      <a href="{{ pagination.prev|url }}">&laquo; Previous</a>
-    {% else %}
-      <span class="disabled">&laquo; Previous</span>
+{% macro render_pagination(pagination, odd) %}
+    {% if pagination.has_next or pagination.has_prev %}
+        <section class="content {% if odd %}-odd{% else %}-even{% endif %}">
+            <div class="content__box">
+                <div class="content__inner_box">
+                    <div class="content__pagination {% if odd %}-odd{% else %}-even{% endif %}">
+                        {% if pagination.has_prev %}
+                            <a class="pagination__anchor {% if odd %}-odd{% else %}-even{% endif %}" href="{{ pagination.prev|url }}">&laquo; Previous</a>
+                        {% else %}
+                            <span class="pagination__disabled">&laquo; Previous</span>
+                        {% endif %}
+                        | {{ pagination.page }} |
+                        {% if pagination.has_next %}
+                            <a class="pagination__anchor {% if odd %}-odd{% else %}-even{% endif %}" href="{{ pagination.next|url }}">Next &raquo;</a>
+                        {% else %}
+                            <span class="pagination__disabled">Next &raquo;</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </section>
     {% endif %}
-    | {{ pagination.page }} |
-    {% if pagination.has_next %}
-      <a href="{{ pagination.next|url }}">Next &raquo;</a>
-    {% else %}
-      <span class="disabled">Next &raquo;</span>
-    {% endif %}
-  </div>
 {% endmacro %}

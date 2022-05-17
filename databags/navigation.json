@@ -1,0 +1,32 @@
+{
+  "Start": {
+    "href": "/"
+  },
+  "Rezepte": {
+    "href": "/rezept",
+    "list_childs": true,
+    "items": {
+      "list_namespace": "/rezept/",
+      "Rezept Feed": "/feed_rezepte.xml"
+    }
+  },
+  "Mitmachen": {
+    "href": "/mitmachen",
+    "list_childs": false,
+    "items": {
+      "Mitmachen": "/mitmachen",
+      "Hygiene": "/hygiene",
+      "Bilder": "https://waffel.li/",
+      "Videos": "https://waffel.tv/",
+      "MY.C3WOC.DE": "-> Mich kann man buchen"
+    }
+  },
+  "Kontakt": {
+    "href": "/kontakt",
+    "list_childs": true,
+    "items": {
+      "Impressum": "/impressum",
+      "Datenschutz": "/datenschutz"
+    }
+  }
+}

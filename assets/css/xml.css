@@ -1,0 +1,122 @@
+/* this custom CSS stylesheet
+   is under the MIT license
+   MIT (C) 2020 by L3D <l3d@c3woc.de>
+
+   this stylesheet has the purpose
+   to make the Podcast XML Feed more
+   attractive and graphically enhance it.
+*/
+channel {
+  display:block;
+  border: 1px solid gray;
+  margin:0.5em;
+  padding:0.5em;
+  background-color:whitesmoke;
+  list-style: none;
+  color: black;
+}
+channel:before {
+  content: 'Podcast Feed für deinen Podcast Client';
+  color: green;
+  font-size: 20pt;
+}
+lastBuildDate:before {
+  content: "Füge diesen XML Feed in deinen Podcatcher ein um den Podcast zu abonnieren!";
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: block;
+  color: forestgreen;
+  font-size: 12pt;
+}
+lastBuildDate {
+  color: rgba(245, 245, 245, 0);
+  font-size: 0;
+}
+item {
+  display:block;
+  border: 1px solid silver;
+  margin:0.5em;
+  padding:0.5em;
+  background-color:whitesmoke;
+}
+title {
+  display:block;
+  color: #ee7402;
+  font-size: 120%;
+}
+title:before,
+.itunes_subtitle:after,
+description:after,
+.itunes_subtitle:before{
+  content: '\a';
+  white-space: pre;
+}
+title:after,
+link:after,
+download:after,
+content:after,
+content:before{
+  content: '\a \a ';
+  white-space: pre;
+}
+link,
+download{
+  color: navy;
+  text-decoration: underline;
+}
+download:before{ content: "Download: "; }
+description{
+  color: #f94f22;
+}
+language:before{ content:"Language: "; }
+language:after{ content:", Kategorie: "; }
+description:before{
+  content: "\a \a Beschreibung: ";
+  white-space: pre;
+}
+id,
+copyright,
+generator,
+updated,
+pubDate,
+guid,
+description,
+.itunes_summary,
+.itunes_keywords,
+.itunes_explicit,
+.itunes_owner,
+.itunes_new-feed-url,
+.itunes_author,
+.itunes_serial,
+.episodeType,
+.itunessummary,
+.encoded { display: none; }
+name { color:red; text-decoration: underline; }
+price { color:green; }
+stock { color:brown; }
+country { color:blue; }
+content {
+  color: #424242;
+  background-color: #ccc;
+  display:block;
+  border: 1px solid gray;
+  margin:1em;
+  margin-right: 12em;
+  padding:0.5em;
+  background-color: #ccc;
+  list-style: none;
+}
+.itunes_block {
+  content: '\a\a\a\a\a\a\a\a\a\a';
+  padding: 64px;
+  float: right;
+  margin: 4px;
+  background: url("/images/wtf_podcast_logo.png") no-repeat;
+  color: rgba(0,0,0,0);
+}
+.itunes_subtitle { font-size: 70%;}
+channel:after {
+  content: 'Das Stylesheet und der XML Feed wurde von L3D für den Podcastfeed erstellt und steht unter der MIT License. Über Feedback hierzu würde L3D sich freuen... --> https://chaos.social/@l3d';
+  color: gray;
+  font-size: 7pt;
+}

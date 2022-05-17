@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+{%- if '/css/sitemap.min.css'|asseturl is defined -%}
+  <?xml-stylesheet href="{{ '/css/sitemap.min.css'|asseturl }}" type="text/css" ?>
+{%- endif %}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {%- for page in [site.root] if page != this recursive %}
+    {%- if not page.hide_from_global_index %}
   <url><loc>{{ page|url(external=true) }}</loc></url>
   {{- loop(page.children) }}
+    {%- endif %}
   {%- endfor %}
 </urlset>

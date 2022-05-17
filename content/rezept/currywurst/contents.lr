@@ -1,35 +1,21 @@
-title: Berliner Currywurst
+title:
+
+ Currywurst
 ---
-author: NicKira
+orf: yes
+---
+weight: 2001
+---
+author: c-base
+---
+pub_date: 2022-05-09
 ---
 body:
 
-```
-0,5 Liter Vollei-Eiklar (oder ca. 10 Eier)
-250 g Zucker
-625 g Butter
-50 g Backpulver (oder 3 Packungen)
-1 Liter frische Vollmilch (keine H-Milch)
-1 Liter Fruchtbuttermilch (Multivitamin)
-1 kg Weizenmehl (550er)
-1 kg Weizenvollkornmehl
-750 ml Cola
-40 g Curry-Pulver
-2 kg Curry-Wurst ohne Darm (grob geschnitten)
-5 Knollen Knoblauch (klein geschnitten)
-eine Prise Salz
-etwas Zitronensaft
-```
-
-Am besten erst einmal das Mehl mit dem Zucker, Backpulver und Currypulver vermengen, dann die Flüssigkeiten unterrühren und die Currywurst-Stücke und den Knoblauch unterheben. Mit Salz und Zitronensaft abschmecken.
-
 Als Topping empfehlen wir:
 
-```
 2 Teile Schmand
 1 Teil Curry-Ketchup
-```
-
 Entweder zusammen gerührt oder einzeln (nach persönlicher Vorliebe) auf die warme Waffel geben.
 
 oder:
@@ -37,11 +23,3 @@ oder:
 Schmand auf die warme Waffel geben und mit Amarena-Kirchsoße garnieren.
 
 Als Getränk kann man eine Cola oder einen "Pfeffi", ein Berliner Pfefferminzlikör, dazureichen.
-
-
----
-icon: fas fa-hotdog
----
-number: 89
----
-teaser: Waffeln mit Wurst... Curry Wurst

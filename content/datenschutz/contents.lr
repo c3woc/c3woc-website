@@ -1,31 +1,34 @@
-content:
-
-Datenschutz ist auch bei Waffeln, Waffelbäckern und waffelnahen Lebensformen ein wichtiger Punkt.
-Deshalb versuchen wir hier mal verständlich zu machen, was diese Website kann und tut und darf.
-Bei Verständnisfragen oder Inkonsistenzen fragt bitte nach!
-
-Diese Website kann grundsätzlich absolut anonym genutzt werden – ihr braucht keine Namen, Mailadressen, oder sonstwas
-dafür angeben. Wir nutzen auch keine Cookies, um nachzuvollziehen, wer die Website wie oft wann besucht. Wir tracken die
-Websitenbesucher auch sonst nicht. Ihr dürft beim betrachten der Webseite aber natürlich selber Cookies oder Waffeln mitbringen
-um den aufenthalt noch süßer zu machen.
-
-Wir erfassen nicht, wie viele Menschen wann auf die Seiten der Webseite zugreifen. Aber wir speichern
-kurzzeitig fehlerhafte Seitenaufrufe, auch bekannt als ``error.log`` um euren Aufenthalt hier noch gemütlicher zu gestalten.
-Da wir unsere Websiten alle selber betreiben, liegen selbst diese anonymen Informationen nur bei uns,
-und nur das Admin-Team hat Zugriff darauf. Wir übermitteln diese Daten an niemanden sonst.
-
-Dadurch dass wir diese Websites verschlüsselt (über SSL/TLS, ihrwisstschon, HTTPS) anbieten, helfen wir weiter dabei,
-eure Daten zu schützen, weil so nicht einfach von Dritten einsehbar ist, welche Inhalte ihr abruft. Wir können aber nicht
-garantieren, dass nicht irgendwo im HTTPS-Protokoll oder den Implementierungen, die ihr oder wir nutzen, Fehler sind.
-(Wenn das so ist, dann erfahrt ihr das aber definitiv aus den Nachrichten, sobald es rauskommt.)
-
-Zu unserem eigenen Schutz: Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
-
-Für die anderen Orte im Internet, bei denen das C3WOC auftaucht, gilt die Datenschutzerklärung der jeweiligen Seite.<br/>
-Zum Beispiel für das Mastodon auf [chaos.social/@c3woc](https://chaos.social/@c3woc) wäre das die Datenschutzerklärung von chaos.social auf [chaos.social/terms](https://chaos.social/terms).
----
-slogan: Welche Gefahren drohen dir hier?
----
-teaser: Welche Gefahren drohen dir auf c3woc.de? Hier erfährst du, was wir von dir speichern und wieso.
+_model: page
 ---
 title: Datenschutz
+---
+body:
+
+Datenschutz wird beim Chaos Computer Club schon immer als sehr wichtigen Teil der digitale Souveränität angesehen. Dies gilt natürlich auch für den Teil des CCC, der sich mit köstlichen Teigprodukten beschäftigt.
+
+Nach unserer auffassung der Datenschutz-Grundverordnung muss jede Seite klar und verständlich aufführen, wie mit Personenbezogenen Daten Ihrer Besucher umgeht. Deshalb versuchen wir hier nun verständlich zu machen, was diese Website kann und tut und darf. Bei Verständnisfragen oder Inkonsistenzen fragt bitte nach!
+
+## verwenden der Webseite
+Diese Website kann grundsätzlich absolut anonym genutzt werden – ihr braucht keine Namen, Mailadresse oder sonst irgend welche persöhnliche Daten daür angeben. Wir nutzen auch keine Cookies, um nachzuvollziehen, wer die Website wie oft wann besucht. Wir tracken die einzelnen Websitenbesucher auch sonst nicht. Ihr dürft beim betrachten der Webseite aber natürlich selber Cookies oder Waffeln mitbringen um den aufenthalt noch süßer zu machen. Aber diese Entscheidung überlassen wir ausschließlich euch.
+
+## Tracking
+Wir erfassen nicht, welche Personen wann auf welche Teile unserer Internetpräsenz zugegreifen hat. Aber wir speichern kurzzeitig fehlerhafte Seitenaufrufe, auch bekannt als "error.log" um euren Aufenthalt hier noch gemütlicher zu gestalten und Fehler zu beheben. Da wir unsere Websiten alle selber betreiben, liegen selbst diese anonymen Informationen nur bei uns, und nur das Admin-Team hat Zugriff darauf. Wir übermitteln diese Daten an niemanden sonst.
+Da wir diese Webseite auf einem Cloudserver bei dem Anbieter "Hetzner" hosten, wird protokolliert wie viel so genannter "Netzwerktraffic" beim Besuch unserer Seite entsteht. Die Datenschutzerklärung von Hetzner findet ihr auf [hetzner.com/de/legal/privacy-policy](https://www.hetzner.com/de/legal/privacy-policy). Selbstverständlich haben wir mit Hetzner einen so genannten "Vertrag zur Auftragsverarbeitung" abgeschlossen und uns bemüht, alles so Datensparsam wie möglich ein zu stellen.
+
+## Verschlüsselung
+Dadurch dass wir diese Websites verschlüsselt *(über SSL/TLS, ihr wisst schon, HTTPS)* anbieten, helfen wir weiter dabei, eure Daten zu schützen, weil so nicht einfach von Dritten einsehbar ist, welche Inhalte ihr abruft. Wir können aber nicht garantieren, dass nicht irgendwo im HTTPS-Protokoll oder den Implementierungen, die ihr oder wir nutzen, Fehler sind. *(Wenn das so ist, dann erfahrt ihr das aber definitiv aus den Nachrichten, sobald es rauskommt.)*
+
+## Wiederspruch zu Werbung und Spam
+Zu unserem eigenen Schutz: Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+
+## Weitere Auftritte im Internet
+Das C3WOC hat nicht nur eine Webseite sondern ist auch auf Social Media aktiv. Für die anderen Orte im Internet, gilt jeweils die Datenschutzerklärung der jeweiligen Seite.
++ Zum Beispiel für das Mastodon auf [chaos.social/@c3woc](https://chaos.social/@c3woc) wäre das die Datenschutzerklärung von chaos.social auf [chaos.social/terms](https://chaos.social/terms).
++ Für YouTube ist dies die Datenschutzerklärung auf [policies.google.com/privacy](https://policies.google.com/privacy?hl=de).
++ Für Twitter ist die Datenschutzerklärung auf [twitter.com/de/privacy](https://twitter.com/de/privacy)
++ Für Twitch ist die Datenschutzerklärung auf [twitch.tv/p/de-de/legal/privacy-notice](https://www.twitch.tv/p/de-de/legal/privacy-notice/). Für Spenden und Zahlungen im zusammenhang mit dem [Twitch Account des C3WOC](https://twitch.tv/c3woc) haftet die [WTF Kooperative eG](https://wtf-eg.de/impressum/) und stellt Ihre Datenschutzerklärung auf [wtf-eg.de/datenschutz/](https://wtf-eg.de/datenschutz/) zur verfügung.
++ Für Reddit gilt die Datenschutzerklärung von Reddit auf [redditinc.com/de/policies/privacy-policy](https://www.redditinc.com/de/policies/privacy-policy).
++ Github hat seine Datenschutzerklärung auf [docs.github.com/en/site-policy/privacy-policies](https://docs.github.com/en/site-policy/privacy-policies) versteckt.
++ Für Telegram gilt die Datenschutzerklärung auf [telegram.org/privacy](https://telegram.org/privacy).
+---
+meta_description: Datenschutz wird beim Chaos Computer Club schon immer für sehr wichtig angesehen. Daher achten wir stehts darauf, alle unsere Systeme maximal Datensparsam einzurichten. Natürlich gilt dies auch für diese Webseite.

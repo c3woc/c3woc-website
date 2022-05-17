@@ -1,0 +1,14 @@
+{%- for child in post.children -%}
+  {%- if child._template == 'zutaten.yaml' -%}
+    {%- if child.render_hygiene | default(True) -%}
+      <div class="content__box">
+        <div class="content__inner_box">
+          <h3 id="hygiene">Verbesserungsvorschläge</h3>
+          <p>Unsere Webseite wird in einem <a href="https://github.com/c3woc/c3woc-website/">git</a> verwaltet.<br/>
+            Wenn dir auffällt, das etwas verbessert werden kann, öffne gerne ein <a href="https://github.com/c3woc/c3woc-website/issues/new/choose">Issue</a>. Du kannst auch zum Beispiel dieses Rezept hier direkt <a href="https://github.com/c3woc/c3woc-website/edit/main/content{{ '.' | url(external=false) }}rezept.yaml/contents.lr">bearbeiten</a>.
+          </p>
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}

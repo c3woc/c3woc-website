@@ -1,0 +1,54 @@
+{%- extends "layout.html" -%}
+{%- block header -%}
+  {{- '\n  ' -}} <header>
+    <div class="header__top_box">
+      <div class="header__logo_box">
+        <a class="header__homelink" href="{{ '/'|url }}" title="Startseite">
+        {%- if '/images/logo.svg'|asseturl is defined %}
+          <img class="header__logo" src="{{ '/images/logo.svg'|asseturl }}" style="height: 7rem;" alt="C3WOC Logo">
+        {%- endif %}
+        </a>
+      </div>
+      <nav class="header__secondary_nav">
+        <ul class="secondary_nav__navlist">
+        {%- for alt in get_alts(this) -%}
+          {%- if this.alt != alt -%}
+            {{- '\n        ' -}} <li class="secondary_nav__navitem">
+            {{- '\n        ' -}}   <a class="secondary_nav__navlink" href="{{ '.'|url(alt=alt) }}">{{ alt|title|upper }}</a>
+            {{- '\n        ' -}} </li>
+          {%- endif -%}
+        {%- endfor -%}
+        </ul>
+      </nav>
+    </div>
+    <div class="header__bg_box bganimation">
+      {%- include "blocks/navigation.html" -%}
+
+      {{- '\n      ' -}}
+      <!-- background for header box - start -->
+      <div class="bg_box__top_bar_left"></div>
+      <div class="bg_box__top_bar_middle"></div>
+      <div class="bg_box__top_bar_right"></div>
+      <div class="bg_box__unicorns"></div>
+      <div class="bg_box__big_bg"></div>
+      <div class="bg_box__bottom_bar_left"></div>
+      <div class="bg_box__bottom_bar_middle"></div>
+      <div class="bg_box__bottom_bar_right"></div>
+      <div class="bg_box__very_bottom_bar"></div>
+      <!-- background for header box - end -->
+      <section class="header__claim">
+        <h2>{{ this.claim_heading }}</h2>
+        {{ this.claim_content }}
+      </section>
+      <section class="header__sub_claim">
+        <div class="sub_claim__box">
+          <h2>{{ this.subclaim_heading }}</h2>
+          {{ this.subclaim_content }}
+        </div>
+        <button class="header__button sub_claim__button">
+          <a class="header__button_link" href={{ this.subclaim_url }}>{{ this.subclaim_address }}</a>
+        </button>
+      </section>
+    </div>
+  {{- '\n  ' -}} </header>
+{% endblock %}

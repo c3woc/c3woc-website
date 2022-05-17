@@ -2,8 +2,9 @@
 name = c3woc
 url = https://c3woc.de/
 url_style = absolute
-excluded_assets = *.scss, *.js
-included_assets = *.min.js
+excluded_assets = *.scss
+upscale = false
+output_path = temp/builds/c3woc.de/
 
 [servers.c3woc]
 name = c3woc
@@ -26,4 +27,6 @@ url_prefix = /en/
 
 [packages]
 lektor-scss = 1.4.1
-lektor-html-pretify = 1.0.5
+lektor-image-resize = 1.0.0
+lektor-image-filter = 3.0
+lektor-html-pretify = 1.0.6

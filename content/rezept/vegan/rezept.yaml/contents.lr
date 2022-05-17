@@ -1,0 +1,380 @@
+title: vegane Waffeln
+---
+_template: zutaten.yaml
+---
+recipe_name: vegane Waffeln
+---
+x_ignore_1: yes
+---
+servings:
+
+#### flow_servings ####
+serving_number: 10
+----
+serving_units: Waffeln
+#### flow_servings ####
+serving_number: 50
+----
+serving_units: Waffeln
+---
+ingredients:
+
+#### flow_ingredients ####
+ingredient: Ei-Ersatz
+----
+usda_num: 1144
+----
+amounts:
+
+##### flow_amounts #####
+amount: 4
+-----
+unit: TL
+##### flow_amounts #####
+amount: 250
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes:
+
+##### flow_notes #####
+note: Ei-Ersatz Pulver gibt es im Internet oder in ausgewählten Supermärkten
+-----
+html: 
+#### flow_ingredients ####
+ingredient: Zucker
+----
+usda_num: 19335
+----
+amounts:
+
+##### flow_amounts #####
+amount: 200
+-----
+unit: g
+##### flow_amounts #####
+amount: 1
+-----
+unit: kg
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: vegane Butter
+----
+usda_num: 4612
+----
+amounts:
+
+##### flow_amounts #####
+amount: 250
+-----
+unit: g
+##### flow_amounts #####
+amount: 1,25
+-----
+unit: kg
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: weich oder zerlassen
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Vanillezucker
+----
+usda_num: 2050
+----
+amounts:
+
+##### flow_amounts #####
+amount: 2
+-----
+unit: EL
+##### flow_amounts #####
+amount: 100
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Backpulver
+----
+usda_num: 18371
+----
+amounts:
+
+##### flow_amounts #####
+amount: 1
+-----
+unit: EL
+##### flow_amounts #####
+amount: 50
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes:
+
+##### flow_notes #####
+note:
+
+ Backpulver vergrößert das Volumen des Teigs
+-----
+html: yes
+#### flow_ingredients ####
+ingredient: Mandelmilch
+----
+usda_num: 14091
+----
+amounts:
+
+##### flow_amounts #####
+amount: 200
+-----
+unit: ml
+##### flow_amounts #####
+amount: 1
+-----
+unit: l
+----
+substitutions:
+
+##### flow_substitutions #####
+ingredient: Hafermilch
+-----
+usda_num: 100277
+-----
+amounts:
+
+###### flow_amounts ######
+amount: 200
+------
+unit: g
+###### flow_amounts ######
+amount: 1
+------
+unit: l
+-----
+processing: 
+-----
+notes: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Mehl
+----
+usda_num: 20481
+----
+amounts:
+
+##### flow_amounts #####
+amount: 400
+-----
+unit: g
+##### flow_amounts #####
+amount: 2
+-----
+unit: kg
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Club-Mate
+----
+usda_num: 
+----
+amounts:
+
+##### flow_amounts #####
+amount: 100
+-----
+unit: ml
+##### flow_amounts #####
+amount: 0,5
+-----
+unit: l
+----
+substitutions:
+
+##### flow_substitutions #####
+ingredient: Sprudel
+-----
+usda_num: 92410210
+-----
+amounts:
+
+###### flow_amounts ######
+amount: 100
+------
+unit: ml
+###### flow_amounts ######
+amount: 0,5
+------
+unit: l
+-----
+processing: 
+-----
+notes:
+
+###### flow_notes ######
+note: Alternativ zu Sprudel kann auch fast jedes andere Kohlensäurehaltige Getränk verwendet werden
+------
+html: no
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Rum
+----
+usda_num: 93504000
+----
+amounts: 
+----
+substitutions: 
+----
+processing: 
+----
+notes:
+
+##### flow_notes #####
+note: optional
+-----
+html: yes
+#### flow_ingredients ####
+ingredient: Salz
+----
+usda_num: 2047
+----
+amounts:
+
+##### flow_amounts #####
+amount: 1
+-----
+unit: TL
+##### flow_amounts #####
+amount: 2
+-----
+unit: EL
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+---
+source_authors: L3D <l3d@c3woc.de>
+---
+x_license: https://backwesen.de/c3woc/webseite/src/branch/main/LICENCE
+---
+oven:
+
+#### flow_oven ####
+amount: 210
+----
+unit: C
+---
+oven_fan: Off
+---
+oven_time: 99s
+---
+oven_type: Waffeleisen
+---
+steps:
+
+#### flow_steps ####
+step: Ei-Ersatz Pulver mit etwas flüssigkeit vermischen und schaumig rühren
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step: Zucker, Vanillezucker und Milch mit dem Ei-Ersatz gemisch verrühren.
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step: unter Rühren die häfte des Mehl dazugeben.
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step: die flüssige vegane Butter oder Magarine vorsichtig dazugeben und gut verrühren.
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step: nach und nach die restlichen Zutaten hinzugeben.
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step: Den Teig klumpenfrei rühren, bei bedarf etwas mit Mehl oder Flüssigkeit variieren, damit es ein dickflüssiger Teig wird, der sich noch in ein Waffeleisen gießen lässt.
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step: den Teig etwas ruhen lassen
+----
+haccp_type: control_point
+----
+haccp_string: Wenn der Teig nicht direkt zubereitet wird unbedingt kühlen!
+----
+notes: 
+#### flow_steps ####
+step: Waffeln im heißen Waffeleisen zubereiten
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes:
+
+##### flow_notes #####
+note: Waffeln optional zB. mit Puderzucker und Apfelmus verzieren.
+-----
+html: 
+---
+render_hygiene: yes

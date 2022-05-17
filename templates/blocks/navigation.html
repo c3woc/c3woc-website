@@ -1,0 +1,62 @@
+{%- block navigation %}
+      <nav class="header__primary_nav -logo_header">
+        <div class="primary_nav__toggle">
+          <svg viewBox="0 0 100 80" width="32" height="32">
+            <rect width="100" height="15"></rect>
+            <rect y="30" width="100" height="15"></rect>
+            <rect y="60" width="100" height="15"></rect>
+          </svg>
+          <p>menu</p>
+        </div>
+        <ul class="primary_nav__navlist">
+          {%- for title, mapping in bag("navigation").items() -%}
+            {%- if mapping.visible|default(true) -%}
+              {{- '\n          ' -}} <li class="primary_nav__navitem">
+              {{- '\n            ' -}} <a class="primary_nav__navlink
+              {%- if this._path == mapping.href -%}
+                -active
+              {%- endif -%}
+              " href="{{ mapping.href|url }}">
+              {{- '\n              ' -}}
+              {{- title -}}
+              {{- '\n            ' -}} </a>
+              {%- if mapping.list_childs -%}
+                {{- '\n            ' -}} <ul class="primary_nav__sub_navlist">
+                {%- set sub_menu = mapping['items'].items() -%}
+                {%- for sub_title, href in sub_menu -%}
+                  {%- if sub_title != "list_namespace" -%}
+                    {{- '\n              ' -}} <li class="primary_nav__sub_navitem">
+                    {{- '\n                ' -}} <a class="primary_nav__sub_navlink
+                    {%- if this._path == href -%}
+                      -active
+                    {%- endif -%}" href="{{ href }}">
+                    {{- '\n                  ' -}}
+                    {{- sub_title -}}
+                    {{- '\n                ' -}} </a>
+                    {{- '\n              ' -}} </li>
+                  {%- else -%}
+                    {%- set children = site.get(href).children -%}
+                    {%- for child in children -%}
+                      {%- if loop.index <= 8 -%}
+                        {{- '\n              ' -}} <li class="primary_nav__sub_navitem">
+                        {{- '\n                ' -}} <a class="primary_nav__sub_navlink
+                        {%- if this._path + '/' == child.url_path -%}
+                          -active
+                        {%- endif -%}
+                        " href="{{ child.url_path }}">
+                        {{- '\n                ' -}}
+                        {{- child.title -}}
+                        {{- '\n              ' -}} </a>
+                        {{- '\n            ' -}} </li>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {{- '\n            ' -}} </ul>
+              {%- endif -%}
+              {{- '\n          ' -}} </li>
+            {%- endif -%}
+          {%- endfor %}
+        </ul>
+      </nav>
+{%- endblock -%}

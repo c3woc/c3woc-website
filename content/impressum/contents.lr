@@ -2,36 +2,42 @@ _model: page
 ---
 title: Impressum
 ---
-slogan: Die Wege der Waffel sind unergründlich. Aber dieser hier führt zu uns.
----
-teaser: Das Impressum des C3 Waffel Operation Center. Hier findet ihr die zentralen Kontaktmöglichkeiten um mit uns kommunizieren zu können.
----
-content:
+body:
 
- Anschrift:
----------------
-```
-Toolbox Bodensee e.V.
-z. Hd. C3WOC
-Bergheimer Str. 6-12
-88677 Markdorf
-```
-<i>Zurzeit kommt Post hier nicht sehr zuverlässig an. Irgend jemand hat sich ausgedacht das Vereinsleben durch eine Pandemie einzuschränken :P</i>
+Diese Webseite wird gehostet, betrieben und gestaltet vom C3WOC. Den führenden Experten im bereich "Waffeln" in der Community des [Chaos Computer Club](https://de.wikipedia.org/wiki/Chaos_Computer_Club).
 
- Mail:
-----
+Da das deutsch Telemediengesetzt jedoch keine Arbeitsgruppen sondern natürliche Personen im Impressum haben möchte, hier die rechtlich notwendigen Daten.
+
 ```
-waffel@c3woc.de
+Lilian Roller
+Marienstraße 9
+88045 Friedirchshafen
+```
+## Kontakt:
+```
+mail: waffel <at> c3woc.de
+phone: +49 221 59619 5962
+VoIP: sip:5962@hg.eventphone.de
+IRC: ircs://irc.hackint.org/#waffel
 ```
 
- Streitschlichtung
-----------------
-Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Lass uns doch lieber zusammen eine Waffel essen und darüber reden!
+Wir bitten Sie, im Falle einer Kontaktaufnahme immer auch eine Kontaktaufnahme per E-Mail zu unternehmen.
 
- Weitere online Präsenzen
----------------------
-Das C3WOC gibt es u.a. auch im Cyberspace:
 
+## Urheberrechtliche Hinweise zur Webseite:
+Sofern nicht anders angegeben, stehen alle Inhalte dieser Webseite unter dieser [MIT Lizenz](https://backwesen.de/c3woc/webseite/src/branch/main/LICENCE). Die Lizenz besagt in etwa, das die Inhalte dieser Seite zwar verwendet und auch weiter verbreitet werden dürfen, aber es muss dabei stehts der Lizenztext angegeben sein und der folgende Hinweis auf die Urheber muss mit dabei stehen:
+```
+MIT License
+Copyright (c) 2019 L3D <l3d@c3woc.de>
+Copyright (c) 2019 C3 Waffle Operation Center <waffel@c3woc.de>
+```
+
+## Information gemäß § 36 VSBG
+
+Gemäß § 36 VSBG (Verbraucherstreitbeilegungsgesetz – Gesetz über die alternative Streitbeilegung in Verbrauchersachen) erklären wir als Betreiber dieser Website, das wir weder bereit, motiviert noch verpflichtet sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Gerne können wir aber versuchen, bei einem Getränk mal über dein anliegen reden.
+
+## Für wen gilt dieses Impressum
+Dieses Impressum gilt selbstverständlich für diese Webseite. Aber auch für Beiträge, die vom C3WOC im Internet erstellt wurden. Dies geschieht zum Beispiel auf unseren social Media Kanälen:
 + Mastodon: [chaos.social/@c3woc](https://chaos.social/@c3woc)
 + Twitter: [twitter.com/@c3woc](https://twitter.com/@c3woc)
 + YouTube: [youtube.com/c3woc](https://youtube.com/c3woc)
@@ -41,6 +47,6 @@ Das C3WOC gibt es u.a. auch im Cyberspace:
 + Github: [github.com/c3woc](https://github.com/c3woc)
 + Gitea: [backwesen.de/c3woc](https://backwesen.de/c3woc)
 
-Und gelegentlich an manch anderen Orten bei denen es nach Waffeln duftet!
-
-Dieses Impressum gilt auch für unsere weiteren Internet-Präsenzen auf Social Media Plattformen und im Cyberspace.
+Dieses Impressum gilt aber auch für ausgewählt Seiten wie [backwesen.de](https://backwesen.de), [podcast.c3woc.de](https://podcast.c3woc.de) oder [winkekatze.tv](https://winkekatze.tv).
+---
+meta_description: Impressum des C3 Waffel Operation Center. Wir sind u.a. per Mail erreichbar unter waffel <at> c3woc.de

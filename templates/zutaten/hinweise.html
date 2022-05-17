@@ -1,0 +1,42 @@
+{#-
+  Hinweise zum Backen...
+-#}
+{%- if child.oven is defined and child.oven != "" and child.oven.blocks or
+  child.oven_type is defined and child.oven_type != "" or
+  child.oven_time is defined and child.oven_time != "" -%}
+  {{- '\n      ' -}} <div class="content__box">
+  {{- '\n        ' -}} <div class="content__inner_box">
+  {{- '\n          ' -}} <h2>Backhinweise</h2>
+  {{- '\n          ' -}} <ul>
+  {%- if child.oven is defined and child.oven != "" and child.oven.blocks is defined and child.oven.blocks != "" -%}
+    {% if child.oven.blocks is defined and child.oven.blocks != [] -%}
+      {%- for ovn in child.oven.blocks -%}
+        {%- if ovn.amount is defined and ovn.amount != "" -%}
+          {{- '\n            ' -}} <li>
+          {{-  '\n              ' -}} <span>Ofentemperatur: {{ ovn.amount }}
+          {%- if ovn.unit | default('C') == 'C' -%}
+            {{- ' °C' -}}
+          {%- else -%}
+            {{- ' ' -}}
+            {{- ovn.unit -}}
+          {%- endif -%}
+          </span>
+          {{- '\n            ' -}} </li>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if child.oven_type is defined and child.oven_type != "" -%}
+    {{- '\n            ' -}} <li>
+    {{- '\n              ' -}} <span>Ofentype: {{ child.oven_type }}</span>
+    {{- '\n            ' -}} </li>
+  {%- endif -%}
+  {%- if child.oven_time is defined and child.oven_time != "" -%}
+    {{- '\n            ' -}} <li>
+    {{- '\n              ' -}} <span>Backzeit: {{ child.oven_time }}</span>
+    {{- '\n            ' -}} </li>
+  {%- endif -%}
+  {{- '\n          ' -}} </ul>
+  {{- '\n        ' -}} </div>
+  {{- '\n      ' -}} </div>
+{%- endif -%}

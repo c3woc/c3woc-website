@@ -1,0 +1,238 @@
+_template: zutaten.yaml
+---
+oven_fan: Off
+---
+oven_type: Waffeleisen
+---
+recipe_name: Hafer-Brühstück
+---
+render_hygiene: yes
+---
+title: Hafer-Brühstück
+---
+x_ignore_1: yes
+---
+x_license: https://backwesen.de/c3woc/webseite/src/branch/main/LICENCE
+---
+ingredients:
+
+#### flow_ingredients ####
+ingredient: Haferflocken
+----
+usda_num: 43495
+----
+amounts:
+
+##### flow_amounts #####
+amount: 80
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient:
+
+ Erva-Mate Chimarrão
+----
+usda_num: 819162004609
+----
+amounts:
+
+##### flow_amounts #####
+amount: 40
+-----
+unit: g
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: fein gemahlener, abgesiebter Mate-Tee
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Wasser
+----
+usda_num: 14555
+----
+amounts:
+
+##### flow_amounts #####
+amount: 200
+-----
+unit: ml
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: kochend
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Sauerteig
+----
+usda_num: 701990000468
+----
+amounts:
+
+##### flow_amounts #####
+amount: 100
+-----
+unit: ml
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Pflanzenöl
+----
+usda_num: 4669
+----
+amounts:
+
+##### flow_amounts #####
+amount: 150
+-----
+unit: ml
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: Raps, Sonnenblume, …
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Mehl
+----
+usda_num: 20481
+----
+amounts:
+
+##### flow_amounts #####
+amount: 270
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Zucker
+----
+usda_num: 19335
+----
+amounts:
+
+##### flow_amounts #####
+amount: 150
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Salz
+----
+usda_num: 2047
+----
+amounts:
+
+##### flow_amounts #####
+amount: 1
+-----
+unit: pr
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Hefewürfel
+----
+usda_num: 
+----
+amounts:
+
+##### flow_amounts #####
+amount: ¼
+-----
+unit: Stück
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+---
+steps:
+
+#### flow_steps ####
+step:
+
+Vorbereitung „Brühstück“: Wir vermengen die Haferflocken mit dem Mate-Pulver, und übergießen das mit dem kochenden Wasser. Abkühlen lassen. Die gequollenen, gelierten Haferkörner verleihen dem Teig eine gute Zähigkeit und machen die Waffeln locker und zart. 
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step:
+
+Teig: Wenn der tiefgrüne „radioaktive Haferschleim“ Raumtemperatur hat, rühren wir ihn glatt und mischen Sauerteig, Öl, Zucker, Salz hinein. Dann die Hefe zugeben. 
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step:
+
+ Anschließend das Mehl in mehreren Schritten einrühren. Falls nötig immer wieder Wasser zugeben, um am Ende die perfekte Waffelteig-Konsistenz zu erhalten. Mindestens eine halbe Stunde gehen lassen, dann Teigkonsistenz noch mal überprüfen. 
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step:
+
+ Abschmecken zB mit Zimt und abgeriebener Zitronenschale. (Vanille passt nicht so gut.) 
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+---
+servings:
+
+#### flow_servings ####
+serving_number: 10
+----
+serving_units: Waffeln

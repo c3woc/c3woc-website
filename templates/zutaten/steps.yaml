@@ -1,0 +1,30 @@
+{#-
+  Recipe Steps for loop
+-#}
+{%- if this.steps is defined and this.steps.blocks is defined and this.steps != "" -%}
+  {%- if this.steps.blocks is defined and this.steps.blocks != "" and this.steps.blocks != [] -%}
+    {{- '\n\nsteps:' -}}
+    {%- for stp in this.steps.blocks -%}
+      {%- if stp.step is defined and stp.step != "" -%}
+        {{- '\n  - step: ' -}} "{{- stp.step -}}"
+        {%- if stp.haccp_type is defined and stp.haccp_type != "" and stp.haccp_string is defined and stp.haccp_string != ""  -%}
+          {{- '\n    haccp:' -}}
+          {{- '\n      ' -}} {{- stp.haccp_type|lower -}}: "{{- stp.haccp_string -}}"
+        {%- endif %}
+        {%- if stp.notes is defined and stp.notes != "" and stp.notes.blocks is defined %}
+          {%- for nde in stp.notes.blocks %}
+            {%- if loop.index == 1 -%}
+              {{- '\n    notes:' -}}
+            {%- endif -%}
+            {{- '\n      - ' -}} "{{ nde.note }}"
+          {%- endfor %}
+        {%- endif %}
+      {%- endif %}
+    {%- endfor -%}
+    {{- '\n' -}}
+  {%- else -%}
+    {{- '\nsteps: []' -}}
+  {%- endif -%}
+{%- else -%}
+  {{- '\n\nsteps: []' -}}
+{%- endif -%}

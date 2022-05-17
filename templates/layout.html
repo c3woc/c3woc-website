@@ -1,154 +1,223 @@
-{%- from "macros/translator.j2" import translator -%}
-<!DOCTYPE html>
+<!doctype html>
 <html
-  {%- if alt %} lang="{{ alt }}"
-  {%- endif %}>
-  <head>
-    <title>
-      {%- block title -%}
-        Startseite
-      {%- endblock -%}
-    </title>
-    {%- block expand_description %}
-      <meta name="description" content="{{- translator('description', 'translate', this.alt) }}" />
-    {%- endblock %}
-    {%- block expand_header %}
-    {%- endblock %}
-    {% include "partials/head.html" -%}
+{%- if alt %} lang="{{ alt }}"
+{%- endif %}>
+<head>
+  <meta charset="utf-8" />
+{%- if this.path == '/' -%}
+  {{- '\n  ' -}}  <link rel="preload" as="image" href="/waffle_apfelmus-medium.webp"/>
+  {{- '\n  ' -}} <link rel="preload" as="image" href="/sweet_waffle-medium.webp"/>
+{%- endif -%}
+{{- '\n' -}}
+<!--                               __         _____   _
+                                  /  \__..-"""  ;-.",'/
+                                 ( /  \_         `.' / `.
+                                 | |    )  `;.  ,'  / \  \
+                                 ( '.  /___/_j_    / ) |  )
+                                 '\     /   __\``::'/__'  |
+                                  |\_  (   / .-| |-.|  `-,|
+                                 .| (   \ ( (W♥| \♥)j     '
+           ..-"""-,             .|'  ',  \_\_`_|  ``-.
+        .-` ..::.  `,           |,   ._:7        \__/
+      ,'  .:::'':::. \         |:'.   \    ______.-'
+    .'  .::'      ':: :._______| \ \   `"7  /
+   /   ./:'  ,.-'''>-'         '  `.`.._/  (
+  -   :/:'  |     /  ╱▔╲╱▔╲   `.  `._/    \
+  |  :::'  .'    |   ▏WAF ▕     `-_./      |
+ .'  |||  .'     |   ╲ FEL╱                |
+ |   |||  |      |    ╲  ╱                 |
+ |   ':|| '.    / \    ╲╱  /            \__/
+ | .  |||  |.-"'   |      /-,_______\       \
+ |/|  |||  |     _/      /     |    |\       \
+ ` )  '::. '.   /       /     |     | `-.,    \
+   \   |||  |   |      |      |     |   /      )
+    `. |||  | _/|      |      |      | (       |
+      `::||  |  |      |      |      |  \      |
+         `-._|  |       \     |       \  `.___/
+                 \_______)     \_______)  C3WOC
+
+ EDIT THIS PAGE AT
+ https://github.com/c3woc/c3woc-website/edit/main/content{{ '.' | url(external=false) }}contents.lr
+
+                 -->
 
 
-  </head>
-
-  <body class="
-    {%- if this._path == '/' -%}
-      landing 
-    {%- endif %} is-preload">
-    <div id="page-wrapper">
-      <!-- Header -->
-      <header id="header">
-
-{#-
- # Navigation Bar
- #}
-        <nav id="nav">
-          <ul>
-            <li{% if this._path == '/' %} class="active"{% endif %}>
-              <a href="{{ '/'|url }}">
-                {{- translator('home', 'navigation', this.alt) -}}
-              </a>
-            </li>
-{%- for title, href in bag('nav-bar', "NavBar").items() %}
-            <li{% if this.is_child_of(href) %} class="active"{% endif %}>
-              <a href="{{ href|url }}">
-                {{- translator(title, 'navigation', this.alt) -}}
-              </a>
-              <ul>
-  {%- if bag('nav-bar', 'list', title) %}
-    {%- set root = site.get( bag('nav-bar', 'list', title), alt=this.alt) %}
-    {%- for child in root.children recursive %}
-      {%- if loop.index <= 7 %}
-                <li{% if this._path == child._path %} class="active"{% endif %}>
-                  <a href="{{ child|url }}">{{ child.shorttitle if child.shorttitle else child.title  }}</a>
-                </li>
-      {%- endif %}
-    {%- endfor %}
-  {%- endif %}
-  {%- if  bag('nav-bar', title) %}
-    {%- for nav_title, nav_url in bag('nav-bar', title).items() %}
-                <li>
-                  <a href={{ nav_url if 'http' in nav_url else nav_url|url }}
-      {%- if bag('nav-bar', 'button', nav_title) %} class="button nav"
-      {%- endif -%}
-                  >
-                    {{- translator(nav_title, 'navigation', this.alt) -}}
-                  </a>
-                </li>
-    {%- endfor %}
-  {%- endif %}
-              </ul>
-            </li>
-{%- endfor %}
 
 {#-
-  # the language selection is currently not included into the template above, because we did not find a proper solution to integrate them yet
-  #}
-             <li class="last">
-               <a href="{{ '.'|url(alt=translator('default_path', 'navigation', this.alt, 'en')) }}">
-               {{- translator('sprache', 'navigation', this.alt) -}}
-               </a>
-               <ul class="last">
-                 <li>
-                   <a href="{{ '.'|url(alt='') }}">
-                     {{- translator('German', 'navigation', this.alt) -}}
-                   </a>
-                 </li>
-{#
-                 <li>
-                   <a href="{{ '.'|url(alt='sxu') }}">
-                     {{- translator('Saechsisch', 'navigation', this.alt) }}
-                     <i>(
-                       {{- translator('falls', 'navigation', this.alt) -}}
-                     )</i>
-                   </a>
-                 </li>
+
+                Namensschema der CSS-Klassen nach BEM (Block Element Modifier,
+                http://getbem.com/naming/). Mit der Erweiterung, dass Modifier einzeln
+                mit Bindestrich angegeben werden. Also:
+
+                <li class="navlist__navitem -active">
+                        statt
+                <li class="navlist__navitem navlist__navitem--active">
+
+                Das ist weniger redundant und übersichtlicher. Der passende CSS-Selektor
+                dazu ist:
+
+                .navlist__navitem.-active
+
 #}
-                 <li>
-                   <a href="{{ '.'|url(alt='en') }}">
-                     {{- translator('Englisch', 'navigation', this.alt) }}
-                     <i>(
-                       {{- translator('falls', 'navigation', this.alt) -}}
-                     )</i>
-                   </a>
-                 </li>
-               </ul>
-             </li>
-           </ul>
-         </nav>
-       </header>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>{% block title %}C3 Waffel Operation Center{% endblock %} | C3WOC</title>
+  <meta name="description" content="{% block meta_description %}vielfältige Waffelrezepte. knusprige Ideen. kreativer Waffelbelag. Das C3WOC sind die führenden Experten für Waffeln in der Chaos Community{% endblock %}">
+  {#- OG Values
+  https://ogp.me/ #}
+  <meta property="og:title" content="{{ self.title() }}">
+  <meta property="og:description" content="{{ self.meta_description() }}">
+  <meta property="og:url" content="{{ this | url(external=true) }}">
+  {% if '/images/waffel.jpg'|asseturl is defined -%}
+    <meta property="og:image" content="{% block meta_image %}{{ '/images/waffel.jpg'|asseturl }}{% endblock %}">
+  {%- endif -%}
+  {#- JSON-LD SEO Optimisation Stuff... -#}
+  {%- block json_ld %}
+  <script type='application/ld+json'>
+    {
+      "@context": "http://www.schema.org",
+      "name": "C3WOC",
+      "url": "https://c3woc.de",
+      "logo": "https://c3woc.de/images/logo.svg",
+      "description": "vielfältige Waffelrezepte. knusprige Ideen. kreativer Waffelbelag. Das C3WOC sind die führenden Experten für Waffeln in der Chaos Community."
+    }
+  </script>
+  {%- endblock %}
 
+  {%- if '/css/reset.css'|asseturl is defined -%}
+    {{- '\n  ' -}} <link rel="stylesheet" href="{{ '/css/reset.css'|asseturl }}">
+  {%- endif -%}
+  {%- if '/css/fonts.css'|asseturl is defined -%}
+    {{- '\n  ' -}} <link rel="stylesheet" href="{{ '/css/fonts.css'|asseturl }}">
+  {%- endif -%}
+  {%- if '/css/main.min.css'|asseturl is defined -%}
+    {{- '\n  ' -}} <link rel="stylesheet" href="{{ '/css/main.min.css'|asseturl }}">
+  {%- endif -%}
+  {%- if '/images/icons/manifest.json'|asseturl is defined -%}
+    {{- '\n  ' -}} <link rel="manifest" href="{{ '/images/icons/manifest.json'|asseturl }}">
+  {%- endif -%}
+  {%- if '/images/icons/apple-touch-icon.png'|asseturl is defined -%}
+    {{- '\n  ' -}} <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/icons/apple-touch-icon.png'|asseturl }}">
+  {%- endif -%}
+  {%- if '/images/icons/favicon-32x32.png'|asseturl is defined -%}
+    {{- '\n  ' -}} <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/icons/favicon-32x32.png'|asseturl }}">
+  {%- endif -%}
+  {%- if '/images/icons/favicon-16x16.png'|asseturl is defined -%}
+    {{- '\n  ' -}} <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/icons/favicon-16x16.png'|asseturl }}">
+  {%- endif -%}
+  {%- if '/images/icons/site.webmanifest'|asseturl is defined -%}
+    {{- '\n  ' -}} <link rel="manifest" href="{{ '/images/icons/site.webmanifest'|asseturl }}">
+  {%- endif -%}
+  {%- if '/images/icons/safari-pinned-tab.svg'|asseturl is defined -%}
+    {{- '\n  ' -}} <link rel="mask-icon" href="{{ '/images/icons/safari-pinned-tab.svg'|asseturl }}" color="#ffda1d">
+  {%- endif -%}
+  {%- if '/images/icons/favicon.ico'|asseturl is defined -%}
+    {{- '\n  ' -}} <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico'|asseturl }}">
+  {%- endif -%}
+  {% if '/images/icons/browserconfig.xml'|asseturl is defined -%}
+    {{- '\n  ' -}} <meta name="msapplication-config" content="{{ '/images/icons/browserconfig.xml'|asseturl }}">
+  {%- endif -%}
+  {{- '\n  ' -}} <meta name="msapplication-TileColor" content="#ffac33">
+  {{- '\n  ' -}} <meta name="theme-color" content="#631409">
 
-
-      <!-- Main -->
-      {%- block body %}
-      {%- endblock %}
-       <!-- Footer -->
-       <footer id="footer">
-         <ul class="icons">{%
-         for label, icon, href in [
-           ['Mastodon', 'fab fa-mastodon', "https://chaos.social/@c3woc"],
-           ['Twitter', 'fab fa-twitter', "https://twitter.com/c3woc"],
-           ['Webseite', 'fab fa-github', "https://github.com/c3woc/c3woc-website"],
-           ['Gitea', 'fab fa-gitlab', "https://backwesen.de/c3woc/"],
-           ['Mail', 'fas fa-envelope', "mailto:waffeln@c3woc.de"],
-           ['IRC Chat', 'fas fa-hashtag', "ircs://irc.hackint.org/#waffel"],
-           ['Rezept-Feed', 'fas fa-receipt', "https://c3woc.de/feed_rezepte.xml"],
-           ['News', 'fas fa-rss', "https://c3woc.de/feed_blog.xml"],
-           ['Tourdaten', 'fas fa-user-plus', "https://c3woc.de/mitmachen"]
-         ] %}
-           <li><a href="{{ href }}" title="{{ label }}" target="_blank" rel="noopener" class="icon {{ icon }}"></a></li>{%
-         endfor %}
-        </ul>
-        <ul class="copyright">
-          <li>&copy; Copyright by C3 Waffel Operation Center.</li>
-          <li>&copy; <a href="https://github.com/c3woc/c3woc-website/blob/master/LICENCE">MIT License</a></li>
-          <li><a href="{{ '/impressum/'|url }}">{% 
-                  if bag('navigation', this.alt, 'Impressum') %}{{ bag('navigation', this.alt, 'Impressum') }}{%
-                  else %}Impressum{% endif %}</a></li>
-          <li><a href="{{ '/datenschutz/'|url }}">{% 
-                  if bag('navigation', this.alt, 'Datenschutz') %}{{ bag('navigation', this.alt, 'Datenschutz') }}{% 
-                  else %}Datenschutzerklärung{% endif %}</a></li>
-          <li>Design inspired by <a href="http://html5up.net">HTML5 UP</a> </li>
-          <!-- CMS: Lektor | Angepasst durch L3D -->
-          <!-- advertising: Grab your waffle from C3WOC! C3WOC ->Great waffles for everypony. https://c3woc.de/ -->
-        </ul>
-      </footer>
+</head>
+<body>
+  {%- block header -%}
+    {{- '\n  ' -}} <header>
+    {{- '\n    ' -}} <!-- Hello HEADER world -->
+    {{- '\n  ' -}} </header>
+  {%- endblock -%}
+  {{- '  ' -}}
+  <main>
+<!--            __  __ _
+               / _|/ _| |
+__      ____ _| |_| |_| | ___
+\ \ /\ / / _` |  _|  _| |/ _ \
+ \ V  V / (_| | | | | | |  __/
+  \_/\_/ \__,_|_| |_| |_|\___| -->
+   <!-- WAFFLES ARE BEAUTIFUL -->
+    {%- block body -%}
+      <!-- Hello World -->
+    {%- endblock %}
+  </main>
+  <footer>
+    <div class="footer__top_bar_left"></div>
+    <div class="footer__top_bar_mid"></div>
+    <div class="footer__top_bar_right"></div>
+    <div class="footer__wrapper">
+      <ul class="footer__nav">
+        <li class="footer__navitem -first">
+          <p>Waffeln im Internet:<br>
+            <a rel="me" href="https://chaos.social/@C3WOC" title="Mastodon">
+              {% if '/images/icons/social/mastodon.svg'|asseturl is defined -%}
+                <img alt="Mastodon" class="footer__social_logo" src="{{ '/images/icons/social/mastodon.svg'|asseturl }}" width="142"/>
+              {%- else -%}
+                Mastodon
+              {%- endif %}
+            </a>
+            {%- for ziel, name, icon in [
+              ['https://twitter.com/c3woc/', 'Twitter', '/images/icons/social/twitter.svg'],
+              ['https://waffel.reddit.com/', 'Reddit', '/images/icons/social/reddit.svg'],
+              ['https://t.me/c3woc', 'Telegram', '/images/icons/social/telegram.svg'],
+              ['https://webirc.hackint.org/#irc://irc.hackint.org/waffel', 'IRC', '/images/icons/social/hackint.svg'],
+              ['https://podcast.c3woc.de/', 'Das heiße Eisen - Der Waffel-Podcast', '/images/icons/social/podcast.svg'],
+              ['https://podcast.c3woc.de/podcast-he.xml', 'Podcast Feed', '/images/icons/social/feed.svg'],
+              ['https://backwesen.de/c3woc/', 'Source Code', '/images/icons/social/gitea.svg'],
+              ['https://github.com/c3woc/', 'Github', '/images/icons/social/github.svg']
+            ] -%}
+              {{- '\n' }}            <a href="{{- ziel -}}" title="{{- name -}}">
+              {%- if icon|asseturl is defined -%}
+                {{- '\n' }}              <img alt="{{- name -}}" class="footer__social_logo" src="{{- icon|asseturl -}}" width="142"/>
+              {%- else -%}
+                {{- name -}}
+              {%- endif %}
+              {{- '\n' }}            </a>
+            {%- endfor %}
+          </p>
+          <a class="footer__navlink" href="{{ '/impressum'|url }}">Impressum</a>
+          |
+          <a class="footer__navlink" href="{{ '/datenschutz'|url }}">Datenschutz</a>
+        </li>
+        <li class="footer__navitem -second">
+        </li>
+        <li class="footer__navitem -third">
+          <img class="footer__wtf_logo" src="/images/logo.svg" alt="C3WOC - Logo" height="50">
+          <br/>
+          © {{ none|datetimeformat('YYYY', 'UTC', locale='de_DE') }} C3 Waffel Operation Center
+          <br/>
+          Diese Webseite steht unter der <a class="footer__navlink" href="https://backwesen.de/c3woc/webseite/src/branch/main/LICENCE">MIT License</a>.
+        </li>
+      </ul>
     </div>
-
-    <!-- Scripts -->
-    <script src="{{ '/js/jquery.scrolly.min.js'|asseturl }}"></script>
-    <script src="{{ '/js/jquery.scrollex.min.js'|asseturl }}"></script>
-    <script src="{{ '/js/skel.min.js'|asseturl }}"></script>
-    <script src="{{ '/js/util.js'|asseturl }}"></script>
-    <script src="{{ '/js/main.js'|asseturl }}"></script>
-  </body>
+  </footer>
+  {%- if '/js/nav_toggle.js'|asseturl is defined -%}
+    {{- '\n  ' -}} <script type="text/javascript" src="{{ '/js/nav_toggle.js'|asseturl }}"></script>
+  {%- endif %}
+</body>
 </html>
+<!--                               __         _____   _
+                                  /  \__..-"""  ;-.",'/
+                                 ( /  \_         `.' / `.
+                                 | |    )  `;.  ,'  / \  \
+                                 ( '.  /___/_j_    / ) |  )
+                                 '\     /   __\``::'/__'  |
+                                  |\_  (   / .-| |-.|  `-,|
+                                 .| (   \ ( (W♥| \♥)j     '
+           ..-"""-,             .|'  ',  \_\_`_|  ``-.
+        .-` ..::.  `,           |,   ._:7        \__/
+      ,'  .:::'':::. \         |:'.   \    ______.-'
+    .'  .::'      ':: :._______| \ \   `"7  /
+   /   ./:'  ,.-'''>-'         '  `.`.._/  (
+  -   :/:'  |     /  ╱▔╲╱▔╲   `.  `._/    \
+  |  :::'  .'    |   ▏WAF ▕     `-_./      |
+ .'  |||  .'     |   ╲ FEL╱                |
+ |   |||  |      |    ╲  ╱                 |
+ |   ':|| '.    / \    ╲╱  /            \__/
+ | .  |||  |.-"'   |      /-,_______\       \
+ |/|  |||  |     _/      /     |    |\       \
+ ` )  '::. '.   /       /     |     | `-.,    \
+   \   |||  |   |      |      |     |   /      )
+    `. |||  | _/|      |      |      | (       |
+      `::||  |  |      |      |      |  \      |
+         `-._|  |       \     |       \  `.___/
+                 \_______)     \_______)  C3WOC -->

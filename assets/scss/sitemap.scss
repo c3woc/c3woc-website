@@ -1,0 +1,25 @@
+/* this custom SCSS stylesheet
+   is under the MIT license
+   MIT (C) 2022 by L3D <l3d@c3woc.de>
+
+   this stylesheet has the purpose
+   to make the sitemap XML Feed more
+   attractive and graphically enhance it.
+*/
+url {
+  display:block;
+  border: 1px solid gray;
+  margin:0.5em;
+  padding:0.5em;
+  background-color:whitesmoke;
+  list-style: none;
+  color: black;
+}
+urlset:before {
+  content: "Eine Sitemap ist eine Datei, in der Informationen zu dieser Seite stehen. Zum Beispiel welche Unterseiten es hier alles gibt.";
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: block;
+  padding-left: 0.5em;
+  font-size: 16pt;
+}

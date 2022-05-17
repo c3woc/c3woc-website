@@ -1,0 +1,87 @@
+{#-
+  Recepie incredient collection / for loop
+-#}
+
+{%- if this.ingredients is defined and this.ingredients != "" %}
+  {{- '\ningredients:' -}}
+  {%- for ing in this.ingredients.blocks | default('[]') %}
+    {%- if ing.ingredient is defined and ing.ingredient != "" -%}
+      {{- '\n  - ' -}} "{{- ing.ingredient | lower -}}":
+      {%- if ing.amounts is defined and ing.amounts != "" and ing.amounts.blocks is defined and ing.amounts.blocks != "" -%}
+        {{- '\n      amounts:' -}}
+        {%- if ing.amounts.blocks == [] -%}
+          {{- ' []' -}}
+        {%- else -%}
+          {%- for amt in ing.amounts.blocks -%}
+            {{- '\n        - amount: ' -}} "{{ amt.amount }}"
+            {{- '\n          unit: ' -}} "{{ amt.unit | default('each') }}"
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if ing.processing is defined and ing.processing != "" and ing.processing.blocks is defined and ing.processing.blocks != "" -%}
+        {%- for prc in ing.processing.blocks -%}
+          {%- if loop.index == 1 -%}
+            {{- '\n      processing:' -}}
+          {%- endif -%}
+          {{- '\n        - ' -}} "{{ prc.process }}"
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if ing.notes is defined and ing.notes != "" and ing.notes.blocks is defined and ing.notes.blocks != "" -%}
+        {%- for nde in ing.notes.blocks -%}
+          {%- if loop.index == 1 -%}
+            {{- '\n      notes:' -}}
+          {%- endif -%}
+          {{- '\n        - ' -}} "{{ nde.note }}"
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if ing.usda_num is defined and ing.usda_num != "" -%}
+        {{- '\n      usda_num: ' -}} {{- ing.usda_num -}}
+      {%- endif -%}
+      {%- if ing.substitutions is defined and ing.substitutions != "" -%}
+        {%- if ing.substitutions.blocks is defined and ing.substitutions.blocks != "" -%}
+          {%- if ing.substitutions.blocks != [] -%}
+            {%- for sst in ing.substitutions.blocks -%}
+              {%- if loop.index == 1 -%}
+                {{- '\n      substitutions:' -}}
+              {%- endif -%}
+              {{- '\n        - ' -}} "{{- sst.ingredient | lower -}}"
+              {%- if sst.amounts is defined and sst.amounts != "" and sst.amounts.blocks is defined and sst.amounts.blocks != "" -%}
+                {{- '\n          amounts:' -}}
+                {%- if sst.amounts.blocks == [] -%}
+                  {{- ' []' -}}
+                {%- else -%}
+                  {%- for amt2 in sst.amounts.blocks -%}
+                    {{- '\n            - amount:' -}} "{{ amt2.amount }}"
+                    {{- '\n              unit:' -}} "{{ amt2.unit | default('each') }}"
+                  {%- endfor -%}
+                {%- endif -%}
+              {%- endif -%}
+              {%- if sst.usda_num is defined and sst.usda_num != "" -%}
+                {{- '\n          usda_num: ' -}} {{- sst.usda_num -}}
+              {%- endif -%}
+              {%- if sst.processing is defined and sst.processing != "" and sst.processing.blocks is defined and sst.processing.blocks != "" -%}
+                {%- for prc2 in sst.processing.blocks -%}
+                  {%- if loop.index == 1 -%}
+                    {{- '\n          processing:' -}}
+                  {%- endif -%}
+                  {{- '\n          - ' -}} "{{ prc2.process }}"
+                {%- endfor -%}
+              {%- endif -%}
+              {%- if sst.notes is defined and sst.notes != "" and sst.notes.blocks is defined and sst.notes.blocks != "" -%}
+                {%- for nde2 in sst.notes.blocks -%}
+                  {%- if loop.index == 1 -%}
+                    {{- '\n          notes:' -}}
+                  {%- endif -%}
+                  {{- '\n            - ' -}} "{{ nde2.note }}"
+                {%- endfor -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {{- '\ningredients: []' -}}
+{%- endif -%}
+

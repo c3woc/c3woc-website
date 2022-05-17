@@ -1,0 +1,77 @@
+{% macro render_blog_post(post, from_index=false, section_class='-odd') %}
+    <section class="content {{ section_class }}">
+        <div class="content__box -heading">
+            <div class="content__inner_box">
+                {% if from_index %}
+                    <h2><a class="content__blog_link {{ section_class }}" href="{{ post|url }}">{{ post.title }}</a></h2>
+                {% else %}
+                    <h2>{{ post.title }}</h2>
+                {% endif %}
+                <hr class="{{ section_class }}">
+                <p class="content__meta">
+                    <i>geschrieben von {{ post.authors }} am {{ post.pub_date }}</i>
+                </p>
+            </div>
+        </div>
+        <div class="content__half_box">
+            <div class="content__inner_half_box">
+              {{ post.podcast_teaser }}
+              {% if not from_index %}
+                {{ post.podcast_shownotes }}
+              {% endif %}
+            </div>
+
+            {% if from_index -%}
+              <div class="content__inner_half_box">
+                <div class="pod_ctrl_box">
+                  <audio controls class="pod_ctrl_box__audio_controls">
+                    {% if post.podcastogg -%}
+                      <source src="{{ post|url(alt='de')}}{{ post.podcastogg }}" type="audio/ogg">
+                    {%- endif %}
+                    {% if post.podcastmp3 -%}
+                      <source src="{{  post|url(alt='de') }}{{ post.podcastmp3 }}" type="audio/mpeg">
+                    {%- endif %}
+                      Your browser does not support the audio element.
+                  </audio>
+                  <div class="pod_ctrl_box__button">
+                    <a class="pod_ctrl_box__button_link" href="{{ post|url }}" >Podcastfolge durchst&ouml;bern</a>
+                  </div>
+                </div>
+            {% else -%}
+              <div class="content__inner_half_box">
+                <audio controls>
+                  {% if post.podcastogg -%}
+                    <source src="{{ post.podcastogg|url(alt='de') }}" type="audio/ogg">
+                  {%- endif %}
+                  {% if post.podcastmp3 %}
+                    <source src="{{ post.podcastmp3|url(alt='de') }}" type="audio/mpeg">
+                  {%- endif %}
+                    Your browser does not support the audio element.
+                </audio>
+                <br/>
+                {% if post.podcastmp3 -%}
+                  <a class="" href="{{ post.podcastmp3|url(alt='de')  }}" download>
+                    {%- if post.podcasttitle -%}
+                      {{ post.podcasttitle }}
+                    {%- else -%}
+                      Download Folge
+                    {%- endif -%}
+                    {{ ' als MP3' }}
+                  </a>
+                {% endif %}
+                {% if post.podcastogg -%}
+                  <a class="" href="{{ post.podcastogg|url(alt='de')  }}" download>
+                    {%- if post.podcasttitle -%}
+                      {{ post.podcasttitle }}
+                    {%- else -%}
+                      Download Folge
+                    {%- endif -%}
+                    {{ ' als OGG' }}
+                  </a>
+                {% endif %}<br/>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+    </section>
+{% endmacro %}

@@ -1,0 +1,132 @@
+{#-
+License: MIT
+(C)2020 by L3D <l3d@c3woc.de>
+Source: https://github.com/c3woc/c3woc-podcast.git
+-#}
+{%- set search = "podcast" -%}
+{%- set podcasttitle = "Waffel Podcast" -%}
+{%- set podcastdescribtion = "Der Podcast des C3WOC" -%}
+{%- set podcastsubtitle = "Der Podcast des C3WOC" -%}
+{%- set podcastsummary = "Der Podcast des C3WOC" -%}
+{%- set podcastauthor = "L3D" -%}
+{%- set podcastemail = "waffel@c3woc.de" -%}
+{%- set podcastxml = "/podcast.xml" -%}
+{%- set podcastkeywords = "Waffeln, CCC, C3WOC" -%}
+{%- set podcastkategory = "Technology" -%}
+{%- set podcastlanguage = "de-DE" -%}
+{%- set podcastlogassetimagepath = "/images/waffel.jpg" -%}
+{#- Make sure you set the the correct property for mp3 and ogg feed!
+    For MP3 Feed set the path for the xml file to the mp3feed variable.
+    Same procedure for ogg and the oggfeed variable -#}
+{%- set mp3feed = '/podcast.xml' -%}
+{%- set oggfeed = '/podcast-ogg.xml' -%}
+
+<?xml version="1.0" encoding="UTF-8"?>
+{#- custom CSS fuer das XML... -#}
+{% if '/css/xml.css'|asseturl is defined -%}
+  <?xml-stylesheet href="{{ '/css/xml.css'|asseturl }}" type="text/css" ?>
+{%- endif %}
+<rss version="2.0"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:georss="http://www.georss.org/georss"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:psc="http://podlove.org/simple-chapters"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:fh="http://purl.org/syndication/history/1.0" >
+  <channel>
+    <!-- essential to RSS spec https://www.rssboard.org/rss-specification -->
+    <title type="text">{{ podcasttitle }}</title>
+    <link>{{ '/'|url(external=true) }}{{ search }}/</link>
+    <description>
+        {{ podcastdescribtion }}
+        {%- if this.path == oggfeed -%}
+          Dieser Podcast wird als OGG Feed bereit gestellt.
+        {% else %}
+          Dieser Podcast wird als MP3 Feed bereit gestellt.
+        {% endif %}
+    </description>
+    <!-- optional to RSS spec -->
+    <!--lastBuildDate>{ { none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') } }</lastBuildDate--><!-- todo: implement / use plugin for time_modified (e.g. Lektor-Git-Timestamp) -->
+    <image><url>{{ podcastlogassetimagepath|url(external=true) }}</url><title>{{ podcasttitle }}</title><link>{{ '/'|url(external=true) }}{{ search }}/</link></image>
+    <atom:link rel="self" type="application/rss+xml"    title="{{ podcasttitle }}"  href="{{ podcastxml|url(external=true) }}" />
+    <atom:link rel="first" type="application/rss+xml"   href="{{ podcastxml|url(external=true) }}" />
+    <atom:contributor><atom:name>{{ podcastauthor }}</atom:name></atom:contributor>
+    <generator>Von Hand als Jinja2 Template von L3D geschrieben</generator>
+    <itunes:author class="itunes_author">{{ podcastauthor }}</itunes:author>
+    <itunes:type class="itunes_serial">serial</itunes:type>
+    <itunes:summary class="itunessummary">
+    {{ podcastsummary }}
+    </itunes:summary>
+    <itunes:owner class="itunes_owner">
+      <itunes:name>{{ podcastauthor }}</itunes:name>
+      <itunes:email>{{ podcastemail }}</itunes:email>
+    </itunes:owner>
+    <itunes:image href="{{ podcastlogassetimagepath|url(external=true) }}" class="itunes_feed_image"/>
+    <itunes:category text="Education">
+      <itunes:category text="Technology"/>
+      <itunes:category text="Science"/>
+    </itunes:category>
+    <itunes:subtitle class="itunes_subtitle">{{ podcastsubtitle }}</itunes:subtitle>
+    <itunes:block class="itunes_block">no</itunes:block>
+    <!--updated>{ { none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') } }</updated--><!-- see lastBuildDate -->
+    <pubDate>Sun, 12 Apr 2020 11:42:23 +0000</pubDate>
+    <language>{{ podcastlanguage }}</language>
+    <copyright>&#169; 2020 {{ podcastauthor }}</copyright>
+    <id>{{ podcastxml|url(external=true) }}</id>
+    <itunes:keywords class="itunes_keywords">
+      {{ podcastkeywords }}
+    </itunes:keywords>
+    <itunes:new-feed-url class="itunes_new-feed-url">{{ podcastxml|url(external=true) }}</itunes:new-feed-url>
+    <itunes:category text="Technology">{{ podcastkategory }}</itunes:category>
+    {%- set pages = site.query( '/podcast' ).include_undiscoverable(true).all() -%}
+    {%- set firstrun = true %}
+    {%- for page in pages -%}
+      {%- if not page._hidden %}
+      <item>
+        <title>{{ page.title }}</title>
+        <link>{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/</link>
+        <author class="itunes_author">{% if page.authors %}{% for author in page.authors.split(",") %}{% if author == page.authors.split(",")[0] %}{% elif author == page.authors.split(",")[-1] %} und {% else %}, {% endif %}{{ author }}{% endfor %}{% else %}{{ podcastauthor }}{% endif %}</author>
+        <itunes:author>{% if page.authors %}{% for author in page.authors.split(",") %}{% if author == page.authors.split(",")[0] %}{% elif author == page.authors.split(",")[-1] %} und {% else %}, {% endif %}{{ author }}{% endfor %}{% else %}{{ podcastauthor }}{% endif %}</itunes:author>
+        <pubDate>{{ page.pub_date|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') }}</pubDate>
+        <itunes:duration>{{ page.duration }}</itunes:duration>
+        <guid isPermaLink="false">WAFFEL+{{ page._id }}-{{ page.pub_date|datetimeformat('YYYYMMddhhmmss') }}-L3D</guid>
+            <description><![CDATA[{{ page.feed_shownotes }}]]></description>
+            <atom:link href="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/" />
+        <enclosure url="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/
+            {%- if this.path == oggfeed -%}
+              {{ page.podcastogg }}" type="audio/ogg" length="{% if page.oggleng %}{{ page.oggleng }}{% else %}1337{% endif %}
+            {%- else -%}
+              {{ page.podcastmp3 }}" type="audio/mpeg" length="{% if page.mp3leng %}{{ page.mp3leng }}{% else %}1337{% endif %}
+            {%- endif -%}"/>
+        <itunes:subtitle>{{ page.podcast_teaser }}</itunes:subtitle>
+            <itunes:title>{{ page.title }}</itunes:title>
+            <itunes:season>{{ page.season }}</itunes:season>
+            <itunes:episode>{{ page.episode }}</itunes:episode>
+            <itunes:episodeType class="episodeType">full</itunes:episodeType>
+            <itunes:summary class="itunessummary"><![CDATA[{{ page.feed_shownotes }}]]></itunes:summary>
+            <itunes:explicit class="itunes_explicit">no</itunes:explicit>
+            <content:encoded class="encoded"><![CDATA[{{ page.feed_shownotes }}<br/>
+        <p>Vielen Dank für das anhören dieser {% if this.path == oggfeed %}OGG{% else %}MP3{% endif %} Podcastfolge. Wenn ihr Fragen oder Anmerkungen habt freuen wir uns sehr darüber diese auf <a href="mailto:{{ podcastemail }}">{{ podcastemail }}</a> empfangen zu dürfen!</p>]]></content:encoded>
+
+{#-
+
+  *KAPITEL DERZEIT (noch) nicht implementiert...*
+  Sie sollten aber in etwa so aussehen...
+
+  <psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2">
+  <psc:chapter start="00:00:00.000" title="Intro"/>
+  <psc:chapter start="00:01:55.003" title="Hallo"/>
+  <psc:chapter start="00:02:50.000" title="Welt"/>
+  <psc:chapter start="00:14:14.000" title="Die Waffel"/>
+  <psc:chapter start="00:23:42.000" title="Ende"/>
+</psc:chapters>
+
+-#}
+
+{%- if page.authors %}{% for author in page.authors.split(",") %}<atom:contributor><atom:name>{{ author }}</atom:name></atom:contributor>{% endfor %}{%- else %}<atom:contributor><atom:name>{{ podcastauthor }}</atom:name></atom:contributor>{%- endif %}
+      </item>
+        {%- endif %}
+      {%- endfor %}
+  </channel>
+</rss>

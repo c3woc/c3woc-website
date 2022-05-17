@@ -1,111 +1,27 @@
-_model: vereinsheim
+_model: page
 ---
 title: Mitmachen
 ---
-slogan: Denn geteilte Freude ist doppelte Freude!
+body:
+
+Du bist begeistert von waffelfähigen Teigprodukten? Du hast spaß daran, mit neuen Rezepten zu experimentieren oder erfahrene Rezepte zu verbreiten? Dann mach doch mit beim C3WOC!
+
+Das C3WOC besteht aus Wesen, die vom süßlichen Duft der Waffeln angezogen sind und spaß am Waffel-Gerät haben. Wir haben heraus gefunden, das zusammen Waffeln backen gleich viel mehr Freude macht. Daher laden wir dich ein, bei uns mit zu machen.
+
+ Was kann man Mitmachen
+---------------------------------
+Wenn du Lust hast mit zu machen, melde dich doch über ``waffel at c3woc.de`` oder über social Media.
+
+### Waffelengel
+Wenn wir auf einer Veranstaltung Waffel backen, die von einer chaosnahen Entität ausgetragen wird, dann können wir jede Hilfe hinterm Waffeleisen und beim Teig machen gebrauchen. Vielen Dank an alle, die uns hier bisher unterstützt haben. Und schonmal Danke an diejenigen, die dies zukünftig machen werden.
+
+### Gastgeber:in
+Du oder dein Verein veranstalten ein Event, das gerne bewaffelt werden würde? Sprich uns doch mal an, ob bei uns nicht jemand Lust hat vorbei zu kommen!
+
+### Food Fotograf:in
+Waffeln sind ein köstliches Teiggericht. Aber sehr scheu vor der Kamera. Wir würden uns sehr über hübsche Bilder von Waffeln freuen, wenn du diese mit einer brauchbaren Lizenz für uns zur verfügung stellst.
+
+### Event Manager:in
+Wir sind auf einigen der chaosnahen Veranstaltungen vertreten. Dies braucht aber alles vorbereitung. Vom Einkauf über Lagerung der Zutaten und Transport von Waffeleisen bis hin zur Helferplanung. Hier freuen wir uns sehr über kluge Köpfe, die uns bei der Planung unterstützen möchten.
 ---
-teaser:
-
-Das C3 Waffel Operation Center braucht deine Hilfe. Entweder als Waffelbäcker*In oder sogar als Fotograf*In oder Mensch der in der Organisation hilft.
-Mach einfach mit und hab spaß - am Waffelgerät!
----
-precontent:
-
-Beim C3WOC machen Menschen mit, die sich zum [Chaos Computer Club](https://ccc.de) hingezogen fühlen.<br/>
-Außerdem finden diese Menschen Waffeln nicht ganz unsympathisch.
-
-Wenn du dich hier wieder erkennst, dann würden wir uns sehr freuen, wenn du beim C3WOC mitmachen willst!
-
-**Melde dich hierfür beim C3WOC:**
-
-<a href="mailto:waffel@c3woc.de" class="button special">waffel at c3woc.de</a>
-
-
- Wie kannst du helfen?
-----------------------------------
-
-Es gibt viele Aufgaben, die beim Waffeln verteilen auftreten. Hierbei sind wir auf deine Mithilfe angewiesen.
-Meistens organisieren wir uns über das offizielle Helfersystem bei dem Event.
-
-
-### Deine Aufgabe als Waffel-Helfer:
-
- + **Waffeln backen:**
-
-Unsere Waffeln werden frisch im Waffeleisen gebacken. Dies ist nicht besonders kompliziert, bringt aber eine gewisse Verbrennungsgefahr mit sich.
-Vielen vielen Dank an jeden, der uns hier hilft.
-
-+ **Teig anrühren**:
-
-Wir rühren unseren Waffelteig aus frischen Zutaten an. Live vor Ort. Dafür verwenden wir unsere Open Source Rezepte von [c3woc.de/rezept](https://c3woc.de/rezept). Ein ganz großes Dankeschön an jeden, der uns hier unterstützt.
-
-+ **Putzen**:
-
-Saubere Werkzeuge sind ein essentieller Bestandteil beim Waffeln backen und Teig zuzubereiten. Ein extrem großes Danke an alle, die hier helfen!
-
-+ **Crowd Control**:
-
-Bei größeren Veranstaltungen ist es manchmal wichtig, den ausgehungerten Hacksen und Hackern zu helfen, den sicheren Weg zur Waffel zu finden ohne die Nutelle über die Aufkleber auszuschütten oder eine Massenpanik auszulösen.
-
-
-### Weitere Aufgaben bei den Waffeln:
-
-+ **Fotografieren der Waffeln:**
-
-Bei dem ganzen Waffeln planen und Waffeln backen kommt eins viel zu kurz: <br/>
-Sich die Zeit nehmen die knusprigen Kunstwerke zu bewundern und festzuhalten.
-
-Gerade wenn ihr euch etwas mit Fotografieren auskennt, wäre es echt cool das ein oder andere Bild der Waffelsituation zu bekommen und dieses zum Beispiel auf dieser Webseite und den sozialen Netzwerken zu verbreiten. Natürlich gilt hier auch der Grundsatz, Menschen in Bilder erst zu fragen, bevor man sie fotografiert!
-
-+ **Die Waffeln in deinen Hackerspace bringen:**
-
-Bringe die Waffeln in deinen Hackerspace. Und gründe dort ein lokales C3WOC.
-Berichte von der heimischen Waffel im [Waffelblog](/blog/) und zaubere anderen Hackern ein lächeln ins Gesicht, wenn du für den nötigen Waffelvorrat sorgst.
-
-
-+ **Hilf uns bei der Planung**:
-
-Das Waffeln planen ist für eine Person echt viel Arbeit. Wenn mehr Menschen zuverlässig bei einem Event eine der Planungs-Aufgaben übernehmen oder beim Planen und Brainstormen helfen, dann entlastet das sehr.
-Bitte unterstützt den L3D und - wenn ihr euch das zutraut, helft mit beim Nachdenken über das Waffelkonzept einer veranstaltung und erklärt euch bereit Teilaufgaben zu übernehmen. *(Zum Beispiel Transport, Einkauf, Helfer Koordination oder anderes)*.
-
-
-+ **Verbessere die Webseite**:
-
-Hast du etwas erlebt oder fotografiert, das in den Waffelblog gehört? Trage es dort ein!<br/>
-Gründest du ein lokales C3WOC? Dann trage es hier ein!<br/>
-Hast du etwas, das du beitragen kannst oder möchtest? Trage es bei!<br/>
-Hast du Lust die C3WOC Webseite zu Übersetzen? In andere Sprachen oder Dialekte? Bitte mach es!<br/>
-Bei Fragen helfen wir natürlich gerne mit git, github und dem von uns verwendeten Static Side Generator.
-
-Wenn dir das alles zu kompliziert ist und du einfach nur dein Foto an uns schicken willst... Nutze einen unserer [Kontaktmöglichkeiten](/kontakt)
-
-
-+ **Sage Danke!**
-
-Wir machen gerne Waffeln. Aber mit einer positiven Rückmeldung macht es gleich viel mehr spaß!
-
-+ **Lade uns ein:**
-
-Du hilfst beim Veranstalten eines Events und hoffst auf Waffelunterstützung?
-
-Sprich mit uns!
-
-+ **Trage dein Wissen bei:**
-
-Die Waffeln des C3WOC sind Open Source.
-
-Hilf uns bei der weiterentwicklung und verbesserung neuer und alter Rezepte!
-
-+ **vegane Waffelforschung**
-
-Wir sind auf der suche nach einem ordentlichen veganen Waffelrezept.
-
-Helf uns, eins zu finden!
-
-Bewirb dich mit einer E-Mail an [waffel at c3woc.de](mailto:waffel@c3woc.de)!
----
-content:
-
-
-
-
+meta_description: Du bist begeistert von waffelfähigen Teigprodukten? Du hast spaß daran, mit neuen Rezepten zu experimentieren oder erfahrene Rezepte zu verbreiten? Dann mach doch mit beim C3WOC!

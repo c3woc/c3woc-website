@@ -1,0 +1,29 @@
+// animations
+@keyframes backgroundImageAnimation {
+  0% {
+    background-image: url("/sweet_waffle-medium.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  33% {
+    background-image: url("/waffle_apfelmus-medium.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  66% {
+    background-image: url("/sweet_waffle-medium.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.bganimation {
+  animation-name: backgroundImageAnimation;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+}

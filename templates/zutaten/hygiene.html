@@ -1,0 +1,15 @@
+{%- for child in post.children -%}
+  {%- if child._template == 'zutaten.yaml' -%}
+    {%- if child.render_hygiene | default(True) -%}
+      {{- '\n      ' -}} <div class="content__box">
+      {{- '\n        ' -}} <div class="content__inner_box">
+      {{- '\n          ' -}} <h2 id="hygiene">Hygiene</h2>
+      {{- '\n          ' -}} <p>Beim Zubereiten von Speisen ist Hygiene besonders wichtig. <br/>
+      {{- '\n          ' -}} Eine saubere Arbeitsfläche, saubere Werkzeuge und frisch <a href="https://youtu.be/w-4_5J0xk7A">gewaschene Hände</a> sollten selbstverständlich sein. <br/>
+      {{- '\n          ' -}} Weiteres Dazu auf <a href="/hygiene">c3woc.de/hygiene</a> und als Flyer auf <a href="https://wiki.c3gelb.de/doku.php?id=public:flyer">c3gelb.de</a>.
+      {{- '\n          ' -}} </p>
+      {{- '\n        ' -}} </div>
+      {{- '\n      ' -}} </div>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}

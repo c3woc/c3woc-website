@@ -1,0 +1,13 @@
+{#- Card Icon Text Collection for Startpage -#}
+  {{- '\n        ' -}} <div class="card">
+  {{- '\n          ' -}} <img class="card__icon" src="{{ this.card_image|url }}" alt=""/>
+  {{- '\n          ' -}} <h3 class="card__heading -homepage">{{ this.card_title }}</h3>
+  {{- '\n          ' -}} <div class="card__text">
+  {{- '\n            ' -}} {{ this.card_text }}
+  {%- if this.card_url is defined and this.card_url != '' -%}
+    {{- '            ' -}} <a class="content__inner_third_button_link" href="{{ this.card_url }}">
+    {{- this.card_url_text -}}
+    </a>
+  {%- endif -%}
+  {{- '\n          ' -}} </div>
+  {{- '\n        ' -}} </div>

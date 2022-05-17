@@ -1,12 +1,24 @@
-_template: waffeln.ics
----
-_model: waffeln
+_model: calendar
 ---
 title: C3WOC Tourdaten
 ---
-termine:
+_template: calendar.ics
+---
+description: Tourdaten des C3WOC
+---
+name: C3WOC Tourdaten
+---
+color: orange
+---
+lang: de_DE
+---
+hide_from_global_index: false
+---
+moreinfourl: https://c3woc.de/#tourdaten
+---
+dates:
 
-#### termine ####
+#### events ####
 start: 2019-08-21 00:00:00 Europe/Berlin
 ----
 ende: 2019-08-25 23:42:23 Europe/Berlin
@@ -19,8 +31,12 @@ url: https://events.ccc.de/
 ----
 description: Das Chaos Communication Camp ist ein internationales Treffen von Hackern, das seit 1999 alle vier Jahre in der Nähe von Berlin stattfindet. Es wird organisiert vom Chaos Computer Club.
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2018-11-23 00:00:00 Europe/Berlin
 ----
 ende: 2018-11-25 23:42:23 Europe/Berlin
@@ -33,8 +49,12 @@ url: https://entropia.de/GPN18,5
 ----
 description: Die Glühweinprogrammiernacht, auch GPN18,5, setzt den Schwerpunkt auf Hacken, Lounge und Zusammensein.|Wir wollen versuchen, die Vorzüge von Lounge und Hackcenter in einem zu kombinieren. Ohne großen Aufwand und locker organisiert.|Die Veranstaltung soll auch wie die GPN freien Eintritt haben und durch Spenden eurerseits finanziert werden. Die Veranstaltung findet vom Fr., 23.11.2018 bis So., 25.11.2018 in der HfG statt.
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2018-08-25 00:00:00 Europe/Berlin
 ----
 ende: 2018-08-26 23:42:23 Europe/Berlin
@@ -47,8 +67,12 @@ url: https://froscon.de/
 ----
 description: Wir wurden eingeladen auf der Froscon Waffeln zu machen. Und es wird cool!
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-04-19 00:00:00 Europe/Berlin
 ----
 ende: 2019-04-22 23:42:23 Europe/Berlin
@@ -61,8 +85,12 @@ url: https://eh19.easterhegg.eu
 ----
 description: Der Chaos Computer Club Wien freut sich, euch zur Easterhegg 2019 zu Ostern (19.-22.04.2019) nach Wien einladen zu dürfen! Wien ist nicht nur bekannt für Kaffee, Lipizzaner und Sachertorte, sondern auch für den berüchtigten Wiener Schmäh.|Daher ist das Motto für die EH19: Bun Intended!
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-05-30 10:00:00 Europe/Berlin
 ----
 ende: 2019-06-02 23:42:23 Europe/Berlin
@@ -75,8 +103,12 @@ url: https://entropia.de/GPN19
 ----
 description: Hacken, Gulasch, Vorträge, Cloud, Tschunk, Workshops, Lounge, Mate, Spaß am Gerät.|Gulaschprogrammiernacht klingt fast wie ein Kochmarathon für schlaflose Informatikstudenten. Was 2002 in einem Karlsruher Kellerraum mit ein paar Technikbegeisterten angefangen hat, ist inzwischen zu einer der größten Veranstaltungen des Chaos Computer Clubs gewachsen. Die Themen sind breit gefächert: Den Kern bilden Hard- und Softwareentwicklung, sowie Datensicherheit. Daneben kommen aber auch Datenschutz, Netzpolitik und viele andere faszinierende Themen zum Zug: Wie kocht man das perfekte Gulasch? Kann man aus Hardwareschrott noch schönen Schmuck basteln? Wie funktioniert eigentlich eine Nähmaschine? Wie fliegt man Raumschiffe? Wo kann ich Waffeln machen...|
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-03-09 14:00:00 Europe/Berlin
 ----
 ende: 2019-03-10 08:42:23 Europe/Berlin
@@ -89,8 +121,12 @@ url: https://c3woc.de/#tourdaten
 ----
 description: Waffeln! Chilli! Döner!|Was man da alles machen kann...|Nur echt mit Party!
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2018-12-27 00:00:00 Europe/Berlin
 ----
 ende: 2018-12-30 23:42:23 Europe/Berlin
@@ -103,8 +139,12 @@ url: https://events.ccc.de
 ----
 description: Der Chaos Communication Congress ist ein mehrtägiges, in Deutschland stattfindendes Treffen der internationalen Hackerszene, das vom Chaos Computer Club (CCC) ausgerichtet und organisiert wird. Der Kongress widmet sich in zahlreichen Vorträgen und Workshops technischen und gesellschaftspolitischen Themen. |Außerdem ist er auch L3Ds Geburtstagsparty. Schließlich hat er an Tag 1 Geburtstag.|Lasst uns gemeinsam Waffeln essen und spaß haben!
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2018-12-01 09:00:00 Europe/Berlin
 ----
 ende: 2018-12-01 18:42:23 Europe/Berlin
@@ -117,8 +157,12 @@ url: https://see-base.de/
 ----
 description: Waffeln auf dem Basar des Hackerspace! Zusammen mit Mate, Löten, rohrpost und jede menge coolen Menschen!
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2018-08-09 00:00:00 Europe/Berlin
 ----
 ende: 2018-08-12 23:42:23 Europe/Berlin
@@ -131,8 +175,12 @@ url: https://ffbsee.de/
 ----
 description: Freifunkcamp am Bodensee.|Mit Waffeln \o/|
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2018-11-09 00:00:00 Europe/Berlin
 ----
 ende: 2018-11-11 23:42:23 Europe/Berlin
@@ -145,8 +193,12 @@ url: https://c3c3.de
 ----
 description: Cluster und Waffeln. Was da für synergien entstehen :P
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2018-11-17 09:00:00 Europe/Berlin
 ----
 ende: 2018-11-17 23:42:23 Europe/Berlin
@@ -159,8 +211,12 @@ url: https://toolbox-bodensee.de
 ----
 description: Toolbox. Heimat der Waffel. Kommt vorbei!
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-03-16 14:00:00 Europe/Berlin
 ----
 ende: 2019-03-16 23:42:23 Europe/Berlin
@@ -173,8 +229,12 @@ url: https://www.chaosbern.ch/
 ----
 description: Wie am letzten Gettogether bereits angekündigt, haben wir vom Chaostreff Bern neue Räume für einen eigenen Hackerspace gefunden [0].| Jetzt laden wir alle Lebensformen ein zur Einweihung unseres neuen Hackerspaces an der Kyburgstrasse 13. Ausserdem feiern wir zugleich das vierjährige Bestehen des Chaostreff Bern. || Datum: Samstag, 2019-03-16| Zeit: Die Türe öffnen wir um 14 Uhr.| Der Space ist den ganzen Nachmittag hindurch für alle Interessierten geöffnet, am Abend ist open end.| Ort: Kyburgstrasse 13, 3013 Bern, Schweiz ([1])  ||Im Verlauf des Nachmittags und Abends wird es einige kurze Vorträge geben zur Geschichte des Chaostreff Bern, zu unserem neuen Hackerspace und zu unserer Vision des Chaos in Bern. Ausserdem ist ein Abendessen geplant.  |Ein Zeitplan wird folgen, wenn wir uns dem Datum nähern, bis dahin gilt: Rettet das Datum!  || [0] https://chaostreffbern.ch/found_a_room.html [1]| https://www.openstreetmap.org/?mlat=46.95634&mlon=7.44833#map=19/46.95638/7.44833|
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2018-12-13 18:00:00 Europe/Berlin
 ----
 ende: 2018-12-13 23:42:23 Europe/Berlin
@@ -183,12 +243,16 @@ event: Toolbox Weihnachtswaffeln
 ----
 ort: Toolbox Bodensee, Markdorf
 ----
-url: https://toolbox-bodensee.de/termine
+url: https://toolbox-bodensee.de/events
 ----
 description: In der Toolbox in Makrdorf gibt es am 13. Dezember ein Weihnachtswaffeln.
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-06-21 00:00:00 Europe/Berlin
 ----
 ende: 2019-06-23 23:42:23 Europe/Berlin
@@ -199,12 +263,14 @@ ort: Uni Ulm
 ----
 url: https://chaos-party-ulm.de/
 ----
-description:
-
-Die CPU ist ein kleineres Chaosevent in der Mensa der Uni Ulm für Erfas, ChaosTreffs, Hackerspaces, chaosnahe Menschen und allgemein jede humanuide Lebensform, die sich für die Veranstaltung interessiert. Wir bieten einen großen Raum zum miteinander herumsitzen und zum austauschen über alle erdenklichen Themen. Außerdem gibt es einen kleineren Workshop- und Seminarraum, in dem wir ein Vortragsprogramm organisieren. Da die hardwaretechnische Seite ab und an auf anderen Events etwas zu kurz kommt, gehen unsere Vorträge und Workshops mehr in diese Richtung. 
+description: Die CPU ist ein kleineres Chaosevent in der Mensa der Uni Ulm für Erfas, ChaosTreffs, Hackerspaces, chaosnahe Menschen und allgemein jede humanuide Lebensform, die sich für die Veranstaltung interessiert. Wir bieten einen großen Raum zum miteinander herumsitzen und zum austauschen über alle erdenklichen Themen. Außerdem gibt es einen kleineren Workshop- und Seminarraum, in dem wir ein Vortragsprogramm organisieren. Da die hardwaretechnische Seite ab und an auf anderen Events etwas zu kurz kommt, gehen unsere Vorträge und Workshops mehr in diese Richtung.
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
 ----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-08-10 13:00:00 Europe/Berlin
 ----
 ende: 2019-08-11 17:23:42 Europe/Berlin
@@ -217,8 +283,12 @@ url: https://www.froscon.org/
 ----
 description: Freie Software und Open Source - das sind die Themen der FrOSCon. |Jedes Jahr im Spätsommer veranstaltet der Fachbereich Informatik der Hochschule Bonn-Rhein-Sieg mit Hilfe des FrOSCon e.V. ein spannendes Programm mit Vorträgen und Workshops für Besucher aller Altersklassen, die Freie Software nutzen, kennenlernen wollen oder selbst entwickeln. | |Natürlich kann das das C3WOC als führende Gruppe von Experten im Open-Source Waffel Business nicht fehlen!
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-03-02 13:00:00 Europe/Berlin
 ----
 ende: 2019-03-02 18:00:00 Europe/Berlin
@@ -231,8 +301,12 @@ url: https:/toolbox-bodensee.de/blog/einweihung-des-doenergrill/
 ----
 description: Die Toolbox hat einen Dönergrill. Lass uns den mal ausprobieren und Döner waffeln machen!
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-03-22 19:00:00 Europe/Berlin
 ----
 ende: 2019-03-22 23:00:00 Europe/Berlin
@@ -245,8 +319,12 @@ url: https://www.spielzimmer.org/events/spielzimmer-talks-3
 ----
 description: 
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-03-23 09:00:00 Europe/Berlin
 ----
 ende: 2019-03-23 23:00:00 Europe/Berlin
@@ -259,8 +337,12 @@ url: https://savetheinternet.info/demos
 ----
 description: Save Your Internet und komm zur Demo!| Auch wenn es da nicht überall Waffeln gibt.
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-06-14 13:37:42 Europe/Berlin
 ----
 ende: 2019-06-16 17:23:42 Europe/Berlin
@@ -273,8 +355,12 @@ url: https://cosin.ch
 ----
 description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer Chaos. Der Inhalt erstreckt sich über Technik und Politik zu Kunst und Kultur.|Bis hinein in die heilige Kunst der Waffel- und Glacce zubereitung.
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-08-01 10:00:42 Europe/Berlin
 ----
 ende: 2019-08-04 18:42:00 Europe/Berlin
@@ -287,8 +373,12 @@ url: https://ffbsee.net/camp/
 ----
 description: 
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-10-03 10:00:42 Europe/Berlin
 ----
 ende: 2019-10-06 18:42:00 Europe/Berlin
@@ -301,8 +391,12 @@ url: https://flipdot.org/
 ----
 description: flipdot ist der Kasseler Hacker- und Makerspace seit 2009. Also wird es Zeit für die 10-Jahres Jubiläumsfeier. Mit Waffeln und allem, was dazu gehört.
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2019-12-26 13:37:00 Europe/Berlin
 ----
 ende: 2019-12-30 23:42:00 Europe/Berlin
@@ -315,8 +409,12 @@ url: https://events.ccc.de/
 ----
 description: Wir sind am Congres... | Macht mit, kommt vorbei, seid dabei!
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2020-06-12 13:37:23 Europe/Berlin
 ----
 ende: 2020-06-14 18:00:42 Europe/Berlin
@@ -329,13 +427,35 @@ url: https://cosin.ch/
 ----
 description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer Chaos. Der Inhalt erstreckt sich über Technik und Politik zu Kunst und Kultur.|Bis hinein in die heilige Kunst der Waffel- und Glacce zubereitung.
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
+start: 2021-08-26 13:37:42 Europe/Berlin
+----
+ende: 2021-08-29 23:42:00 Europe/Berlin
+----
+event: VVoid Camp
+----
+ort: im VVoid
+----
+url: https://www.vvoid.camp/
+----
+description: Camp im VVoid
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: false
+----
+color: crimpson
+#### events ####
 start: 2022-05-19 13:37:23 Europe/Berlin
 ----
 ende: 2022-05-22 16:00:00 Europe/Berlin
 ----
-event: GPN
+event: GPN20
 ----
 ort: HfG und ZKM
 ----
@@ -343,8 +463,12 @@ url: https://entropia.de/GPN20
 ----
 description: Gulaschprogrammiernacht klingt fast wie ein Kochmarathon für schlaflose Informatikstudenten. Doch es ist ein fantastisches Event für Hacker, Haecksen und chaosnahe Wesen sich über knusprige Waffeln und leckers Gulasch zu freuen.
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
-#### termine ####
+----
+color: crimpson
+#### events ####
 start: 2022-07-22 13:37:23 Europe/Berlin
 ----
 ende: 2022-07-26 13:37:23 Europe/Berlin
@@ -353,8 +477,12 @@ event: MCH2022
 ----
 ort: Netherlands
 ----
-url: https://mch2022.org/
+url: ttps://mch2022.org/
 ----
 description: 
 ----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: yes
+----
+color: crimpson

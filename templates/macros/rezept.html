@@ -1,0 +1,27 @@
+{%- macro render_rezept_post(post, from_index=false, section_class='-odd') -%}
+  {{- '\n    ' -}} <section class="content {{ section_class }}">
+  {%- if post.orf | default(false) -%}
+    {#-
+      Render recepie based on open recipe format
+      defined in zutaten.yml
+    -#}
+    {%- for child in post.children -%}
+      {%- if child._template == 'zutaten.yaml' -%}
+        {%- if from_index -%}
+          {%- include "zutaten/rezept_from_index.html" -%}
+        {%- else -%}
+          {%- include "zutaten/rezept.html" -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- include "macros/rezept_body.html" -%}
+    {%- if not from_index -%}
+      {%- include "zutaten/hygiene.html" -%}
+      {%- include "zutaten/orf.html" -%}
+      {%- include "zutaten/github.html" -%}
+    {%- endif %}
+  {%- else -%}
+    {%- include "macros/rezept_body.html" -%}
+  {%- endif %}
+  {{- '\n    ' -}} </section>
+{%- endmacro -%}

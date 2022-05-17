@@ -1,0 +1,19 @@
+{#-
+  Render post.body
+-#}
+{%- if post.body is defined and post.body != "" -%}
+  {{- '\n      ' -}} <div class="content__box">
+  {{- '\n        ' -}} <div class="content__inner_box">
+  {{- '\n          ' -}} {{- post.body -}}
+  {{- '\n        ' -}} </div>
+  {{- '\n      ' -}} </div>
+{%- else -%}
+  {%- if post.title is defined -%}
+    {{- '\n      ' -}} <div class="content__box">
+    {{- '\n        ' -}} <div class="content__inner_box">
+    {{- '\n          ' -}} <h1>{{ post.title -}}</h1>
+    {{- '\n          ' -}} <p>Leider gab es ein Fehler beim Rendern von {{ post.title -}}</p>
+    {{- '\n        ' -}} </div>
+    {{- '\n      ' -}} </div>
+  {%- endif -%}
+{%- endif -%}

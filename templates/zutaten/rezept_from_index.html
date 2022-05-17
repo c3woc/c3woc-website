@@ -1,0 +1,49 @@
+{#-
+  HTML Rendering des Rezept aus dem zutaten.yaml template
+  für die Übersichtsseite /rezept nur das nötigste...
+-#}
+
+{%- for child in post.children -%}
+  {%- if child._template == 'zutaten.yaml' -%}
+    {#-
+
+      Zunächst werden die Zutaten des Rezept definiert...
+
+    -#}
+    {{- '\n      ' -}} <div class="content__box">
+    {{- '\n        ' -}} <div class="content__inner_box">
+    {{- '\n          ' -}}
+    <h1 id="{{- child.parent._gid[:8] -}}-{{- child.parent._gid[-6:-2] -}}-{{- child._gid[-8:-4] }}-{{- child._gid[-4:] -}}-{{- child._gid[:12] -}}">
+      <a href="{{ child.parent | url }}">
+    {%- if child.recipe_name and child.recipe_name != "" -%}
+      {{ child.recipe_name }}</h1>
+    {%- else -%}
+      {{ child.title }}
+    {%- endif -%}
+      </a>
+    </h1>
+    {%- if child.servings is defined and child.servings != "" -%}
+      {%- if child.servings.blocks != [] -%}
+
+        {%- include "zutaten/zutaten_short.html" -%}
+
+      {%- else -%}
+        <p>ungültige Rezeptangaben</p>
+      {%- endif -%}
+    {%- endif -%}
+    {{- '\n        ' -}} </div>
+    {{- '\n      ' -}} </div>
+   {#-
+
+      Nachdem die Zutaten des Rezept nun angegeben sind,
+      folgt die Zubereitung der waffelfähigen Teigprodukte...
+
+    -#}
+    {%- if child.steps is defined and child.steps.blocks is defined and child.steps != "" -%}
+      {%- if child.steps.blocks is defined and child.steps.blocks != "" and child.steps.blocks != [] -%}
+        {%- set only_render_steps = true -%}
+        {%- include "zutaten/zubereitung.html" -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}

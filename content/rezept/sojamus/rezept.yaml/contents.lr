@@ -1,0 +1,253 @@
+_template: zutaten.yaml
+---
+oven_fan: Off
+---
+oven_type: Waffeleisen
+---
+recipe_name: Sojamus mit Mate
+---
+render_hygiene: yes
+---
+title: Sojamus mit Mate
+---
+x_ignore_1: yes
+---
+x_license: https://backwesen.de/c3woc/webseite/src/branch/main/LICENCE
+---
+ingredients:
+
+#### flow_ingredients ####
+ingredient: Sojabohnen
+----
+usda_num: 11450
+----
+amounts:
+
+##### flow_amounts #####
+amount: 100
+-----
+unit: g
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: eingeweicht
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient:
+
+ Erva-Mate Chimarrão
+----
+usda_num: 819162004609
+----
+amounts:
+
+##### flow_amounts #####
+amount: 40
+-----
+unit: g
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: fein gemahlener, abgesiebter Mate-Tee
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Wasser
+----
+usda_num: 14555
+----
+amounts:
+
+##### flow_amounts #####
+amount: 150
+-----
+unit: ml
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: kochend
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Sauerteig
+----
+usda_num: 701990000468
+----
+amounts:
+
+##### flow_amounts #####
+amount: 100
+-----
+unit: ml
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Pflanzenöl
+----
+usda_num: 4669
+----
+amounts:
+
+##### flow_amounts #####
+amount: 150
+-----
+unit: ml
+----
+substitutions: 
+----
+processing:
+
+##### flow_processing #####
+process: Raps, Sonnenblume, …
+-----
+short: yes
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Mehl
+----
+usda_num: 20481
+----
+amounts:
+
+##### flow_amounts #####
+amount: 200
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Zucker
+----
+usda_num: 19335
+----
+amounts:
+
+##### flow_amounts #####
+amount: 150
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Salz
+----
+usda_num: 2047
+----
+amounts:
+
+##### flow_amounts #####
+amount: 1
+-----
+unit: pr
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Hefewürfel
+----
+usda_num: 
+----
+amounts:
+
+##### flow_amounts #####
+amount: ¼
+-----
+unit: Stück
+----
+substitutions: 
+----
+processing: 
+----
+notes: 
+---
+servings:
+
+#### flow_servings ####
+serving_number: 10
+----
+serving_units: Waffeln
+---
+steps:
+
+#### flow_steps ####
+step:
+
+ Vorbereitung: Sojabohnen 2 bis 10 Stunden in kaltem Wasser einweichen: sie nehmen dadurch etwa ihr eigenes Gewicht an Wasser auf. 
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step:
+
+Wir verwerfen das Einweichwasser, kippen dann den Sauerteig und das Öl in die Bohnen, und füllen mit Wasser auf (ca. 150 mL bzw. bis die Bohnen großzügig bedeckt sind). Dann kräftig pürieren/mixen, bis wir die Bohnen gut zerkleinert haben (sie können noch ein bisschen stückig sein, aber es sollten keine halben Bohnen mehr drin sein). 
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step:
+
+Teig: Zucker und Hefe in den Sojabrei rühren. Wir warten kurz, und mischen derweil Mehl und Erva-Mate Chimarrão zusammen. Dann rühren wir in mehreren Schritten das Mehl in den Brei ein. Falls nötig Wasser zugeben, damit wir am Ende die perfekte Waffelteig-Konsistenz erhalten. Mindestens eine halbe Stunde gehen lassen, dann Teigkonsistenz noch mal überprüfen. 
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step:
+
+ Abschmecken zB mit Zimt und abgeriebener Zitronenschale. Vanille passt nicht so gut. 
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step:
+
+ Obacht, Timing nötig! Diese Waffeln backen sich relativ schnell aus: sie bräunen zügig und werden schön knusprig, dann aber auch schnell zu dunkel und bekommen eine bittere Note. 
+----
+haccp_type: critical_control_point
+----
+haccp_string: 
+----
+notes: 

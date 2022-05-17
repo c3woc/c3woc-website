@@ -1,0 +1,70 @@
+{#-
+
+  Wenn eine Zutat-Menge definiert ist, wird diese im folgenden for loop gerendert.
+  Sollte es unterschiedliche Teig-Mengen geben, ist die reinfolge der Zutatenmenge relevant.
+  Wenn also ein Rezept für 2 größen definiert ist, wird für die erste größe die erste Zutat genommen.
+  Und für die zweite größe die andere.
+
+  ABER, wenn eine der Zutat Null bzw. 0 ist, dann wird diese eine Zutat nicht gerendert.
+
+-#}
+{%- set ingredient_counter = loop.index -%}
+{%- for amt in ing.amounts.blocks -%}
+  {%- if loop.index == prt_loop -%}
+    {%- if amt.amount is defined and amt.amount != "" and amt.amount != 0 and amt.amount != '0' and amt.amount != 'Null' -%}
+      {{- '\n            ' -}} <li>
+      {{- '\n              ' -}} <span
+      {%- if ing.usda_num is defined and ing.usda_num != "" -%}
+        {{- ' class=' -}}"usda_{{- ing.usda_num -}}"
+      {%- endif -%}
+      >{{ ing.ingredient }}: {{ amt.amount }} {{ amt.unit | default('each') }}</span>
+      {#-
+        Hier wird eine kurznotiz zur verarbeitung gerendert
+        oder ein Link zur Verarbeitungsnotiz.
+      -#}
+      {%- if ing.processing is defined and ing.processing != "" and ing.processing.blocks is defined and ing.processing.blocks != "" and not hide_recepie_processing | default(false) -%}
+        {%- if ing.processing.blocks != [] -%}
+          {%- for prc in ing.processing.blocks -%}
+            {%- if loop.index == 1 -%}
+              {%- if prc.short|default(False) -%}
+                {{- ' ' -}}
+                <i>({{ prc.process }})</i>
+              {%- else -%}
+                {{- ' ' -}}
+                <i>(<a href="#processing_{{- ing.ingredient | string -}}" class="processing">Angaben zur Verarbeitung von {{ ing.ingredient }} beachten</a>)</i>
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endif -%}
+      {#-
+        Render alternativzutat, wenn verfügbar!
+      -#}
+      {%- if ing.substitutions is defined and ing.substitutions != "" and not hide_recepie_substitutions | default(false) -%}
+        {%- if ing.substitutions.blocks is defined and ing.substitutions.blocks != "" -%}
+          {%- if ing.substitutions.blocks != [] -%}
+            {%- for sst in ing.substitutions.blocks -%}
+              {%- if sst.amounts is defined and sst.amounts != "" and sst.amounts.blocks is defined and sst.amounts.blocks != "" -%}
+                {%- if sst.amounts.blocks != [] -%}
+                  {%- for amt2 in sst.amounts.blocks -%}
+                    {%- if loop.index == prt_loop -%}
+                      {%- if amt2.amount is defined and amt2.amount != "" and amt2.amount != 0 and amt2.amount != '0' -%}
+                        {{- ' ' -}}<i><span
+                        {%- if sst.usda_num is defined and sst.usda_num != "" -%}
+                          {{- ' class=' -}}"usda_{{- sst.usda_num -}}"
+                        {%- endif -%}
+                        >(alternativ {{ sst.ingredient }})</span></i>
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+      {{- '\n            ' -}} </li>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+

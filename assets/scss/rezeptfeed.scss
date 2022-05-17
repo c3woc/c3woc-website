@@ -1,0 +1,33 @@
+/* this custom SCSS stylesheet
+   is under the MIT license
+   MIT (C) 2022 by L3D <l3d@c3woc.de>
+
+   this stylesheet has the purpose
+   to make the rezept XML Feed more
+   attractive and graphically enhance it.
+*/
+feed:before {
+  content: "Dies ist der XML-Feed, mit dem man Änderungen der Rezepte beobachten kann.";
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: block;
+  padding-left: 0.5em;
+  font-size: 16pt;
+}
+
+id,
+updated,
+author,
+content {
+  display: none;
+}
+
+entry {
+  display:block;
+  border: 1px solid gray;
+  margin:0.5em;
+  padding:0.5em;
+  background-color:whitesmoke;
+  list-style: none;
+  color: black;
+}

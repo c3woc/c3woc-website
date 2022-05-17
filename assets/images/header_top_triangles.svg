@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="192"
+   height="64"
+   viewBox="0 0 192 64"
+   version="1.1"
+   xml:space="preserve"
+   style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
+   id="l3d"
+   sodipodi:docname="header_top_triangles.svg"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   borderopacity="1" />
+<path
+   style="fill:#cd4701;fill-opacity:1;stroke:none;stroke-width:1.04469px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+   d="M 0,46 0.03274126,64 C 36.285155,63.940163 59.990027,56.199662 79.137395,46.121648 79.100259,46 0,46 0,46 Z"
+   id="path867"
+   sodipodi:nodetypes="cccc" /><path
+   style="fill:#1c1d26;fill-opacity:1;stroke:none;stroke-width:1.04469px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+   d="M 0,0 0.03274126,46 C 36.249259,45.94022 79.024883,46.181002 79.080504,46.151578 115.03772,27.129793 134.96912,0 191.791,0 Z"
+   id="path1557"
+   sodipodi:nodetypes="ccscc" /></svg>

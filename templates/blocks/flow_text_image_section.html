@@ -1,0 +1,50 @@
+{#- Layout für halb-Text - halb Bild Startseitendinge -#}
+{{- '\n    ' -}} <section class="content">
+{{- '\n      ' -}} <div class="content__box -heading">
+{{- '\n        ' -}} <div class="content__inner_box">
+{{- '\n          ' -}} {%- if this.title_url is defined and this.title_url != '' -%}
+                         <a href="{{ this.title_url }}">
+                       {%- endif -%}
+                       <h2>{{ this.title }}</h2></a>
+                       {%- if this.title_url is defined and this.title_url != '' -%}
+                         </a>
+                       {%- endif -%}
+{{- '\n        ' -}} </div>
+{{- '\n      ' -}} </div>
+{{- '\n      ' -}} <div class="content__half_box">
+        <div class="content__inner_half_box">
+          <div class="content__teaser">
+            {{ this.content_teaser }}
+          </div>
+          <div class="content__body">
+            {{ this.content_body }}
+          </div>
+          <div class="content__footer">
+            {%- for lnk in this.content_footer.blocks -%}
+              {{- lnk -}}
+            {%- endfor %}
+          </div>
+        </div>
+        {%- if this.content_image -%}
+          {{- '\n        ' -}} <div class="content__inner_half_box">
+          {% set image = record.attachments.images.get(this.content_image) %}
+          {#-
+            Wir laden Bilder mit hoher Auflösung hoch. Lektor baut "Thumbnails" mit halber
+            Auflösung. Per srcset bieten wir beides an und der Browser sucht das Richtige
+            raus.
+
+            Versteht der Browser srcset nicht, greift src.
+
+            Wichtig: Keine Angaben für width und height berechnen, dann geht beim Skalieren das Seitenverhältnis kaputt.
+
+            ToDO: Nochmal nach Bildgrößen schauen, ggf. webp usw. mit einbeziehen...
+          #}
+          <img class="content__half_box_image" src="{{ image | imagessrcwebp }}" width="{{ image | firstwidth }}"
+               srcset="{{ image | imagessrcsetwebp }}" alt="{{ this.content_image_alt }}" />
+          {%- if this.content_image_src is defined and this.content_image_alt != '' -%}
+            {{- '\n          ' -}} <p>{{ this.content_image_src }}</p>
+          {%- endif -%}
+        </div>
+        {%- endif %}
+      </div>
+    </section>

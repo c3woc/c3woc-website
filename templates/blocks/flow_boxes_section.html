@@ -1,0 +1,33 @@
+{#-  Icon boxes #}
+    <!-- Icon boxes - start -->
+    <section class="content">
+      <div class="content__box">
+        <div class="content__inner_box  -card_box_head">
+          <div class="flex_heading">
+            <h2>{{ this.title }}</h2>
+          </div>
+          <div class="claim">
+            <div class="claim__background_box">
+              <h2 id="{{ this.background_box_title | lower}}">{{ this.background_box_title }}</h2>
+              <div class="claim__text">
+                {{ this.background_box_claim -}}
+                {%- for card in this.upper_claim_boxes.blocks -%}
+                  {{- card -}}
+                {%- endfor -%}
+              </div>
+            </div>
+            <button class="claim__button">
+              <a class="claim__button_link" href="{{ this.claim__background_url }}">{{ this.claim__background_link }}</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="content__box -card_box -homepage">
+        <div class="content__inner_box -card_box">
+          {%- for card in this.claim_boxes.blocks -%}
+            {{- card -}}
+          {%- endfor -%}
+        </div>
+      </div>
+    </section>
+    <!-- Icon boxes - start -->

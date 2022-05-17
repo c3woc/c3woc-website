@@ -1,0 +1,54 @@
+{% extends "header_slim.html" %}
+{% from "macros/podcast.html" import render_blog_post %}
+{% from "macros/pagination.html" import render_pagination %}
+
+{%- block title -%}{{ this.title }}{%- endblock -%}
+{%- block meta_description -%}
+    {%- if this.meta_description is defined and this.meta_description != "" -%}
+        {{ this.meta_description }}
+    {%- else -%}
+        C3WOC
+    {%- endif -%}
+{%- endblock -%}
+
+{% block body %}
+    {#
+     Main body part for the podcast
+    #}
+        <div class="content__box">
+            <div class="content__inner_box">
+                <h1>{{ this.title }}</h1>
+                <p>{{ this.description }}</p>
+            </div>
+        </div>
+
+        <section class="content -odd -columns">
+            <div class="content__box">
+                <div class="content__inner_box">
+                    {{ this.body }}
+                    {% if this.enable or this.enable2 -%}
+                        {% if this.enable -%}
+                            <a href="{{ this.link|url }}">
+                                {{ this.spruch }} <img class="content__rss_logo" src="{{ '/images/icons/social/feed.svg'|asseturl }}" alt="Feed Logo"></a>
+                        {%- endif %}
+                        {% if this.enable2 -%}
+                            , &nbsp;
+                            <a href="{{ this.link2|url }}">
+                                {{ this.spruch2 }} <img class="content__rss_logo" src="{{ '/images/icons/social/feed.svg'|asseturl }}" alt="Feed Logo">
+                            </a>
+                        {%- endif %}
+                    {% endif -%}
+                </div>
+            </div>
+        </section>
+
+        {#-  Die Podcast Folgen werden aus dem blog template importiert :P -#}
+
+
+        {% for blog_post in this.pagination.items %}
+                {{ render_blog_post(blog_post, from_index=true) }}
+        {% endfor %}
+        <section>
+            {{ render_pagination(this.pagination, true) }}
+        </section>
+{% endblock %}

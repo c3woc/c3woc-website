@@ -1,0 +1,20 @@
+{%- extends "header_with_logo.html" -%}
+{%- block title -%}{{ this.title }}{%- endblock -%}
+{%- block meta_description -%}
+  {%- if this.meta_description is defined and this.meta_description != "" -%}
+    {{- this.meta_description -}}
+  {%- else -%}
+    C3WOC
+  {%- endif -%}
+{%- endblock -%}
+{%- block body -%}
+
+    {{- '\n    ' -}}
+    <!-- Startpage content loop -->
+    {%- for blk in this.section.blocks -%}
+       {{- blk -}}
+    {%- endfor -%}
+    {{- '\n    ' -}}
+    <!-- Startpage content loop ende -->
+
+{%- endblock -%}

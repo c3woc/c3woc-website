@@ -1,0 +1,44 @@
+---
+{#-
+X-definition_ORF: "https://open-recipe-format.readthedocs.io/en/latest/topics/reference/orf.html"
+X-json_schema: "https://raw.githubusercontent.com/techhat/openrecipeformat/master/schema.json"
+X-validator: "https://json-schema.org/"
+X-validator_steps:
+  - "pip3 install jsonschema"
+  - "install yq"
+  - "wget {{ json_schema }}"
+  - "curl rezep.yaml | yq -j > rezept.json"
+  - "jsonschema -i rezept.json schema.json"
+
+X-usda_lookup: "https://fdc.nal.usda.gov/fdc-app.html" -#}
+
+{%- if this.recipe_name and this.recipe_name != "" -%}
+  {{- '\nrecipe_name: ' -}} "{{- this.recipe_name | default(this.title) -}}"
+{%- else -%}
+  {{- '\nrecipe_name: ' -}} "{{- this.title -}}"
+{%- endif -%}
+
+{{- '\nrecipe_uuid: ' -}} "{{- this.parent._gid[:8] -}}-{{- this.parent._gid[-6:-2] -}}-{{- this._gid[-8:-4] }}-{{- this._gid[-4:] -}}-{{- this._gid[:12] -}}"
+
+{%- include "zutaten/yields.yaml" -%}
+
+{%- include "zutaten/ingredients.yaml" -%}
+
+{%- include "zutaten/steps.yaml" -%}
+
+{%- include "zutaten/oven.yaml" -%}
+
+{%- if this.source_authors is defined and this.source_authors != "" -%}
+  {{- '\n\nsource_authors: ' -}} "{{ this.source_authors }}"
+{%- endif -%}
+{%- if this.x_license is defined and this.x_license != "" -%}
+  {{- '\nX-License: ' -}} "{{ this.x_license }}"
+{%- endif -%}
+{%- if this.render_hygiene | default(True) -%}
+  {{- '\nX-hygiene: ' -}} "https://c3woc.de/hygiene/"
+  {{- '\nX-hygiene_flyer: ' -}} "https://wiki.c3gelb.de/doku.php?id=public:flyer"
+  {{- '\nX-hygiene_video: ' -}} "https://youtu.be/w-4_5J0xk7A"
+  {{- '\nX-hygiene_eggs: ' -}} "https://www.bvl.bund.de/DE/Arbeitsbereiche/01_Lebensmittel/03_Verbraucher/03_UmgangLM/02_LMzubereiten/03_Eier/lm_zubereitung_eier_node.html"
+{%- endif -%}
+{{ '\nsource_url:' }} "{{ '../'|url(external=true) }}"
+{#- X-ORF_source: "https://open-recipe-format.readthedocs.io/en/latest/topics/tutorials/walkthrough.html" -#}

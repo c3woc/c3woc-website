@@ -1,0 +1,85 @@
+{#-
+
+  Render die Notizen und Angaben zur Verarbeitung der Rezepte
+
+-#}
+{%- if child.ingredients is defined and child.ingredients != "" %}
+  {%- if child.ingredients.blocks != [] -%}
+    {{- '\n      ' -}} <div class="content__box">
+    {{- '\n        ' -}} <div class="content__inner_box">
+    {{- '\n          ' -}} <h2>Hinweise zu den Zutaten</h2>
+    {%- for ing in child.ingredients.blocks %}
+      {%- if ing.ingredient is defined and ing.ingredient != "" -%}
+        {#-
+          Verarbeitungshinweise der Zutat
+        -#}
+        {%- if ing.processing is defined and ing.processing != "" -%}
+          {%- if ing.processing.blocks != [] -%}
+            {%- for prc in ing.processing.blocks -%}
+              {%- if not prc.short|default(false) -%}
+                {%- if loop.index == 1 -%}
+                  {{- '\n          ' -}} <h3 id="processing_{{- ing.ingredient | string -}}">Verarbeitung von {{ ing.ingredient }}:</h3>
+                {{- '\n          ' -}} <ul>
+                {%- endif -%}
+                {{- '\n            ' -}} <li>
+                {{- '\n              ' -}}
+                  <span class="ingredientprocessing">{{ prc.process }}</span>
+                {{- '\n            ' -}} </li>
+              {%- endif -%}
+            {%- endfor -%}
+            {{- '\n          ' -}} </ul>
+          {%- endif -%}
+        {%- endif -%}
+        {#-
+          Notiz der Zutat
+        -#}
+        {%- if ing.notes is defined and ing.notes != "" -%}
+          {%- if ing.notes.blocks != [] -%}
+            {%- for nde in ing.notes.blocks -%}
+              {%- if not nde.html | default(False) -%}
+                {%- if loop.index == 1 -%}
+                  {{- '\n          ' -}} <h4 id="note_{{- ing.ingredient | string -}}">Notiz zu {{ ing.ingredient }}:</h4>
+                {{- '\n          ' -}} <ul>
+                {%- endif -%}
+                {{- '\n            ' -}} <li>
+                {{- '\n              ' -}}
+                  <span class="ingredientnote">{{ nde.note }}</span>
+                {{- '\n            ' -}} </li>
+                {%- if loop.index == loop.length -%}
+                  {{- '\n          ' -}} </ul>
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if ing.substitutions is defined and ing.substitutions != "" -%}
+          {%- if ing.substitutions.blocks != [] -%}
+            {%- for alt in ing.substitutions.blocks -%}
+              {%- if alt.notes is defined and alt.notes != "" -%}
+                {%- if alt.notes.blocks != [] -%}
+                  {%- for ntz in alt.notes.blocks -%}
+                    {%- if not ntz.html | default(False) -%}
+                      {%- if loop.index == 1 -%}
+                        {{- '\n          ' -}} <h3 id="note_{{- alt.ingredient | string -}}">Notiz zu {{ alt.ingredient }}:</h3>
+                        {{- '\n          ' -}} <ul>
+                      {%- endif -%}
+                      {{- '\n            ' -}} <li>
+                      {{- '\n              ' -}}
+                      <span class="ingredientnote">{{ ntz.note }}</span>
+                      {{- '\n            ' -}} </li>
+                      {%- if loop.index == loop.length -%}
+                        {{- '\n          ' -}} </ul>
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {{- '\n        ' -}} </div>
+    {{- '\n      ' -}} </div>
+  {%- endif -%}
+{%- endif -%}

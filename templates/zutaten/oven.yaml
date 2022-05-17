@@ -1,0 +1,29 @@
+{#-
+  Oven informations
+-#}
+{%- if this.oven is defined and this.oven != "" and this.oven.blocks is defined and this.oven.blocks != "" -%}
+  {% if this.oven.blocks is defined and this.oven.blocks != [] -%}
+    {%- for ovn in this.oven.blocks -%}
+      {%- if ovn.amount is defined and ovn.amount != "" -%}
+        {%- if loop.index == 1 -%}
+          {{- '\noven_temp:' -}}
+        {%- endif -%}
+        {{-  '\n  - amount: ' -}} '{{- ovn.amount -}}'
+        {{- '\n    unit: ' -}}
+        {{- ovn.unit | default('C') -}}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if this.oven_type is defined and this.oven_type != "" -%}
+  {{- '\nX-oven_type: ' -}} "{{- this.oven_type -}}"
+{%- endif -%}
+
+{%- if this.oven_time is defined and this.oven_time != "" -%}
+  {{- '\noven_time: ' -}} "{{- this.oven_time -}}"
+{%- endif -%}
+
+{%- if this.oven_fan is defined and this.oven_fan != "" -%}
+  {{- '\noven_fan: ' -}} "{{- this.oven_fan | default('Off') -}}"
+{%- endif -%}

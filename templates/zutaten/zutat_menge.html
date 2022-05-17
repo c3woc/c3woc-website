@@ -1,0 +1,37 @@
+{#-
+
+  Hier wird eine Zutaten tabelle gerendert.
+  Zusammen mit einem Link auf den Verarbeitungshinweis
+   oder eine Notiz zur Zutat.
+  Der Text zum Hinweis oder der Notiz wird hier nicht gerendert.
+
+-#}
+{%- if child.ingredients.blocks != [] -%}
+  {%- for ing in child.ingredients.blocks -%}
+    {%- if ing.ingredient is defined and ing.ingredient != "" -%}
+      {%- if ing.amounts is defined and ing.amounts != "" and ing.amounts.blocks is defined and ing.amounts.blocks != "" -%}
+        {%- if ing.amounts.blocks != [] -%}
+          {#-
+
+            Wenn eine Zutat-Menge definiert ist, wird diese im folgenden for loop gerendert.
+            Sollte es unterschiedliche Teig-Mengen geben, ist die reinfolge der Zutatenmenge relevant.
+            Wenn also ein Rezept für 2 größen definiert ist, wird für die erste größe die erste Zutat genommen.
+            Und für die zweite größe die andere.
+
+            ABER, wenn eine der Zutat Null bzw. 0 ist, dann wird diese eine Zutat nicht gerendert.
+
+          -#}
+          {%- include "zutaten/zutat_einzeln.html" -%}
+        {%- else -%}
+          {#-
+
+            Wenn eine Zutat keine klare Menge hat,
+            wird diese hier ohne genaue größenangabe gerendert.
+
+          -#}
+          {%- include "zutaten/zutat_einzeln_ohne_menge.html" -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}

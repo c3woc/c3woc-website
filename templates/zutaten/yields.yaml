@@ -1,0 +1,11 @@
+{#-
+    Template to collect yields for the recipe,yml
+-#}
+{%- if this.servings is defined and this.servings != "" -%}
+  {%- for prt in this.servings.blocks -%}
+    {%- if loop.index == 1 -%}
+      {{ '\nyields:' }}
+    {%- endif -%}
+    {{ '\n  - servings:' }} {{ prt.serving_number | default('1') }}
+  {%- endfor -%}
+{%- endif -%}

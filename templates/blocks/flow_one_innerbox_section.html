@@ -1,0 +1,24 @@
+{#- Image Selection -#}
+  {{- '\n      ' -}} <div class="content__inner_third_box">
+  {{- '\n        ' -}} <h2 class="content__inner_third_heading">{{ this.title }}</h2>
+  {%- if this.box_image is defined and this.box_image != '' -%}
+    {%- set image = record.attachments.images.get(this.box_image) -%}
+    {{- '\n        ' -}} <a href="{{ this.box_url }}">
+    {{- '\n          ' -}} <img class="content__inner_third_image content__half_box_image" src="{{ image | imagessrcwebp }}" width="{{ image | firstwidth }}"
+    {{- '\n               ' -}} srcset="{{ image | imagessrcsetwebp }}"
+    {%- if this.image_alt is defined and this.image_alt != "" -%}
+      {{- ' ' -}}
+      alt="{{ this.image_alt }}"
+    {%- endif -%}/>
+    {{- '\n        ' -}} </a>
+  {%- endif -%}
+  {%- if this.box_content is defined and this.box_content != "" -%}
+    {{- '\n        ' -}}
+    {{ this.box_content }}
+  {%- endif -%}
+  {{- '\n        ' -}} <div class="content__button_box">
+  {{- '\n          ' -}} <button class="content__button">
+  {{- '\n            ' -}} <a class="content__inner_third_button_link" href="{{ this.box_url }}">{{ this.box_link }}</a>
+  {{- '\n          ' -}} </button>
+  {{- '\n        ' -}} </div>
+  {{- '\n      ' -}} </div>

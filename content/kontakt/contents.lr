@@ -1,155 +1,35 @@
-_model: vereinsheim
+_model: page
 ---
 title: Kontakt
 ---
-slogan: Dort ist das C3WOC vertreten
+meta_description: Kontaktmöglichkeiten mit dem C3 Waffel Operation Center
 ---
-content:
+body:
 
- Wer beim C3WOC mitmacht:
-----------------------------------------
+Waffeln sind in ihrer einfachsten Form ein aus Mehl und Wasser bestehendes, flaches Feingebäck, das zwischen zwei heißen Eisen gebacken wird. Dies einfache Grundform wurde von vielen Wesen angepasst, verändert und weiter optimiert, bis daraus unsere köstlichen Teigprodukte wurden, mit denen sich die chaos Community bewaffelt.
 
-Das C3WOC besteht aus Chaoten, die bereit sind Ihr Leben der Waffel zu widmen. Hierzu haben folgende Gruppierungen sich bekannt und folgende Hardware einsatzbereit:
+Um die Wesen des C3WOC zu kontaktieren, gibt es viele Möglichkeiten. Eine davon führt über Mail: ``waffel at c3woc.de``.
 
- Toolbox Bodensee e.V.
-======================
-Die [Toolbox](https://toolbox-bodensee.de) ist ein Hack- und Makerspace in Markdorf am Bodensee.<br/>
-Jeden Donnerstag Abend treffen sich dort Menschen um sich auszutauschen und gemeinsam etwas zu unternehmen. Manchmal werden auch Waffeln gemacht.<br/>
-Hierfür stehen zwei Gastronom-Waffeleisen zur Verfügung. Eines mit der klassischen Herzform. Das andere mit Brüssler Motiv. Außerdem steht ein Dönergrill zur verfügung, um zum Beispiel Dönerwaffeln frisch zuzubereiten.
+## Außenstellen
+Hier findet man die Außenstellen des C3WOC, aufgelistet in alphabetische reinfolge.
 
-<div class="lightgallery">
-<a href="/kontakt/eisen.jpg">
-      <img class="image" src="/kontakt/eisen@360x360.jpg">
-  </a>
-<a href="/kontakt/case.jpg">
-      <img class="image" src="/kontakt/case@360x360.jpg">
-  </a>
-<a href="/kontakt/eisen_bruessel.jpg">
-      <img class="image" src="/kontakt/eisen_bruessel@360x360.jpg">
-  </a>
-</div>
-<br/><br/><br/>
+###  Binary Kitchen
+Die Binary Kitchen ist ein Hackspace aus Regensburg in Bayern. Menschen treffen sich dort regelmäßig montags, aber auch an vielen anderen Tagen, um gemeinsam am 3D-Drucker, dem Laser, dem eigenen Laptop oder eben dem neu erworbenen Waffeleisen zu werkeln. Unser "Hallo Welt" hatte das Waffeleisen mit Belgischen Waffeln aus Hefeteig, aber gerüchteweise sind auch Herzchenwaffeln und deftige Waffeln dazukommen. Kontakt: [binary-kitchen.de](https://binary-kitchen.de/)
 
- see-base
-==============
-Die [see-base](https://see-base.de) ist ein Hackspace in Überlingen. Dort kommen Chaoten und Hacker zusammen um gemeinsam an Projekten zu basteln, zu löten, spaß am Gerät zu haben und sich auszutauschen.<br/>
-Natürlich auch mit einem ordentlichen Equipment an Snacks und Getränken. Und hier darf das Doppel-Gastro-Waffeleisen nicht fehlen.
+###  Chaospott Essen
+Der Chaospott ist der örtliche Erfa-Kreis (Erfahrungsaustauschkreis) des Chaos Computer Clubs in Essen. Sie sind eine Gruppe von intergalaktischen Wesen, die das Interesse am kreativen Umgang mit Technik teilen und gerne gestalterisch tätig werden. Auch im Umgang mit Waffeln. Kontakt: [chaospott.de](https://chaospott.de/)
 
-<div class="lightgallery">
-<a href="/kontakt/doppeleisen.jpg">
-      <img class="image" src="/kontakt/doppeleisen@360x360.jpg">
-  </a>
-<a href="/kontakt/big_case.jpg">
-      <img class="image" src="/kontakt/big_case@360x360.jpg">
-  </a>
-</div>
-<br/><br/><br/>
+### Entropia e.V.
+En­tro­pia ist ein Ort für Hacker, Haeck­sen und Neu­gie­rige aus Karls­ru­he und Um­ge­bung.  In seinen Räumen bie­ten er Platz und E­quip­ment für alle, die al­te und neue Tech­no­lo­gien er­for­schen oder Waffeln backen. Kontakt: [entropia.de](https://entropia.de/)
 
- Platinengarten e.V.
-=======================
-Der Platinengarten ist ein Verein in Darmstadt, der sich um das Thema Computer und Waffeln engagiert.<br/>
-Hierfür werden Rowenta Waffeleisen eingesetzt.
+Entropia will die In­te­gra­tion von Me­dien in die Ge­sell­schaft för­dern, über die Tech­nik auf­klären sowie über Vor­teile und Ri­si­ken die­ser in­for­mie­ren. Dazu bieten wir Raum für In­for­ma­tions­aus­tausch, Work­shops, Ba­stel­eien, Vor­trä­ge und ein Pro­gramm für Ju­gend­ein­rich­tungen und Schu­len. 
 
+###  Platinengarten e.V. 
+Der Platinengarten ist ein Verein in Darmstadt, der sich um das Thema Computer und Waffeln engagiert. Kontakt: [platinengarten.de](https://platinengarten.de/)
 
-<div class="lightgallery">
-<a href="/kontakt/rowenta.jpg">
-      <img class="image" src="/kontakt/rowenta@360x360.jpg">
-  </a>
-</div>
-<br/><br/><br/>
+###  see-base
+Die see-base war ein Hackerspace im Raum Überlingen am Bodensee. Dort kamen Chaoten, Hacker und Haecksen zusammen um gemeinsam an Projekten zu basteln, zu löten, spaß am Gerät zu haben und sich bei der ein oder anderen Waffel auszutauschen. Leider ist der Space nicht mehr aktiv. Kontakt: [see-base.de](https://see-base.de/)
 
- Chaospott Essen
-=======================
-Der Chaospott ist der örtliche Erfa-Kreis (Erfahrungsaustauschkreis) des Chaos Computer Clubs in Essen. Sie sind eine Gruppe von intergalaktischen Wesen, die das Interesse am kreativen Umgang mit Technik teilen und gerne gestalterisch tätig werden. Auch im Umgang mit Waffeln. 
-
-
-<div class="lightgallery">
-<a href="/kontakt/chaospott.png">
-      <img class="image" src="/kontakt/chaospott@360x360.png">
-  </a>
-</div>
-<br/><br/><br/>
-
- Binary Kitchen
-=======================
-Die Binary Kitchen ist ein Hackspace aus Regensburg in Bayern. Menschen
-treffen sich dort regelmäßig montags, aber auch an vielen anderen Tagen,
-um gemeinsam am 3D-Drucker, dem Laser, dem eigenen Laptop oder eben dem
-neu erworbenen Waffeleisen zu werkeln. Unser "Hallo Welt" hatte das
-Waffeleisen mit Belgischen Waffeln aus Hefeteig, aber gerüchteweise
-werden bald auch Herzchenwaffeln und deftige Waffeln dazukommen.
-
-
-<div class="lightgallery">
-<a href="/kontakt/binary.png">
-      <img class="image" src="/kontakt/binary@360x360.png">
-  </a>
-</div>
-<br/><br/><br/>
-
- Und du?
-=================
-
-Alleine Waffeln backen ist langweilig.<br/>
-[Mach mit](/mitmachen/) beim C3WOC!
-
-<br/><br/><br/>
-
- Bilder von unserem Equipment:
-----------------------------------------
----
-teaser: Das C3WOC hat an strategisch wichtigen Orten Waffeleisen deponiert. Wo genau? Das erfährst du hier!
----
-project:
-
-#### pro_img ####
-image: eisen.jpg
-#### pro_img ####
-image: case.jpg
-#### pro_img ####
-image: eisen_bruessel.jpg
-#### pro_img ####
-image: doppeleisen.jpg
-#### pro_img ####
-image: big_case.jpg
-#### pro_img ####
-image: rowenta.jpg
-#### pro_img ####
-image: chaospott.png
-#### pro_img ####
-image: binary.png
----
-precontent:
-
-Das C3WOC erreichst du über unterschiedliche Wege.
-
- Mail
------------
-```
-mailto:waffel@c3woc.de
-```
-*Hier lesen alle Menschen mit, die sich so sehr für Waffeln interessieren, dass sie sich auf den Waffelverteiler haben schreiben lassen. Dies soll hoffentlich bald eine richtige Mailingliste werden, wo ihr euch selber drauf setzen könntet.
-
- IRC
-----------
-```
-ircs://irc.hackint.org/#waffel
-```
-*Ein paar der Waffelnerds sind - natürlich - im IRC. Dort findest du sie im Kanal ``#waffel`` auf dem Hackint Server.*
-
- Social Media
-------
-```
-https://chaos.social/@c3woc
-https://twitter.com/@c3woc
-```
-Wer wären wir, wenn wir nicht auf Mastodon und Twitter sind.
-*Protipp: Auf Mastodon gibt es manche exklusivinhalte, die nicht nach Twitter wandern!*
-
- Rocket.Chat
----------
-```
-https://rocket.events.ccc.de/channel/waffel
-```
-*Für Chaosnahe Kommunikation*
-
+### Und du?
+Alleine Waffeln backen ist langweilig.
+[Mach mit](/mitmachen) beim C3WOC.

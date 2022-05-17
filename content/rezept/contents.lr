@@ -1,4 +1,4 @@
-_model: projekte
+_model: rezept
 ---
 title: Die Formel für eine gute Waffel
 ---
@@ -39,3 +39,5 @@ trailer:
 <br/><br/>
 Du kennst noch weitere Möglichkeiten ein Waffeleisen zu verwenden? Wir freuen uns sehr, wenn du uns deine Rezepte und Ideen weiter gibst.
 Das geht per E-Mail. Alternativ kannst du es selbst hier veröffentlichen. Denn diese Webseite kannst du [auf GitHub](https://github.com/c3woc/c3woc-website.git) bearbeiten!
+---
+body: 

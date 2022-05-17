@@ -1,0 +1,47 @@
+{#-
+  Hier werden die einzelnen
+  Zutaten für das Rezept gerendert...
+
+  Und falls vorhanden noch der Hinweis auf Angaben zur Zutat.
+-#}
+{%- for prt in child.servings.blocks -%}
+  {#-
+
+    Zunächst schauen wir, für was für Mengen das Rezept definiert ist.
+    Für jede fefinierte Menge haben wir einen neuen Durchlauf in dem for loop
+
+  -#}
+  {{- '\n          ' -}}
+  <h2>Portionsgröße: Für {{ prt.serving_number | default('1') }}
+    {{- ' ' -}}
+    {{- prt.serving_units| default('Stück') -}}
+  </h2>
+  {%- set prt_loop = loop.index -%}
+  {#-
+    in der prt_loop variable speichern wir in welchem loop index die zutat steht.
+    Damit greifen wir später auf den selben index zu.
+  -#}
+  {%- if child.ingredients is defined and child.ingredients != "" %}
+    {%- if child.ingredients.blocks != [] -%}
+      {{- '\n          ' -}} <ul>
+
+      {#-
+        Hier wird nun die konkrete Zutat angegeben.
+        Also zB. Eier: 4 Stück.
+      -#}
+      {%- include "zutaten/zutat_menge.html" -%}
+
+      {{- '\n          ' -}} </ul>
+    {%- else -%}
+      {{- '\n          ' -}} <ul>
+      {{- '\n            ' -}} <span>Keine Zutaten definiert</span>
+      {{- '\n          ' -}} </ul>
+    {%- endif -%}
+  {%- else -%}
+    {{- '\n          ' -}} <ul>
+    {{- '\n            ' -}} <span>Keine Zutaten definiert</span>
+    {{- '\n          ' -}} </ul>
+  {%- endif -%}
+
+
+{%- endfor -%}

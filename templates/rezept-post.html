@@ -1,0 +1,27 @@
+{%- extends "header_slim.html" -%}
+{%- from "macros/rezept.html" import render_rezept_post -%}
+{%- block title -%}{{ this.title }}{%- endblock -%}
+{%- block meta_description -%}
+  {%- if this.meta_description is defined and this.meta_description != "" -%}
+    {{- this.meta_description -}}
+  {%- else -%}
+    C3WOC
+  {%- endif -%}
+{%- endblock -%}
+{# https://schema.org/Recipe #}
+{%- block json_ld -%}
+  <script type='application/ld+json'>
+    {
+      {%- for child in this.children -%}
+        {%- if child._template == 'zutaten.yaml' -%}
+          {%- if not from_index -%}
+            {%- include "zutaten/rezept_ld.json.j2" -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    }
+  </script>
+{%- endblock -%}
+{%- block body -%}
+  {{- render_rezept_post(this) -}}
+{%- endblock -%}

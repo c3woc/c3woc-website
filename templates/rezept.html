@@ -1,0 +1,27 @@
+{% extends "header_slim.html" %}
+{% from "macros/rezept.html" import render_rezept_post %}
+{% from "macros/pagination.html" import render_pagination %}
+
+{%- block title -%}{{ this.title }}{%- endblock -%}
+{%- block meta_description -%}
+  {%- if this.meta_description is defined and this.meta_description != "" -%}
+    {{ this.meta_description }}
+  {%- else -%}
+    C3WOC
+  {%- endif -%}
+{%- endblock -%}
+{% block body %}
+	<section class="content -odd -columns">
+		<div class="content__box">
+			<div class="content__inner_box">
+				{{ this.body }}
+			</div>
+		</div>
+	</section>
+    {% for blog_post in this.pagination.items %}
+        {{ render_rezept_post(blog_post, from_index=true) }}
+    {% endfor %}
+    <section>
+      {{ render_pagination(this.pagination, true) }}
+    </section>
+{% endblock %}

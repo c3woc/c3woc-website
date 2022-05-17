@@ -1,0 +1,18 @@
+{% extends "header_slim.html" %}
+{% from "macros/podcast.html" import render_blog_post %}
+{%- block title -%}{{ this.title }}{%- endblock -%}
+{%- block meta_description -%}
+  {%- if this.meta_description is defined and this.meta_description != "" -%}
+    {{ this.meta_description }}
+  {%- else -%}
+    Werkkooperative der Technikfreundinnen eG
+  {%- endif -%}
+{%- endblock -%}
+{% block body %}
+<div class="content__box">
+    <div class="content__inner_box">
+        <h1>{{ this.title }}</h1>
+    </div>
+</div>
+    {{ render_blog_post(this) }}
+{% endblock %}

@@ -1,150 +1,200 @@
-_model: start
+_model: homepage
 ---
 title: C3 Waffel Operation Center
 ---
-slogan: Wir machen Waffeln!
+claim_heading: <span>C3 <em>Waffel Operation Center</em></span><br><span>Wir 🧡 Waffeln!</span>
 ---
-about_header: Die Waffel Formel
+claim_content: Die führenden Experten für Waffeln in der chaos Community.
 ---
-about_text: Mit viel Liebe verwandeln wir rohe Zutaten in waffelfähigen Teig. Dabei verwenden wir lang erforschte Rezepturen, die wir euch nicht verheimlichen wollen.
+subclaim_heading: Waffeln sind für alle da
 ---
-about_text2: Nach jahrelanger Forschung ist es uns gelungen, die Formel für den Waffelteig zu rekonstruieren. Diese galt lange als verschollen, wurde jetzt aber durch Quantentechnologie und Blockchain wieder zugänglich gemacht.
+subclaim_content: Lass dich von Waffelrezepten aus der chaos Community Inspirieren und diese Welt mit Waffeln versüßen.  🧡
 ---
-about_text3: Eines der Geheimnisse von gutem Waffelteig ist die Frische der Zutaten. Ein anderes ist die Qualität.
+meta_description: Lass dich von Waffelrezepten aus der chaos Community Inspirieren und diese Welt mit Waffeln versüßen.  🧡
 ---
-about_url: Waffel Rezepturen
----
-about_url2: /rezept/
----
-icons_header: Wo kannst du uns treffen?
----
-icons_text:
+section:
 
-Das C3WOC erfreut sich einer großen Beliebtheit. Besonders im Umkreis des Chaos Computer Club und Chaos nahen Veranstaltungen.<br/>
-Selbstverständlich sollen dort Waffeln nicht fehlen!
----
-icons_1_1: fas fa-heart
----
-icons_1_2: Seid nett zu einander
----
-icons_1_3:
+#### flow_text_image_section ####
+title: Die Waffel Formel
+----
+title_url: /rezept/
+----
+content_teaser: Mit viel Liebe verwandeln wir rohe Zutaten in waffelfähigen Teig. Dabei verwenden wir lang erforschte Rezepturen, die wir euch nicht verheimlichen wollen.
+----
+content_body:
 
-Eine Waffel besteht aus fünf Herzen. Das ist nicht zufällig so!
-Ein Herz steht metaphorisch für Güte und Liebe. Ebenso tut dies eine Waffel!
----
-icons_2_1: fas fa-handshake
----
-icons_2_2: Kommt zusammen
----
-icons_2_3: Eine einsame Waffel schmeckt bei weiten nicht so gut, wie eine Waffel, die man mit Freunden oder neuen Bekannten genießen kann.
----
-icons_3_1: fas fa-flask
----
-icons_3_2: Experimentiert
----
-icons_3_3: Mit Waffeln lassen sich viele Experimente machen oder verbessern. Angefangen von der Waffel, die die experimentierfreudigen Hacker neu motiviert. Bis hin zu neuen Kreationen wie zum Beispiel die [Dönerwaffel](/rezept/doener/).
----
-icons_4_1: fas fa-user-plus
----
-icons_4_2: Mach mit
----
-icons_4_3: Einsam Waffeln backen macht keinen Spaß. Mach mit beim C3WOC und lass uns gemeinsam mit Waffeln etwas Freude, Liebe und gute Laune verbreiten!
----
-icons_4_url: /mitmachen/
----
-icons_5_1: far fa-comments
----
-icons_5_2: Tauscht euch aus
----
-icons_5_3: Lasst uns gemeinsam über Waffeln reden. Kommt doch bei uns im IRC auf [irc.hackint.org/#waffel](https://hackint.org/connect) vorbei.
----
-icons_5_url: https://webirc.hackint.org/#irc://irc.hackint.org/#waffel
----
-icons_6_1: fa-calendar-plus
----
-icons_6_2: Kommt zu Veranstaltungen
----
-icons_6_3: Das C3WOC kommt gerne zu chaosnahen Veranstaltungen, um dort mit euch zusammen Waffeln zu machen. Ladet uns einfach mal ein!
----
-icons_6_url: https://c3woc.de/#tourdaten
----
-icons_txt: Werde Teil des C3WOC
----
-icons_url: https://c3woc.de/mitmachen/
----
-red_1: Wir freuen uns über neue Gesichter.
----
-red_2:
+Nach jahrelanger Forschung ist es uns gelungen, die Formel für den Waffelteig zu rekonstruieren. Diese galt lange als verschollen, wurde jetzt aber durch Quantentechnologie und Blockchain wieder zugänglich gemacht.
 
-Alleine Waffeln zu backen ist langweilig und mit der Zeit echt anstrengend. Aber zusammen macht das gleich viel mehr Spaß.
-Wenn mehr Menschen mitmachen, wird das backen, Planen, Organisieren und essen von Waffeln zu einem super Erlebnis.
----
-red_3:
+Eines der Geheimnisse von gutem Waffelteig ist die Frische der Zutaten. Ein anderes ist die Qualität.
+----
+content_footer:
 
-Wir würden uns sehr über mehr aktive Leute, die Spaß an Waffeln haben, freuen. Denn mit nur wenigen Menschen etwas zu Planen und durchzuführen ist anstrengend und funktioniert nicht für unbegrenzte Zeit.
+##### flow_social_media_link #####
+sm_what: Folge uns auf
+-----
+title: Mastodon
+-----
+sm_link: https://chaos.social/@c3woc
+-----
+sm_image: /images/icons/social/mastodon.svg
+-----
+sm_what_2: oder
+-----
+title_2: Twitter
+-----
+sm_link_2: https://twitter.com/c3woc
+-----
+sm_image_2: /images/icons/social/twitter.svg
+----
+content_image: waffle_colored_stawberry.jpg
+----
+content_image_alt: 
+----
+content_image_src: 
+#### flow_third_box_section ####
+inner_box:
 
-Bitte mach bei uns mit!
----
-red_4: Wir brauchen deine Unterstützung!
----
-icons_1_url: https://c3coc.de
----
-icons_3_url: /rezepte/
----
-hinweis:
+##### flow_one_innerbox_section #####
+title: klassischer Waffelteig
+-----
+box_image: waffle_apfelmus.jpg
+-----
+box_content:
 
-Wenn du Lust hast, dann 
----
-hinweis_txt: mach mit!
----
-hinweis_url: /mitmachen/
----
-sections:
+Der klassische Waffelteig ist für jeden Einsatz gut.
 
-#### startpage_section ####
-type: right
-----
-header: Der Waffelblog
-----
-text: Wenn du interessiert bist an Bildern und etwas Text zu Veranstaltungen, bei denen das C3WOC involviert ist oder anderen Aktionen, bei denen gewaffelt wurde oder es um Waffeln geht, dann schau doch mal in den C3WOC Blog.
-----
-text2:
+Aus Eiern, Butter, Zucker, Mehl, Milch, Vanille, Backpulver und optional ein wenig Rum und Mate lassen sich jederzeit köstliche Waffeln zaubern.
+-----
+box_link: klassische Waffel
+-----
+box_url: /rezept/klassisch/
+-----
+image_alt: 
+##### flow_one_innerbox_section #####
+title: glutenfreier Waffelteig
+-----
+box_image: sweet_waffle.jpg
+-----
+box_content:
 
-Wir würden auch einen Bericht von deinen Waffel-Aktionen dort sehr gerne lesen!
+Durch nur kleine anpassungen lässt sich das Waffelrezept auch so anpassen, das es für Menschen funktioniert die zum Beispiel kein gluten vertragen.
+Hier haben wir besonders gute Erfahrung mit Maismehl gemacht.
+-----
+box_link: glutenfrei
+-----
+box_url: /rezept/glutenfrei/
+-----
+image_alt: 
+##### flow_one_innerbox_section #####
+title: vegane Waffeln
+-----
+box_image: vegan.jpg
+-----
+box_content:
 
-Sprich uns hierfür einfach an oder noch besser: Mach einen Pull-Request auf der [Webseite](https://github.com/c3woc/c3woc-website).
-----
-url_text: Waffel-Blog
-----
-url: /blog/
-----
-background: /images/home/abschnitt2.jpeg
-#### startpage_section ####
-type: left
-----
-header: Equipment
-----
-text:
+Waffeln lassen sich auch vegan backen.
 
-Für die perfekte Waffel gibt es einige Abhängigkeiten.<br/>
-Eine davon ist ganz klar das Waffeleisen.
+Mit Mandelmilch, veganer Butter und Ei-Ersatz lassen sich ebenfalls köstliche Teigprodukte fürs Waffeleisen zaubern.
+-----
+box_link: Vegan
+-----
+box_url: /rezept/vegan/
+-----
+image_alt: 
+#### flow_seperator ####
+#### flow_boxes_section ####
+title: Sei teil der Waffel Community
 ----
-text2: Hier setzt das C3WOC auf professionelles Gastronomie Equipment.
+background_box_title: Terminkalender
 ----
-url_text: Waffellager
+background_box_claim: Lass uns gemeinsam Waffeln backen!
 ----
-url: /kontakt/
+upper_claim_boxes:
+
+##### flow_calendar #####
+calendar_name: /waffeln.ics
 ----
-background: /images/home/abschnitt3.jpeg
+claim__background_link: Kalender Abonnieren
+----
+claim__background_url: /waffeln.ics
+----
+claim_boxes:
+
+##### flow_claim_boxes #####
+card_title: Waffel Internet Relay Chat
+-----
+card_image: /images/icons/social/hackint.svg
+-----
+card_url: https://webirc.hackint.org/#irc://irc.hackint.org/waffel
+-----
+card_url_text: ircs://irc.hackint.org/#waffel
+-----
+card_text: Im [hackint.org](https://hackint.org/) Netzwerk gibt es einen Waffel-Chat. Wenn du magst schau dort doch mal vorbei und lass uns über waffelfähige Teigprodukte austauschen.
+##### flow_claim_boxes #####
+card_title: Waffeln auf Mastodon
+-----
+card_image: /images/icons/social/mastodon.svg
+-----
+card_url: https://chaos.social/@c3woc
+-----
+card_url_text: @c3woc@chaos.social
+-----
+card_text: Auf Mastodon gibt es auch Waffelhaltige Accounts. So ist das C3WOC auf der chaos.social Instanz vertreten. Schau doch mal vorbei.
+##### flow_claim_boxes #####
+card_title: Waffeln auf Twitter
+-----
+card_image:
+
+ /images/icons/social/twitter.svg
+-----
+card_url: https://twitter.com/@C3WOC
+-----
+card_url_text: @C3WOC
+-----
+card_text: Auch auf Twitter zwitschern die Waffeln fröhlich vor sich hin. Sag doch mal Hallo, wenn du magst.
+##### flow_claim_boxes #####
+card_title: Waffeln im Subreddit
+-----
+card_image:
+
+ /images/icons/social/reddit.svg
+-----
+card_url: https://www.reddit.com/r/waffel/
+-----
+card_url_text: waffel.reddit.com
+-----
+card_text: Wusstet ihr, das es einen eigenen Waffel-Subreddit gibt? Der freut sich immer über leckere Waffel-Gedanken.
+##### flow_claim_boxes #####
+card_title: Die Waffel-Verschwörung
+-----
+card_image: /images/icons/social/telegram.svg
+-----
+card_url: https://t.me/c3woc
+-----
+card_url_text: t.me/c3woc
+-----
+card_text: Für die Verschwörungsliebhaber unter euch gibt es die [Waffelverschwörung](https://t.me/waffelverschwoerung) auf Telegram. Und natürlich einen Announcement Kanal.
+##### flow_claim_boxes #####
+card_title: Waffel auf die Ohren
+-----
+card_image: /images/icons/social/podcast.svg
+-----
+card_url: https://podcast.c3woc.de/
+-----
+card_url_text: podcast.c3woc.de
+-----
+card_text: Wer nicht genug von den Waffeln haben kann, der kann auch den Podcast "Das heiße Eisen" [Abonnieren](https://podcast.c3woc.de/podcast-he.xml).
+##### flow_claim_boxes #####
+card_title: Quellcode und Git
+-----
+card_image: /images/icons/social/gitea.svg
+-----
+card_url: https://backwesen.de/c3woc/
+-----
+card_url_text: backwesen.de/c3woc/
+-----
+card_text: Beim C3WOC schätzen wir Open-Source und Versionsverwaltung sehr. Daher sind wir u.a. auf [github.com/c3woc](https://github.com/c3woc) vertreten. Oder auch ohne LFS limits auf unserer eigenen Infrastruktur auf:
 ---
-render_tourdaten: yes
+subclaim_address: Rezepte
 ---
-icons_header_2: Worum geht es bei den Waffeln
----
-icons_text_2:
-
-Das C3WOC macht nicht einfach Waffeln, die man für Geld kaufen kann. 
-
-<b>Sondern es geht um viel mehr!</b>
----
-icons_2_url: https://www.ccc.de/de/regional
+subclaim_url: /rezept/
