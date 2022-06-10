@@ -1,0 +1,199 @@
+claim_heading: <span>C3 <em>Waffle Operation Centre</em></span><br><span>we 🧡 waffles!</span>
+---
+meta_description: Get inspired by waffle recipes from chaos community and sweeten this world with waffles.  🧡
+---
+section:
+
+#### flow_text_image_section ####
+title: The waffle Formula
+----
+title_url: /rezept/
+----
+content_teaser: With a lot of love we transform raw ingredients into waffle-ready dough. In the process, we use long-researched recipes that we do not want to hide from you.
+----
+content_body:
+
+After years of research, we have succeeded in reconstructing the formula for wafer batter. This was long considered lost, but has now been made accessible again through quantum technology and blockchain.
+
+One of the secrets of good waffle batter is the freshness of the ingredients. Another is the quality.
+----
+content_footer:
+
+##### flow_social_media_link #####
+sm_what: Follow us at
+-----
+title: Mastodon
+-----
+sm_link: https://chaos.social/@c3woc
+-----
+sm_image: /images/icons/social/mastodon.svg
+-----
+sm_what_2: or
+-----
+title_2: Twitter
+-----
+sm_link_2: https://twitter.com/c3woc
+-----
+sm_image_2: /images/icons/social/twitter.svg
+----
+content_image: waffle_colored_stawberry.jpg
+----
+content_image_alt: beatuiful waffle with strawberry
+----
+content_image_src: 
+#### flow_third_box_section ####
+inner_box:
+
+##### flow_one_innerbox_section #####
+title: classic waffle dough
+-----
+box_image: waffle_apfelmus.jpg
+-----
+box_content:
+
+The classic waffle mix is good for any use.
+
+From eggs, butter, sugar, flour, milk, vanilla, baking powder and optionally a little rum and mate, delicious waffles can be conjured up at any time.
+-----
+box_link: classic waffles
+-----
+box_url: /rezept/klassisch/
+-----
+image_alt: 
+##### flow_one_innerbox_section #####
+title: gluten free waffle dough
+-----
+box_image: sweet_waffle.jpg
+-----
+box_content:
+
+Through only small adjustments, the waffle recipe can also be adapted so that it works for people who do not tolerate gluten, for example.
+
+Here we have had particularly good experience with the gluten-free flour from Schär.
+-----
+box_link: gluten free
+-----
+box_url: /rezept/glutenfrei/
+-----
+image_alt: 
+##### flow_one_innerbox_section #####
+title: vagan waffles
+-----
+box_image: vegan.jpg
+-----
+box_content:
+
+Waffles can also be baked vegan.
+
+With almond milk, vegan butter and egg substitute, you can also conjure up delicious dough products for the waffle iron.
+-----
+box_link: Vegan
+-----
+box_url: /rezept/vegan/
+-----
+image_alt: vegan waffle
+#### flow_seperator ####
+#### flow_boxes_section ####
+title: Be part of the Waffle Community
+----
+background_box_title: Calendar
+----
+background_box_claim: Let's bake waffles together!
+----
+upper_claim_boxes:
+
+##### flow_calendar #####
+calendar_name: /waffeln.ics
+----
+claim__background_link: Subscribe to calendar
+----
+claim__background_url: /waffeln.ics
+----
+claim_boxes:
+
+##### flow_claim_boxes #####
+card_title: Waffle Internet Relay Chat
+-----
+card_image: /images/icons/social/hackint.svg
+-----
+card_url: https://webirc.hackint.org/#irc://irc.hackint.org/waffel
+-----
+card_url_text: ircs://irc.hackint.org/#waffel
+-----
+card_text: There is a waffle chat on the [hackint.org](https://hackint.org/) network. If you like, drop by there and let's exchange ideas about waffle-ready dough products.
+##### flow_claim_boxes #####
+card_title: Waffles on Mastodon
+-----
+card_image: /images/icons/social/mastodon.svg
+-----
+card_url: https://chaos.social/@c3woc
+-----
+card_url_text: @c3woc@chaos.social
+-----
+card_text: On Mastodon there are also accounts containing waffle. For example, C3WOC is represented on the chaos.social instance. Have a look.
+##### flow_claim_boxes #####
+card_title: Waffles on Twitter
+-----
+card_image:
+
+ /images/icons/social/twitter.svg
+-----
+card_url: https://twitter.com/@C3WOC
+-----
+card_url_text: @C3WOC
+-----
+card_text: Waffles are also happily tweeting away on Twitter. Say hello if you like.
+##### flow_claim_boxes #####
+card_title: Waffles in subreddit
+-----
+card_image:
+
+ /images/icons/social/reddit.svg
+-----
+card_url: https://www.reddit.com/r/waffel/
+-----
+card_url_text: waffel.reddit.com
+-----
+card_text: Did you know that there is an own waffle subreddit? He is always happy about delicious waffle thoughts.
+##### flow_claim_boxes #####
+card_title: The Waffle Conspiracy
+-----
+card_image: /images/icons/social/telegram.svg
+-----
+card_url: https://t.me/c3woc
+-----
+card_url_text: t.me/c3woc
+-----
+card_text: For the conspiracy buffs among you, there's the [Waffle Conspiracy](https://t.me/waffelverschwoerung) on Telegram. And of course an announcement channel.
+##### flow_claim_boxes #####
+card_title: Waffle on the ears
+-----
+card_image: /images/icons/social/podcast.svg
+-----
+card_url: https://podcast.c3woc.de/
+-----
+card_url_text: podcast.c3woc.de
+-----
+card_text: If you can't get enough of the waffles, you can also listen to the podcast "The Hot Iron" [Subscribe](https://podcast.c3woc.de/podcast-he.xml).
+##### flow_claim_boxes #####
+card_title: Source code and Git
+-----
+card_image: /images/icons/social/gitea.svg
+-----
+card_url: https://backwesen.de/c3woc/
+-----
+card_url_text: backwesen.de/c3woc/
+-----
+card_text: At C3WOC, we highly value open source and version control. That's why we're on [github.com/c3woc](https://github.com/c3woc), among other places. Or even without LFS limits on our own infrastructure:
+---
+subclaim_address: Recipes
+---
+subclaim_content:
+
+ Get inspired by waffle recipes from chaos community and sweeten this world with waffles. 🧡 
+---
+title: c3 waffle operation centre
+---
+claim_content: The leading experts on waffles in the chaos community.
+---
+subclaim_heading: Waffles are for everyone

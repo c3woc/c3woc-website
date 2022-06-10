@@ -211,7 +211,7 @@ note: Wenn möglich Frischmilch verwenden
 -----
 html: no
 #### flow_ingredients ####
-ingredient: Mais Mehl
+ingredient: glutenfreues Mehl
 ----
 usda_num: 100251
 ----
@@ -229,7 +229,7 @@ unit: kg
 substitutions:
 
 ##### flow_substitutions #####
-ingredient: Buchweizen Mehl
+ingredient: Buchweizen oder Mais-Mehl
 -----
 usda_num: 20011
 -----
