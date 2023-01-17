@@ -479,6 +479,78 @@ ort: Netherlands
 ----
 url: ttps://mch2022.org/
 ----
+description: Hackercamp in der Niederlande|Natürlich mit Waffeln
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: yes
+----
+color: crimpson
+#### events ####
+start: 2022-12-02 13:37:23 Europe/Berlin
+----
+ende: 2022-12-04 18:00:42 Europe/Berlin
+----
+event: Chaos Weekend Aalen
+----
+ort: Hackwerk Aalen
+----
+url: 
+----
+description: Chaos Wochenende in Aalen
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: yes
+----
+color: crimpson
+#### events ####
+start: 2023-06-08 13:37:42 Europe/Berlin
+----
+ende: 2023-06-11 16:00:42 Europe/Berlin
+----
+event: GPN21
+----
+ort: HfG und ZKM Karlsruhe
+----
+url: https://entropia.de/GPN21
+----
+description: 21. Gulasch Programier Nacht.|Natürlich mit Waffeln, Hacken und Spaß am Gerät
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: yes
+----
+color: crimpson
+#### events ####
+start: 2023-08-15 13:37:42 Europe/Berlin
+----
+ende: 2023-08-19 16:00:42 Europe/Berlin
+----
+event: Chaos Communication Camp 2023
+----
+ort: Ziegeleipark Mildenberg
+----
+url: https://events.ccc.de/
+----
+description: 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: no
+----
+color: crimpson
+#### events ####
+start: 2023-04-07 13:37:00 Europe/Berlin
+----
+ende: 2023-04-10 15:00:42 Europe/Berlin
+----
+event: Easterhegg 20
+----
+ort: Kampnagel
+----
+url: https://eh20.easterhegg.eu/
+----
 description: 
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
