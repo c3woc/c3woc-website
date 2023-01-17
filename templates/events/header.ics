@@ -8,7 +8,7 @@ URL:{{ this.moreinfourl }}
 REFRESH-INTERVAL;VALUE=DURATION:P2D
 SOURCE;VALUE=URI:{{ this._path | url(external=true) }}
 COLOR:{{ this.color }}
-{# NAME;LANGUAGE={{ this.lang }}:{{ this.name | wordwrap(width=45, wrapstring='\n   ') }} #}
+{#- NAME;LANGUAGE={{ this.lang }}:{{ this.name | wordwrap(width=45, wrapstring='\n   ') }} #}
 DESCRIPTION;LANGUAGE={{ this.lang }}:{{ this.description | wordwrap(width=45, wrapstring='\n   ') }}
 X-WR-CALNAME:{{ this.name  | wordwrap(width=45, wrapstring='\n   ') }}
 X-WR-CALDESC:{{ this.description  | wordwrap(width=45, wrapstring='\n   ') }}

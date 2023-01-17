@@ -18,6 +18,7 @@ install:
 	fi
 	sudo pip3 install wheel  --upgrade
 	sudo pip3 install lektor --upgrade
+	echo -e "Pleas make sure you have unix2dos available!"
 
 build:
 	if python3 -m lektor --version 2>/dev/null; then
@@ -37,6 +38,7 @@ deploy:
 	lektor clean --yes
 	lektor plugin flush-cache
 	lektor build $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)
+	unix2dos temp/builds/c3woc.de/waffeln.ics
 	lektor deploy $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)
 
 pull:
