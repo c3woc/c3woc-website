@@ -558,3 +558,21 @@ mail: Waffel Operation Center <waffel@c3woc.de>
 confirmed: yes
 ----
 color: crimpson
+#### events ####
+start: 2023-08-05 13:37:00 Europe/Berlin
+----
+ende: 2023-08-06 16:00:00 Europe/Berlin
+----
+event: Froscon
+----
+ort: Hochschule Bonn-Rhein-Sieg
+----
+url: https://www.froscon.org/
+----
+description: 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: yes
+----
+color: crimpson
