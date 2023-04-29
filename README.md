@@ -35,7 +35,7 @@ Dieses ruft ihr so auf:
 sudo apt install git-lfs
 
 # clont das git (hier von gitea)
-git clone https://gitea.see-base.de/C3WOC/c3woc-webseite.git
+git clone https://backwesen.de/c3woc/webseite.git
 
 # installiere make um das Makefile auszuführen
 sudo apt install make
@@ -43,8 +43,11 @@ sudo apt install make
 # betrete das geklonte repo:
 cd c3woc-webseite
 
-# installiere lektor + abhängigkeiten
+# installiere abhängigkeiten
 make install
+
+# Insturctions how to create venv
+make venv
 ```
 
  Zur C3WOC Webseite etwas beitragen:
