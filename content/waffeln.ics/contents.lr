@@ -576,3 +576,23 @@ mail: Waffel Operation Center <waffel@c3woc.de>
 confirmed: yes
 ----
 color: crimpson
+#### events ####
+start: 2023-06-02 13:37:00 Europe/Berlin
+----
+ende: 2023-06-04 18:00:00 Europe/Berlin
+----
+event: FSCK
+----
+ort: Kino Universum Backnang
+----
+url: https://wiki.events.hacknang.de/2023/
+----
+description:
+
+Der Chaostreff Backnang plant vom 2.-4. Juni ein Hacking-Event in der Murr-Metropole Backnang, im Herzen des Schwabenlandes, auszurichten. Auf der Gästeliste stehen alle technikbegeisterten Haecksen und Hacker, die schon immer mal ein ganzes Wochenende lang im Kino sein wollten. 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: no
+----
+color: crimpson

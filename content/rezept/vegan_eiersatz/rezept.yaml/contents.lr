@@ -1,8 +1,8 @@
-title: vegane Waffeln
+title: vegane Waffeln (Eiersatz)
 ---
 _template: zutaten.yaml
 ---
-recipe_name: vegane Waffeln
+recipe_name: vegane Waffeln (Eiersatz)
 ---
 x_ignore_1: yes
 ---
@@ -20,26 +20,31 @@ serving_units: Waffeln
 ingredients:
 
 #### flow_ingredients ####
-ingredient: Hefe
+ingredient: Ei-Ersatz
 ----
-usda_num: 75236000
+usda_num: 1144
 ----
 amounts:
 
 ##### flow_amounts #####
-amount: ½
+amount: 4
 -----
-unit: Würfel
+unit: TL
 ##### flow_amounts #####
-amount: 2
+amount: 250
 -----
-unit: Würfel
+unit: g
 ----
 substitutions: 
 ----
 processing: 
 ----
-notes: 
+notes:
+
+##### flow_notes #####
+note: Ei-Ersatz Pulver gibt es im Internet oder in ausgewählten Supermärkten
+-----
+html: 
 #### flow_ingredients ####
 ingredient: Zucker
 ----
@@ -62,59 +67,18 @@ processing:
 ----
 notes: 
 #### flow_ingredients ####
-ingredient: Mandelmilch
-----
-usda_num: 14091
-----
-amounts:
-
-##### flow_amounts #####
-amount: 400
------
-unit: ml
-##### flow_amounts #####
-amount: 2
------
-unit: l
-----
-substitutions:
-
-##### flow_substitutions #####
-ingredient: Hafermilch
------
-usda_num: 100277
------
-amounts:
-
-###### flow_amounts ######
-amount: 200
-------
-unit: g
-###### flow_amounts ######
-amount: 1
-------
-unit: l
------
-processing: 
------
-notes: 
-----
-processing: 
-----
-notes: 
-#### flow_ingredients ####
-ingredient: vegane Margarine
+ingredient: vegane Butter
 ----
 usda_num: 4612
 ----
 amounts:
 
 ##### flow_amounts #####
-amount: 200
+amount: 250
 -----
 unit: g
 ##### flow_amounts #####
-amount: 1
+amount: 1,25
 -----
 unit: kg
 ----
@@ -145,6 +109,75 @@ amount: 100
 unit: g
 ----
 substitutions: 
+----
+processing: 
+----
+notes: 
+#### flow_ingredients ####
+ingredient: Backpulver
+----
+usda_num: 18371
+----
+amounts:
+
+##### flow_amounts #####
+amount: 1
+-----
+unit: EL
+##### flow_amounts #####
+amount: 50
+-----
+unit: g
+----
+substitutions: 
+----
+processing: 
+----
+notes:
+
+##### flow_notes #####
+note:
+
+ Backpulver vergrößert das Volumen des Teigs
+-----
+html: yes
+#### flow_ingredients ####
+ingredient: Mandelmilch
+----
+usda_num: 14091
+----
+amounts:
+
+##### flow_amounts #####
+amount: 200
+-----
+unit: ml
+##### flow_amounts #####
+amount: 1
+-----
+unit: l
+----
+substitutions:
+
+##### flow_substitutions #####
+ingredient: Hafermilch
+-----
+usda_num: 100277
+-----
+amounts:
+
+###### flow_amounts ######
+amount: 200
+------
+unit: g
+###### flow_amounts ######
+amount: 1
+------
+unit: l
+-----
+processing: 
+-----
+notes: 
 ----
 processing: 
 ----
@@ -217,6 +250,23 @@ processing:
 ----
 notes: 
 #### flow_ingredients ####
+ingredient: Rum
+----
+usda_num: 93504000
+----
+amounts: 
+----
+substitutions: 
+----
+processing: 
+----
+notes:
+
+##### flow_notes #####
+note: optional
+-----
+html: yes
+#### flow_ingredients ####
 ingredient: Salz
 ----
 usda_num: 2047
@@ -258,7 +308,7 @@ oven_type: Waffeleisen
 steps:
 
 #### flow_steps ####
-step: vegane Butter oder Magarine zerlassen und dann mit dem veganen Drink (Milchersatz) in der Schüssel verrühren
+step: Ei-Ersatz Pulver mit etwas flüssigkeit vermischen und schaumig rühren
 ----
 haccp_type: 
 ----
@@ -266,7 +316,7 @@ haccp_string:
 ----
 notes: 
 #### flow_steps ####
-step: Hefe in die Schüssel in kleinen Stücken dazugeben und verrühren
+step: Zucker, Vanillezucker und Milch mit dem Ei-Ersatz gemisch verrühren.
 ----
 haccp_type: 
 ----
@@ -274,7 +324,7 @@ haccp_string:
 ----
 notes: 
 #### flow_steps ####
-step: Zucker, Vanillezucker und Salz dazu geben und verrühren
+step: unter Rühren die häfte des Mehl dazugeben.
 ----
 haccp_type: 
 ----
@@ -282,7 +332,23 @@ haccp_string:
 ----
 notes: 
 #### flow_steps ####
-step: die weiteren Zutaten wie Mehl und Mate langsam unter rühren dazu geben
+step: die flüssige vegane Butter oder Magarine vorsichtig dazugeben und gut verrühren.
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step: nach und nach die restlichen Zutaten hinzugeben.
+----
+haccp_type: 
+----
+haccp_string: 
+----
+notes: 
+#### flow_steps ####
+step: Den Teig klumpenfrei rühren, bei bedarf etwas mit Mehl oder Flüssigkeit variieren, damit es ein dickflüssiger Teig wird, der sich noch in ein Waffeleisen gießen lässt.
 ----
 haccp_type: 
 ----
