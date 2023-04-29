@@ -56,11 +56,11 @@ deploy:
 	  rm assets/svg/*; \
 	  if python3 -m lektor --version 2>/dev/null; then \
 	    python3 -m lektor build $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS); \
-	    unix2dos temp/builds/c3woc.de/waffeln.ics
+	    unix2dos temp/builds/c3woc.de/waffeln.ics; \
 	    python3 -m lektor deploy $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS); \
 	  else \
 	    lektor build $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS); \
-	    unix2dos temp/builds/c3woc.de/waffeln.ics
+	    unix2dos temp/builds/c3woc.de/waffeln.ics; \
 	    lektor deploy $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS); \
 	  fi; \
 	fi
