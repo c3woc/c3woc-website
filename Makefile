@@ -67,30 +67,30 @@ deploy:
 
 
 pull:
-	if git config remote.github.url > /dev/null; then
-	  git pull github main
-	else
-	  git remote add github https://github.com/c3woc/c3woc-website.git
-	  git pull github main
-	fi
-	if git config remote.backwesen.url > /dev/null; then
-	  git pull backwesen main
-	else
-	  git remote add backwesen https://backwesen.de/c3woc/webseite.git
-	  git pull backwesen main
-	fi
+	if git config remote.github.url > /dev/null; then \
+	  git pull github main; \
+	else \
+	  git remote add github https://github.com/c3woc/c3woc-website.git; \
+	  git pull github main; \
+	fi; \
+	if git config remote.backwesen.url > /dev/null; then \
+	  git pull backwesen main; \
+	else \
+	  git remote add backwesen https://backwesen.de/c3woc/webseite.git; \
+	  git pull backwesen main; \
+	fi; \
 	git pull origin main
 
 push:
-	if git config remote.github.url > /dev/null; then
-	  git push github main
-	else
-	  git remote add github https://github.com/c3woc/c3woc-website.git
-	  git push github main
-	fi
-	if git config remote.backwesen.url > /dev/null; then
-	  git push backwesen main
-	else
-	  git remote add backwesen https://backwesen.de/l3d/webseite.git
-	  git push github main
+	if git config remote.github.url > /dev/null; then \
+	  git push github main; \
+	else \
+	  git remote add github https://github.com/c3woc/c3woc-website.git; \
+	  git push github main; \
+	fi; \
+	if git config remote.backwesen.url > /dev/null; then \
+	  git push backwesen main; \
+	else \
+	  git remote add backwesen https://backwesen.de/l3d/webseite.git; \
+	  git push github main; \
 	fi
