@@ -140,7 +140,12 @@ ingredient: Fruchtbuttermilch
 ----
 usda_num: 011110906151
 ----
-amounts: 
+amounts:
+
+##### flow_amounts #####
+amount: 1
+-----
+unit: l
 ----
 substitutions: 
 ----

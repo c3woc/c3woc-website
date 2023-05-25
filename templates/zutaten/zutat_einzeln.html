@@ -53,7 +53,7 @@
                         {%- if sst.usda_num is defined and sst.usda_num != "" -%}
                           {{- ' class=' -}}"usda_{{- sst.usda_num -}}"
                         {%- endif -%}
-                        >(alternativ {{ sst.ingredient }})</span></i>
+                        >(alternativ {{ amt2.amount }} {{ sst.ingredient }})</span></i>
                       {%- endif -%}
                     {%- endif -%}
                   {%- endfor -%}
