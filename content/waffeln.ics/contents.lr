@@ -593,6 +593,24 @@ Der Chaostreff Backnang plant vom 2.-4. Juni ein Hacking-Event in der Murr-Metro
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: no
+confirmed: yes
+----
+color: crimpson
+#### events ####
+start: 2023-05-28 18:00:00 Europe/Berlin
+----
+ende: 2023-05-29 23:42:00 Europe/Berlin
+----
+event: base^2
+----
+ort: c-base Berlin
+----
+url: https://see-base.de/blog/base2-c-base-2023/
+----
+description: n Berlin findet das base^2 statt. Das Treffen der (Ü)BERLIN(g)er Space see-base und c-base. Es wird Waffeln geben!
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: yes
 ----
 color: crimpson
