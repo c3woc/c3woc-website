@@ -12,9 +12,11 @@ DESCRIPTION;LANGUAGE={{ this.lang }}:{{ blk.description|replace( "|", "\\n")  | 
   {{ blk.url | wordwrap(width=65, wrapstring='\n   ') }}{% endif %}
 LOCATION;LANGUAGE={{ this.lang }}:{{ blk.ort  | wordwrap(width=45, wrapstring='\n   ') }}
 STATUS:
-  {%- if blk.confirmed -%}
+  {%- if blk.confirmed == 'true' -%}
     CONFIRMED
-  {%- else -%}
+  {%- elif blk.confirmed == 'canceled' -%}
+    CANCELLED
+  {%- else %}
     TENTATIVE
   {%- endif %}
 SUMMARY;LANGUAGE={{ this.lang }}:{{ blk.event  | wordwrap(width=45, wrapstring='\n   ') }}

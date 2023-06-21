@@ -33,7 +33,7 @@ description: Das Chaos Communication Camp ist ein internationales Treffen von Ha
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -51,7 +51,7 @@ description: Die Glühweinprogrammiernacht, auch GPN18,5, setzt den Schwerpunkt 
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -69,7 +69,7 @@ description: Wir wurden eingeladen auf der Froscon Waffeln zu machen. Und es wir
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -87,7 +87,7 @@ description: Der Chaos Computer Club Wien freut sich, euch zur Easterhegg 2019 z
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -105,7 +105,7 @@ description: Hacken, Gulasch, Vorträge, Cloud, Tschunk, Workshops, Lounge, Mate
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -123,7 +123,7 @@ description: Waffeln! Chilli! Döner!|Was man da alles machen kann...|Nur echt m
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -141,7 +141,7 @@ description: Der Chaos Communication Congress ist ein mehrtägiges, in Deutschla
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -159,7 +159,7 @@ description: Waffeln auf dem Basar des Hackerspace! Zusammen mit Mate, Löten, r
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -171,13 +171,13 @@ event: Freifunk Camp
 ----
 ort: see-base, Überlingen
 ----
-url: https://ffbsee.de/
+url: 
 ----
 description: Freifunkcamp am Bodensee.|Mit Waffeln \o/|
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -195,7 +195,7 @@ description: Cluster und Waffeln. Was da für synergien entstehen :P
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -213,7 +213,7 @@ description: Toolbox. Heimat der Waffel. Kommt vorbei!
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -231,7 +231,7 @@ description: Wie am letzten Gettogether bereits angekündigt, haben wir vom Chao
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -249,7 +249,7 @@ description: In der Toolbox in Makrdorf gibt es am 13. Dezember ein Weihnachtswa
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -267,7 +267,7 @@ description: Die CPU ist ein kleineres Chaosevent in der Mensa der Uni Ulm für 
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -285,7 +285,7 @@ description: Freie Software und Open Source - das sind die Themen der FrOSCon. |
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -303,7 +303,7 @@ description: Die Toolbox hat einen Dönergrill. Lass uns den mal ausprobieren un
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -321,7 +321,7 @@ description:
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -339,7 +339,7 @@ description: Save Your Internet und komm zur Demo!| Auch wenn es da nicht übera
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -357,7 +357,7 @@ description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer C
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -369,13 +369,13 @@ event: Technik Camp
 ----
 ort: Campus der Waldorfschule Überlingen
 ----
-url: https://ffbsee.net/camp/
+url: 
 ----
 description: 
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -393,7 +393,7 @@ description: flipdot ist der Kasseler Hacker- und Makerspace seit 2009. Also wir
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -411,7 +411,7 @@ description: Wir sind am Congres... | Macht mit, kommt vorbei, seid dabei!
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -429,7 +429,7 @@ description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer C
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -447,7 +447,7 @@ description: Camp im VVoid
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: false
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -465,7 +465,7 @@ description: Gulaschprogrammiernacht klingt fast wie ein Kochmarathon für schla
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -483,7 +483,7 @@ description: Hackercamp in der Niederlande|Natürlich mit Waffeln
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -501,7 +501,7 @@ description: Chaos Wochenende in Aalen
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -519,7 +519,7 @@ description: 21. Gulasch Programier Nacht.|Natürlich mit Waffeln, Hacken und Sp
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -531,13 +531,13 @@ event: Chaos Communication Camp 2023
 ----
 ort: Ziegeleipark Mildenberg
 ----
-url: https://events.ccc.de/
+url: https://events.ccc.de/camp/2023/infos/
 ----
 description: 
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: no
+confirmed: canceled
 ----
 color: crimpson
 #### events ####
@@ -555,7 +555,7 @@ description:
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -573,7 +573,7 @@ description:
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -593,7 +593,7 @@ Der Chaostreff Backnang plant vom 2.-4. Juni ein Hacking-Event in der Murr-Metro
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
 ----
 color: crimpson
 #### events ####
@@ -611,6 +611,118 @@ description: n Berlin findet das base^2 statt. Das Treffen der (Ü)BERLIN(g)er S
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: yes
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2023-06-24 17:00 Europe/Berlin
+----
+ende: 2023-06-24 23:00 Europe/Berlin
+----
+event: THW OV Friedrichshafen - Sommerfest
+----
+ort: THW OV Friedrichshafen
+----
+url: https://ov-friedrichshafen.thw.de/
+----
+description: 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2023-06-29 13:37:42 Europe/Berlin
+----
+ende: 2023-07-02 23:42:00 Europe/Berlin
+----
+event: WAMP
+----
+ort: Westerwald
+----
+url: https://westwood.camp/
+----
+description: WAMP - Das Camp im Westerwald. |Mit Waffeln, Chaos und was sonst noch so dazu ggehört.
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2023-07-14 13:37:00 Europe/Berlin
+----
+ende: 2023-07-16 23:42:00 Europe/Berlin
+----
+event: Hackover
+----
+ort: Hannover
+----
+url: https://hackover.de/
+----
+description: 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: false
+----
+color: crimpson
+#### events ####
+start: 2023-07-20 13:37:00 Europe/Berlin
+----
+ende: 2023-07-23 23:42:00 Europe/Berlin
+----
+event: IGER
+----
+ort: Bamberg
+----
+url: https://fairydust.reisen/
+----
+description: 23.000 Meilen uber dem Meer |20.-​23.​7.​2023 |Ein Event des backspace e. V. in Bamberg
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: false
+----
+color: crimpson
+#### events ####
+start: 2023-08-22 13:37:00 Europe/Berlin
+----
+ende: 2023-08-26 23:42:00 Europe/Berlin
+----
+event:
+
+ Hacken Open Air 2::23
+----
+ort: Gifhorn
+----
+url: https://hackenopenair.de/
+----
+description:
+
+ Hacken Open Air 2::23
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: false
+----
+color: crimpson
+#### events ####
+start: 2023-11-03 13:37:42 Europe/Berlin
+----
+ende: 2023-11-05 23:42:42 Europe/Berlin
+----
+event: Geekend AAlen
+----
+ort: Aalen
+----
+url: https://aalen.space/
+----
+description: 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
 ----
 color: crimpson

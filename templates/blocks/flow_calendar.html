@@ -21,6 +21,12 @@
           {%- endif -%}
             <tr>
               <th>
+              {%- if blk.confirmed == 'true' -%}
+              {%- elif blk.confirmed == 'canceled' -%}
+              <s>
+              {% else %}
+              <i>
+              {% endif %}
           {%- if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') -%}
             {{- '\n                        ' -}}
             {{ blk.start.strftime('%d.%m.%y %H') }} - {{  blk.ende.strftime('%H') }} Uhr
@@ -30,12 +36,30 @@
           {%- endif -%}
           {{- '\n                      ' -}} </th>
           {{- '\n                      ' -}} <th>
+              {%- if blk.confirmed == 'true' -%}
+              {%- elif blk.confirmed == 'canceled' -%}
+              <s>
+              {% else %}
+              <i>
+              {% endif %}
           {{- '\n                        ' -}} <a href="{{ blk.url }}" title="{{ blk.description|replace("|", " ") }}">
           {{- blk.event -}}
           </a>
+              {%- if blk.confirmed == 'true' -%}
+              {%- elif blk.confirmed == 'canceled' -%}
+              </s>
+              {% else %}
+              </i>
+              {% endif %}
           {{- '\n                      ' -}} </th>
           {{- '\n                      ' -}} <th>{{ blk.ort }}</th>
-          {{- '\n                    ' -}} </tr>
+              {%- if blk.confirmed == 'true' -%}
+              {%- elif blk.confirmed == 'canceled' -%}
+              </s>
+              {% else %}
+              </i>
+              {% endif %}
+          {{- '\n                    ' -}} </tr></s>
         {%- endif -%}
       {%- endfor -%}
     {%- endif -%}
