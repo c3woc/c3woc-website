@@ -53,7 +53,6 @@ deploy:
 	else \
 	  lektor plugin flush-cache; \
 	  lektor clean --yes; \
-	  rm assets/svg/*; \
 	  if python3 -m lektor --version 2>/dev/null; then \
 	    python3 -m lektor build $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS); \
 	    unix2dos temp/builds/c3woc.de/waffeln.ics; \

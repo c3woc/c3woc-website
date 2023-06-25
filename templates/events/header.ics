@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 UID:{{ this._gid }}
 URL:{{ this.moreinfourl }}
-REFRESH-INTERVAL;VALUE=DURATION:P2D
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
 SOURCE;VALUE=URI:{{ this._path | url(external=true) }}
 COLOR:{{ this.color }}
 {#- NAME;LANGUAGE={{ this.lang }}:{{ this.name | wordwrap(width=45, wrapstring='\n   ') }} #}

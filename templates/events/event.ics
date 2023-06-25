@@ -11,17 +11,20 @@ DESCRIPTION;LANGUAGE={{ this.lang }}:{{ blk.description|replace( "|", "\\n")  | 
   Weiteres dazu auf
   {{ blk.url | wordwrap(width=65, wrapstring='\n   ') }}{% endif %}
 LOCATION;LANGUAGE={{ this.lang }}:{{ blk.ort  | wordwrap(width=45, wrapstring='\n   ') }}
-STATUS:
-  {%- if blk.confirmed == 'true' -%}
-    CONFIRMED
-  {%- elif blk.confirmed == 'canceled' -%}
-    CANCELLED
-  {%- else %}
-    TENTATIVE
-  {%- endif %}
+  {%- if blk.confirmed == 'true' -%}{{- '\n' -}}
+STATUS:CONFIRMED
+METHOD:PUBLISH
+  {%- elif blk.confirmed == 'canceled' -%}{{- '\n' -}}
+STATUS:CANCELLED
+METHOD:CANCEL
+  {%- else -%}{{- '\n' -}}
+STATUS:TENTATIVE
+  {%- endif -%} {{- '\n' -}}
 SUMMARY;LANGUAGE={{ this.lang }}:{{ blk.event  | wordwrap(width=45, wrapstring='\n   ') }}
 TRANSP:OPAQUE
+{%- if blk.url is defined %}
 URL:{{ blk.url }}
+{%- endif %}
 DTEND;VALUE=DATE-TIME;TZID=Europe/Berlin:{{ blk.ende.strftime('%Y%m%dT%H%M%S') }}
 CONTACT;LANGUAGE={{ this.lang }}:{{ blk.mail }}
 COLOR:{{ blk.color }}

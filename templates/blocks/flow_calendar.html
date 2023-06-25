@@ -22,10 +22,8 @@
             <tr>
               <th>
               {%- if blk.confirmed == 'true' -%}
-              {%- elif blk.confirmed == 'canceled' -%}
-              <s>
-              {% else %}
-              <i>
+              {%- elif blk.confirmed == 'canceled' -%} <s>
+              {% else %} <i>
               {% endif %}
           {%- if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') -%}
             {{- '\n                        ' -}}
@@ -34,13 +32,15 @@
             {{- '\n                        ' -}}
             {{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }}
           {%- endif -%}
+              {%- if blk.confirmed == 'true' -%}
+              {%- elif blk.confirmed == 'canceled' -%} </s>
+              {% else %} </i>
+              {% endif %}
           {{- '\n                      ' -}} </th>
           {{- '\n                      ' -}} <th>
               {%- if blk.confirmed == 'true' -%}
-              {%- elif blk.confirmed == 'canceled' -%}
-              <s>
-              {% else %}
-              <i>
+              {%- elif blk.confirmed == 'canceled' -%} <s>
+              {% else %} <i>
               {% endif %}
           {{- '\n                        ' -}} <a href="{{ blk.url }}" title="{{ blk.description|replace("|", " ") }}">
           {{- blk.event -}}
@@ -51,15 +51,23 @@
               {% else %}
               </i>
               {% endif %}
-          {{- '\n                      ' -}} </th>
-          {{- '\n                      ' -}} <th>{{ blk.ort }}</th>
               {%- if blk.confirmed == 'true' -%}
-              {%- elif blk.confirmed == 'canceled' -%}
-              </s>
-              {% else %}
-              </i>
+              {%- elif blk.confirmed == 'canceled' -%} </s>
+              {% else %} </i>
               {% endif %}
-          {{- '\n                    ' -}} </tr></s>
+          {{- '\n                      ' -}} </th>
+          {{- '\n                      ' -}} <th>
+              {%- if blk.confirmed == 'true' -%}
+              {%- elif blk.confirmed == 'canceled' -%} <s>
+              {% else %} <i>
+              {% endif %}
+                {{ blk.ort }}
+              {%- if blk.confirmed == 'true' -%}
+              {%- elif blk.confirmed == 'canceled' -%} </s>
+              {% else %} </i>
+              {% endif %}
+          </th>
+          {{- '\n                    ' -}} </tr>
         {%- endif -%}
       {%- endfor -%}
     {%- endif -%}
