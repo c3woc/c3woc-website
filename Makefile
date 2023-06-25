@@ -72,11 +72,11 @@ pull:
 	  git remote add github https://github.com/c3woc/c3woc-website.git; \
 	  git pull github main; \
 	fi; \
-	if git config remote.backwesen.url > /dev/null; then \
-	  git pull backwesen main; \
+	if git config remote.l3d.url > /dev/null; then \
+	  git pull l3d main; \
 	else \
-	  git remote add backwesen https://backwesen.de/c3woc/webseite.git; \
-	  git pull backwesen main; \
+	  git remote add l3d https://git.l3d.ch/c3woc/webseite.git; \
+	  git pull l3d main; \
 	fi; \
 	git pull origin main
 
@@ -87,9 +87,9 @@ push:
 	  git remote add github https://github.com/c3woc/c3woc-website.git; \
 	  git push github main; \
 	fi; \
-	if git config remote.backwesen.url > /dev/null; then \
-	  git push backwesen main; \
+	if git config remote.l3d.url > /dev/null; then \
+	  git push l3d main; \
 	else \
-	  git remote add backwesen https://backwesen.de/l3d/webseite.git; \
-	  git push github main; \
+	  git remote add l3d https://git.l3d.ch/l3d/webseite.git; \
+	  git push l3d main; \
 	fi
