@@ -726,3 +726,21 @@ mail: Waffel Operation Center <waffel@c3woc.de>
 confirmed: true
 ----
 color: crimpson
+#### events ####
+start: 2024-06-13 13:37:42 Europe/Berlin
+----
+ende: 2024-06-16 16:00:00 Europe/Berlin
+----
+event: VVoid Camp
+----
+ort: Zeltplatz Messerschmidmühle
+----
+url: https://vvoid.camp
+----
+description: Das VVoid Camp auf dem Zeltplatz Messerschmidmühle im Bayerischen VVald ist Treffpunkt, VVohnzimmer und Bühne für allerlei chaotische VVesen. Mit Cyber, Waffeln und was sonst noch so dazu gehört.
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: false
+----
+color: crimpson
