@@ -6,7 +6,7 @@
       {%- for blk in page.dates.blocks|sort(attribute='ende', reverse = False) -%}
         {%- if blk.start.strftime('%Y%m%d%H%M') > none|datetimeformat('yyyyMMddhhmm') -%}
           {%- if counter == ['1'] -%}
-            <table class="template">
+            <table class="template" id="tourdaten">
               <thead>
                 <tr>
                   <th>Datum</th>

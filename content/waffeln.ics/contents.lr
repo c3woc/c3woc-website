@@ -533,7 +533,7 @@ ort: Ziegeleipark Mildenberg
 ----
 url: https://events.ccc.de/camp/2023/infos/
 ----
-description: Chaos Communication Camp 2023 im Ziegeleipark Mildenberg. Leider ohne Waffeln, weil man bisher mit der PL keinen Weg gefunden hat, wie es Waffeln auf so einem Event geben könnte.
+description: Chaos Communication Camp 2023 im Ziegeleipark Mildenberg. Leider ohne öffentlich zugängliche Waffeln, weil man mit der PL keinen Weg gefunden hat, wie es Waffeln auf so einem Event geben könnte. Ein klassischer Waffelstand hat leider zu viel komerz und passt nicht in den charakter des Events.
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
@@ -683,7 +683,7 @@ description: 23.000 Meilen uber dem Meer |20.-​23.​7.​2023 |Ein Event des 
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
-confirmed: false
+confirmed: true
 ----
 color: crimpson
 #### events ####
