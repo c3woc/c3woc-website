@@ -91,7 +91,7 @@ amount: 200
 ------
 unit: g
 ###### flow_amounts ######
-amount: 1
+amount: 2
 ------
 unit: l
 -----
