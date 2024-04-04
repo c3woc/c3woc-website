@@ -744,3 +744,149 @@ mail: Waffel Operation Center <waffel@c3woc.de>
 confirmed: false
 ----
 color: crimpson
+#### events ####
+start: 2024-03-28 16:00:00 Europe/Berlin
+----
+ende: 2024-04-01 14:00:00 Europe/Berlin
+----
+event: Easterhegg 2024
+----
+ort: Regensburg
+----
+url: 
+----
+description: 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2024-05-03 14:00:00 Europe/Berlin
+----
+ende: 2024-05-05 14:00:00 Europe/Berlin
+----
+event: FSCK 2024
+----
+ort: Kino Universum Backnang
+----
+url: https://events.ctbk.de/fsck-2024/
+----
+description: 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2024-08-22 14:00:00 Europe/Berlin
+----
+ende: 2024-08-25 14:00:00 Europe/Berlin
+----
+event: WAMP
+----
+ort: Westerwald
+----
+url: https://westwood.camp/
+----
+description: WAMP|Das Camp im Westerwald
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2024-05-30 14:00:00 Europe/Berlin
+----
+ende: 2024-06-02 16:00:00 Europe/Berlin
+----
+event: GPN22
+----
+ort: HFG/ZKM Karlsruhe
+----
+url: https://entropia.de/GPN22
+----
+description: Die GPN22 wird vom 30.05 bis 02.06 2024 stattfinden.|Vier Tage lang erwarten euch Hacken, Gulasch, Vorträge, Tschunk, Workshops, Lounge, Mate und Spaß am Waffeleisen.
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2024-07-09 14:00:00 Europe/Berlin
+----
+ende: 2024-07-13 16:00:00 Europe/Berlin
+----
+event: HOA 2024
+----
+ort: Giffhorn
+----
+url: https://hackenopenair.de/
+----
+description: Das Hacken Open Air ist feinstes Hacker-Camping, ausgerichtet vom Stratum0. Gemeinsam mit euch wollen wir in der Natur tüfteln, diskutieren und kreativ sein.
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: false
+----
+color: crimpson
+#### events ####
+start: 2024-07-17 14:00:00 Europe/Berlin
+----
+ende: 2024-07-24 16:00:00 Europe/Berlin
+----
+event: Bornhack 2024
+----
+ort:
+
+ Danish island of Funen
+----
+url: https://bornhack.dk/bornhack-2024/
+----
+description: BornHack ist ein 7-tägiges Zeltlager im Freien, bei dem Hacker und Menschen mit Interesse an Technologie oder Sicherheit zusammen kommen, um Technologie zu feiern, Kontakte zu knüpfen, zu lernen und Spaß zu haben.
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: false
+----
+color: crimpson
+#### events ####
+start: 2024-07-26 14:00:00 Europe/Berlin
+----
+ende: 2024-07-28 16:00:00 Europe/Berlin
+----
+event: FAT24
+----
+ort: Aalen
+----
+url: 
+----
+description: Aach aalen...
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2024-06-28 14:00:00 Europe/Berlin
+----
+ende: 2024-06-30 16:00:00 Europe/Berlin
+----
+event: CoSin 2024
+----
+ort: Biel/Bienne
+----
+url: https://cosin.ch/
+----
+description: 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: false
+----
+color: crimpson
