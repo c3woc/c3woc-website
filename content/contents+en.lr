@@ -180,9 +180,9 @@ card_title: Source code and Git
 -----
 card_image: /images/icons/social/gitea.svg
 -----
-card_url: https://backwesen.de/c3woc/
+card_url: https://git.l3d.ch/c3woc/
 -----
-card_url_text: backwesen.de/c3woc/
+card_url_text: git.l3d.ch/c3woc/
 -----
 card_text: At C3WOC, we highly value open source and version control. That's why we're on [github.com/c3woc](https://github.com/c3woc), among other places. Or even without LFS limits on our own infrastructure:
 ---
@@ -190,7 +190,7 @@ subclaim_address: Recipes
 ---
 subclaim_content:
 
- Get inspired by waffle recipes from chaos community and sweeten this world with waffles. 🧡 
+ Get inspired by waffle recipes from chaos community and sweeten this world with waffles. 🧡
 ---
 title: c3 waffle operation centre
 ---

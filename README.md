@@ -35,7 +35,7 @@ Dieses ruft ihr so auf:
 sudo apt install git-lfs
 
 # clont das git (hier von gitea)
-git clone https://backwesen.de/c3woc/webseite.git
+git clone https://git.l3d.ch/c3woc/webseite.git
 
 # installiere make um das Makefile auszuführen
 sudo apt install make

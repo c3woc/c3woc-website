@@ -189,9 +189,9 @@ card_title: Quellcode und Git
 -----
 card_image: /images/icons/social/gitea.svg
 -----
-card_url: https://backwesen.de/c3woc/
+card_url: https://git.l3d.ch/c3woc/
 -----
-card_url_text: backwesen.de/c3woc/
+card_url_text: git.l3d.ch/c3woc/
 -----
 card_text: Beim C3WOC schätzen wir Open-Source und Versionsverwaltung sehr. Daher sind wir u.a. auf [github.com/c3woc](https://github.com/c3woc) vertreten. Oder auch ohne LFS limits auf unserer eigenen Infrastruktur auf:
 ---
