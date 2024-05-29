@@ -59,7 +59,7 @@ note: Statt Eier sollte man, wenn möglich, Vollei verwenden
 -----
 html: 
 ##### flow_notes #####
-note: Eier möglichst nicht im Orginalkaton lagern
+note: Eier möglichst nicht im Orginalkarton lagern
 -----
 html: 
 #### flow_ingredients ####
@@ -270,7 +270,7 @@ processing:
 notes:
 
 ###### flow_notes ######
-note: Alternativ zu Sprudel kann auch fast jedes andere Kohlensäurehaltige Getränk verwendet werden
+note: Alternativ zu Sprudel kann auch fast jedes andere kohlensäurehaltige Getränk verwendet werden
 ------
 html: no
 ----
@@ -368,7 +368,7 @@ haccp_string:
 ----
 notes: 
 #### flow_steps ####
-step: Den Teig klumpenfrei rühren, bei bedarf etwas mit Mehl oder Flüssigkeit variieren, damit es ein dickflüssiger Teig wird, der sich noch in ein Waffeleisen gießen lässt.
+step: Den Teig klumpenfrei rühren, bei Bedarf etwas mit Mehl oder Flüssigkeit variieren, damit es ein dickflüssiger Teig wird, der sich noch in ein Waffeleisen gießen lässt.
 ----
 haccp_type: 
 ----
@@ -380,7 +380,7 @@ step: den Teig etwas ruhen lassen
 ----
 haccp_type: control_point
 ----
-haccp_string: Wenn der Teig nicht direkt zubereitet wird unbedingt kühlen!
+haccp_string: Wenn der Teig nicht direkt zubereitet wird, unbedingt kühlen!
 ----
 notes: 
 #### flow_steps ####
