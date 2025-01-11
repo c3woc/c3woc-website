@@ -308,7 +308,7 @@ oven_type: Waffeleisen
 steps:
 
 #### flow_steps ####
-step: Ei-Ersatz Pulver mit etwas flüssigkeit vermischen und schaumig rühren
+step: Ei-Ersatz Pulver mit etwas Flüssigkeit vermischen und schaumig rühren
 ----
 haccp_type: 
 ----
@@ -316,7 +316,7 @@ haccp_string:
 ----
 notes: 
 #### flow_steps ####
-step: Zucker, Vanillezucker und Milch mit dem Ei-Ersatz gemisch verrühren.
+step: Zucker, Vanillezucker und Milch mit dem Ei-Ersatz-Gemisch verrühren.
 ----
 haccp_type: 
 ----
@@ -324,7 +324,7 @@ haccp_string:
 ----
 notes: 
 #### flow_steps ####
-step: unter Rühren die häfte des Mehl dazugeben.
+step: unter Rühren die Häfte des Mehls dazugeben.
 ----
 haccp_type: 
 ----
@@ -348,7 +348,7 @@ haccp_string:
 ----
 notes: 
 #### flow_steps ####
-step: Den Teig klumpenfrei rühren, bei bedarf etwas mit Mehl oder Flüssigkeit variieren, damit es ein dickflüssiger Teig wird, der sich noch in ein Waffeleisen gießen lässt.
+step: Den Teig klumpenfrei rühren, bei Bedarf etwas mit Mehl oder Flüssigkeit variieren, damit es ein dickflüssiger Teig wird, der sich noch in ein Waffeleisen gießen lässt.
 ----
 haccp_type: 
 ----
