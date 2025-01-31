@@ -48,14 +48,14 @@ process: Ei vor dem Aufschlagen waschen und wenn möglich desinfizieren
 -----
 short: 
 ##### flow_processing #####
-process: alle Teile des Ei sind nach dem Aufschlagen so schnell wie möglich zu verarbeiten
+process: alle Teile des Eies sind nach dem Aufschlagen so schnell wie möglich zu verarbeiten
 -----
 short: 
 ----
 notes:
 
 ##### flow_notes #####
-note: Statt Eier sollte man, wenn möglich, Vollei verwenden
+note: Statt Eiern sollte man, wenn möglich, Vollei verwenden
 -----
 html: 
 ##### flow_notes #####
@@ -344,7 +344,7 @@ haccp_string: rohe Eier strikt räumlich getrennt von anderen Lebensmitteln vera
 ----
 notes: 
 #### flow_steps ####
-step: unter Rühren die häfte des Mehl dazugeben.
+step: unter Rühren die häfte des Mehls dazugeben.
 ----
 haccp_type: 
 ----
