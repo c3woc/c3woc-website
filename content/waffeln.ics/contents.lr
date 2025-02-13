@@ -887,6 +887,118 @@ description:
 ----
 mail: Waffel Operation Center <waffel@c3woc.de>
 ----
+confirmed: canceled
+----
+color: crimpson
+#### events ####
+start: 2025-05-29 14:00:00 Europe/Berlin
+----
+ende: 2025-06-01 17:00:00 Europe/Berlin
+----
+event: CoSin 2025
+----
+ort: Biel/Bienne
+----
+url: https://cosin.ch
+----
+description: Chaos Singularity (CoSin) ist ein jährlicher Event des Schweizer Chaos. Der Inhalt erstreckt sich über Technik und Politik zu Kunst, Kultur und Waffeln.
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: false
+----
+color: crimpson
+#### events ####
+start: 2025-06-19 14:00:00 Europe/Berlin
+----
+ende: 2025-06-2 17:00:00 Europe/Berlin
+----
+event: GPN23
+----
+ort: HfG und ZKM Karlsruhe
+----
+url: https://entropia.de/GPN23
+----
+description: Vier Tage lang erwarten euch Hacken, Gulasch, Vorträge, Tschunk, Workshops, Lounge, Mate, Waffeln und Spaß am Gerät.
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2025-07-04 14:00:00 Europe/Berlin
+----
+ende: 2025-07-06 17:00:00 Europe/Berlin
+----
+event: FAT25
+----
+ort: Aalen
+----
+url: https://hackwerk.fun
+----
+description: Aach Aalen... Aber nett ist es
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2025-08-08 14:00:00 Europe/Berlin
+----
+ende: 2025-08-12 17:00:00 Europe/Berlin
+----
+event: WHY2025
+----
+ort: Geestmerambacht, Niederlande
+----
+url: https://why2025.org
+----
+description:
+
+WHY2025 is a nonprofit outdoors hacker camp taking place in Geestmerambacht, the Netherlands, on 8-12 August 2025. 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: false
+----
+color: crimpson
+#### events ####
+start: 2025-08-28 14:00:00 Europe/Berlin
+----
+ende: 2025-08-31 14:00:00 Europe/Berlin
+----
+event: WAMP
+----
+ort: Westerwald
+----
+url:
+
+https://westwood.camp 
+----
+description: 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
+confirmed: true
+----
+color: crimpson
+#### events ####
+start: 2025-07-17 14:00:00 Europe/Berlin
+----
+ende: 2025-07-20 17:00:00 Europe/Berlin
+----
+event: vvoid.camp
+----
+ort: VVoid
+----
+url: https://vvoid.camp
+----
+description: 
+----
+mail: Waffel Operation Center <waffel@c3woc.de>
+----
 confirmed: false
 ----
 color: crimpson
