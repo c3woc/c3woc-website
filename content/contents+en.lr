@@ -124,18 +124,6 @@ card_url_text: @c3woc@chaos.social
 -----
 card_text: On Mastodon there are also accounts containing waffle. For example, C3WOC is represented on the chaos.social instance. Have a look.
 ##### flow_claim_boxes #####
-card_title: Waffles on Twitter
------
-card_image:
-
- /images/icons/social/twitter.svg
------
-card_url: https://twitter.com/@C3WOC
------
-card_url_text: @C3WOC
------
-card_text: Waffles are also happily tweeting away on Twitter. Say hello if you like.
-##### flow_claim_boxes #####
 card_title: Waffles in subreddit
 -----
 card_image:

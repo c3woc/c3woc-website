@@ -133,18 +133,6 @@ card_url_text: @c3woc@chaos.social
 -----
 card_text: Auf Mastodon gibt es auch Waffelhaltige Accounts. So ist das C3WOC auf der chaos.social Instanz vertreten. Schau doch mal vorbei.
 ##### flow_claim_boxes #####
-card_title: Waffeln auf Twitter
------
-card_image:
-
- /images/icons/social/twitter.svg
------
-card_url: https://twitter.com/@C3WOC
------
-card_url_text: @C3WOC
------
-card_text: Auch auf Twitter zwitschern die Waffeln fröhlich vor sich hin. Sag doch mal Hallo, wenn du magst.
-##### flow_claim_boxes #####
 card_title: Waffeln im Subreddit
 -----
 card_image:
